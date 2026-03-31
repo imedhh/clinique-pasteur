@@ -7,9 +7,9 @@ import { explorations, clinicInfo } from '@/lib/data'
 import { examsByExploration } from '@/lib/examens-index'
 
 const explorationImages: Record<string, string> = {
-  'explorations-cardiaques': '/images/reanimation.jpeg',
-  'explorations-neurophysiologiques': '/images/surgery-blue-4.jpg',
-  'explorations-ophtalmologiques': '/images/ophtalmo.jpg',
+  'explorations-cardiaques': '/images/cardio-ecg.jpg',
+  'explorations-neurophysiologiques': '/images/neuro-eeg.jpg',
+  'explorations-ophtalmologiques': '/images/ophtalmo-exam.jpg',
   'explorations-urodynamiques': '/images/urodynamique.jpeg',
 }
 

@@ -7,15 +7,15 @@ import { centres, clinicInfo } from '@/lib/data'
 import { examsByCentre } from '@/lib/examens-index'
 
 const centreImages: Record<string, string> = {
-  'radiologie': '/images/surgery-modern.jpg',
-  'endoscopie': '/images/endoscopie.jpeg',
+  'radiologie': '/images/radiologie-irm.jpg',
+  'endoscopie': '/images/endoscopie-salle.jpg',
   'laboratoire': '/images/laboratoire.jpeg',
   'urgences': '/images/ambulance.jpeg',
-  'explorations-cardiaques': '/images/reanimation.jpeg',
-  'explorations-neurophysiologiques': '/images/surgery-blue-4.jpg',
+  'explorations-cardiaques': '/images/cardio-ecg.jpg',
+  'explorations-neurophysiologiques': '/images/neuro-eeg.jpg',
   'explorations-urodynamiques': '/images/urodynamique.jpeg',
-  'hospitalisation-jour': '/images/hopital-jour.jpeg',
-  'coaching-nutritionnel-esthetique': '/images/clinic-interior.jpg',
+  'hospitalisation-jour': '/images/h4.jpeg',
+  'coaching-nutritionnel-esthetique': '/images/nutrition.jpg',
 }
 
 export async function generateStaticParams() {
