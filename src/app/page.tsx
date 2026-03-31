@@ -23,7 +23,7 @@ export default function HomePage() {
         <div className="relative container-custom px-4 py-16 md:py-24 text-center">
           {/* Logo */}
           <Image
-            src="/images/logo-clinique.png"
+            src="/images/logo-fr.png"
             alt="Logo Clinique Pasteur Tunis"
             width={200}
             height={120}

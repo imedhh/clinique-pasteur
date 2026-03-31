@@ -137,14 +137,8 @@ export default function Header() {
         <div className="container-custom px-4">
           <div className="flex items-center justify-between">
             {/* Logo */}
-            <Link href="/" className="flex items-center gap-2 sm:gap-3">
-              <Image src="/images/logo-clinique.png" alt="Clinique Pasteur" width={48} height={48} className="w-10 h-10 sm:w-12 sm:h-12 rounded-full shadow-md" />
-              <div>
-                <span className="text-lg sm:text-xl font-heading font-bold text-clinic-darkgreen leading-tight block">
-                  Clinique Pasteur
-                </span>
-                <span className="text-[10px] sm:text-xs text-gray-500 font-medium">Tunis</span>
-              </div>
+            <Link href="/">
+              <Image src="/images/logo-fr.png" alt="Clinique Pasteur Tunis" width={483} height={97} className="h-10 sm:h-12 w-auto" />
             </Link>
 
             {/* Desktop Nav */}
@@ -230,9 +224,8 @@ export default function Header() {
               flexShrink: 0,
             }}
           >
-            <Link href="/" className="flex items-center gap-2">
-              <Image src="/images/logo-clinique.png" alt="CP" width={40} height={40} className="w-10 h-10 rounded-full" />
-              <span className="text-lg font-heading font-bold text-clinic-darkgreen">Clinique Pasteur</span>
+            <Link href="/">
+              <Image src="/images/logo-fr.png" alt="Clinique Pasteur" width={483} height={97} className="h-9 w-auto" />
             </Link>
             <button
               type="button"
