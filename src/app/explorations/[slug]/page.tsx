@@ -2,8 +2,9 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
 import { notFound } from 'next/navigation'
-import { ArrowRight, ArrowLeft, CheckCircle2, Phone } from 'lucide-react'
+import { ArrowRight, ArrowLeft, CheckCircle2, Phone, Clock, ChevronRight } from 'lucide-react'
 import { explorations, clinicInfo } from '@/lib/data'
+import { examsByExploration } from '@/lib/examens-index'
 
 const explorationImages: Record<string, string> = {
   'explorations-cardiaques': '/images/reanimation.jpeg',
@@ -31,6 +32,7 @@ export default function ExplorationPage({ params }: { params: { slug: string } }
 
   const otherExplorations = explorations.filter((e) => e.slug !== params.slug)
   const heroImage = explorationImages[params.slug] || '/images/surgery-modern.jpg'
+  const exams = examsByExploration[params.slug] || []
 
   return (
     <>
@@ -61,13 +63,31 @@ export default function ExplorationPage({ params }: { params: { slug: string } }
         <div className="container-custom">
           <div className="grid lg:grid-cols-3 gap-12">
             <div className="lg:col-span-2">
-              <h2 className="text-2xl font-heading font-bold text-gray-900 mb-8">Services & Examens</h2>
-              <div className="grid md:grid-cols-2 gap-3">
-                {exploration.services.map((s: string) => (
-                  <div key={s} className="flex items-start gap-3 p-4 bg-gray-50 rounded-lg hover:bg-green-50 transition">
-                    <CheckCircle2 className="w-5 h-5 text-clinic-green flex-shrink-0 mt-0.5" />
-                    <span className="text-gray-700">{s}</span>
-                  </div>
+              <h2 className="text-2xl font-heading font-bold text-gray-900 mb-3">Nos Examens & Explorations</h2>
+              <p className="text-gray-500 mb-8">Cliquez sur un examen pour en savoir plus : description, préparation, déroulement, durée.</p>
+
+              {/* Exam cards - clickable */}
+              <div className="grid gap-4">
+                {exams.map((exam: any) => (
+                  <Link
+                    key={exam.slug}
+                    href={`/explorations/${params.slug}/${exam.slug}`}
+                    className="group flex items-start gap-4 p-5 bg-gray-50 rounded-xl border border-gray-200 hover:border-clinic-green hover:bg-green-50 hover:shadow-md transition-all"
+                  >
+                    <div className="w-10 h-10 rounded-lg gradient-green flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <CheckCircle2 className="w-5 h-5 text-white" />
+                    </div>
+                    <div className="flex-grow min-w-0">
+                      <h3 className="font-semibold text-gray-900 group-hover:text-clinic-green transition">{exam.title}</h3>
+                      <p className="text-gray-500 text-sm mt-1 line-clamp-2">{exam.description}</p>
+                      {exam.duree && (
+                        <div className="flex items-center gap-1.5 mt-2 text-xs text-gray-400">
+                          <Clock className="w-3.5 h-3.5" /> {exam.duree}
+                        </div>
+                      )}
+                    </div>
+                    <ChevronRight className="w-5 h-5 text-gray-300 group-hover:text-clinic-green flex-shrink-0 mt-2 transition" />
+                  </Link>
                 ))}
               </div>
             </div>
