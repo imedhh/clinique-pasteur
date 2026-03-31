@@ -138,7 +138,7 @@ export default function Header() {
           <div className="flex items-center justify-between">
             {/* Logo */}
             <Link href="/" className="flex items-center gap-2 sm:gap-3">
-              <Image src="/images/logo.png" alt="Clinique Pasteur" width={48} height={48} className="w-10 h-10 sm:w-12 sm:h-12 rounded-full shadow-md" />
+              <Image src="/images/logo-clinique.png" alt="Clinique Pasteur" width={48} height={48} className="w-10 h-10 sm:w-12 sm:h-12 rounded-full shadow-md" />
               <div>
                 <span className="text-lg sm:text-xl font-heading font-bold text-clinic-darkgreen leading-tight block">
                   Clinique Pasteur
@@ -231,7 +231,7 @@ export default function Header() {
             }}
           >
             <Link href="/" className="flex items-center gap-2">
-              <Image src="/images/logo.png" alt="CP" width={40} height={40} className="w-10 h-10 rounded-full" />
+              <Image src="/images/logo-clinique.png" alt="CP" width={40} height={40} className="w-10 h-10 rounded-full" />
               <span className="text-lg font-heading font-bold text-clinic-darkgreen">Clinique Pasteur</span>
             </Link>
             <button

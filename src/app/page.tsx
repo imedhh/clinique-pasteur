@@ -8,8 +8,7 @@ export default function HomePage() {
   return (
     <>
       {/* ============ HERO ============ */}
-      <section className="relative min-h-[90vh] flex items-center overflow-hidden">
-        {/* Background image */}
+      <section className="relative min-h-[80vh] flex items-center overflow-hidden">
         <div className="absolute inset-0">
           <Image
             src="/images/clinic-building.jpg"
@@ -18,114 +17,72 @@ export default function HomePage() {
             className="object-cover"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0a1628]/95 via-[#0f2035]/85 to-[#0a2e1f]/75" />
+          <div className="absolute inset-0 bg-[#0a1628]/80" />
         </div>
 
-        <div className="relative container-custom px-4 py-16 md:py-24">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              {/* Badge */}
-              <div className="inline-flex items-center gap-2 bg-red-500/20 backdrop-blur-sm border border-red-400/30 px-5 py-2.5 rounded-full text-red-200 text-sm mb-8 animate-fade-in">
-                <span className="w-2 h-2 rounded-full bg-red-400 animate-pulse" />
-                Urgences 24h/24 — Appelez le 36 402 076
-              </div>
+        <div className="relative container-custom px-4 py-16 md:py-24 text-center">
+          {/* Logo */}
+          <Image
+            src="/images/logo-clinique.png"
+            alt="Logo Clinique Pasteur Tunis"
+            width={200}
+            height={120}
+            className="mx-auto mb-8 w-40 md:w-52 drop-shadow-2xl"
+          />
 
-              {/* Title */}
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white leading-[1.1] mb-8 animate-slide-up">
-                Votre santé mérite<br />
-                <span style={{ backgroundImage: 'linear-gradient(135deg, #4ade80, #C8A96E)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>l&apos;excellence</span>
-              </h1>
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-heading font-bold text-white leading-tight mb-6">
+            Clinique Pasteur de Tunis
+          </h1>
 
-              <p className="text-lg md:text-xl text-gray-300 leading-relaxed mb-10 max-w-2xl">
-                Clinique pluridisciplinaire de référence au Centre Urbain Nord de Tunis.
-                <strong className="text-white"> +15 spécialités</strong> chirurgicales,
-                <strong className="text-white"> 10 blocs opératoires</strong> et des équipements de dernière technologie.
-              </p>
+          <p className="text-lg md:text-xl text-gray-300 leading-relaxed mb-10 max-w-2xl mx-auto">
+            Clinique pluridisciplinaire de référence au Centre Urbain Nord.
+            Plus de 15 spécialités chirurgicales et des équipements de dernière technologie.
+          </p>
 
-              {/* CTA Buttons */}
-              <div className="flex flex-col sm:flex-row gap-4 mb-14">
-                <Link href="/devis" className="btn-gold text-lg group">
-                  Obtenir un Devis Gratuit
-                  <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
-                </Link>
-                <a href={`tel:${clinicInfo.phone}`} className="inline-flex items-center justify-center px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/20 text-white font-semibold rounded-lg hover:bg-white/20 transition-all text-lg">
-                  <Phone className="w-5 h-5 mr-3" /> 36 402 000
-                </a>
-              </div>
+          {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-14">
+            <Link href="/devis" className="btn-gold text-lg group">
+              Obtenir un Devis Gratuit
+              <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+            </Link>
+            <a href={`tel:${clinicInfo.phone}`} className="inline-flex items-center justify-center px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/20 text-white font-semibold rounded-lg hover:bg-white/20 transition-all text-lg">
+              <Phone className="w-5 h-5 mr-3" /> 36 402 000
+            </a>
+          </div>
 
-              {/* Stats row */}
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-10">
-                {[
-                  { value: '15+', label: 'Spécialités' },
-                  { value: '79', label: 'Chambres' },
-                  { value: '10', label: 'Blocs opératoires' },
-                  { value: '24/7', label: 'Urgences' },
-                ].map(({ value, label }) => (
-                  <div key={label} className="border-l-2 border-clinic-gold/50 pl-4">
-                    <div className="text-3xl font-bold text-white">{value}</div>
-                    <p className="text-gray-400 text-sm mt-1">{label}</p>
-                  </div>
-                ))}
+          {/* Stats row */}
+          <div className="flex flex-wrap justify-center gap-8 md:gap-16">
+            {[
+              { value: '15+', label: 'Spécialités' },
+              { value: '79', label: 'Chambres' },
+              { value: '10', label: 'Blocs opératoires' },
+              { value: '24/7', label: 'Urgences' },
+            ].map(({ value, label }) => (
+              <div key={label} className="text-center">
+                <div className="text-3xl md:text-4xl font-bold text-white">{value}</div>
+                <p className="text-gray-400 text-sm mt-1">{label}</p>
               </div>
-            </div>
-
-            {/* Right side - Image collage */}
-            <div className="hidden lg:block relative">
-              <div className="grid grid-cols-2 gap-4">
-                <div className="space-y-4">
-                  <div className="rounded-2xl overflow-hidden shadow-2xl border border-white/10 h-48">
-                    <Image src="/images/surgery-blue-2.jpg" alt="Bloc opératoire moderne" width={500} height={300} className="w-full h-full object-cover" />
-                  </div>
-                  <div className="rounded-2xl overflow-hidden shadow-2xl border border-white/10 h-64">
-                    <Image src="/images/reanimation.jpeg" alt="Réanimation" width={500} height={400} className="w-full h-full object-cover" />
-                  </div>
-                </div>
-                <div className="space-y-4 pt-8">
-                  <div className="rounded-2xl overflow-hidden shadow-2xl border border-white/10 h-64">
-                    <Image src="/images/surgery-blue-3.jpg" alt="Chirurgie moderne" width={500} height={400} className="w-full h-full object-cover" />
-                  </div>
-                  <div className="rounded-2xl overflow-hidden shadow-2xl border border-white/10 h-48">
-                    <Image src="/images/laboratoire.jpeg" alt="Laboratoire" width={500} height={300} className="w-full h-full object-cover" />
-                  </div>
-                </div>
-              </div>
-              {/* Floating badge */}
-              <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-white rounded-2xl shadow-xl px-8 py-4 flex items-center gap-4">
-                <div className="w-12 h-12 gradient-green rounded-full flex items-center justify-center">
-                  <Shield className="w-6 h-6 text-white" />
-                </div>
-                <div>
-                  <p className="text-xl font-bold text-gray-900">Excellence Médicale</p>
-                  <p className="text-gray-500 text-sm">Depuis des années à Tunis</p>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
 
       {/* ============ SERVICES RAPIDES ============ */}
-      <section className="relative -mt-16 z-10 px-4">
+      <section className="relative -mt-10 z-10 px-4">
         <div className="container-custom">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
             {[
-              { icon: Siren, title: 'Urgences', desc: '24h/24 - 7j/7', href: '/centres/urgences', color: 'bg-red-600', img: '/images/ambulance.jpeg' },
-              { icon: Heart, title: 'Chirurgie Cardiaque', desc: 'Pôle de référence', href: '/chirurgies/chirurgie-cardiovasculaire', color: 'bg-rose-600', img: '/images/reanimation2.jpg' },
-              { icon: Sparkles, title: 'Esthétique', desc: 'Visage & Corps', href: '/chirurgies/chirurgie-esthetique', color: 'bg-purple-600', img: '/images/esthetique.jpg' },
-              { icon: ScanLine, title: 'Imagerie', desc: 'IRM, Scanner, Mammo', href: '/centres/radiologie', color: 'bg-blue-600', img: '/images/radiologie-irm.jpg' },
-            ].map(({ icon: Icon, title, desc, href, color, img }) => (
-              <Link key={title} href={href} className="bg-white rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all group border border-gray-100 hover:-translate-y-1">
-                <div className="relative h-32 overflow-hidden">
-                  <Image src={img} alt={title} width={400} height={200} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-                  <div className={`absolute top-3 left-3 w-10 h-10 ${color} rounded-lg flex items-center justify-center`}>
-                    <Icon className="w-5 h-5 text-white" />
-                  </div>
+              { icon: Siren, title: 'Urgences', desc: '24h/24 - 7j/7', href: '/centres/urgences', color: 'bg-red-600' },
+              { icon: Heart, title: 'Chirurgie Cardiaque', desc: 'Pôle de référence', href: '/chirurgies/chirurgie-cardiovasculaire', color: 'bg-rose-600' },
+              { icon: Sparkles, title: 'Esthétique', desc: 'Visage & Corps', href: '/chirurgies/chirurgie-esthetique', color: 'bg-purple-600' },
+              { icon: ScanLine, title: 'Imagerie', desc: 'IRM, Scanner, Mammo', href: '/centres/radiologie', color: 'bg-blue-600' },
+            ].map(({ icon: Icon, title, desc, href, color }) => (
+              <Link key={title} href={href} className="bg-white rounded-xl p-4 md:p-5 shadow-lg hover:shadow-xl transition-all group border border-gray-100 hover:-translate-y-1">
+                <div className={`w-10 h-10 ${color} rounded-lg flex items-center justify-center mb-3`}>
+                  <Icon className="w-5 h-5 text-white" />
                 </div>
-                <div className="p-4">
-                  <h3 className="font-semibold text-gray-900 group-hover:text-clinic-green transition text-sm md:text-base">{title}</h3>
-                  <p className="text-gray-500 text-xs mt-1">{desc}</p>
-                </div>
+                <h3 className="font-semibold text-gray-900 group-hover:text-clinic-green transition text-sm">{title}</h3>
+                <p className="text-gray-500 text-xs mt-1">{desc}</p>
               </Link>
             ))}
           </div>
