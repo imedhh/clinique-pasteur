@@ -74,7 +74,7 @@ export default function HomePage() {
               <div className="grid grid-cols-2 gap-4">
                 <div className="space-y-4">
                   <div className="rounded-2xl overflow-hidden shadow-2xl border border-white/10 h-48">
-                    <Image src="/images/bloc-operatoire.jpg" alt="Bloc opératoire" width={500} height={300} className="w-full h-full object-cover" />
+                    <Image src="/images/surgery-blue-2.jpg" alt="Bloc opératoire moderne" width={500} height={300} className="w-full h-full object-cover" />
                   </div>
                   <div className="rounded-2xl overflow-hidden shadow-2xl border border-white/10 h-64">
                     <Image src="/images/reanimation.jpeg" alt="Réanimation" width={500} height={400} className="w-full h-full object-cover" />
@@ -82,7 +82,7 @@ export default function HomePage() {
                 </div>
                 <div className="space-y-4 pt-8">
                   <div className="rounded-2xl overflow-hidden shadow-2xl border border-white/10 h-64">
-                    <Image src="/images/chirurgie.jpg" alt="Chirurgie" width={500} height={400} className="w-full h-full object-cover" />
+                    <Image src="/images/surgery-blue-3.jpg" alt="Chirurgie moderne" width={500} height={400} className="w-full h-full object-cover" />
                   </div>
                   <div className="rounded-2xl overflow-hidden shadow-2xl border border-white/10 h-48">
                     <Image src="/images/laboratoire.jpeg" alt="Laboratoire" width={500} height={300} className="w-full h-full object-cover" />
@@ -111,8 +111,8 @@ export default function HomePage() {
             {[
               { icon: Siren, title: 'Urgences', desc: '24h/24 - 7j/7', href: '/centres/urgences', color: 'bg-red-600', img: '/images/ambulance.jpeg' },
               { icon: Heart, title: 'Chirurgie Cardiaque', desc: 'Pôle de référence', href: '/chirurgies/chirurgie-cardiovasculaire', color: 'bg-rose-600', img: '/images/reanimation2.jpg' },
-              { icon: Sparkles, title: 'Esthétique', desc: 'Visage & Corps', href: '/chirurgies/chirurgie-esthetique', color: 'bg-purple-600', img: '/images/chirurgie2.jpeg' },
-              { icon: ScanLine, title: 'Imagerie', desc: 'IRM, Scanner, Mammo', href: '/centres/radiologie', color: 'bg-blue-600', img: '/images/table.jpeg' },
+              { icon: Sparkles, title: 'Esthétique', desc: 'Visage & Corps', href: '/chirurgies/chirurgie-esthetique', color: 'bg-purple-600', img: '/images/surgery-blue-1.jpg' },
+              { icon: ScanLine, title: 'Imagerie', desc: 'IRM, Scanner, Mammo', href: '/centres/radiologie', color: 'bg-blue-600', img: '/images/surgery-modern.jpg' },
             ].map(({ icon: Icon, title, desc, href, color, img }) => (
               <Link key={title} href={href} className="bg-white rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all group border border-gray-100 hover:-translate-y-1">
                 <div className="relative h-32 overflow-hidden">
@@ -203,7 +203,7 @@ export default function HomePage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               { icon: HeartPulse, title: 'Explorations Cardiaques', desc: 'ECG, Holter, échocardiographie, épreuve d\'effort, coronarographie', href: '/explorations/explorations-cardiaques', img: '/images/reanimation.jpeg' },
-              { icon: Brain, title: 'Explorations Neurophysiologiques', desc: 'EEG, EMG, potentiels évoqués, vidéo-EEG prolongé', href: '/explorations/explorations-neurophysiologiques', img: '/images/chirurgie2.jpeg' },
+              { icon: Brain, title: 'Explorations Neurophysiologiques', desc: 'EEG, EMG, potentiels évoqués, vidéo-EEG prolongé', href: '/explorations/explorations-neurophysiologiques', img: '/images/surgery-blue-4.jpg' },
               { icon: Eye, title: 'Explorations Ophtalmologiques', desc: 'OCT, champ visuel, fond d\'œil, angiographie rétinienne', href: '/explorations/explorations-ophtalmologiques', img: '/images/ophtalmo.jpg' },
               { icon: Activity, title: 'Explorations Urodynamiques', desc: 'Débitmétrie, cystomanométrie, bilan urodynamique complet', href: '/explorations/explorations-urodynamiques', img: '/images/urodynamique.jpeg' },
             ].map(({ icon: Icon, title, desc, href, img }) => (
@@ -250,8 +250,8 @@ export default function HomePage() {
           <div className="grid md:grid-cols-3 gap-6 mb-8">
             {[
               { title: 'Chirurgie Cardiovasculaire', desc: 'Pôle de référence : cathétérisme, chirurgie à cœur ouvert, électrophysiologie', img: '/images/reanimation2.jpg', href: '/chirurgies/chirurgie-cardiovasculaire' },
-              { title: 'Chirurgie Bariatrique', desc: 'Sleeve, bypass, anneau gastrique — spécialité phare de la clinique', img: '/images/chirurgie.jpg', href: '/chirurgies/chirurgie-bariatrique' },
-              { title: 'Chirurgie Esthétique', desc: 'Rhinoplastie, liposuccion, lifting, augmentation mammaire', img: '/images/bloc-operatoire.jpg', href: '/chirurgies/chirurgie-esthetique' },
+              { title: 'Chirurgie Bariatrique', desc: 'Sleeve, bypass, anneau gastrique — spécialité phare de la clinique', img: '/images/surgery-blue-5.jpg', href: '/chirurgies/chirurgie-bariatrique' },
+              { title: 'Chirurgie Esthétique', desc: 'Rhinoplastie, liposuccion, lifting, augmentation mammaire', img: '/images/surgery-blue-2.jpg', href: '/chirurgies/chirurgie-esthetique' },
             ].map(({ title, desc, img, href }) => (
               <Link key={title} href={href} className="rounded-2xl overflow-hidden shadow-lg group relative h-72">
                 <Image src={img} alt={title} width={600} height={400} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
@@ -291,7 +291,7 @@ export default function HomePage() {
       {/* ============ PÔLES D'EXCELLENCE ============ */}
       <section className="relative section-padding overflow-hidden">
         <div className="absolute inset-0">
-          <Image src="/images/chirurgie2.jpeg" alt="Chirurgie" fill className="object-cover" />
+          <Image src="/images/surgery-blue-3.jpg" alt="Chirurgie" fill className="object-cover" />
           <div className="absolute inset-0 bg-[#0a1628]/90" />
         </div>
         <div className="container-custom relative text-white">

@@ -7,7 +7,7 @@ import { explorations, clinicInfo } from '@/lib/data'
 
 const explorationImages: Record<string, string> = {
   'explorations-cardiaques': '/images/reanimation.jpeg',
-  'explorations-neurophysiologiques': '/images/chirurgie2.jpeg',
+  'explorations-neurophysiologiques': '/images/surgery-blue-4.jpg',
   'explorations-ophtalmologiques': '/images/ophtalmo.jpg',
   'explorations-urodynamiques': '/images/urodynamique.jpeg',
 }
@@ -30,7 +30,7 @@ export default function ExplorationPage({ params }: { params: { slug: string } }
   if (!exploration) notFound()
 
   const otherExplorations = explorations.filter((e) => e.slug !== params.slug)
-  const heroImage = explorationImages[params.slug] || '/images/table.jpeg'
+  const heroImage = explorationImages[params.slug] || '/images/surgery-modern.jpg'
 
   return (
     <>

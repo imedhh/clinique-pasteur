@@ -10,7 +10,7 @@ export const metadata = {
 
 const explorationImages: Record<string, string> = {
   'explorations-cardiaques': '/images/reanimation.jpeg',
-  'explorations-neurophysiologiques': '/images/chirurgie2.jpeg',
+  'explorations-neurophysiologiques': '/images/surgery-blue-4.jpg',
   'explorations-ophtalmologiques': '/images/ophtalmo.jpg',
   'explorations-urodynamiques': '/images/urodynamique.jpeg',
 }
@@ -20,7 +20,7 @@ export default function ExplorationsPage() {
     <>
       <section className="relative py-20 overflow-hidden">
         <div className="absolute inset-0">
-          <Image src="/images/table.jpeg" alt="Explorations" fill className="object-cover" />
+          <Image src="/images/surgery-modern.jpg" alt="Explorations" fill className="object-cover" />
           <div className="absolute inset-0 bg-[#0a1628]/90" />
         </div>
         <div className="container-custom px-4 relative">
@@ -43,7 +43,7 @@ export default function ExplorationsPage() {
               >
                 <div className="relative h-52 overflow-hidden">
                   <Image
-                    src={explorationImages[exploration.slug] || '/images/table.jpeg'}
+                    src={explorationImages[exploration.slug] || '/images/surgery-modern.jpg'}
                     alt={exploration.title}
                     width={600}
                     height={300}

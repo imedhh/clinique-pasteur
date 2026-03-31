@@ -1,7 +1,8 @@
 'use client'
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
-import { Phone, Menu, X, ChevronDown, Clock, Mail, MapPin } from 'lucide-react'
+import Image from 'next/image'
+import { Phone, Menu, X, ChevronDown, ChevronRight, Clock, Mail, MapPin } from 'lucide-react'
 
 const navigation = [
   { name: 'Accueil', href: '/' },
@@ -61,6 +62,7 @@ export default function Header() {
   const [scrolled, setScrolled] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
   const [openDropdown, setOpenDropdown] = useState<string | null>(null)
+  const [mobileSubmenu, setMobileSubmenu] = useState<string | null>(null)
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20)
@@ -68,9 +70,28 @@ export default function Header() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
+  // Lock body scroll when mobile menu is open
+  useEffect(() => {
+    if (mobileOpen) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = ''
+    }
+    return () => { document.body.style.overflow = '' }
+  }, [mobileOpen])
+
+  const closeMobile = () => {
+    setMobileOpen(false)
+    setMobileSubmenu(null)
+  }
+
+  const toggleMobileSubmenu = (name: string) => {
+    setMobileSubmenu(mobileSubmenu === name ? null : name)
+  }
+
   return (
     <>
-      {/* Top Bar */}
+      {/* Top Bar - desktop only */}
       <div className="bg-clinic-dark text-white text-sm hidden lg:block">
         <div className="container-custom flex justify-between items-center py-2 px-4">
           <div className="flex items-center gap-6">
@@ -96,19 +117,17 @@ export default function Header() {
       </div>
 
       {/* Main Navigation */}
-      <header className={`sticky top-0 z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-lg py-2' : 'bg-white/95 backdrop-blur-md py-4'}`}>
+      <header className={`sticky top-0 z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-lg py-2' : 'bg-white/95 backdrop-blur-md py-3 lg:py-4'}`}>
         <div className="container-custom px-4">
           <div className="flex items-center justify-between">
             {/* Logo */}
-            <Link href="/" className="flex items-center gap-3 group">
-              <div className="w-12 h-12 rounded-full gradient-green flex items-center justify-center text-white font-bold text-lg shadow-md">
-                CP
-              </div>
+            <Link href="/" className="flex items-center gap-2 sm:gap-3" onClick={closeMobile}>
+              <Image src="/images/logo.png" alt="Clinique Pasteur" width={48} height={48} className="w-10 h-10 sm:w-12 sm:h-12 rounded-full shadow-md" />
               <div>
-                <h1 className="text-xl font-heading font-bold text-clinic-darkgreen leading-tight">
+                <span className="text-lg sm:text-xl font-heading font-bold text-clinic-darkgreen leading-tight block">
                   Clinique Pasteur
-                </h1>
-                <p className="text-xs text-gray-500 font-medium">Tunis - Centre Urbain Nord</p>
+                </span>
+                <span className="text-[10px] sm:text-xs text-gray-500 font-medium">Tunis - Centre Urbain Nord</span>
               </div>
             </Link>
 
@@ -129,7 +148,7 @@ export default function Header() {
                     {item.children && <ChevronDown className="w-3.5 h-3.5" />}
                   </Link>
                   {item.children && openDropdown === item.name && (
-                    <div className="absolute top-full left-0 w-72 bg-white rounded-xl shadow-2xl border border-gray-100 py-2 animate-fade-in">
+                    <div className="absolute top-full left-0 w-72 bg-white rounded-xl shadow-2xl border border-gray-100 py-2 animate-fade-in z-50">
                       {item.children.map((child) => (
                         <Link
                           key={child.name}
@@ -145,17 +164,20 @@ export default function Header() {
               ))}
             </nav>
 
-            {/* CTA + Mobile */}
-            <div className="flex items-center gap-3">
-              <Link href="/devis" className="hidden md:inline-flex btn-primary text-sm !px-6 !py-2.5">
+            {/* CTA + Mobile Button */}
+            <div className="flex items-center gap-2 sm:gap-3">
+              <Link href="/devis" className="hidden md:inline-flex btn-primary text-sm !px-5 !py-2.5">
                 Demander un Devis
               </Link>
               <a href="tel:+21636402000" className="hidden sm:flex items-center gap-2 text-clinic-green font-semibold text-sm hover:text-clinic-darkgreen transition">
                 <Phone className="w-4 h-4" /> 36 402 000
               </a>
               <button
-                className="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition"
-                onClick={() => setMobileOpen(!mobileOpen)}
+                className="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition z-50 relative"
+                onClick={() => {
+                  setMobileOpen(!mobileOpen)
+                  if (mobileOpen) setMobileSubmenu(null)
+                }}
                 aria-label="Menu"
               >
                 {mobileOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -164,41 +186,75 @@ export default function Header() {
           </div>
         </div>
 
-        {/* Mobile Menu */}
+        {/* Mobile Menu - Full screen overlay */}
         {mobileOpen && (
-          <div className="lg:hidden bg-white border-t shadow-xl animate-fade-in">
-            <div className="container-custom px-4 py-4">
+          <div className="lg:hidden fixed inset-0 top-[56px] bg-white z-40 overflow-y-auto animate-fade-in">
+            {/* Urgences banner mobile */}
+            <div className="bg-red-600 text-white px-4 py-3 flex items-center justify-between">
+              <span className="text-sm font-semibold">Urgences 24h/24</span>
+              <a href="tel:+21636402076" className="bg-white text-red-600 px-4 py-1.5 rounded-full text-sm font-bold">
+                36 402 076
+              </a>
+            </div>
+
+            <div className="px-4 py-2">
               {navigation.map((item) => (
-                <div key={item.name} className="border-b border-gray-100 last:border-0">
-                  <Link
-                    href={item.href}
-                    className="block py-3 text-gray-700 font-medium hover:text-clinic-green transition"
-                    onClick={() => !item.children && setMobileOpen(false)}
-                  >
-                    {item.name}
-                  </Link>
-                  {item.children && (
-                    <div className="pl-4 pb-2">
-                      {item.children.map((child) => (
+                <div key={item.name} className="border-b border-gray-100">
+                  {item.children ? (
+                    <>
+                      {/* Parent with toggle */}
+                      <div className="flex items-center justify-between">
                         <Link
-                          key={child.name}
-                          href={child.href}
-                          className="block py-2 text-sm text-gray-500 hover:text-clinic-green transition"
-                          onClick={() => setMobileOpen(false)}
+                          href={item.href}
+                          className="flex-grow py-4 text-gray-800 font-semibold text-base"
+                          onClick={closeMobile}
                         >
-                          {child.name}
+                          {item.name}
                         </Link>
-                      ))}
-                    </div>
+                        <button
+                          onClick={() => toggleMobileSubmenu(item.name)}
+                          className="p-3 -mr-2 text-gray-500"
+                          aria-label={`Ouvrir ${item.name}`}
+                        >
+                          <ChevronDown className={`w-5 h-5 transition-transform duration-200 ${mobileSubmenu === item.name ? 'rotate-180' : ''}`} />
+                        </button>
+                      </div>
+                      {/* Submenu */}
+                      {mobileSubmenu === item.name && (
+                        <div className="pb-3 animate-fade-in">
+                          {item.children.map((child) => (
+                            <Link
+                              key={child.name}
+                              href={child.href}
+                              className="flex items-center gap-2 py-2.5 pl-4 text-gray-600 text-sm hover:text-clinic-green transition"
+                              onClick={closeMobile}
+                            >
+                              <ChevronRight className="w-3.5 h-3.5 text-clinic-green" />
+                              {child.name}
+                            </Link>
+                          ))}
+                        </div>
+                      )}
+                    </>
+                  ) : (
+                    <Link
+                      href={item.href}
+                      className="block py-4 text-gray-800 font-semibold text-base"
+                      onClick={closeMobile}
+                    >
+                      {item.name}
+                    </Link>
                   )}
                 </div>
               ))}
-              <div className="mt-4 flex flex-col gap-3">
-                <Link href="/devis" className="btn-primary text-center" onClick={() => setMobileOpen(false)}>
+
+              {/* CTA Buttons */}
+              <div className="mt-6 flex flex-col gap-3 pb-8">
+                <Link href="/devis" className="btn-primary text-center text-base" onClick={closeMobile}>
                   Demander un Devis
                 </Link>
-                <a href="tel:+21636402076" className="btn-secondary text-center">
-                  Urgences: 36 402 076
+                <a href="tel:+21636402000" className="btn-secondary text-center text-base">
+                  <Phone className="w-5 h-5 mr-2" /> 36 402 000
                 </a>
               </div>
             </div>
