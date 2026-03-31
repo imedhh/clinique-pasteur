@@ -204,7 +204,6 @@ export default function HomePage() {
             {[
               { icon: HeartPulse, title: 'Explorations Cardiaques', desc: 'ECG, Holter, échocardiographie, épreuve d\'effort, coronarographie', href: '/explorations/explorations-cardiaques', img: '/images/cardio-ecg.jpg' },
               { icon: Brain, title: 'Explorations Neurophysiologiques', desc: 'EEG, EMG, potentiels évoqués, vidéo-EEG prolongé', href: '/explorations/explorations-neurophysiologiques', img: '/images/neuro-eeg.jpg' },
-              { icon: Eye, title: 'Explorations Ophtalmologiques', desc: 'OCT, champ visuel, fond d\'œil, angiographie rétinienne', href: '/explorations/explorations-ophtalmologiques', img: '/images/ophtalmo-exam.jpg' },
               { icon: Activity, title: 'Explorations Urodynamiques', desc: 'Débitmétrie, cystomanométrie, bilan urodynamique complet', href: '/explorations/explorations-urodynamiques', img: '/images/urodynamique.jpeg' },
             ].map(({ icon: Icon, title, desc, href, img }) => (
               <Link key={title} href={href} className="bg-white rounded-2xl overflow-hidden shadow-md card-hover group border border-gray-100">

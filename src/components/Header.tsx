@@ -39,7 +39,7 @@ const navigation = [
     children: [
       { name: 'Cardiaques', href: '/explorations/explorations-cardiaques' },
       { name: 'Neurophysiologiques', href: '/explorations/explorations-neurophysiologiques' },
-      { name: 'Ophtalmologiques', href: '/explorations/explorations-ophtalmologiques' },
+
       { name: 'Urodynamiques', href: '/explorations/explorations-urodynamiques' },
       { name: 'Toutes les explorations', href: '/explorations' },
     ],

@@ -5,13 +5,12 @@ import { explorations, clinicInfo } from '@/lib/data'
 
 export const metadata = {
   title: 'Nos Explorations Médicales',
-  description: 'Découvrez les explorations médicales de la Clinique Pasteur Tunis : explorations cardiaques, neurophysiologiques, ophtalmologiques et urodynamiques.',
+  description: 'Découvrez les explorations médicales de la Clinique Pasteur Tunis : explorations cardiaques, neurophysiologiques, et urodynamiques.',
 }
 
 const explorationImages: Record<string, string> = {
   'explorations-cardiaques': '/images/cardio-ecg.jpg',
   'explorations-neurophysiologiques': '/images/neuro-eeg.jpg',
-  'explorations-ophtalmologiques': '/images/ophtalmo-exam.jpg',
   'explorations-urodynamiques': '/images/urodynamique.jpeg',
 }
 

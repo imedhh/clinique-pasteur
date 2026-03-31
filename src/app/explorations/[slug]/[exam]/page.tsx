@@ -9,7 +9,6 @@ import { examsByExploration } from '@/lib/examens-index'
 const explorationImages: Record<string, string> = {
   'explorations-cardiaques': '/images/cardio-ecg.jpg',
   'explorations-neurophysiologiques': '/images/neuro-eeg.jpg',
-  'explorations-ophtalmologiques': '/images/ophtalmo-exam.jpg',
   'explorations-urodynamiques': '/images/urodynamique.jpeg',
 }
 
