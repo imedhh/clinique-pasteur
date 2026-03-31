@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import Image from 'next/image'
 import { Bed, Crown, Star, Home, CheckCircle2, ArrowRight, Phone } from 'lucide-react'
 import { clinicInfo, niveaux } from '@/lib/data'
 

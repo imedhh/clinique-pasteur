@@ -1,8 +1,16 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import Image from 'next/image'
 import { notFound } from 'next/navigation'
-import { ArrowRight, ArrowLeft, CheckCircle2, Phone, Stethoscope } from 'lucide-react'
+import { ArrowRight, ArrowLeft, CheckCircle2, Phone } from 'lucide-react'
 import { explorations, clinicInfo } from '@/lib/data'
+
+const explorationImages: Record<string, string> = {
+  'explorations-cardiaques': '/images/reanimation.jpeg',
+  'explorations-neurophysiologiques': '/images/chirurgie2.jpeg',
+  'explorations-ophtalmologiques': '/images/ophtalmo.jpg',
+  'explorations-urodynamiques': '/images/urodynamique.jpeg',
+}
 
 export async function generateStaticParams() {
   return explorations.map((e) => ({ slug: e.slug }))
@@ -22,16 +30,30 @@ export default function ExplorationPage({ params }: { params: { slug: string } }
   if (!exploration) notFound()
 
   const otherExplorations = explorations.filter((e) => e.slug !== params.slug)
+  const heroImage = explorationImages[params.slug] || '/images/table.jpeg'
 
   return (
     <>
-      <section className="relative py-20 gradient-dark text-white">
-        <div className="container-custom px-4">
+      {/* Hero with image */}
+      <section className="relative py-20 overflow-hidden">
+        <div className="absolute inset-0">
+          <Image src={heroImage} alt={exploration.title} fill className="object-cover" />
+          <div className="absolute inset-0 bg-[#0a1628]/85" />
+        </div>
+        <div className="container-custom px-4 relative">
           <Link href="/explorations" className="inline-flex items-center gap-2 text-gray-400 hover:text-white transition mb-6 text-sm">
             <ArrowLeft className="w-4 h-4" /> Toutes les explorations
           </Link>
-          <h1 className="text-3xl md:text-5xl font-heading font-bold mb-6">{exploration.title}</h1>
+          <h1 className="text-3xl md:text-5xl font-heading font-bold text-white mb-6">{exploration.title}</h1>
           <p className="text-xl text-gray-300 leading-relaxed max-w-3xl">{exploration.fullDescription}</p>
+          <div className="mt-8 flex flex-col sm:flex-row gap-4">
+            <Link href="/devis" className="btn-gold">
+              Demander un Devis <ArrowRight className="w-5 h-5 ml-2" />
+            </Link>
+            <a href={`tel:${clinicInfo.phone}`} className="inline-flex items-center justify-center px-6 py-3 border-2 border-white/30 text-white rounded-lg hover:bg-white/10 transition font-semibold">
+              <Phone className="w-5 h-5 mr-2" /> {clinicInfo.phone}
+            </a>
+          </div>
         </div>
       </section>
 
@@ -41,8 +63,8 @@ export default function ExplorationPage({ params }: { params: { slug: string } }
             <div className="lg:col-span-2">
               <h2 className="text-2xl font-heading font-bold text-gray-900 mb-8">Services & Examens</h2>
               <div className="grid md:grid-cols-2 gap-3">
-                {exploration.services.map((s) => (
-                  <div key={s} className="flex items-start gap-3 p-4 bg-gray-50 rounded-lg">
+                {exploration.services.map((s: string) => (
+                  <div key={s} className="flex items-start gap-3 p-4 bg-gray-50 rounded-lg hover:bg-green-50 transition">
                     <CheckCircle2 className="w-5 h-5 text-clinic-green flex-shrink-0 mt-0.5" />
                     <span className="text-gray-700">{s}</span>
                   </div>
@@ -52,6 +74,11 @@ export default function ExplorationPage({ params }: { params: { slug: string } }
 
             <div className="lg:col-span-1">
               <div className="sticky top-24 space-y-6">
+                {/* Image */}
+                <div className="rounded-2xl overflow-hidden shadow-lg">
+                  <Image src={heroImage} alt={exploration.title} width={400} height={250} className="w-full h-48 object-cover" />
+                </div>
+
                 <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-2xl p-8 border border-green-200">
                   <h3 className="text-xl font-heading font-bold text-gray-900 mb-4">Prendre Rendez-vous</h3>
                   <p className="text-gray-600 text-sm mb-6">
@@ -71,12 +98,10 @@ export default function ExplorationPage({ params }: { params: { slug: string } }
                     {otherExplorations.map((e) => (
                       <Link key={e.slug} href={`/explorations/${e.slug}`} className="block p-3 bg-gray-50 rounded-lg hover:bg-green-50 transition text-sm">
                         <span className="font-semibold text-gray-900">{e.shortTitle}</span>
+                        <p className="text-gray-500 text-xs mt-1">{e.description}</p>
                       </Link>
                     ))}
                   </div>
-                  <Link href="/explorations" className="text-clinic-green font-semibold text-sm flex items-center gap-1 mt-4 hover:gap-2 transition-all">
-                    Toutes les explorations <ArrowRight className="w-4 h-4" />
-                  </Link>
                 </div>
               </div>
             </div>

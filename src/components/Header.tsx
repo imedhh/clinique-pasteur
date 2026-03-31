@@ -32,11 +32,21 @@ const navigation = [
     ],
   },
   {
+    name: 'Explorations',
+    href: '/explorations',
+    children: [
+      { name: 'Explorations Cardiaques', href: '/explorations/explorations-cardiaques' },
+      { name: 'Explorations Neurophysiologiques', href: '/explorations/explorations-neurophysiologiques' },
+      { name: 'Explorations Ophtalmologiques', href: '/explorations/explorations-ophtalmologiques' },
+      { name: 'Explorations Urodynamiques', href: '/explorations/explorations-urodynamiques' },
+      { name: 'Toutes les explorations', href: '/explorations' },
+    ],
+  },
+  {
     name: 'Centres',
     href: '/centres',
     children: [
       { name: 'Urgences 24h/24', href: '/centres/urgences' },
-      { name: 'Explorations Cardiaques', href: '/centres/explorations-cardiaques' },
       { name: 'Radiologie & Imagerie', href: '/centres/radiologie' },
       { name: 'Laboratoire d\'Analyses', href: '/centres/laboratoire' },
       { name: 'Endoscopie', href: '/centres/endoscopie' },
