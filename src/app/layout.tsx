@@ -3,6 +3,7 @@ import './globals.css'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import WhatsAppButton from '@/components/WhatsAppButton'
+import Chatbot from '@/components/Chatbot'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://cliniquepasteurtunis.com'),
@@ -95,7 +96,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Header />
         <main className="flex-grow">{children}</main>
         <Footer />
-        <WhatsAppButton />
+        <Chatbot />
       </body>
     </html>
   )
