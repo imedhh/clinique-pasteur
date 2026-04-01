@@ -111,7 +111,7 @@ export default function LaCliniquePage() {
             {[
               { value: '10', label: 'Salles d\'opération', icon: Stethoscope },
               { value: '79', label: 'Chambres d\'hospitalisation', icon: Bed },
-              { value: '21', label: 'Lits de réanimation', icon: Heart },
+              { value: '29', label: 'Lits de réanimation', icon: Heart },
               { value: '30', label: 'Cabinets médicaux', icon: Users },
             ].map(({ value, label, icon: Icon }) => (
               <div key={label} className="text-center">

@@ -7,7 +7,7 @@ const stats = [
   { icon: Bed, value: 79, suffix: '', label: 'Chambres' },
   { icon: Stethoscope, value: 10, suffix: '', label: 'Blocs opératoires' },
   { icon: Building2, value: 11, suffix: '', label: 'Niveaux' },
-  { icon: Heart, value: 21, suffix: '', label: 'Lits de réanimation' },
+  { icon: Heart, value: 29, suffix: '', label: 'Lits de réanimation' },
   { icon: Users, value: 30, suffix: '', label: 'Cabinets médicaux' },
 ]
 

@@ -15,7 +15,7 @@ export const clinicInfo = {
     chambres: 79,
     blocsOperatoires: 10,
     niveaux: 11,
-    litsReanimation: 21,
+    litsReanimation: 29,
     cabinets: 30,
   }
 };

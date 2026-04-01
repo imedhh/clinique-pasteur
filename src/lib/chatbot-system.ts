@@ -43,8 +43,9 @@ Tu fournis UNIQUEMENT des informations pratiques, administratives et d'orientati
 **5ème étage — Cathétérisme & Soins Intensifs**
 - 1 salle de cathétérisme cardiaque
 - 7 chambres de soins intensifs (1 suite + 1 confort + 5 standard)
-- 8 lits USIC (Unité de Soins Intensifs Cardiologiques)
+- 8 lits USIC (Unité de Soins Intensifs Cardiologiques) — comptent comme lits de réanimation
 - Matériel haute technologie
+- TOTAL réanimation clinique : 29 lits (11 réa cardio + 10 réa polyvalente + 8 USIC)
 
 **4ème, 3ème, 2ème, 1er étage + Hôpital du Jour — Hospitalisation**
 - 79 chambres au total :

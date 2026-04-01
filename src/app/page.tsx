@@ -105,7 +105,7 @@ export default function HomePage() {
                 S&apos;étendant sur <strong>11 niveaux</strong>, elle offre une prise en charge personnalisée avec un dossier patient informatisé et sécurisé. Le personnel médical et paramédical, sélectionné sur la base de l&apos;excellence, assure un suivi régulier et continu.
               </p>
               <div className="grid grid-cols-2 gap-y-3 gap-x-6 mb-8">
-                {['10 salles d\'opération', '79 chambres dont 6 VIP', '21 lits de réanimation', 'Stérilisation informatisée', 'Dossier patient sécurisé', 'Équipements haute technologie'].map((item) => (
+                {['10 salles d\'opération', '79 chambres dont 6 VIP', '29 lits de réanimation', 'Stérilisation informatisée', 'Dossier patient sécurisé', 'Équipements haute technologie'].map((item) => (
                   <div key={item} className="flex items-center gap-2 text-gray-700 text-sm">
                     <CheckCircle2 className="w-4 h-4 text-clinic-green flex-shrink-0" /> {item}
                   </div>
