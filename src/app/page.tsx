@@ -16,7 +16,7 @@ export default function HomePage() {
             className="object-cover"
             priority
           />
-          <div className="absolute inset-0 bg-[#0a1628]/80" />
+          <div className="absolute inset-0 bg-[#0a1628]/55" />
         </div>
 
         <div className="relative container-custom px-4 py-16 md:py-24 text-center">
