@@ -1,5 +1,5 @@
-import { streamText } from 'ai'
 import { createAnthropic } from '@ai-sdk/anthropic'
+import { streamText } from 'ai'
 import { SYSTEM_PROMPT } from '@/lib/chatbot-system'
 
 const anthropic = createAnthropic({
@@ -13,7 +13,6 @@ export async function POST(req: Request) {
     model: anthropic('claude-haiku-4-5-20251001'),
     system: SYSTEM_PROMPT,
     messages,
-    maxOutputTokens: 1024,
   })
 
   return result.toTextStreamResponse()
