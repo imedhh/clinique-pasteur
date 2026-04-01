@@ -2,7 +2,6 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { ArrowRight, Phone, Shield, Heart, Brain, Stethoscope, Baby, Sparkles, Activity, Clock, Users, Building2, Bed, Siren, CheckCircle2, Eye, Zap, ScanLine, FlaskConical, Microscope, HeartPulse } from 'lucide-react'
 import { clinicInfo, chirurgies, centres } from '@/lib/data'
-import CounterSection from '@/components/CounterSection'
 
 export default function HomePage() {
   return (
@@ -35,8 +34,8 @@ export default function HomePage() {
           </h1>
 
           <p className="text-lg md:text-xl text-gray-300 leading-relaxed mb-10 max-w-2xl mx-auto">
-            Clinique pluridisciplinaire de référence au Centre Urbain Nord.
-            Plus de 15 spécialités chirurgicales et des équipements de dernière technologie.
+            Clinique pluridisciplinaire de référence au Centre Urbain Nord de Tunis.
+            Équipements de dernière technologie et équipe médicale d&apos;excellence.
           </p>
 
           {/* CTA Buttons */}
@@ -50,20 +49,6 @@ export default function HomePage() {
             </a>
           </div>
 
-          {/* Stats row */}
-          <div className="flex flex-wrap justify-center gap-8 md:gap-16">
-            {[
-              { value: '15+', label: 'Spécialités' },
-              { value: '79', label: 'Chambres' },
-              { value: '10', label: 'Blocs opératoires' },
-              { value: '24/7', label: 'Urgences' },
-            ].map(({ value, label }) => (
-              <div key={label} className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-white">{value}</div>
-                <p className="text-gray-400 text-sm mt-1">{label}</p>
-              </div>
-            ))}
-          </div>
         </div>
       </section>
 
@@ -99,13 +84,13 @@ export default function HomePage() {
                 La Clinique Pasteur de Tunis
               </h2>
               <p className="text-gray-600 leading-relaxed mb-5 text-lg">
-                Sise au Centre Urbain Nord, voisine d&apos;un centre médical de 30 cabinets privés, la Clinique Pasteur est un établissement pluridisciplinaire de référence en Tunisie.
+                Sise au Centre Urbain Nord, voisine d&apos;un centre médical, la Clinique Pasteur est un établissement pluridisciplinaire de référence en Tunisie.
               </p>
               <p className="text-gray-600 leading-relaxed mb-8">
-                S&apos;étendant sur <strong>11 niveaux</strong>, elle offre une prise en charge personnalisée avec un dossier patient informatisé et sécurisé. Le personnel médical et paramédical, sélectionné sur la base de l&apos;excellence, assure un suivi régulier et continu.
+                Elle offre une prise en charge personnalisée avec un dossier patient informatisé et sécurisé. Le personnel médical et paramédical, sélectionné sur la base de l&apos;excellence, assure un suivi régulier et continu.
               </p>
               <div className="grid grid-cols-2 gap-y-3 gap-x-6 mb-8">
-                {['10 salles d\'opération', '79 chambres dont 6 VIP', '29 lits de réanimation', 'Stérilisation informatisée', 'Dossier patient sécurisé', 'Équipements haute technologie'].map((item) => (
+                {['Blocs opératoires de pointe', 'Chambres individuelles et VIP', 'Réanimation spécialisée', 'Stérilisation informatisée', 'Dossier patient sécurisé', 'Équipements haute technologie'].map((item) => (
                   <div key={item} className="flex items-center gap-2 text-gray-700 text-sm">
                     <CheckCircle2 className="w-4 h-4 text-clinic-green flex-shrink-0" /> {item}
                   </div>
@@ -206,7 +191,7 @@ export default function HomePage() {
           <div className="grid md:grid-cols-3 gap-6 mb-8">
             {[
               { title: 'Chirurgie Cardiovasculaire', desc: 'Pôle de référence : cathétérisme, chirurgie à cœur ouvert, électrophysiologie', img: '/images/reanimation2.jpg', href: '/chirurgies/chirurgie-cardiovasculaire' },
-              { title: 'Chirurgie Bariatrique', desc: 'Sleeve, bypass, anneau gastrique — spécialité phare de la clinique', img: '/images/surgery-blue-5.jpg', href: '/chirurgies/chirurgie-bariatrique' },
+              { title: 'Chirurgie Bariatrique', desc: 'Sleeve, bypass, anneau gastrique — spécialité phare de la clinique', img: '/images/bariatrique.jpg', href: '/chirurgies/chirurgie-bariatrique' },
               { title: 'Chirurgie Esthétique', desc: 'Rhinoplastie, liposuccion, lifting, augmentation mammaire', img: '/images/surgery-blue-2.jpg', href: '/chirurgies/chirurgie-esthetique' },
             ].map(({ title, desc, img, href }) => (
               <Link key={title} href={href} className="rounded-2xl overflow-hidden shadow-lg group relative h-72">
@@ -288,8 +273,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ============ COUNTER ============ */}
-      <CounterSection />
 
       {/* ============ HOSPITALISATION ============ */}
       <section className="section-padding bg-white">
@@ -315,18 +298,13 @@ export default function HomePage() {
                 Hospitalisation & Séjour
               </h2>
               <p className="text-gray-600 leading-relaxed mb-6">
-                79 chambres réparties sur plusieurs étages, du confort standard au luxe VIP. Chaque chambre est pensée pour le bien-être du patient.
+                Des chambres réparties sur plusieurs étages, du confort standard au luxe VIP. Chaque chambre est pensée pour le bien-être du patient.
               </p>
-              <div className="grid grid-cols-3 gap-4 mb-8">
-                {[
-                  { num: '68', label: 'Individuelles' },
-                  { num: '8', label: 'Confort' },
-                  { num: '6', label: 'Suites VIP' },
-                ].map(({ num, label }) => (
-                  <div key={label} className="text-center bg-green-50 rounded-xl p-4">
-                    <p className="text-2xl font-bold text-clinic-green">{num}</p>
-                    <p className="text-gray-600 text-xs">{label}</p>
-                  </div>
+              <div className="flex flex-wrap gap-3 mb-8">
+                {['Chambres individuelles', 'Chambres confort', 'Suites VIP', 'Service repas'].map((label) => (
+                  <span key={label} className="bg-green-50 text-clinic-green text-sm px-4 py-2 rounded-full font-medium">
+                    {label}
+                  </span>
                 ))}
               </div>
               <Link href="/hospitalisation" className="btn-primary">
@@ -401,10 +379,10 @@ export default function HomePage() {
           </div>
           <div className="space-y-3">
             {[
-              { q: 'Quelles spécialités chirurgicales sont disponibles ?', a: 'Plus de 15 spécialités : cardiovasculaire, bariatrique, esthétique, orthopédique, urologique, ORL, neurochirurgie, gynéco-obstétrique, pédiatrique, carcinologique, et plus.' },
+              { q: 'Quelles spécialités chirurgicales sont disponibles ?', a: 'Nombreuses spécialités : cardiovasculaire, bariatrique, esthétique, orthopédique, urologique, ORL, neurochirurgie, gynéco-obstétrique, pédiatrique, carcinologique, et plus.' },
               { q: 'Le service des urgences est-il disponible 24h/24 ?', a: 'Oui, urgences 24h/24, 7j/7 avec équipe qualifiée connectée aux blocs opératoires et à la réanimation. Urgences : +216 36 402 076.' },
               { q: 'Comment obtenir un devis ?', a: 'Via notre formulaire en ligne, par email à commercial@cliniquepasteur.com.tn, ou par téléphone au +216 36 402 000. Réponse sous 24-48h.' },
-              { q: 'Quels types de chambres proposez-vous ?', a: '79 chambres : 68 individuelles, 8 confort et 6 suites VIP. La maternité a 9 chambres dont 2 VIP.' },
+              { q: 'Quels types de chambres proposez-vous ?', a: 'Des chambres individuelles, confort et suites VIP, ainsi qu\'une maternité avec chambres VIP.' },
               { q: 'Acceptez-vous les patients internationaux ?', a: 'Oui, notre service commercial organise votre parcours complet : devis, planification, hébergement, transferts.' },
               { q: 'Quels équipements d\'imagerie ?', a: 'IRM, scanner double énergie, mammographie, panoramique dentaire, ostéodensitomètre, radiologie interventionnelle.' },
             ].map(({ q, a }) => (

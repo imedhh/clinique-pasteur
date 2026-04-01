@@ -19,7 +19,7 @@ export default function ChirurgiesPage() {
             <span className="text-clinic-gold font-semibold text-sm uppercase tracking-wider">Spécialités</span>
             <h1 className="text-4xl md:text-5xl font-heading font-bold mt-2 mb-6">Nos Chirurgies et Spécialités</h1>
             <p className="text-xl text-gray-300 leading-relaxed">
-              Plus de 15 spécialités chirurgicales avec des équipes médicales chevronnées, des blocs opératoires de dernière technologie et une prise en charge personnalisée.
+              Des spécialités chirurgicales avec des équipes médicales chevronnées, des blocs opératoires de dernière technologie et une prise en charge personnalisée.
             </p>
           </div>
         </div>

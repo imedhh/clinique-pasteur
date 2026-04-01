@@ -5,7 +5,7 @@ import { niveaux } from '@/lib/data'
 
 export const metadata: Metadata = {
   title: 'La Clinique - Présentation & Infrastructure',
-  description: 'Découvrez la Clinique Pasteur Tunis : 11 niveaux, 10 blocs opératoires, 79 chambres, équipements de pointe. Clinique pluridisciplinaire de référence au Centre Urbain Nord.',
+  description: "Découvrez la Clinique Pasteur Tunis : équipements de pointe, équipe d'excellence. Clinique pluridisciplinaire de référence au Centre Urbain Nord.",
 }
 
 export default function LaCliniquePage() {
@@ -103,21 +103,20 @@ export default function LaCliniquePage() {
         </div>
       </section>
 
-      {/* Chiffres clés */}
+      {/* Points forts */}
       <section className="section-padding gradient-green text-white">
         <div className="container-custom">
-          <h2 className="text-3xl font-heading font-bold text-center mb-12">La Clinique en Chiffres</h2>
+          <h2 className="text-3xl font-heading font-bold text-center mb-12">Nos Points Forts</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
-              { value: '10', label: 'Salles d\'opération', icon: Stethoscope },
-              { value: '79', label: 'Chambres d\'hospitalisation', icon: Bed },
-              { value: '29', label: 'Lits de réanimation', icon: Heart },
-              { value: '30', label: 'Cabinets médicaux', icon: Users },
-            ].map(({ value, label, icon: Icon }) => (
+              { label: 'Blocs opératoires de pointe', icon: Stethoscope },
+              { label: 'Chambres individuelles & VIP', icon: Bed },
+              { label: 'Réanimation spécialisée', icon: Heart },
+              { label: 'Équipements haute technologie', icon: Users },
+            ].map(({ label, icon: Icon }) => (
               <div key={label} className="text-center">
                 <Icon className="w-10 h-10 text-clinic-gold mx-auto mb-3" />
-                <div className="text-4xl font-bold mb-2">{value}</div>
-                <p className="text-green-100 text-sm">{label}</p>
+                <p className="text-green-100 font-semibold">{label}</p>
               </div>
             ))}
           </div>

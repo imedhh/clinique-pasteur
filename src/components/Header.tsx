@@ -50,7 +50,6 @@ const navigation = [
     children: [
       { name: 'Urgences 24h/24', href: '/centres/urgences' },
       { name: 'Radiologie & Imagerie', href: '/centres/radiologie' },
-      { name: 'Laboratoire', href: '/centres/laboratoire' },
       { name: 'Endoscopie', href: '/centres/endoscopie' },
       { name: 'Nutrition & Esthétique', href: '/centres/coaching-nutritionnel-esthetique' },
       { name: 'Tous les centres', href: '/centres' },

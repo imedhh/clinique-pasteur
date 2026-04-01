@@ -85,7 +85,6 @@ export default function Footer() {
                 { name: 'Urgences 24h/24', href: '/centres/urgences' },
                 { name: 'Explorations Cardiaques', href: '/centres/explorations-cardiaques' },
                 { name: 'Radiologie & Imagerie', href: '/centres/radiologie' },
-                { name: 'Laboratoire', href: '/centres/laboratoire' },
                 { name: 'Endoscopie', href: '/centres/endoscopie' },
                 { name: 'Hospitalisation', href: '/hospitalisation' },
                 { name: 'Tous les centres', href: '/centres' },

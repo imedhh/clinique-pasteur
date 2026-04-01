@@ -9,7 +9,6 @@ import { examsByCentre } from '@/lib/examens-index'
 const centreImages: Record<string, string> = {
   'radiologie': '/images/radiologie-irm.jpg',
   'endoscopie': '/images/endoscopie-salle.jpg',
-  'laboratoire': '/images/laboratoire.jpeg',
   'urgences': '/images/ambulance.jpeg',
   'explorations-cardiaques': '/images/cardio-ecg.jpg',
   'explorations-neurophysiologiques': '/images/neuro-eeg.jpg',

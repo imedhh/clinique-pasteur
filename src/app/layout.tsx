@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     default: 'Clinique Pasteur Tunis | Clinique Pluridisciplinaire - Centre Urbain Nord',
     template: '%s | Clinique Pasteur Tunis',
   },
-  description: 'Clinique Pasteur Tunis : clinique pluridisciplinaire au Centre Urbain Nord. +15 spécialités, chirurgie cardiovasculaire, bariatrique, esthétique. Urgences 24h/24. IRM, Scanner. Tél: +216 36 402 000',
+  description: 'Clinique Pasteur Tunis : clinique pluridisciplinaire au Centre Urbain Nord. Chirurgie cardiovasculaire, bariatrique, esthétique. Urgences 24h/24. IRM, Scanner. Tél: +216 36 402 000',
   keywords: ['clinique pasteur tunis', 'clinique tunis', 'chirurgie tunisie', 'chirurgie cardiaque tunis', 'chirurgie bariatrique tunisie', 'chirurgie esthétique tunis', 'clinique centre urbain nord', 'hôpital tunis', 'IRM tunis', 'urgences tunis'],
   authors: [{ name: 'Clinique Pasteur Tunis' }],
   openGraph: {
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     url: 'https://cliniquepasteurtunis.com',
     siteName: 'Clinique Pasteur Tunis',
     title: 'Clinique Pasteur Tunis | Clinique Pluridisciplinaire de Référence',
-    description: 'Clinique pluridisciplinaire de référence au Centre Urbain Nord de Tunis. +15 spécialités médicales et chirurgicales. Urgences 24h/24.',
+    description: 'Clinique pluridisciplinaire de référence au Centre Urbain Nord de Tunis. Spécialités médicales et chirurgicales. Urgences 24h/24.',
     images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Clinique Pasteur Tunis' }],
   },
   twitter: {

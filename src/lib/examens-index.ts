@@ -3,7 +3,6 @@ import { examensNeurophysiologiques } from './examens-neurophysiologiques'
 import { examensUrodynamiques } from './examens-urodynamiques'
 import { examensRadiologie } from './examens-radiologie'
 import { examensEndoscopie } from './examens-endoscopie'
-import { examensLaboratoire } from './examens-laboratoire'
 
 export const examsByExploration: Record<string, any[]> = {
   'explorations-cardiaques': examensCardiaques,
@@ -14,7 +13,6 @@ export const examsByExploration: Record<string, any[]> = {
 export const examsByCentre: Record<string, any[]> = {
   'radiologie': examensRadiologie,
   'endoscopie': examensEndoscopie,
-  'laboratoire': examensLaboratoire,
 }
 
 export {
@@ -23,5 +21,4 @@ export {
   examensUrodynamiques,
   examensRadiologie,
   examensEndoscopie,
-  examensLaboratoire,
 }

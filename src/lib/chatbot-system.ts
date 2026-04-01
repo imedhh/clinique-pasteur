@@ -34,39 +34,46 @@ Tu fournis UNIQUEMENT des informations pratiques, administratives et d'orientati
 
 ### Structure du bâtiment (11 niveaux)
 
-**7ème et 6ème étage — Blocs Opératoires & Réanimation**
-- 10 salles d'opération dont une septique
-- 11 lits de réanimation cardiologique
-- 10 lits de réanimation polyvalente
-- Stérilisation centrale informatisée avec traçabilité complète
+**7ème étage — Blocs Opératoires & Réanimation Cardiaque**
+- 6 salles d'opération
+- Réanimation post chirurgie cardiaque adulte et pédiatrique (11 lits)
+- Stérilisation centrale informatisée
 
-**5ème étage — Cathétérisme & Soins Intensifs**
+**6ème étage — Blocs Opératoires & Réanimation Polyvalente**
+- 4 salles d'opération
+- Réanimation polyvalente (13 lits)
+
+**5ème étage — Cathétérisme, USIC & Hospitalisation**
 - 1 salle de cathétérisme cardiaque
-- 7 chambres de soins intensifs (1 suite + 1 confort + 5 standard)
-- 8 lits USIC (Unité de Soins Intensifs Cardiologiques) — comptent comme lits de réanimation
-- Matériel haute technologie
-- TOTAL réanimation clinique : 29 lits (11 réa cardio + 10 réa polyvalente + 8 USIC)
+- 8 lits USIC (Unité de Soins Intensifs Cardiologiques)
+- Chambres d'hospitalisation
 
-**4ème, 3ème, 2ème, 1er étage + Hôpital du Jour — Hospitalisation**
-- 79 chambres au total :
-  - 68 chambres individuelles
-  - 8 chambres confort
-  - 6 chambres suites / VIP
+TOTAL lits de réanimation : 32 (11 réa cardiaque + 13 réa polyvalente + 8 USIC)
+TOTAL salles d'opération : 10 (6 au 7ème + 4 au 6ème)
+
+**4ème, 3ème, 2ème, 1er étage — Hospitalisation**
+- Chambres d'hospitalisation uniquement
+- 79 chambres au total : 68 individuelles, 8 confort, 6 suites/VIP
 
 **Mezzanine — Maternité**
 - 2 box d'accouchement mitoyens à une salle de césarienne
-- 9 chambres d'hospitalisation (7 standard + 2 VIP)
+- Chambres d'hospitalisation
 
-**RDC — Accueil & Consultations**
-- Accueil central des patients
+**RDC — Urgences, Explorations Cardiaques & Radiologie**
 - Service des urgences (24h/24)
-- Consultations externes
+- Centre d'explorations cardiaques
+- Centre de radiologie (IRM, Scanner double énergie, Mammographie)
 - Centre médical adjacent (30 cabinets médicaux privés)
 
-**Sous-sols — Plateau Technique**
-- Centre de radiologie (IRM, Scanner double énergie, Mammographie)
-- Laboratoire d'analyses médicales
-- Services techniques
+**1er sous-sol — Explorations & Endoscopie**
+- Centre d'explorations neurophysiologiques
+- Centre d'explorations urodynamiques
+- Centre d'endoscopie
+
+**2ème sous-sol — Hôpital de Jour**
+- Chirurgie ambulatoire, endoscopies, chimiothérapie, bilans de santé
+
+Note : le laboratoire d'analyses médicales est une structure indépendante louée à un prestataire, il n'appartient pas à la clinique.
 
 ### Types de chambres
 - **Chambre individuelle** : lit médicalisé, salle de bain privative, TV, climatisation, WiFi
@@ -87,8 +94,6 @@ EEG, EMG, potentiels évoqués (visuels, auditifs, somesthésiques, moteurs), vi
 **Centre de radiologie** — Sous-sols
 IRM, scanner double énergie, mammographie, panoramique dentaire 2D, ostéodensitométrie, échographie, radiologie conventionnelle, radiologie interventionnelle (embolisation, drainage, radiofréquence).
 
-**Laboratoire d'analyses médicales** — Sous-sols
-Biochimie, hématologie, hémostase, bactériologie, sérologie, marqueurs tumoraux, biologie d'urgence 24h/24, bilan pré-opératoire.
 
 **Centre d'endoscopie**
 FOGD (fibroscopie gastrique), coloscopie, écho-endoscopie, CPRE, polypectomie, mucosectomie, pose de prothèses digestives, ligature de varices.

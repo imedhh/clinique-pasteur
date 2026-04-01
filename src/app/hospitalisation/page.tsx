@@ -6,7 +6,7 @@ import { clinicInfo, niveaux } from '@/lib/data'
 
 export const metadata: Metadata = {
   title: 'Hospitalisation - Chambres & Séjour',
-  description: 'Clinique Pasteur Tunis : 79 chambres d\'hospitalisation - individuelles, confort, suites et VIP. Découvrez nos options de séjour et nos équipements.',
+  description: 'Clinique Pasteur Tunis : chambres d\'hospitalisation - individuelles, confort, suites et VIP. Découvrez nos options de séjour et nos équipements.',
 }
 
 const chambres = [
@@ -66,7 +66,6 @@ export default function HospitalisationPage() {
                   <div className={`bg-gradient-to-r ${ch.color} p-8 text-white`}>
                     <Icon className="w-12 h-12 mb-4" />
                     <h3 className="text-2xl font-heading font-bold">{ch.type}</h3>
-                    <p className="text-3xl font-bold mt-2">{ch.nombre} <span className="text-lg font-normal opacity-80">chambres</span></p>
                   </div>
                   <div className="p-8">
                     <p className="text-gray-600 mb-6">{ch.description}</p>
