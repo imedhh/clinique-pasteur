@@ -1,7 +1,6 @@
 'use client'
 import { useState } from 'react'
 import { Send, CheckCircle2, Loader2 } from 'lucide-react'
-import { chirurgies } from '@/lib/data'
 
 export default function DevisForm() {
   const [submitted, setSubmitted] = useState(false)
@@ -119,15 +118,78 @@ export default function DevisForm() {
         <h3 className="text-lg font-semibold text-gray-900 mb-4 pb-2 border-b">Informations Médicales</h3>
         <div className="space-y-4">
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">Spécialité souhaitée *</label>
+            <label className="block text-sm font-medium text-gray-700 mb-1">Service souhaité *</label>
             <select name="specialite" required className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-clinic-green focus:border-transparent transition bg-white">
-              <option value="">Sélectionnez une spécialité</option>
-              {chirurgies.map((c) => (
-                <option key={c.slug} value={c.title}>{c.title}</option>
-              ))}
-              <option value="Radiologie / Imagerie">Radiologie / Imagerie (IRM, Scanner)</option>
-              <option value="Bilan de santé">Bilan de santé complet</option>
-              <option value="Autre">Autre</option>
+              <option value="">Sélectionnez un service</option>
+
+              <optgroup label="Consultations médicales">
+                <option value="Consultation cardiologie">Consultation cardiologie</option>
+                <option value="Consultation pneumologie">Consultation pneumologie</option>
+                <option value="Consultation gastro-entérologie">Consultation gastro-entérologie</option>
+                <option value="Consultation neurologie">Consultation neurologie</option>
+                <option value="Consultation urologie">Consultation urologie</option>
+                <option value="Consultation gynécologie">Consultation gynécologie</option>
+                <option value="Consultation ORL">Consultation ORL</option>
+                <option value="Consultation orthopédie">Consultation orthopédie</option>
+                <option value="Consultation dermatologie">Consultation dermatologie</option>
+                <option value="Consultation endocrinologie">Consultation endocrinologie</option>
+                <option value="Consultation rhumatologie">Consultation rhumatologie</option>
+                <option value="Consultation médecine interne">Consultation médecine interne</option>
+                <option value="Consultation pédiatrie">Consultation pédiatrie</option>
+                <option value="Consultation nutrition / diététique">Consultation nutrition / diététique</option>
+              </optgroup>
+
+              <optgroup label="Explorations & Examens">
+                <option value="Explorations cardiaques (ECG, Holter, écho)">Explorations cardiaques (ECG, Holter, échographie)</option>
+                <option value="Explorations neurophysiologiques (EEG, EMG)">Explorations neurophysiologiques (EEG, EMG)</option>
+                <option value="Explorations urodynamiques">Explorations urodynamiques</option>
+                <option value="Endoscopie (FOGD, coloscopie)">Endoscopie (fibroscopie, coloscopie)</option>
+                <option value="Bilan de santé complet">Bilan de santé complet</option>
+                <option value="Bilan pré-opératoire">Bilan pré-opératoire</option>
+              </optgroup>
+
+              <optgroup label="Imagerie médicale">
+                <option value="IRM">IRM (Imagerie par Résonance Magnétique)</option>
+                <option value="Scanner">Scanner</option>
+                <option value="Mammographie">Mammographie</option>
+                <option value="Échographie">Échographie</option>
+                <option value="Radiologie conventionnelle">Radiologie conventionnelle</option>
+                <option value="Ostéodensitométrie">Ostéodensitométrie</option>
+                <option value="Panoramique dentaire">Panoramique dentaire</option>
+              </optgroup>
+
+              <optgroup label="Chirurgies">
+                <option value="Chirurgie cardiovasculaire et thoracique">Chirurgie cardiovasculaire et thoracique</option>
+                <option value="Chirurgie générale">Chirurgie générale</option>
+                <option value="Chirurgie bariatrique (obésité)">Chirurgie bariatrique (sleeve, bypass)</option>
+                <option value="Chirurgie esthétique et réparatrice">Chirurgie esthétique et réparatrice</option>
+                <option value="Chirurgie orthopédique">Chirurgie orthopédique</option>
+                <option value="Chirurgie urologique">Chirurgie urologique</option>
+                <option value="Chirurgie ORL">Chirurgie ORL</option>
+                <option value="Neurochirurgie">Neurochirurgie</option>
+                <option value="Chirurgie pédiatrique">Chirurgie pédiatrique</option>
+                <option value="Chirurgie gynéco-obstétrique">Chirurgie gynéco-obstétrique</option>
+                <option value="Chirurgie carcinologique (cancers)">Chirurgie carcinologique (cancers)</option>
+                <option value="Chirurgie endoscopique">Chirurgie endoscopique</option>
+                <option value="Chirurgie cœlioscopique">Chirurgie cœlioscopique (laparoscopie)</option>
+                <option value="Électrophysiologie cardiaque">Électrophysiologie cardiaque</option>
+              </optgroup>
+
+              <optgroup label="Maternité & Obstétrique">
+                <option value="Suivi de grossesse">Suivi de grossesse</option>
+                <option value="Accouchement">Accouchement</option>
+                <option value="Césarienne">Césarienne</option>
+              </optgroup>
+
+              <optgroup label="Autres services">
+                <option value="Urgences">Urgences</option>
+                <option value="Hospitalisation">Hospitalisation</option>
+                <option value="Coaching nutritionnel">Coaching nutritionnel</option>
+                <option value="Soins esthétiques (non chirurgicaux)">Soins esthétiques (non chirurgicaux)</option>
+                <option value="Médecine esthétique (injections, peelings)">Médecine esthétique (injections, peelings)</option>
+                <option value="Rééducation / Kinésithérapie">Rééducation / Kinésithérapie</option>
+                <option value="Autre">Autre (préciser dans le message)</option>
+              </optgroup>
             </select>
           </div>
           <div>
