@@ -10,7 +10,7 @@ export default function HomePage() {
       <section className="relative min-h-[80vh] flex items-center overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="/images/clinic-building.jpg"
+            src="/images/clinic-building.webp"
             alt="Clinique Pasteur Tunis"
             fill
             className="object-cover"
@@ -106,23 +106,16 @@ export default function HomePage() {
               <div className="grid grid-cols-2 gap-4">
                 <div className="space-y-4">
                   <div className="rounded-2xl overflow-hidden shadow-lg h-52">
-                    <Image src="/images/clinic-interior.jpg" alt="Intérieur clinique" width={400} height={300} className="w-full h-full object-cover" />
+                    <Image src="/images/clinic-interior.webp" alt="Intérieur clinique" width={400} height={300} className="w-full h-full object-cover" />
                   </div>
                   <div className="rounded-2xl overflow-hidden shadow-lg h-40">
-                    <Image src="/images/etages.jpeg" alt="Bâtiment clinique" width={400} height={250} className="w-full h-full object-cover" />
+                    <Image src="/images/etages.webp" alt="Bâtiment clinique" width={400} height={250} className="w-full h-full object-cover" />
                   </div>
                 </div>
                 <div className="pt-8">
                   <div className="rounded-2xl overflow-hidden shadow-lg h-80">
-                    <Image src="/images/clinic-building.jpg" alt="Clinique Pasteur" width={400} height={500} className="w-full h-full object-cover" />
+                    <Image src="/images/clinic-building.webp" alt="Clinique Pasteur" width={400} height={500} className="w-full h-full object-cover" />
                   </div>
-                </div>
-              </div>
-              {/* Floating stats card */}
-              <div className="absolute -bottom-6 -left-4 bg-white rounded-2xl shadow-xl p-5 border border-gray-100">
-                <div className="grid grid-cols-2 gap-4 text-center">
-                  <div><p className="text-2xl font-bold text-clinic-green">11</p><p className="text-xs text-gray-500">Niveaux</p></div>
-                  <div><p className="text-2xl font-bold text-clinic-green">30</p><p className="text-xs text-gray-500">Cabinets</p></div>
                 </div>
               </div>
             </div>
@@ -144,9 +137,9 @@ export default function HomePage() {
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { icon: HeartPulse, title: 'Explorations Cardiaques', desc: 'ECG, Holter, échocardiographie, épreuve d\'effort, coronarographie', href: '/explorations/explorations-cardiaques', img: '/images/cardio-ecg.jpg' },
-              { icon: Brain, title: 'Explorations Neurophysiologiques', desc: 'EEG, EMG, potentiels évoqués, vidéo-EEG prolongé', href: '/explorations/explorations-neurophysiologiques', img: '/images/neuro-eeg.jpg' },
-              { icon: Activity, title: 'Explorations Urodynamiques', desc: 'Débitmétrie, cystomanométrie, bilan urodynamique complet', href: '/explorations/explorations-urodynamiques', img: '/images/urodynamique.jpeg' },
+              { icon: HeartPulse, title: 'Explorations Cardiaques', desc: 'ECG, Holter, échocardiographie, épreuve d\'effort, coronarographie', href: '/explorations/explorations-cardiaques', img: '/images/cardio-ecg.webp' },
+              { icon: Brain, title: 'Explorations Neurophysiologiques', desc: 'EEG, EMG, potentiels évoqués, vidéo-EEG prolongé', href: '/explorations/explorations-neurophysiologiques', img: '/images/neuro-eeg.webp' },
+              { icon: Activity, title: 'Explorations Urodynamiques', desc: 'Débitmétrie, cystomanométrie, bilan urodynamique complet', href: '/explorations/explorations-urodynamiques', img: '/images/urodynamique.webp' },
             ].map(({ icon: Icon, title, desc, href, img }) => (
               <Link key={title} href={href} className="bg-white rounded-2xl overflow-hidden shadow-md card-hover group border border-gray-100">
                 <div className="relative h-44 overflow-hidden">
@@ -190,9 +183,9 @@ export default function HomePage() {
           {/* Top row - 3 featured with images */}
           <div className="grid md:grid-cols-3 gap-6 mb-8">
             {[
-              { title: 'Chirurgie Cardiovasculaire', desc: 'Pôle de référence : cathétérisme, chirurgie à cœur ouvert, électrophysiologie', img: '/images/reanimation2.jpg', href: '/chirurgies/chirurgie-cardiovasculaire' },
-              { title: 'Chirurgie Bariatrique', desc: 'Sleeve, bypass, anneau gastrique — spécialité phare de la clinique', img: '/images/bariatrique.jpg', href: '/chirurgies/chirurgie-bariatrique' },
-              { title: 'Chirurgie Esthétique', desc: 'Rhinoplastie, liposuccion, lifting, augmentation mammaire', img: '/images/surgery-blue-2.jpg', href: '/chirurgies/chirurgie-esthetique' },
+              { title: 'Chirurgie Cardiovasculaire', desc: 'Pôle de référence : cathétérisme, chirurgie à cœur ouvert, électrophysiologie', img: '/images/reanimation2.webp', href: '/chirurgies/chirurgie-cardiovasculaire' },
+              { title: 'Chirurgie Bariatrique', desc: 'Sleeve, bypass, anneau gastrique — spécialité phare de la clinique', img: '/images/bariatrique.webp', href: '/chirurgies/chirurgie-bariatrique' },
+              { title: 'Chirurgie Esthétique', desc: 'Rhinoplastie, liposuccion, lifting, augmentation mammaire', img: '/images/surgery-blue-2.webp', href: '/chirurgies/chirurgie-esthetique' },
             ].map(({ title, desc, img, href }) => (
               <Link key={title} href={href} className="rounded-2xl overflow-hidden shadow-lg group relative h-72">
                 <Image src={img} alt={title} width={600} height={400} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
@@ -232,7 +225,7 @@ export default function HomePage() {
       {/* ============ PÔLES D'EXCELLENCE ============ */}
       <section className="relative section-padding overflow-hidden">
         <div className="absolute inset-0">
-          <Image src="/images/surgery-blue-3.jpg" alt="Chirurgie" fill className="object-cover" />
+          <Image src="/images/surgery-blue-3.webp" alt="Chirurgie" fill className="object-cover" />
           <div className="absolute inset-0 bg-[#0a1628]/90" />
         </div>
         <div className="container-custom relative text-white">
@@ -280,16 +273,16 @@ export default function HomePage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="grid grid-cols-2 gap-4">
               <div className="rounded-2xl overflow-hidden shadow-lg h-48">
-                <Image src="/images/h1.jpeg" alt="Chambre individuelle" width={400} height={300} className="w-full h-full object-cover" />
+                <Image src="/images/h1.webp" alt="Chambre individuelle" width={400} height={300} className="w-full h-full object-cover" />
               </div>
               <div className="rounded-2xl overflow-hidden shadow-lg h-48">
-                <Image src="/images/h2.jpeg" alt="Chambre confort" width={400} height={300} className="w-full h-full object-cover" />
+                <Image src="/images/h2.webp" alt="Chambre confort" width={400} height={300} className="w-full h-full object-cover" />
               </div>
               <div className="rounded-2xl overflow-hidden shadow-lg h-48">
-                <Image src="/images/h3.jpeg" alt="Suite VIP" width={400} height={300} className="w-full h-full object-cover" />
+                <Image src="/images/h3.webp" alt="Suite VIP" width={400} height={300} className="w-full h-full object-cover" />
               </div>
               <div className="rounded-2xl overflow-hidden shadow-lg h-48">
-                <Image src="/images/repas.jpeg" alt="Service repas" width={400} height={300} className="w-full h-full object-cover" />
+                <Image src="/images/repas.webp" alt="Service repas" width={400} height={300} className="w-full h-full object-cover" />
               </div>
             </div>
             <div>
@@ -344,7 +337,7 @@ export default function HomePage() {
       {/* ============ DEVIS CTA ============ */}
       <section className="relative py-20 px-4 overflow-hidden">
         <div className="absolute inset-0">
-          <Image src="/images/clinic-building.jpg" alt="Clinique" fill className="object-cover" />
+          <Image src="/images/clinic-building.webp" alt="Clinique" fill className="object-cover" />
           <div className="absolute inset-0 bg-clinic-green/90" />
         </div>
         <div className="container-custom relative text-center text-white">

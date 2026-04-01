@@ -7,9 +7,9 @@ import { explorations, clinicInfo } from '@/lib/data'
 import { examsByExploration } from '@/lib/examens-index'
 
 const explorationImages: Record<string, string> = {
-  'explorations-cardiaques': '/images/cardio-ecg.jpg',
-  'explorations-neurophysiologiques': '/images/neuro-eeg.jpg',
-  'explorations-urodynamiques': '/images/urodynamique.jpeg',
+  'explorations-cardiaques': '/images/cardio-ecg.webp',
+  'explorations-neurophysiologiques': '/images/neuro-eeg.webp',
+  'explorations-urodynamiques': '/images/urodynamique.webp',
 }
 
 export async function generateStaticParams() {
@@ -43,7 +43,7 @@ export default function ExamPage({ params }: { params: { slug: string; exam: str
   if (!exploration) notFound()
 
   const otherExams = exams.filter((e: any) => e.slug !== params.exam).slice(0, 5)
-  const heroImage = explorationImages[params.slug] || '/images/surgery-modern.jpg'
+  const heroImage = explorationImages[params.slug] || '/images/surgery-modern.webp'
 
   return (
     <>

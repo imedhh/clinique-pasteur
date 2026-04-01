@@ -9,9 +9,9 @@ export const metadata = {
 }
 
 const explorationImages: Record<string, string> = {
-  'explorations-cardiaques': '/images/cardio-ecg.jpg',
-  'explorations-neurophysiologiques': '/images/neuro-eeg.jpg',
-  'explorations-urodynamiques': '/images/urodynamique.jpeg',
+  'explorations-cardiaques': '/images/cardio-ecg.webp',
+  'explorations-neurophysiologiques': '/images/neuro-eeg.webp',
+  'explorations-urodynamiques': '/images/urodynamique.webp',
 }
 
 export default function ExplorationsPage() {
@@ -19,7 +19,7 @@ export default function ExplorationsPage() {
     <>
       <section className="relative py-20 overflow-hidden">
         <div className="absolute inset-0">
-          <Image src="/images/consultation.jpg" alt="Explorations médicales" fill className="object-cover" />
+          <Image src="/images/consultation.webp" alt="Explorations médicales" fill className="object-cover" />
           <div className="absolute inset-0 bg-[#0a1628]/90" />
         </div>
         <div className="container-custom px-4 relative">
@@ -42,7 +42,7 @@ export default function ExplorationsPage() {
               >
                 <div className="relative h-52 overflow-hidden">
                   <Image
-                    src={explorationImages[exploration.slug] || '/images/surgery-modern.jpg'}
+                    src={explorationImages[exploration.slug] || '/images/surgery-modern.webp'}
                     alt={exploration.title}
                     width={600}
                     height={300}
@@ -79,7 +79,7 @@ export default function ExplorationsPage() {
 
       <section className="relative py-20 px-4 overflow-hidden">
         <div className="absolute inset-0">
-          <Image src="/images/clinic-building.jpg" alt="Clinique" fill className="object-cover" />
+          <Image src="/images/clinic-building.webp" alt="Clinique" fill className="object-cover" />
           <div className="absolute inset-0 bg-clinic-green/90" />
         </div>
         <div className="container-custom relative text-center text-white">

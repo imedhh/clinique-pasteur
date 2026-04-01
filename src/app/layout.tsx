@@ -1,9 +1,11 @@
 import type { Metadata } from 'next'
 import { Inter, Playfair_Display } from 'next/font/google'
+import dynamic from 'next/dynamic'
 import './globals.css'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
-import Chatbot from '@/components/Chatbot'
+
+const Chatbot = dynamic(() => import('@/components/Chatbot'), { ssr: false })
 
 const inter = Inter({
   subsets: ['latin'],

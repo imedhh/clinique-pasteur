@@ -7,14 +7,14 @@ import { centres, clinicInfo } from '@/lib/data'
 import { examsByCentre } from '@/lib/examens-index'
 
 const centreImages: Record<string, string> = {
-  'radiologie': '/images/radiologie-irm.jpg',
-  'endoscopie': '/images/endoscopie-salle.jpg',
-  'urgences': '/images/ambulance.jpeg',
-  'explorations-cardiaques': '/images/cardio-ecg.jpg',
-  'explorations-neurophysiologiques': '/images/neuro-eeg.jpg',
-  'explorations-urodynamiques': '/images/urodynamique.jpeg',
-  'hospitalisation-jour': '/images/h4.jpeg',
-  'coaching-nutritionnel-esthetique': '/images/nutrition.jpg',
+  'radiologie': '/images/radiologie-irm.webp',
+  'endoscopie': '/images/endoscopie-salle.webp',
+  'urgences': '/images/ambulance.webp',
+  'explorations-cardiaques': '/images/cardio-ecg.webp',
+  'explorations-neurophysiologiques': '/images/neuro-eeg.webp',
+  'explorations-urodynamiques': '/images/urodynamique.webp',
+  'hospitalisation-jour': '/images/h4.webp',
+  'coaching-nutritionnel-esthetique': '/images/nutrition.webp',
 }
 
 export async function generateStaticParams() {
@@ -37,7 +37,7 @@ export default function CentrePage({ params }: { params: { slug: string } }) {
   const otherCentres = centres.filter((c) => c.slug !== params.slug).slice(0, 4)
   const exams = examsByCentre[params.slug] || []
   const hasDetailedExams = exams.length > 0
-  const heroImage = centreImages[params.slug] || '/images/surgery-modern.jpg'
+  const heroImage = centreImages[params.slug] || '/images/surgery-modern.webp'
 
   return (
     <>
