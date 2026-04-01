@@ -30,6 +30,18 @@ export default function DevisForm() {
         setError('')
         const form = e.target as HTMLFormElement
         const formData = new FormData(form)
+
+        // Convert files to base64
+        const files: { name: string; content: string; type: string }[] = []
+        const fileInput = formData.getAll('fichiers') as File[]
+        for (const file of fileInput) {
+          if (file && file.size > 0) {
+            const buffer = await file.arrayBuffer()
+            const base64 = btoa(String.fromCharCode(...new Uint8Array(buffer)))
+            files.push({ name: file.name, content: base64, type: file.type })
+          }
+        }
+
         const data = {
           nom: formData.get('nom'),
           prenom: formData.get('prenom'),
@@ -41,6 +53,7 @@ export default function DevisForm() {
           typeChambre: formData.get('typeChambre'),
           message: formData.get('message'),
           date: formData.get('date'),
+          fichiers: files,
         }
         try {
           const res = await fetch('/api/devis', {
@@ -214,6 +227,17 @@ export default function DevisForm() {
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-1">Date souhaitée (approximative)</label>
             <input name="date" type="date" className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-clinic-green focus:border-transparent transition" />
+          </div>
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-1">Documents médicaux (rapports, radios, ordonnances...)</label>
+            <input
+              name="fichiers"
+              type="file"
+              multiple
+              accept=".pdf,.jpg,.jpeg,.png,.doc,.docx,.dicom,.dcm"
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-clinic-green focus:border-transparent transition text-sm file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-semibold file:bg-green-50 file:text-clinic-green hover:file:bg-green-100 file:cursor-pointer"
+            />
+            <p className="text-xs text-gray-500 mt-1">PDF, JPG, PNG, DOC, DICOM — Max 10 Mo par fichier</p>
           </div>
         </div>
       </div>

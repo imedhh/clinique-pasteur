@@ -49,12 +49,25 @@ export async function POST(req: Request) {
       </div>
     `
 
+    // Build attachments from base64 files
+    const attachments = (data.fichiers || []).map((f: { name: string; content: string; type: string }) => ({
+      filename: f.name,
+      content: Buffer.from(f.content, 'base64'),
+      contentType: f.type,
+    }))
+
+    const nbFichiers = attachments.length
+    const fichiersInfo = nbFichiers > 0
+      ? `<p style="color: #1a5c32; font-weight: bold; margin-top: 16px;">📎 ${nbFichiers} fichier(s) joint(s)</p>`
+      : ''
+
     await transporter.sendMail({
       from: `"Site Clinique Pasteur" <${process.env.SMTP_USER}>`,
       to: 'contact@cliniquepasteur.com.tn',
       replyTo: data.email,
-      subject: `Demande de Devis - ${data.nom} ${data.prenom} - ${data.specialite || 'Non précisé'}`,
-      html,
+      subject: `Demande de Devis - ${data.nom} ${data.prenom} - ${data.specialite || 'Non précisé'}${nbFichiers > 0 ? ` (${nbFichiers} fichier${nbFichiers > 1 ? 's' : ''})` : ''}`,
+      html: html + fichiersInfo,
+      attachments,
     })
 
     return NextResponse.json({ success: true })
