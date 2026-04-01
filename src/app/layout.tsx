@@ -1,9 +1,21 @@
 import type { Metadata } from 'next'
+import { Inter, Playfair_Display } from 'next/font/google'
 import './globals.css'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
-import WhatsAppButton from '@/components/WhatsAppButton'
 import Chatbot from '@/components/Chatbot'
+
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-sans',
+  display: 'swap',
+})
+
+const playfair = Playfair_Display({
+  subsets: ['latin'],
+  variable: '--font-heading',
+  display: 'swap',
+})
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://cliniquepasteurtunis.com'),
@@ -41,8 +53,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="fr">
       <head>
         <link rel="icon" href="/favicon.ico" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -92,7 +102,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           }}
         />
       </head>
-      <body className="min-h-screen flex flex-col">
+      <body className={`${inter.variable} ${playfair.variable} min-h-screen flex flex-col`}>
         <Header />
         <main className="flex-grow">{children}</main>
         <Footer />
