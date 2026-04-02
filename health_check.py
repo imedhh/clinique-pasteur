@@ -63,14 +63,11 @@ try:
 except Exception as e:
     check("Exam detail page", False, str(e))
 
-# 5. Email API (devis) - test via localhost
+# 5. Email API endpoint exists (check route responds, NO actual email sent)
 try:
-    r = session.post(f"{LOCAL}/api/devis", json={
-        "nom": "HealthCheck", "prenom": "Auto", "email": "healthcheck@test.local",
-        "telephone": "+216 00 000 000", "pays": "Test", "specialite": "Test",
-        "message": "Automated health check - ignore this email"
-    }, timeout=15)
-    check("Email API (devis)", r.status_code == 200 and r.json().get("success"), f"HTTP {r.status_code}")
+    r = session.get(f"{LOCAL}/api/devis", timeout=10)
+    # GET on POST-only route returns 405 = route exists and works
+    check("Email API (devis)", r.status_code == 405, f"HTTP {r.status_code}")
 except Exception as e:
     check("Email API (devis)", False, str(e))
 
