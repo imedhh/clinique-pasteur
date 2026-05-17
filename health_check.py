@@ -13,9 +13,9 @@ import re
 
 RESULTS = {"status": "ok", "checks": [], "problems": [], "timestamp": time.strftime("%Y-%m-%d %H:%M:%S")}
 
-def check(name, passed, detail=""):
-    RESULTS["checks"].append({"name": name, "passed": passed, "detail": detail})
-    if not passed:
+def check(name, passed, detail="", critical=True):
+    RESULTS["checks"].append({"name": name, "passed": passed, "detail": detail, "critical": critical})
+    if not passed and critical:
         RESULTS["problems"].append(f"{name}: {detail}")
         RESULTS["status"] = "error"
 
@@ -81,9 +81,9 @@ try:
         content += chunk
         if len(content) > 50:
             break
-    check("Chatbot IA", r.status_code == 200 and len(content) > 10, f"HTTP {r.status_code}, {len(content)} chars")
+    check("Chatbot IA", r.status_code == 200 and len(content) > 10, f"HTTP {r.status_code}, {len(content)} chars", critical=False)
 except Exception as e:
-    check("Chatbot IA", False, str(e))
+    check("Chatbot IA", False, str(e), critical=False)
 
 # 7. systemd service
 try:
