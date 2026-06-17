@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter, Playfair_Display } from 'next/font/google'
 import dynamic from 'next/dynamic'
+import Script from 'next/script'
 import './globals.css'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
@@ -109,6 +110,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main className="flex-grow">{children}</main>
         <Footer />
         <Chatbot />
+        {/* Umami analytics (self-hosted, privacy-friendly, no cookies) */}
+        <Script
+          src="https://analytics.upstone.io/script.js"
+          data-website-id="ded8ffe4-c0b3-4d78-a492-b6b2237ce700"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   )
