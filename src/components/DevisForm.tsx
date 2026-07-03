@@ -31,14 +31,30 @@ export default function DevisForm() {
         const form = e.target as HTMLFormElement
         const formData = new FormData(form)
 
-        // Convert files to base64
+        // Convert files to base64 (par chunks pour éviter le dépassement de pile sur gros fichiers)
         const files: { name: string; content: string; type: string }[] = []
         const fileInput = formData.getAll('fichiers') as File[]
+        let totalBytes = 0
         for (const file of fileInput) {
           if (file && file.size > 0) {
-            const buffer = await file.arrayBuffer()
-            const base64 = btoa(String.fromCharCode(...new Uint8Array(buffer)))
-            files.push({ name: file.name, content: base64, type: file.type })
+            totalBytes += file.size
+            if (file.size > 10 * 1024 * 1024) {
+              setError(`Le fichier « ${file.name} » dépasse 10 Mo.`)
+              setLoading(false)
+              return
+            }
+            if (totalBytes > 15 * 1024 * 1024) {
+              setError('Les pièces jointes dépassent 15 Mo au total.')
+              setLoading(false)
+              return
+            }
+            const bytes = new Uint8Array(await file.arrayBuffer())
+            let binary = ''
+            const CHUNK = 0x8000
+            for (let i = 0; i < bytes.length; i += CHUNK) {
+              binary += String.fromCharCode(...bytes.subarray(i, i + CHUNK))
+            }
+            files.push({ name: file.name, content: btoa(binary), type: file.type })
           }
         }
 
@@ -53,6 +69,7 @@ export default function DevisForm() {
           typeChambre: formData.get('typeChambre'),
           message: formData.get('message'),
           date: formData.get('date'),
+          website: formData.get('website'), // honeypot anti-spam
           fichiers: files,
         }
         try {
@@ -77,6 +94,10 @@ export default function DevisForm() {
       {error && (
         <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-lg text-sm">{error}</div>
       )}
+
+      {/* Honeypot anti-spam : champ caché, invisible pour les humains */}
+      <input type="text" name="website" tabIndex={-1} autoComplete="off" aria-hidden="true" className="hidden" />
+
 
       {/* Informations personnelles */}
       <div>

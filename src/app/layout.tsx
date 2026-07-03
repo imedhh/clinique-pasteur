@@ -21,7 +21,7 @@ const playfair = Playfair_Display({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://cliniquepasteurtunis.com'),
+  metadataBase: new URL('https://cptunis.com'),
   title: {
     default: 'Clinique Pasteur Tunis | Clinique Pluridisciplinaire - Centre Urbain Nord',
     template: '%s | Clinique Pasteur Tunis',
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'fr_TN',
-    url: 'https://cliniquepasteurtunis.com',
+    url: 'https://cptunis.com',
     siteName: 'Clinique Pasteur Tunis',
     title: 'Clinique Pasteur Tunis | Clinique Pluridisciplinaire de Référence',
     description: 'Clinique pluridisciplinaire de référence au Centre Urbain Nord de Tunis. Spécialités médicales et chirurgicales. Urgences 24h/24.',
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     follow: true,
     googleBot: { index: true, follow: true, 'max-video-preview': -1, 'max-image-preview': 'large', 'max-snippet': -1 },
   },
-  alternates: { canonical: 'https://cliniquepasteurtunis.com' },
+  alternates: { canonical: './' },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -64,7 +64,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               '@type': 'MedicalClinic',
               name: 'Clinique Pasteur Tunis',
               description: 'Clinique pluridisciplinaire de référence au Centre Urbain Nord de Tunis',
-              url: 'https://cliniquepasteurtunis.com',
+              url: 'https://cptunis.com',
+              image: 'https://cptunis.com/og-image.jpg',
+              sameAs: [
+                'https://www.facebook.com/cliniquepasteurtunis',
+                'https://www.instagram.com/cliniquepasteurtunis',
+                'https://www.youtube.com/cliniquepasteurtunis',
+              ],
               telephone: '+216 36 402 000',
               address: {
                 '@type': 'PostalAddress',

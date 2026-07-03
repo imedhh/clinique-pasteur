@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: ['/api/', '/admin/'],
     },
-    sitemap: 'https://cliniquepasteurtunis.com/sitemap.xml',
+    sitemap: 'https://cptunis.com/sitemap.xml',
   }
 }

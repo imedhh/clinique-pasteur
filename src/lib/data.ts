@@ -10,14 +10,6 @@ export const clinicInfo = {
   instagram: 'https://www.instagram.com/cliniquepasteurtunis',
   youtube: 'https://www.youtube.com/cliniquepasteurtunis',
   googleMaps: 'https://maps.google.com/?q=Clinique+Pasteur+Tunis+Centre+Urbain+Nord',
-  stats: {
-    specialites: 15,
-    chambres: 79,
-    blocsOperatoires: 10,
-    niveaux: 11,
-    litsReanimation: 32,
-    cabinets: 30,
-  }
 };
 
 export const chirurgies = [
@@ -45,8 +37,8 @@ export const chirurgies = [
     equipements: [
       'Salle de cathétérisme cardiaque de dernière génération',
       'Bloc opératoire dédié avec CEC',
-      'Unité de soins intensifs cardiologiques (USIC) - 8 lits',
-      'Réanimation cardiologique - 11 lits',
+      'Unité de soins intensifs cardiologiques (USIC)',
+      'Réanimation cardiologique dédiée',
       'Monitoring continu haute résolution',
       'Technologie NO (monoxyde d\'azote)',
       'Épuration extra-rénale sous toutes ses formes',
@@ -297,7 +289,7 @@ export const chirurgies = [
     ],
     avantages: [
       'Équipe neurochirurgicale expérimentée',
-      'Réanimation polyvalente dédiée (10 lits)',
+      'Réanimation polyvalente dédiée',
       'Imagerie de pointe (IRM, Scanner)',
       'Collaboration avec le centre d\'explorations neurophysiologiques',
     ],
@@ -419,7 +411,7 @@ export const chirurgies = [
     ],
     equipements: [
       'Bloc opératoire avec matériel spécialisé',
-      'Laboratoire d\'analyses intégré pour examens extemporanés',
+      'Analyses extemporanées disponibles en per-opératoire',
       'Imagerie complète (IRM, Scanner, Échographie)',
     ],
     avantages: [
@@ -436,7 +428,7 @@ export const chirurgies = [
     icon: 'HeartPulse',
     color: 'rose',
     description: 'Obstétrique, gynécologie chirurgicale et accouchement dans un cadre sécurisé.',
-    heroDescription: 'Le service de gynécologie-obstétrique de la Clinique Pasteur offre une prise en charge complète de la femme, de la grossesse à la ménopause. Notre maternité dispose de deux box d\'accouchement et d\'une salle de césarienne dédiée.',
+    heroDescription: 'Le service de gynécologie-obstétrique de la Clinique Pasteur offre une prise en charge complète de la femme, de la grossesse à la ménopause. Notre maternité dispose de box d\'accouchement et d\'une salle de césarienne dédiée.',
     prestations: [
       'Accouchement naturel assisté',
       'Césarienne programmée et en urgence',
@@ -451,8 +443,8 @@ export const chirurgies = [
       'Chirurgie du sein (tumeurs bénignes et malignes)',
     ],
     equipements: [
-      '2 box d\'accouchement mitoyens à une salle de césarienne',
-      '9 chambres d\'hospitalisation dédiées (7 standard + 2 VIP)',
+      'Box d\'accouchement mitoyens à une salle de césarienne',
+      'Chambres d\'hospitalisation dédiées (standard et VIP)',
       'Monitoring fœtal continu',
       'Colonne de cœlioscopie gynécologique',
       'Échographe obstétrical',
@@ -659,20 +651,20 @@ export const niveaux = [
   {
     etage: '7ème étage',
     titre: 'Blocs Opératoires & Réanimation Cardiaque',
-    description: '6 salles d\'opération et la réanimation post chirurgie cardiaque adulte et pédiatrique.',
-    details: ['6 salles d\'opération', 'Réanimation post chirurgie cardiaque', 'Adulte et pédiatrique', 'Stérilisation centrale informatisée'],
+    description: 'Blocs opératoires et réanimation post chirurgie cardiaque adulte et pédiatrique.',
+    details: ['Blocs opératoires', 'Réanimation post chirurgie cardiaque', 'Adulte et pédiatrique', 'Stérilisation centrale informatisée'],
   },
   {
     etage: '6ème étage',
     titre: 'Blocs Opératoires & Réanimation Polyvalente',
-    description: '4 salles d\'opération et la réanimation polyvalente (13 lits).',
-    details: ['4 salles d\'opération', '13 lits de réanimation polyvalente'],
+    description: 'Blocs opératoires et réanimation polyvalente.',
+    details: ['Blocs opératoires', 'Réanimation polyvalente'],
   },
   {
     etage: '5ème étage',
     titre: 'Cathétérisme, USIC & Hospitalisation',
-    description: 'Salle de cathétérisme cardiaque, unité de soins intensifs cardiologiques (USIC, 8 lits) et chambres d\'hospitalisation.',
-    details: ['1 salle de cathétérisme', '8 lits USIC', 'Chambres d\'hospitalisation'],
+    description: 'Salle de cathétérisme cardiaque, unité de soins intensifs cardiologiques (USIC) et chambres d\'hospitalisation.',
+    details: ['Salle de cathétérisme', 'USIC', 'Chambres d\'hospitalisation'],
   },
   {
     etage: '4ème au 1er étage',
@@ -683,14 +675,14 @@ export const niveaux = [
   {
     etage: 'Mezzanine',
     titre: 'Maternité',
-    description: '2 box d\'accouchement mitoyens à une salle de césarienne et des chambres d\'hospitalisation.',
-    details: ['2 box d\'accouchement', '1 salle de césarienne', 'Chambres d\'hospitalisation'],
+    description: 'Box d\'accouchement mitoyens à une salle de césarienne et chambres d\'hospitalisation.',
+    details: ['Box d\'accouchement', 'Salle de césarienne', 'Chambres d\'hospitalisation'],
   },
   {
     etage: 'RDC',
     titre: 'Urgences, Explorations Cardiaques & Radiologie',
     description: 'Service des urgences 24h/24, centre d\'explorations cardiaques et centre de radiologie (IRM, Scanner, Mammographie).',
-    details: ['Service des urgences', 'Explorations cardiaques', 'Centre de radiologie', 'Centre médical adjacent (30 cabinets)'],
+    details: ['Service des urgences', 'Explorations cardiaques', 'Centre de radiologie', 'Centre médical adjacent'],
   },
   {
     etage: '1er sous-sol',

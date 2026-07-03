@@ -5,7 +5,7 @@ import { chirurgies } from '@/lib/data'
 
 export const metadata: Metadata = {
   title: 'Nos Chirurgies et Spécialités',
-  description: 'Découvrez les 14 spécialités chirurgicales de la Clinique Pasteur Tunis : cardiovasculaire, bariatrique, esthétique, orthopédique, neurochirurgie et plus.',
+  description: 'Découvrez les spécialités chirurgicales de la Clinique Pasteur Tunis : cardiovasculaire, bariatrique, esthétique, orthopédique, neurochirurgie et plus.',
 }
 
 export default function ChirurgiesPage() {

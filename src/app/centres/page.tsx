@@ -5,7 +5,7 @@ import { centres } from '@/lib/data'
 
 export const metadata: Metadata = {
   title: 'Nos Centres Médicaux',
-  description: 'Découvrez les 9 centres médicaux de la Clinique Pasteur Tunis : urgences, radiologie, explorations cardiaques, laboratoire, endoscopie et plus.',
+  description: 'Découvrez les centres médicaux de la Clinique Pasteur Tunis : urgences, radiologie, explorations cardiaques, endoscopie, hôpital de jour et plus.',
 }
 
 export default function CentresPage() {

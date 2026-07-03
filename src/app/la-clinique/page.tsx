@@ -72,10 +72,10 @@ export default function LaCliniquePage() {
           <div className="text-center mb-16">
             <span className="text-clinic-green font-semibold text-sm uppercase tracking-wider">Infrastructure</span>
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-gray-900 mt-2 mb-4">
-              11 Niveaux d&apos;Excellence
+              Une Infrastructure d&apos;Excellence
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              La Clinique s&apos;étend sur 11 niveaux, du 2ème sous-sol au 7ème étage, offrant une infrastructure complète et moderne.
+              La Clinique s&apos;étend du 2ème sous-sol au 7ème étage, offrant une infrastructure complète et moderne.
             </p>
           </div>
           <div className="space-y-6">

@@ -44,7 +44,7 @@ export default function HospitalisationPage() {
           <span className="text-clinic-gold font-semibold text-sm uppercase tracking-wider">Séjour</span>
           <h1 className="text-4xl md:text-5xl font-heading font-bold mt-2 mb-6">Hospitalisation</h1>
           <p className="text-xl text-gray-300 leading-relaxed max-w-3xl">
-            79 chambres d&apos;hospitalisation réparties sur plusieurs étages, du confort standard au luxe VIP. Chaque chambre est pensée pour le bien-être du patient et de ses proches.
+            Des chambres d&apos;hospitalisation réparties sur plusieurs étages, du confort standard au luxe VIP. Chaque chambre est pensée pour le bien-être du patient et de ses proches.
           </p>
         </div>
       </section>
@@ -94,10 +94,10 @@ export default function HospitalisationPage() {
                 <span className="text-pink-500 font-semibold text-sm uppercase tracking-wider">Maternité</span>
                 <h2 className="text-3xl font-heading font-bold text-gray-900 mt-2 mb-6">Service d&apos;Obstétrique</h2>
                 <p className="text-gray-600 mb-6">
-                  La maternité de la Clinique Pasteur, située en mezzanine, dispose de 2 box d&apos;accouchement mitoyens à une salle de césarienne, avec 9 chambres d&apos;hospitalisation dont 2 VIP pour un accueil chaleureux des nouvelles mamans.
+                  La maternité de la Clinique Pasteur, située en mezzanine, dispose de box d&apos;accouchement mitoyens à une salle de césarienne, avec des chambres d&apos;hospitalisation dont des chambres VIP pour un accueil chaleureux des nouvelles mamans.
                 </p>
                 <div className="grid grid-cols-2 gap-4">
-                  {['2 box d\'accouchement', '1 salle de césarienne', '7 chambres standard', '2 chambres VIP'].map((item) => (
+                  {['Box d\'accouchement', 'Salle de césarienne', 'Chambres standard', 'Chambres VIP'].map((item) => (
                     <div key={item} className="flex items-center gap-2 text-gray-700 text-sm">
                       <CheckCircle2 className="w-5 h-5 text-pink-500 flex-shrink-0" /> {item}
                     </div>
@@ -106,9 +106,9 @@ export default function HospitalisationPage() {
               </div>
               <div className="bg-gradient-to-br from-pink-50 to-pink-100 rounded-2xl p-8 text-center">
                 <Bed className="w-16 h-16 text-pink-500 mx-auto mb-4" />
-                <h3 className="text-2xl font-bold text-gray-900">9</h3>
-                <p className="text-gray-600">chambres dédiées à la maternité</p>
-                <p className="text-sm text-gray-500 mt-2">dont 2 suites VIP</p>
+                <h3 className="text-xl font-bold text-gray-900">Chambres dédiées</h3>
+                <p className="text-gray-600">à la maternité</p>
+                <p className="text-sm text-gray-500 mt-2">dont des suites VIP</p>
               </div>
             </div>
           </div>

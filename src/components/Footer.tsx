@@ -40,7 +40,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed mb-6">
-              Clinique pluridisciplinaire de référence au Centre Urbain Nord de Tunis. Plus de 15 spécialités médicales et chirurgicales, équipements de dernière technologie.
+              Clinique pluridisciplinaire de référence au Centre Urbain Nord de Tunis. De nombreuses spécialités médicales et chirurgicales, équipements de dernière technologie.
             </p>
             <div className="flex gap-3">
               <a href={clinicInfo.facebook} target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-clinic-green transition text-sm font-bold" aria-label="Facebook">

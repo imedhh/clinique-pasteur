@@ -35,6 +35,7 @@ export default function ContactForm() {
           telephone: formData.get('telephone'),
           sujet: formData.get('sujet'),
           message: formData.get('message'),
+          website: formData.get('website'), // honeypot anti-spam
         }
         try {
           const res = await fetch('/api/contact', {
@@ -58,6 +59,8 @@ export default function ContactForm() {
       {error && (
         <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-lg text-sm">{error}</div>
       )}
+      {/* Honeypot anti-spam : champ caché, invisible pour les humains */}
+      <input type="text" name="website" tabIndex={-1} autoComplete="off" aria-hidden="true" className="hidden" />
       <div className="grid md:grid-cols-2 gap-4">
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-1">Nom *</label>
