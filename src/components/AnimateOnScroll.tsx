@@ -12,6 +12,14 @@ export default function AnimateOnScroll({ children, className = '', delay = 0 }:
   const [visible, setVisible] = useState(false)
 
   useEffect(() => {
+    // Respect de prefers-reduced-motion : on affiche tout de suite, sans animation
+    const reduced = typeof window !== 'undefined'
+      && window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    if (reduced) {
+      setVisible(true)
+      return
+    }
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -32,7 +40,7 @@ export default function AnimateOnScroll({ children, className = '', delay = 0 }:
       style={{
         opacity: visible ? 1 : 0,
         transform: visible ? 'translateY(0)' : 'translateY(40px)',
-        transition: `all 0.7s cubic-bezier(0.16, 1, 0.3, 1) ${delay}ms`,
+        transition: 'all 0.7s cubic-bezier(0.16, 1, 0.3, 1)',
       }}
     >
       {children}

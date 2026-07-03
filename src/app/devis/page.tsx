@@ -14,7 +14,7 @@ export default function DevisPage() {
       <section className="relative py-20 gradient-green text-white">
         <div className="container-custom px-4">
           <div className="max-w-3xl">
-            <span className="text-clinic-gold font-semibold text-sm uppercase tracking-wider">Devis gratuit</span>
+            <span className="text-amber-100 font-semibold text-sm uppercase tracking-wider">Devis gratuit</span>
             <h1 className="text-4xl md:text-5xl font-heading font-bold mt-2 mb-6">Demandez votre Devis Personnalisé</h1>
             <p className="text-xl text-green-100 leading-relaxed">
               Remplissez le formulaire ci-dessous et recevez un devis détaillé sous 24 à 48 heures. Notre équipe commerciale vous accompagne dans votre parcours de soins.

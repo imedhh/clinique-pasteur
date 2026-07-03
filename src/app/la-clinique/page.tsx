@@ -33,7 +33,7 @@ export default function LaCliniquePage() {
               <h2 className="text-3xl font-heading font-bold text-gray-900 mb-6">Une expertise pluridisciplinaire reconnue</h2>
               <div className="prose prose-lg text-gray-600 space-y-4">
                 <p>
-                  La Clinique Pasteur de Tunis est une clinique pluridisciplinaire sise au Centre Urbain Nord, voisine d&apos;un Centre Médical constitué d&apos;une trentaine de cabinets médicaux privés.
+                  La Clinique Pasteur de Tunis est une clinique pluridisciplinaire sise au Centre Urbain Nord, voisine d&apos;un Centre Médical regroupant de nombreux cabinets médicaux privés.
                 </p>
                 <p>
                   La Clinique admet ses patients d&apos;une façon personnalisée pour les orienter aux unités de soins et/ou centres d&apos;explorations concernés le plus rapidement possible et dans les meilleures conditions.

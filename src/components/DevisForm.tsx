@@ -104,24 +104,24 @@ export default function DevisForm() {
         <h3 className="text-lg font-semibold text-gray-900 mb-4 pb-2 border-b">Informations Personnelles</h3>
         <div className="grid md:grid-cols-2 gap-4">
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">Nom *</label>
-            <input name="nom" type="text" required className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-clinic-green focus:border-transparent transition" placeholder="Votre nom" />
+            <label htmlFor="devis-nom" className="block text-sm font-medium text-gray-700 mb-1">Nom *</label>
+            <input id="devis-nom" name="nom" type="text" required autoComplete="family-name" className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-clinic-green focus:border-transparent transition" placeholder="Votre nom" />
           </div>
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">Prénom *</label>
-            <input name="prenom" type="text" required className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-clinic-green focus:border-transparent transition" placeholder="Votre prénom" />
+            <label htmlFor="devis-prenom" className="block text-sm font-medium text-gray-700 mb-1">Prénom *</label>
+            <input id="devis-prenom" name="prenom" type="text" required autoComplete="given-name" className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-clinic-green focus:border-transparent transition" placeholder="Votre prénom" />
           </div>
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">Email *</label>
-            <input name="email" type="email" required className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-clinic-green focus:border-transparent transition" placeholder="votre@email.com" />
+            <label htmlFor="devis-email" className="block text-sm font-medium text-gray-700 mb-1">Email *</label>
+            <input id="devis-email" name="email" type="email" required autoComplete="email" className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-clinic-green focus:border-transparent transition" placeholder="votre@email.com" />
           </div>
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">Téléphone *</label>
-            <input name="telephone" type="tel" required className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-clinic-green focus:border-transparent transition" placeholder="+216 XX XXX XXX" />
+            <label htmlFor="devis-telephone" className="block text-sm font-medium text-gray-700 mb-1">Téléphone *</label>
+            <input id="devis-telephone" name="telephone" type="tel" required autoComplete="tel" className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-clinic-green focus:border-transparent transition" placeholder="+216 XX XXX XXX" />
           </div>
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">Pays de résidence *</label>
-            <select name="pays" required className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-clinic-green focus:border-transparent transition bg-white">
+            <label htmlFor="devis-pays" className="block text-sm font-medium text-gray-700 mb-1">Pays de résidence *</label>
+            <select id="devis-pays" name="pays" required autoComplete="country-name" className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-clinic-green focus:border-transparent transition bg-white">
               <option value="">Sélectionnez votre pays</option>
               <option value="Tunisie">Tunisie</option>
               <option value="France">France</option>
@@ -141,8 +141,8 @@ export default function DevisForm() {
             </select>
           </div>
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">Âge</label>
-            <input name="age" type="number" min="0" max="120" className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-clinic-green focus:border-transparent transition" placeholder="Votre âge" />
+            <label htmlFor="devis-age" className="block text-sm font-medium text-gray-700 mb-1">Âge</label>
+            <input id="devis-age" name="age" type="number" min="0" max="120" className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-clinic-green focus:border-transparent transition" placeholder="Votre âge" />
           </div>
         </div>
       </div>
@@ -152,8 +152,8 @@ export default function DevisForm() {
         <h3 className="text-lg font-semibold text-gray-900 mb-4 pb-2 border-b">Informations Médicales</h3>
         <div className="space-y-4">
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">Service souhaité *</label>
-            <select name="specialite" required className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-clinic-green focus:border-transparent transition bg-white">
+            <label htmlFor="devis-specialite" className="block text-sm font-medium text-gray-700 mb-1">Service souhaité *</label>
+            <select id="devis-specialite" name="specialite" required className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-clinic-green focus:border-transparent transition bg-white">
               <option value="">Sélectionnez un service</option>
 
               <optgroup label="Consultations médicales">
@@ -227,8 +227,8 @@ export default function DevisForm() {
             </select>
           </div>
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">Type de chambre souhaité</label>
-            <select name="typeChambre" className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-clinic-green focus:border-transparent transition bg-white">
+            <label htmlFor="devis-typeChambre" className="block text-sm font-medium text-gray-700 mb-1">Type de chambre souhaité</label>
+            <select id="devis-typeChambre" name="typeChambre" className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-clinic-green focus:border-transparent transition bg-white">
               <option value="">Pas de préférence</option>
               <option value="Individuelle">Chambre Individuelle</option>
               <option value="Confort">Chambre Confort</option>
@@ -236,8 +236,9 @@ export default function DevisForm() {
             </select>
           </div>
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">Décrivez votre besoin médical *</label>
+            <label htmlFor="devis-message" className="block text-sm font-medium text-gray-700 mb-1">Décrivez votre besoin médical *</label>
             <textarea
+              id="devis-message"
               name="message"
               required
               rows={5}
@@ -246,12 +247,13 @@ export default function DevisForm() {
             />
           </div>
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">Date souhaitée (approximative)</label>
-            <input name="date" type="date" className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-clinic-green focus:border-transparent transition" />
+            <label htmlFor="devis-date" className="block text-sm font-medium text-gray-700 mb-1">Date souhaitée (approximative)</label>
+            <input id="devis-date" name="date" type="date" className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-clinic-green focus:border-transparent transition" />
           </div>
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">Documents médicaux (rapports, radios, ordonnances...)</label>
+            <label htmlFor="devis-fichiers" className="block text-sm font-medium text-gray-700 mb-1">Documents médicaux (rapports, radios, ordonnances...)</label>
             <input
+              id="devis-fichiers"
               name="fichiers"
               type="file"
               multiple

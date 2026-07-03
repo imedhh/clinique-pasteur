@@ -112,8 +112,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body className={`${inter.variable} ${playfair.variable} min-h-screen flex flex-col`}>
+        <a href="#contenu" className="skip-link">Aller au contenu principal</a>
         <Header />
-        <main className="flex-grow">{children}</main>
+        <main id="contenu" className="flex-grow">{children}</main>
         <Footer />
         <Chatbot />
         {/* Umami analytics (self-hosted, privacy-friendly, no cookies) */}

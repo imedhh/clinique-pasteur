@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
-import { ArrowRight, CheckCircle2, Phone, ArrowLeft, Shield, Wrench, Award } from 'lucide-react'
+import { ArrowRight, CheckCircle2, Phone, ArrowLeft, Shield, Stethoscope, Award } from 'lucide-react'
 import { chirurgies, clinicInfo } from '@/lib/data'
 
 export async function generateStaticParams() {
@@ -57,7 +57,7 @@ export default function ChirurgiePage({ params }: { params: { slug: string } }) 
               <div className="mb-12">
                 <div className="flex items-center gap-3 mb-6">
                   <div className="w-12 h-12 rounded-xl gradient-green flex items-center justify-center">
-                    <Wrench className="w-6 h-6 text-white" />
+                    <Stethoscope className="w-6 h-6 text-white" />
                   </div>
                   <h2 className="text-2xl font-heading font-bold text-gray-900">Prestations & Interventions</h2>
                 </div>

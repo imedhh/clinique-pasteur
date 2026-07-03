@@ -208,7 +208,7 @@ export default function Chatbot() {
               onChange={(e) => setInput(e.target.value)}
               placeholder="Posez votre question..."
               disabled={isLoading}
-              style={{ flexGrow: 1, padding: '10px 16px', borderRadius: 24, border: '1px solid #d1d5db', fontSize: 14, outline: 'none', background: '#f9fafb' }}
+              style={{ flexGrow: 1, padding: '10px 16px', borderRadius: 24, border: '1px solid #d1d5db', fontSize: 14, background: '#f9fafb' }}
             />
             <button type="submit" disabled={isLoading || !input.trim()} style={{
               width: 42, height: 42, borderRadius: '50%',

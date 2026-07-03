@@ -15,6 +15,7 @@
   --color-clinic-green: #2D8C4E;
   --color-clinic-darkgreen: #1a5c32;
   --color-clinic-gold: #C8A96E;
+  --color-clinic-gold-dark: #8a6c33;
   --color-clinic-dark: #1a1a2e;
   --color-clinic-light: #f8faf9;
 
@@ -89,15 +90,16 @@ h1, h2, h3, h4 {
   justify-content: center;
   padding: 1rem 2rem;
   background-color: var(--color-clinic-gold);
-  color: white;
-  font-weight: 600;
+  color: var(--color-clinic-dark);
+  font-weight: 700;
   border-radius: 0.5rem;
   transition: all 0.3s;
   box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
 }
 .btn-gold:hover {
-  background-color: #a3863e;
+  background-color: #d8bd88;
   box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1);
+  transform: translateY(-2px);
 }
 
 /* Utilities */
@@ -153,4 +155,47 @@ h1, h2, h3, h4 {
 /* Hero overlay */
 .hero-overlay {
   background: linear-gradient(135deg, rgba(26,26,46,0.85) 0%, rgba(45,140,78,0.7) 100%);
+}
+
+/* Accessibilité : focus visible au clavier */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+summary:focus-visible,
+[tabindex]:focus-visible {
+  outline: 3px solid var(--color-clinic-green);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Lien d'évitement (skip to content) */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 10000;
+  padding: 0.75rem 1.25rem;
+  background: var(--color-clinic-dark);
+  color: #fff;
+  font-weight: 600;
+  border-radius: 0 0 0.5rem 0;
+}
+.skip-link:focus {
+  left: 0;
+}
+
+/* Respect de prefers-reduced-motion (utilisateurs sensibles au mouvement) */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }

@@ -12,7 +12,6 @@ export const metadata: Metadata = {
 const chambres = [
   {
     type: 'Chambre Individuelle',
-    nombre: 68,
     icon: Home,
     color: 'from-blue-500 to-blue-600',
     features: ['Lit médicalisé électrique', 'Salle de bain privative', 'Télévision', 'Climatisation', 'Appel infirmier', 'WiFi'],
@@ -20,7 +19,6 @@ const chambres = [
   },
   {
     type: 'Chambre Confort',
-    nombre: 8,
     icon: Star,
     color: 'from-clinic-green to-clinic-darkgreen',
     features: ['Espace plus grand', 'Mobilier de qualité supérieure', 'Mini-réfrigérateur', 'Fauteuil visiteur confortable', 'Salle de bain spacieuse', 'Télévision grand écran', 'Climatisation', 'WiFi haut débit'],
@@ -28,7 +26,6 @@ const chambres = [
   },
   {
     type: 'Suite / VIP',
-    nombre: 6,
     icon: Crown,
     color: 'from-clinic-gold to-yellow-700',
     features: ['Suite spacieuse avec salon', 'Décoration soignée et haut de gamme', 'Lit premium king-size', 'Salle de bain luxueuse', 'Mini-bar', 'Télévision grand écran', 'Canapé-lit pour accompagnant', 'Service personnalisé', 'Menu repas premium', 'WiFi haut débit'],

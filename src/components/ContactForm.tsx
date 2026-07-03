@@ -63,25 +63,25 @@ export default function ContactForm() {
       <input type="text" name="website" tabIndex={-1} autoComplete="off" aria-hidden="true" className="hidden" />
       <div className="grid md:grid-cols-2 gap-4">
         <div>
-          <label className="block text-sm font-medium text-gray-700 mb-1">Nom *</label>
-          <input name="nom" type="text" required className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-clinic-green focus:border-transparent transition" placeholder="Votre nom" />
+          <label htmlFor="contact-nom" className="block text-sm font-medium text-gray-700 mb-1">Nom *</label>
+          <input id="contact-nom" name="nom" type="text" required autoComplete="family-name" className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-clinic-green focus:border-transparent transition" placeholder="Votre nom" />
         </div>
         <div>
-          <label className="block text-sm font-medium text-gray-700 mb-1">Prénom *</label>
-          <input name="prenom" type="text" required className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-clinic-green focus:border-transparent transition" placeholder="Votre prénom" />
+          <label htmlFor="contact-prenom" className="block text-sm font-medium text-gray-700 mb-1">Prénom *</label>
+          <input id="contact-prenom" name="prenom" type="text" required autoComplete="given-name" className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-clinic-green focus:border-transparent transition" placeholder="Votre prénom" />
         </div>
       </div>
       <div>
-        <label className="block text-sm font-medium text-gray-700 mb-1">Email *</label>
-        <input name="email" type="email" required className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-clinic-green focus:border-transparent transition" placeholder="votre@email.com" />
+        <label htmlFor="contact-email" className="block text-sm font-medium text-gray-700 mb-1">Email *</label>
+        <input id="contact-email" name="email" type="email" required autoComplete="email" className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-clinic-green focus:border-transparent transition" placeholder="votre@email.com" />
       </div>
       <div>
-        <label className="block text-sm font-medium text-gray-700 mb-1">Téléphone</label>
-        <input name="telephone" type="tel" className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-clinic-green focus:border-transparent transition" placeholder="+216 XX XXX XXX" />
+        <label htmlFor="contact-telephone" className="block text-sm font-medium text-gray-700 mb-1">Téléphone</label>
+        <input id="contact-telephone" name="telephone" type="tel" autoComplete="tel" className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-clinic-green focus:border-transparent transition" placeholder="+216 XX XXX XXX" />
       </div>
       <div>
-        <label className="block text-sm font-medium text-gray-700 mb-1">Sujet *</label>
-        <select name="sujet" required className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-clinic-green focus:border-transparent transition bg-white">
+        <label htmlFor="contact-sujet" className="block text-sm font-medium text-gray-700 mb-1">Sujet *</label>
+        <select id="contact-sujet" name="sujet" required className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-clinic-green focus:border-transparent transition bg-white">
           <option value="">Sélectionnez un sujet</option>
           <option value="Demande d'information">Demande d&apos;information</option>
           <option value="Prise de rendez-vous">Prise de rendez-vous</option>
@@ -91,8 +91,8 @@ export default function ContactForm() {
         </select>
       </div>
       <div>
-        <label className="block text-sm font-medium text-gray-700 mb-1">Message *</label>
-        <textarea name="message" required rows={5} className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-clinic-green focus:border-transparent transition resize-none" placeholder="Votre message..." />
+        <label htmlFor="contact-message" className="block text-sm font-medium text-gray-700 mb-1">Message *</label>
+        <textarea id="contact-message" name="message" required rows={5} className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-clinic-green focus:border-transparent transition resize-none" placeholder="Votre message..." />
       </div>
       <button type="submit" disabled={loading} className="btn-primary w-full justify-center">
         {loading ? (

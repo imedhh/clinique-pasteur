@@ -193,7 +193,7 @@ export default function HomePage() {
           {/* Featured 3 */}
           <div className="grid md:grid-cols-3 gap-6 mb-10">
             {[
-              { title: 'Chirurgie Cardiovasculaire', desc: 'Cathétérisme, chirurgie à cœur ouvert, électrophysiologie', img: '/images/cardiovasculaire.webp', href: '/chirurgies/chirurgie-cardiovasculaire' },
+              { title: 'Chirurgie Cardiovasculaire', desc: 'Cathétérisme, chirurgie à cœur ouvert, électrophysiologie', img: '/images/bloc-operatoire.webp', href: '/chirurgies/chirurgie-cardiovasculaire' },
               { title: 'Chirurgie Bariatrique', desc: 'Sleeve, bypass — spécialité phare de la clinique', img: '/images/bariatrique.webp', href: '/chirurgies/chirurgie-bariatrique' },
               { title: 'Chirurgie Esthétique', desc: 'Rhinoplastie, liposuccion, lifting, augmentation mammaire', img: '/images/esthetique.webp', href: '/chirurgies/chirurgie-esthetique' },
             ].map(({ title, desc, img, href }, i) => (
@@ -290,7 +290,7 @@ export default function HomePage() {
                   Confort
                 </div>
                 <h2 className="text-3xl md:text-5xl font-heading font-bold text-gray-900 mb-6 leading-tight">
-                  Un séjour<br /><span style={{ color: '#C8A96E' }}>tout confort</span>
+                  Un séjour<br /><span style={{ color: '#8a6c33' }}>tout confort</span>
                 </h2>
                 <p className="text-gray-600 leading-relaxed mb-8 text-lg">
                   Du standard au VIP, chaque chambre est pensée pour votre bien-être. Service de restauration, climatisation, WiFi et accompagnement personnalisé.
