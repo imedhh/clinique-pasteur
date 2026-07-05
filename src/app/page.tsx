@@ -146,8 +146,8 @@ export default function HomePage() {
               { icon: Brain, title: 'Explorations Neurophysiologiques', desc: 'EEG, EMG, potentiels évoqués, vidéo-EEG', href: '/explorations/explorations-neurophysiologiques', img: '/images/neuro-eeg.webp', gradient: 'from-violet-500 to-purple-600' },
               { icon: Activity, title: 'Explorations Urodynamiques', desc: 'Débitmétrie, cystomanométrie, bilan urodynamique complet', href: '/explorations/explorations-urodynamiques', img: '/images/urodynamique.webp', gradient: 'from-teal-500 to-emerald-600' },
             ].map(({ icon: Icon, title, desc, href, img, gradient }, i) => (
-              <AnimateOnScroll key={title} delay={i * 150}>
-                <Link href={href} className="block bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all group hover:-translate-y-2">
+              <AnimateOnScroll key={title} delay={i * 150} className="h-full">
+                <Link href={href} className="flex flex-col h-full bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all group hover:-translate-y-2">
                   <div className="relative h-52 overflow-hidden">
                     <Image src={img} alt={title} width={500} height={300} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
                     <div className={`absolute inset-0 bg-gradient-to-t ${gradient} opacity-40`} />
@@ -157,10 +157,10 @@ export default function HomePage() {
                       </div>
                     </div>
                   </div>
-                  <div className="p-6">
+                  <div className="p-6 flex flex-col flex-grow">
                     <h3 className="font-heading font-bold text-gray-900 text-lg mb-2 group-hover:text-clinic-green transition">{title}</h3>
                     <p className="text-gray-500 text-sm leading-relaxed mb-4">{desc}</p>
-                    <span className="text-clinic-green font-semibold text-sm flex items-center gap-1 group-hover:gap-3 transition-all">
+                    <span className="text-clinic-green font-semibold text-sm flex items-center gap-1 group-hover:gap-3 transition-all mt-auto">
                       Découvrir les examens <ArrowRight className="w-4 h-4" />
                     </span>
                   </div>
@@ -257,8 +257,8 @@ export default function HomePage() {
               { icon: ScanLine, title: 'Pôle de Radiologie', desc: 'Plateau technique ultra-performant. Radiologie conventionnelle et interventionnelle.', highlights: ['IRM', 'Scanner double énergie', 'Radiologie interventionnelle'], href: '/centres/radiologie' },
               { icon: Stethoscope, title: 'Pôle de Chirurgie', desc: 'Chirurgie lourde digestive et urologique. La chirurgie bariatrique a fait la réputation de la clinique.', highlights: ['Chirurgie bariatrique', 'CHIP', 'Laparoscopie avancée'], href: '/chirurgies/chirurgie-bariatrique' },
             ].map(({ icon: Icon, title, desc, highlights, href }, i) => (
-              <AnimateOnScroll key={title} delay={i * 150}>
-                <Link href={href} className="block bg-white/[0.05] backdrop-blur-sm border border-white/10 rounded-3xl p-8 hover:bg-white/[0.1] transition-all group hover:-translate-y-1">
+              <AnimateOnScroll key={title} delay={i * 150} className="h-full">
+                <Link href={href} className="flex flex-col h-full bg-white/[0.05] backdrop-blur-sm border border-white/10 rounded-3xl p-8 hover:bg-white/[0.1] transition-all group hover:-translate-y-1">
                   <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-clinic-gold/30 to-clinic-gold/10 flex items-center justify-center mb-6">
                     <Icon className="w-7 h-7 text-clinic-gold" />
                   </div>
@@ -271,7 +271,7 @@ export default function HomePage() {
                       </li>
                     ))}
                   </ul>
-                  <span className="text-clinic-gold font-semibold text-sm flex items-center gap-1 group-hover:gap-3 transition-all">
+                  <span className="text-clinic-gold font-semibold text-sm flex items-center gap-1 group-hover:gap-3 transition-all mt-auto">
                     En savoir plus <ArrowRight className="w-4 h-4" />
                   </span>
                 </Link>
@@ -313,8 +313,8 @@ export default function HomePage() {
                   { img: '/images/h2.webp', alt: 'Chambre confort' },
                   { img: '/images/h3.webp', alt: 'Suite' },
                   { img: '/images/repas.webp', alt: 'Service repas' },
-                ].map(({ img, alt }, i) => (
-                  <div key={alt} className="rounded-2xl overflow-hidden shadow-lg h-48 hover:shadow-xl transition-shadow" style={{ transform: i % 2 === 1 ? 'translateY(20px)' : '' }}>
+                ].map(({ img, alt }) => (
+                  <div key={alt} className="rounded-2xl overflow-hidden shadow-lg h-48 hover:shadow-xl transition-shadow">
                     <Image src={img} alt={alt} width={400} height={300} className="w-full h-full object-cover" />
                   </div>
                 ))}
@@ -390,7 +390,7 @@ export default function HomePage() {
             {[
               { q: 'Quelles spécialités sont disponibles ?', a: 'Chirurgie cardiovasculaire, bariatrique, esthétique, orthopédique, urologique, ORL, neurochirurgie, gynéco-obstétrique, pédiatrique, carcinologique, ainsi que des consultations médicales dans toutes les spécialités.' },
               { q: 'Le service des urgences est-il disponible 24h/24 ?', a: 'Oui, urgences 24h/24, 7j/7 avec équipe qualifiée connectée aux blocs opératoires et à la réanimation. Urgences : +216 36 402 076.' },
-              { q: 'Comment obtenir un devis ?', a: 'Via notre formulaire en ligne, par email à commercial@cliniquepasteur.com.tn, ou par téléphone au +216 36 402 000. Réponse sous 24-48h.' },
+              { q: 'Comment obtenir un devis ?', a: 'Via notre formulaire en ligne, par email à contact@cliniquepasteur.com.tn, ou par téléphone au +216 36 402 000. Réponse sous 24-48h.' },
               { q: 'Acceptez-vous les patients internationaux ?', a: 'Oui, notre service commercial organise votre parcours complet : devis, planification, hébergement, transferts.' },
               { q: 'Quels équipements d\'imagerie ?', a: 'IRM, scanner double énergie, mammographie, panoramique dentaire, ostéodensitomètre, échographie, radiologie interventionnelle.' },
             ].map(({ q, a }) => (

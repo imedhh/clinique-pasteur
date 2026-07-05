@@ -1,6 +1,7 @@
 import { MetadataRoute } from 'next'
 import { chirurgies, centres, explorations } from '@/lib/data'
 import { examsByExploration, examsByCentre } from '@/lib/examens-index'
+import { prestationsByChirurgie } from '@/lib/prestations-chirurgie'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://cptunis.com'
@@ -57,6 +58,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }))
   )
 
+  const prestationPages = Object.entries(prestationsByChirurgie).flatMap(([slug, prestations]) =>
+    prestations.map((p) => ({
+      url: `${baseUrl}/chirurgies/${slug}/${p.slug}`,
+      lastModified: now,
+      changeFrequency: 'monthly' as const,
+      priority: 0.7,
+    }))
+  )
+
   return [
     ...staticPages,
     ...chirurgiePages,
@@ -64,5 +74,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...centrePages,
     ...explorationExamPages,
     ...centreExamPages,
+    ...prestationPages,
   ]
 }

@@ -69,7 +69,7 @@ export default function CentrePage({ params }: { params: { slug: string } }) {
             <div className="lg:col-span-2">
               <h2 className="text-2xl font-heading font-bold text-gray-900 mb-3">Services & Examens</h2>
               {hasDetailedExams && (
-                <p className="text-gray-500 mb-8">Cliquez sur un examen pour en savoir plus : description, préparation, déroulement, durée.</p>
+                <p className="text-gray-500 mb-8">Cliquez sur un service ou un examen pour en savoir plus : description, préparation, déroulement, durée.</p>
               )}
 
               {hasDetailedExams ? (

@@ -1,8 +1,9 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
-import { ArrowRight, CheckCircle2, Phone, ArrowLeft, Shield, Stethoscope, Award } from 'lucide-react'
+import { ArrowRight, CheckCircle2, Phone, ArrowLeft, Shield, Stethoscope, Award, ChevronRight, Clock } from 'lucide-react'
 import { chirurgies, clinicInfo } from '@/lib/data'
+import { prestationsByChirurgie } from '@/lib/prestations-chirurgie'
 
 export async function generateStaticParams() {
   return chirurgies.map((c) => ({ slug: c.slug }))
@@ -26,6 +27,8 @@ export default function ChirurgiePage({ params }: { params: { slug: string } }) 
   if (!chir) notFound()
 
   const otherChirurgies = chirurgies.filter((c) => c.slug !== params.slug).slice(0, 4)
+  const prestationsDetail = prestationsByChirurgie[params.slug] || []
+  const hasDetailedPrestations = prestationsDetail.length > 0
 
   return (
     <>
@@ -61,14 +64,43 @@ export default function ChirurgiePage({ params }: { params: { slug: string } }) 
                   </div>
                   <h2 className="text-2xl font-heading font-bold text-gray-900">Prestations & Interventions</h2>
                 </div>
-                <div className="grid md:grid-cols-2 gap-3">
-                  {chir.prestations.map((p) => (
-                    <div key={p} className="flex items-start gap-3 p-3 bg-gray-50 rounded-lg">
-                      <CheckCircle2 className="w-5 h-5 text-clinic-green flex-shrink-0 mt-0.5" />
-                      <span className="text-gray-700 text-sm">{p}</span>
+                {hasDetailedPrestations ? (
+                  <>
+                    <p className="text-gray-500 mb-6 -mt-2">Cliquez sur une intervention pour en savoir plus : description, indications, déroulement, récupération.</p>
+                    <div className="grid gap-4">
+                      {prestationsDetail.map((p: any) => (
+                        <Link
+                          key={p.slug}
+                          href={`/chirurgies/${params.slug}/${p.slug}`}
+                          className="group flex items-start gap-4 p-5 bg-gray-50 rounded-xl border border-gray-200 hover:border-clinic-green hover:bg-green-50 hover:shadow-md transition-all"
+                        >
+                          <div className="w-10 h-10 rounded-lg gradient-green flex items-center justify-center flex-shrink-0 mt-0.5">
+                            <CheckCircle2 className="w-5 h-5 text-white" />
+                          </div>
+                          <div className="flex-grow min-w-0">
+                            <h3 className="font-semibold text-gray-900 group-hover:text-clinic-green transition">{p.title}</h3>
+                            <p className="text-gray-500 text-sm mt-1 line-clamp-2">{p.description}</p>
+                            {p.duree && (
+                              <div className="flex items-center gap-1.5 mt-2 text-xs text-gray-400">
+                                <Clock className="w-3.5 h-3.5" /> {p.duree}
+                              </div>
+                            )}
+                          </div>
+                          <ChevronRight className="w-5 h-5 text-gray-300 group-hover:text-clinic-green flex-shrink-0 mt-2 transition" />
+                        </Link>
+                      ))}
                     </div>
-                  ))}
-                </div>
+                  </>
+                ) : (
+                  <div className="grid md:grid-cols-2 gap-3">
+                    {chir.prestations.map((p) => (
+                      <div key={p} className="flex items-start gap-3 p-3 bg-gray-50 rounded-lg">
+                        <CheckCircle2 className="w-5 h-5 text-clinic-green flex-shrink-0 mt-0.5" />
+                        <span className="text-gray-700 text-sm">{p}</span>
+                      </div>
+                    ))}
+                  </div>
+                )}
               </div>
 
               {chir.equipements && (
