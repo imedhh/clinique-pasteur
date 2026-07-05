@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { ArrowRight, Phone, Heart, Brain, Stethoscope, Baby, Sparkles, Activity, Siren, CheckCircle2, ScanLine, HeartPulse, Zap, Eye, Shield } from 'lucide-react'
 import { clinicInfo, chirurgies, centres } from '@/lib/data'
 import AnimateOnScroll from '@/components/AnimateOnScroll'
+import SocialLinks from '@/components/SocialLinks'
 
 export default function HomePage() {
   return (
@@ -402,6 +403,23 @@ export default function HomePage() {
               </details>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* ============ Suivez-nous ============ */}
+      <section className="section-padding bg-gray-50">
+        <div className="container-custom text-center">
+          <AnimateOnScroll>
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-gray-900 mb-3">
+              Suivez-nous
+            </h2>
+            <p className="text-gray-600 mb-8 max-w-xl mx-auto">
+              Retrouvez l&apos;actualité de la Clinique Pasteur Tunis sur les réseaux sociaux.
+            </p>
+            <div className="flex justify-center">
+              <SocialLinks />
+            </div>
+          </AnimateOnScroll>
         </div>
       </section>
     </>
