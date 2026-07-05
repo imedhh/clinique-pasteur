@@ -9,7 +9,7 @@ export const clinicInfo = {
   facebook: 'https://www.facebook.com/cliniquepasteurtunis',
   instagram: 'https://www.instagram.com/cliniquepasteurtunis',
   youtube: 'https://www.youtube.com/cliniquepasteurtunis',
-  googleMaps: 'https://maps.google.com/?q=Clinique+Pasteur+Tunis+Centre+Urbain+Nord',
+  googleMaps: 'https://maps.app.goo.gl/YShkDHZoGDdmK5nV6',
 };
 
 export const chirurgies = [
