@@ -69,7 +69,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               sameAs: [
                 'https://www.facebook.com/cliniquepasteurtunisie',
                 'https://www.instagram.com/cliniquepasteurtunis',
-                'https://www.youtube.com/cliniquepasteurtunis',
+                'https://youtu.be/qI3CiG8ArWc',
               ],
               telephone: '+216 36 402 000',
               address: {

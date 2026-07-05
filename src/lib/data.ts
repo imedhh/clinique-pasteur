@@ -8,7 +8,7 @@ export const clinicInfo = {
   horaires: '24h/24 - 7j/7',
   facebook: 'https://www.facebook.com/cliniquepasteurtunisie',
   instagram: 'https://www.instagram.com/cliniquepasteurtunis',
-  youtube: 'https://www.youtube.com/cliniquepasteurtunis',
+  youtube: 'https://youtu.be/qI3CiG8ArWc',
   googleMaps: 'https://maps.app.goo.gl/YShkDHZoGDdmK5nV6',
 };
 
