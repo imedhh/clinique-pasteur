@@ -67,7 +67,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               url: 'https://cptunis.com',
               image: 'https://cptunis.com/og-image.jpg',
               sameAs: [
-                'https://www.facebook.com/cliniquepasteurtunis',
+                'https://www.facebook.com/cliniquepasteurtunisie',
                 'https://www.instagram.com/cliniquepasteurtunis',
                 'https://www.youtube.com/cliniquepasteurtunis',
               ],

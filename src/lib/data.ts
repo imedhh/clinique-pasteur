@@ -6,7 +6,7 @@ export const clinicInfo = {
   email: 'contact@cliniquepasteur.com.tn',
   emailCommercial: 'commercial@cliniquepasteur.com.tn',
   horaires: '24h/24 - 7j/7',
-  facebook: 'https://www.facebook.com/cliniquepasteurtunis',
+  facebook: 'https://www.facebook.com/cliniquepasteurtunisie',
   instagram: 'https://www.instagram.com/cliniquepasteurtunis',
   youtube: 'https://www.youtube.com/cliniquepasteurtunis',
   googleMaps: 'https://maps.app.goo.gl/YShkDHZoGDdmK5nV6',
