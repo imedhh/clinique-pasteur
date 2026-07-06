@@ -16,18 +16,20 @@ const nextConfig = {
   compress: true,
   poweredByHeader: false,
   async redirects() {
-    // Les actes de cathétérisme ont quitté « Explorations cardiaques » pour la
-    // spécialité « Cathétérisme » (Chirurgies). On redirige les anciennes URLs.
-    const actes = ['coronarographie', 'catheterisme-cardiaque', 'angioplastie-stent', 'valvuloplastie-percutanee']
-    const bases = ['/explorations/explorations-cardiaques', '/centres/explorations-cardiaques']
-    const redirs = []
-    for (const base of bases) {
-      for (const acte of actes) {
-        redirs.push({
-          source: `${base}/${acte}`,
-          destination: `/chirurgies/cardiologie-interventionnelle/${acte}`,
-          permanent: true,
-        })
+    // Le cathétérisme et l'électrophysiologie ne sont plus des chirurgies : ils
+    // forment le pôle « Cardiologie interventionnelle & Rythmologie » (Centres).
+    // On redirige toutes les anciennes URLs (Chirurgies + Explorations cardiaques).
+    const dest = '/centres/cardiologie-interventionnelle'
+    const actesCathe = ['coronarographie', 'catheterisme-cardiaque', 'angioplastie-stent', 'valvuloplastie-percutanee']
+    const redirs = [
+      { source: '/chirurgies/electrophysiologie', destination: dest, permanent: true },
+      { source: '/chirurgies/electrophysiologie/:slug', destination: `${dest}/:slug`, permanent: true },
+      { source: '/chirurgies/cardiologie-interventionnelle', destination: dest, permanent: true },
+      { source: '/chirurgies/cardiologie-interventionnelle/:slug', destination: `${dest}/:slug`, permanent: true },
+    ]
+    for (const base of ['/explorations/explorations-cardiaques', '/centres/explorations-cardiaques']) {
+      for (const acte of actesCathe) {
+        redirs.push({ source: `${base}/${acte}`, destination: `${dest}/${acte}`, permanent: true })
       }
     }
     return redirs

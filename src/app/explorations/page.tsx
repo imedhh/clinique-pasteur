@@ -9,9 +9,9 @@ export const metadata = {
 }
 
 const explorationImages: Record<string, string> = {
-  'explorations-cardiaques': '/images/cardio-ecg.webp',
-  'explorations-neurophysiologiques': '/images/neuro-eeg.webp',
-  'explorations-urodynamiques': '/images/urodynamique.webp',
+  'explorations-cardiaques': '/images/fiches/home-explo-cardiaque.webp',
+  'explorations-neurophysiologiques': '/images/fiches/home-explo-neuro.webp',
+  'explorations-urodynamiques': '/images/fiches/home-explo-urodynamique.webp',
 }
 
 export default function ExplorationsPage() {

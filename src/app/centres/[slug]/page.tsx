@@ -10,9 +10,10 @@ const centreImages: Record<string, string> = {
   'radiologie': '/images/radiologie-irm.webp',
   'endoscopie': '/images/endoscopie-salle.webp',
   'urgences': '/images/ambulance.webp',
-  'explorations-cardiaques': '/images/cardio-ecg.webp',
-  'explorations-neurophysiologiques': '/images/neuro-eeg.webp',
-  'explorations-urodynamiques': '/images/urodynamique.webp',
+  'explorations-cardiaques': '/images/fiches/home-explo-cardiaque.webp',
+  'cardiologie-interventionnelle': '/images/fiches/cardio-coronarographie.webp',
+  'explorations-neurophysiologiques': '/images/fiches/home-explo-neuro.webp',
+  'explorations-urodynamiques': '/images/fiches/home-explo-urodynamique.webp',
   'hospitalisation-jour': '/images/h4.webp',
   'coaching-nutritionnel-esthetique': '/images/nutrition.webp',
 }

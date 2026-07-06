@@ -29,8 +29,6 @@ const navigation = [
       { name: 'Neurochirurgie', href: '/chirurgies/neurochirurgie' },
       { name: 'ORL', href: '/chirurgies/chirurgie-orl' },
       { name: 'Gynéco-Obstétrique', href: '/chirurgies/chirurgie-gyneco-obstetrique' },
-      { name: 'Électrophysiologie', href: '/chirurgies/electrophysiologie' },
-      { name: 'Cathétérisme cardiaque', href: '/chirurgies/cardiologie-interventionnelle' },
       { name: 'Toutes les chirurgies', href: '/chirurgies' },
     ],
   },
@@ -50,6 +48,7 @@ const navigation = [
     href: '/centres',
     children: [
       { name: 'Urgences 24h/24', href: '/centres/urgences' },
+      { name: 'Cardiologie interventionnelle', href: '/centres/cardiologie-interventionnelle' },
       { name: 'Radiologie & Imagerie', href: '/centres/radiologie' },
       { name: 'Endoscopie', href: '/centres/endoscopie' },
       { name: 'Nutrition & Esthétique', href: '/centres/coaching-nutritionnel-esthetique' },

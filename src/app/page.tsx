@@ -142,15 +142,15 @@ export default function HomePage() {
           </AnimateOnScroll>
           <div className="grid md:grid-cols-3 gap-8">
             {[
-              { icon: HeartPulse, title: 'Explorations Cardiaques', desc: 'ECG, Holter, échocardiographie, épreuve d\'effort, coronarographie', href: '/explorations/explorations-cardiaques', img: '/images/cardio-ecg.webp', gradient: 'from-rose-500 to-red-600' },
-              { icon: Brain, title: 'Explorations Neurophysiologiques', desc: 'EEG, EMG, potentiels évoqués, vidéo-EEG', href: '/explorations/explorations-neurophysiologiques', img: '/images/neuro-eeg.webp', gradient: 'from-violet-500 to-purple-600' },
-              { icon: Activity, title: 'Explorations Urodynamiques', desc: 'Débitmétrie, cystomanométrie, bilan urodynamique complet', href: '/explorations/explorations-urodynamiques', img: '/images/urodynamique.webp', gradient: 'from-teal-500 to-emerald-600' },
-            ].map(({ icon: Icon, title, desc, href, img, gradient }, i) => (
+              { icon: HeartPulse, title: 'Explorations Cardiaques', desc: 'ECG, Holter, échocardiographie, épreuve d\'effort', href: '/explorations/explorations-cardiaques', img: '/images/fiches/home-explo-cardiaque.webp', gradient: 'from-rose-500 to-red-600' },
+              { icon: Brain, title: 'Explorations Neurophysiologiques', desc: 'EEG, EMG, potentiels évoqués, vidéo-EEG', href: '/explorations/explorations-neurophysiologiques', img: '/images/fiches/home-explo-neuro.webp', gradient: 'from-violet-500 to-purple-600' },
+              { icon: Activity, title: 'Explorations Urodynamiques', desc: 'Débitmétrie, cystomanométrie, bilan urodynamique complet', href: '/explorations/explorations-urodynamiques', img: '/images/fiches/home-explo-urodynamique.webp', gradient: 'from-teal-500 to-emerald-600' },
+            ].map(({ icon: Icon, title, desc, href, img }, i) => (
               <AnimateOnScroll key={title} delay={i * 150} className="h-full">
                 <Link href={href} className="flex flex-col h-full bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all group hover:-translate-y-2">
                   <div className="relative h-52 overflow-hidden">
                     <Image src={img} alt={title} width={500} height={300} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
-                    <div className={`absolute inset-0 bg-gradient-to-t ${gradient} opacity-40`} />
+                    <div className="absolute inset-0 bg-gradient-to-t from-gray-900/55 via-gray-900/10 to-transparent" />
                     <div className="absolute bottom-4 left-5">
                       <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center">
                         <Icon className="w-6 h-6 text-white" />
@@ -194,9 +194,9 @@ export default function HomePage() {
           {/* Featured 3 */}
           <div className="grid md:grid-cols-3 gap-6 mb-10">
             {[
-              { title: 'Chirurgie Cardiovasculaire', desc: 'Cathétérisme, chirurgie à cœur ouvert, électrophysiologie', img: '/images/bloc-operatoire.webp', href: '/chirurgies/chirurgie-cardiovasculaire' },
-              { title: 'Chirurgie Bariatrique', desc: 'Sleeve, bypass — spécialité phare de la clinique', img: '/images/bariatrique.webp', href: '/chirurgies/chirurgie-bariatrique' },
-              { title: 'Chirurgie Esthétique', desc: 'Rhinoplastie, liposuccion, lifting, augmentation mammaire', img: '/images/esthetique.webp', href: '/chirurgies/chirurgie-esthetique' },
+              { title: 'Chirurgie Cardiovasculaire', desc: 'Cathétérisme, chirurgie à cœur ouvert, électrophysiologie', img: '/images/fiches/home-chir-cardiovasc.webp', href: '/chirurgies/chirurgie-cardiovasculaire' },
+              { title: 'Chirurgie Bariatrique', desc: 'Sleeve, bypass — spécialité phare de la clinique', img: '/images/fiches/home-chir-bariatrique.webp', href: '/chirurgies/chirurgie-bariatrique' },
+              { title: 'Chirurgie Esthétique', desc: 'Rhinoplastie, liposuccion, lifting, augmentation mammaire', img: '/images/fiches/home-chir-esthetique.webp', href: '/chirurgies/chirurgie-esthetique' },
             ].map(({ title, desc, img, href }, i) => (
               <AnimateOnScroll key={title} delay={i * 100}>
                 <Link href={href} className="block rounded-3xl overflow-hidden shadow-lg group relative h-80 hover:shadow-2xl transition-all">
