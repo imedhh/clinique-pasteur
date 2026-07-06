@@ -309,10 +309,10 @@ export default function HomePage() {
               </div>
               <div className="order-1 lg:order-2 grid grid-cols-2 gap-4">
                 {[
-                  { img: '/images/h1.webp', alt: 'Chambre VIP' },
-                  { img: '/images/h2.webp', alt: 'Chambre confort' },
-                  { img: '/images/h3.webp', alt: 'Suite' },
-                  { img: '/images/repas.webp', alt: 'Service repas' },
+                  { img: '/images/fiches/home-confort-1.webp', alt: 'Chambre VIP' },
+                  { img: '/images/fiches/home-confort-2.webp', alt: 'Salon confort' },
+                  { img: '/images/fiches/home-confort-3.webp', alt: 'Accompagnement personnalisé' },
+                  { img: '/images/fiches/home-confort-4.webp', alt: 'Chambre confort' },
                 ].map(({ img, alt }) => (
                   <div key={alt} className="rounded-2xl overflow-hidden shadow-lg h-48 hover:shadow-xl transition-shadow">
                     <Image src={img} alt={alt} width={400} height={300} className="w-full h-full object-cover" />

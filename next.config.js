@@ -1,6 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
+    // Nos images sont déjà des webp légers (27-110 Ko). On les sert en direct,
+    // sans optimisation à la demande de Next (qui était lente : encodage sharp +
+    // upscale jusqu'à 3840px + AVIF au 1er chargement -> photos lentes/blanches).
+    // Servies statiquement par Caddy avec Cache-Control immutable => chargement instantané.
+    unoptimized: true,
     remotePatterns: [
       { protocol: 'https', hostname: 'images.unsplash.com' },
       { protocol: 'https', hostname: 'cptunis.com' },
