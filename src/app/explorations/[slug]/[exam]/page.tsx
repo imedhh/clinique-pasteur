@@ -43,7 +43,7 @@ export default function ExamPage({ params }: { params: { slug: string; exam: str
   if (!exploration) notFound()
 
   const otherExams = exams.filter((e: any) => e.slug !== params.exam).slice(0, 5)
-  const heroImage = explorationImages[params.slug] || '/images/surgery-modern.webp'
+  const heroImage = exam.image || explorationImages[params.slug] || '/images/surgery-modern.webp'
 
   return (
     <>
@@ -94,6 +94,12 @@ export default function ExamPage({ params }: { params: { slug: string; exam: str
                 </div>
               </div>
 
+              <figure className="rounded-2xl overflow-hidden border border-gray-200 shadow-sm">
+                <div className="relative aspect-[16/9]">
+                  <Image src={heroImage} alt={exam.title} fill className="object-cover" sizes="(max-width: 1024px) 100vw, 66vw" />
+                </div>
+              </figure>
+
               {/* Indications */}
               {exam.indications && exam.indications.length > 0 && (
                 <div>
@@ -104,12 +110,19 @@ export default function ExamPage({ params }: { params: { slug: string; exam: str
                     Quand est-il prescrit ?
                   </h2>
                   <div className="grid md:grid-cols-2 gap-3">
-                    {exam.indications.map((ind: string) => (
-                      <div key={ind} className="flex items-start gap-3 p-4 bg-blue-50 rounded-lg border border-blue-100">
-                        <CheckCircle2 className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
-                        <span className="text-gray-700 text-sm">{ind}</span>
-                      </div>
-                    ))}
+                    {exam.indications.map((ind: any) => {
+                      const label = typeof ind === 'string' ? ind : ind.label
+                      const explication = typeof ind === 'string' ? null : ind.explication
+                      return (
+                        <div key={label} className="flex items-start gap-3 p-4 bg-blue-50 rounded-lg border border-blue-100">
+                          <CheckCircle2 className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                          <div>
+                            <span className="text-gray-800 text-sm font-semibold">{label}</span>
+                            {explication && <p className="text-gray-600 text-sm mt-1 leading-relaxed">{explication}</p>}
+                          </div>
+                        </div>
+                      )
+                    })}
                   </div>
                 </div>
               )}

@@ -9,13 +9,13 @@ export const prestationsCarcinologique = [
 Chaque dossier est discuté en réunion de concertation pluridisciplinaire réunissant chirurgiens, oncologues, radiologues et autres spécialistes, afin de définir la meilleure stratégie : chirurgie d'emblée ou après un traitement de préparation, voie d'abord classique ou mini-invasive. La continuité digestive est rétablie chaque fois que possible dans le même temps opératoire.
 
 À la Clinique Pasteur Tunis, la chirurgie des cancers digestifs s'appuie sur un plateau technique complet — imagerie, endoscopie, blocs opératoires équipés, réanimation — et sur des analyses extemporanées disponibles pendant l'intervention. L'analyse anatomopathologique de la pièce opératoire est assurée et guide la suite du traitement, dans un parcours coordonné et attentif au patient et à ses proches.`,
-    image: '/images/surgery-blue-1.webp',
+    image: '/images/fiches/carci-cancers-digestifs.webp',
     indications: [
-      'Tumeur du côlon ou du rectum confirmée par biopsie',
-      'Tumeur de l\'estomac relevant d\'une exérèse chirurgicale',
-      'Tumeurs du foie, primitives ou secondaires, accessibles à une résection',
-      'Tumeurs du pancréas ou des voies biliaires sélectionnées',
-      'Complications tumorales nécessitant une chirurgie (occlusion, saignement)',
+      { label: 'Tumeur du côlon ou du rectum confirmée par biopsie', explication: `Lorsqu'une tumeur de l'intestin est confirmée par les prélèvements, son ablation chirurgicale constitue le socle du traitement, avec de bonnes perspectives lorsqu'elle est prise à temps.` },
+      { label: 'Tumeur de l\'estomac relevant d\'une exérèse chirurgicale', explication: `Certaines tumeurs de l'estomac se traitent par le retrait de la zone malade, parfois après un traitement de préparation destiné à faciliter la chirurgie.` },
+      { label: 'Tumeurs du foie, primitives ou secondaires, accessibles à une résection', explication: `Qu'elles soient nées dans le foie ou venues d'un autre organe, certaines tumeurs hépatiques peuvent être retirées grâce à la remarquable capacité du foie à se régénérer.` },
+      { label: 'Tumeurs du pancréas ou des voies biliaires sélectionnées', explication: `Après un bilan approfondi, certaines tumeurs du pancréas ou des canaux biliaires relèvent d'une chirurgie spécialisée, décidée en concertation entre les experts.` },
+      { label: 'Complications tumorales nécessitant une chirurgie (occlusion, saignement)', explication: `Une tumeur peut parfois bloquer le transit ou saigner : la chirurgie permet alors de traiter la complication et de soulager rapidement le patient.` },
     ],
     preparation: [
       'Bilan complet : endoscopie avec biopsies, scanner et imagerie complémentaire',
@@ -52,13 +52,13 @@ Chaque dossier est discuté en réunion de concertation pluridisciplinaire réun
 Le choix de la stratégie est toujours validé en concertation pluridisciplinaire, et les techniques mini-invasives — laparoscopie, chirurgie endoscopique par les voies naturelles pour certaines tumeurs de la vessie — sont privilégiées chaque fois qu'elles offrent la même qualité carcinologique, afin d'alléger les suites opératoires.
 
 À la Clinique Pasteur Tunis, les urologues prennent en charge l'ensemble de ce parcours : bilan initial avec l'imagerie sur place, intervention dans des blocs équipés, surveillance post-opératoire et suivi au long cours. L'analyse anatomopathologique des pièces opératoires est assurée et oriente précisément la suite du traitement.`,
-    image: '/images/surgery-blue-2.webp',
+    image: '/images/fiches/carci-cancers-urologiques.webp',
     indications: [
-      'Tumeur du rein découverte à l\'imagerie',
-      'Tumeur de la vessie diagnostiquée par endoscopie',
-      'Cancer localisé de la prostate après bilan complet',
-      'Tumeurs des voies urinaires supérieures',
-      'Tumeurs du testicule nécessitant une exérèse',
+      { label: 'Tumeur du rein découverte à l\'imagerie', explication: `Souvent repérées à l'occasion d'un examen d'imagerie, les tumeurs du rein peuvent être retirées en préservant le reste de l'organe chaque fois que c'est possible.` },
+      { label: 'Tumeur de la vessie diagnostiquée par endoscopie', explication: `Les tumeurs de la vessie sont le plus souvent traitées par les voies naturelles, sans incision, grâce à des instruments endoscopiques qui retirent la lésion.` },
+      { label: 'Cancer localisé de la prostate après bilan complet', explication: `Quand la maladie reste limitée à la prostate, l'ablation de la glande offre de très bonnes chances de guérison ; la stratégie est toujours discutée après un bilan complet.` },
+      { label: 'Tumeurs des voies urinaires supérieures', explication: `Les canaux qui conduisent l'urine du rein vers la vessie peuvent aussi être le siège de tumeurs, traitées par une chirurgie adaptée à leur localisation.` },
+      { label: 'Tumeurs du testicule nécessitant une exérèse', explication: `L'ablation du testicule atteint est le premier temps du traitement de ces tumeurs, dont le pronostic est généralement très favorable chez l'homme jeune.` },
     ],
     preparation: [
       'Bilan urologique complet : imagerie, endoscopie et biopsies selon l\'organe',
@@ -93,13 +93,13 @@ Le choix de la stratégie est toujours validé en concertation pluridisciplinair
 La stratégie est définie pour chaque patiente en concertation pluridisciplinaire, en tenant compte de sa situation personnelle, notamment d'un éventuel désir de préservation de la fertilité lorsque la maladie le permet. Les voies mini-invasives sont utilisées chaque fois qu'elles sont appropriées sur le plan carcinologique.
 
 À la Clinique Pasteur Tunis, les patientes sont prises en charge par des chirurgiens gynécologues expérimentés en cancérologie, dans un environnement attentif et respectueux. L'analyse anatomopathologique des pièces opératoires est assurée, y compris en extemporané pendant l'intervention lorsque c'est utile, et un accompagnement psychologique peut être proposé tout au long du parcours.`,
-    image: '/images/maternite.webp',
+    image: '/images/fiches/carci-cancers-gynecologiques.webp',
     indications: [
-      'Cancer de l\'endomètre (corps de l\'utérus) confirmé par prélèvement',
-      'Cancer du col utérin relevant d\'un traitement chirurgical',
-      'Tumeurs de l\'ovaire suspectes ou confirmées',
-      'Lésions précancéreuses étendues nécessitant une exérèse',
-      'Cancers de la vulve ou du vagin sélectionnés',
+      { label: 'Cancer de l\'endomètre (corps de l\'utérus) confirmé par prélèvement', explication: `Souvent révélé par des saignements inhabituels, ce cancer se traite en première intention par la chirurgie, avec un bon pronostic lorsqu'il est découvert tôt.` },
+      { label: 'Cancer du col utérin relevant d\'un traitement chirurgical', explication: `À certains stades, la chirurgie constitue le traitement de référence du cancer du col, parfois avec des techniques préservant la fertilité chez la femme jeune.` },
+      { label: 'Tumeurs de l\'ovaire suspectes ou confirmées', explication: `Devant une masse de l'ovaire suspecte, l'intervention permet à la fois de préciser sa nature et de la retirer dans les règles de la cancérologie.` },
+      { label: 'Lésions précancéreuses étendues nécessitant une exérèse', explication: `Retirer une lésion avant qu'elle ne se transforme est le meilleur moyen d'éviter un cancer : ces gestes préventifs sont le plus souvent simples et conservateurs.` },
+      { label: 'Cancers de la vulve ou du vagin sélectionnés', explication: `Ces cancers plus rares relèvent d'une chirurgie adaptée à chaque situation, décidée en concertation pluridisciplinaire et accompagnée avec une attention particulière.` },
     ],
     preparation: [
       'Bilan complet : examen gynécologique, imagerie (IRM, scanner) et prélèvements',
@@ -135,12 +135,12 @@ La stratégie est définie pour chaque patiente en concertation pluridisciplinai
 L'intervention se déroule par une incision discrète à la base du cou. Deux structures font l'objet d'une attention constante : les nerfs récurrents, qui commandent les cordes vocales, et les glandes parathyroïdes, qui régulent le calcium. Leur repérage et leur préservation sont au cœur de la technique chirurgicale.
 
 À la Clinique Pasteur Tunis, la chirurgie thyroïdienne est réalisée par des chirurgiens expérimentés, en lien avec les endocrinologues pour le bilan et le suivi. L'analyse anatomopathologique de la pièce opératoire est assurée, y compris en extemporané pendant l'intervention si nécessaire, et un traitement hormonal substitutif simple est mis en place lorsque la glande est retirée en totalité.`,
-    image: '/images/chirurgie.webp',
+    image: '/images/fiches/carci-cancers-thyroidiens.webp',
     indications: [
-      'Nodule thyroïdien suspect à la ponction ou à l\'échographie',
-      'Cancer thyroïdien confirmé par les prélèvements',
-      'Goitre nodulaire avec nodule suspect associé',
-      'Nodule augmentant de volume ou comprimant les organes voisins',
+      { label: 'Nodule thyroïdien suspect à la ponction ou à l\'échographie', explication: `Quand les examens ne permettent pas d'écarter formellement un cancer, l'ablation du nodule apporte une réponse définitive tout en traitant la lésion.` },
+      { label: 'Cancer thyroïdien confirmé par les prélèvements', explication: `La chirurgie est le traitement de première intention des cancers de la thyroïde, dont l'évolution est le plus souvent très favorable après l'intervention.` },
+      { label: 'Goitre nodulaire avec nodule suspect associé', explication: `Lorsqu'une glande augmentée de volume abrite un nodule douteux, retirer la zone concernée permet de traiter le goitre et de lever le doute en même temps.` },
+      { label: 'Nodule augmentant de volume ou comprimant les organes voisins', explication: `Un nodule qui grossit peut gêner la déglutition, la respiration ou la voix : son ablation soulage ces symptômes et permet son analyse complète.` },
     ],
     preparation: [
       'Bilan complet : échographie cervicale, ponction du nodule et dosages hormonaux',
@@ -176,13 +176,13 @@ L'intervention se déroule par une incision discrète à la base du cou. Deux st
 L'évaluation des ganglions de l'aisselle fait partie intégrante du traitement : la technique du ganglion sentinelle permet, dans de nombreux cas, de n'analyser que les premiers ganglions de drainage et d'éviter un curage étendu lorsque celui-ci n'est pas nécessaire.
 
 À la Clinique Pasteur Tunis, chaque dossier est discuté en concertation pluridisciplinaire réunissant chirurgien, oncologue et radiologue, et la patiente est accompagnée à chaque étape, y compris sur le plan psychologique. L'analyse anatomopathologique des pièces opératoires est assurée, avec examen extemporané pendant l'intervention lorsque c'est utile.`,
-    image: '/images/surgery-blue-3.webp',
+    image: '/images/fiches/carci-cancers-du-sein.webp',
     indications: [
-      'Cancer du sein confirmé par biopsie',
-      'Lésion mammaire suspecte nécessitant une exérèse diagnostique',
-      'Lésions précancéreuses étendues (carcinome in situ)',
-      'Récidive locale après traitement conservateur',
-      'Chirurgie de réduction de risque dans des situations très particulières, après avis spécialisé',
+      { label: 'Cancer du sein confirmé par biopsie', explication: `Une fois le diagnostic posé par la biopsie, la chirurgie retire la zone malade, en conservant le sein chaque fois que la taille et la localisation de la tumeur le permettent.` },
+      { label: 'Lésion mammaire suspecte nécessitant une exérèse diagnostique', explication: `Quand une image reste douteuse malgré les examens, retirer la lésion pour l'analyser en totalité permet d'obtenir une réponse claire et définitive.` },
+      { label: 'Lésions précancéreuses étendues (carcinome in situ)', explication: `Ces lésions encore localisées n'ont pas franchi les limites du tissu où elles sont nées : les retirer à ce stade offre d'excellentes chances de guérison.` },
+      { label: 'Récidive locale après traitement conservateur', explication: `Si la maladie réapparaît dans un sein déjà traité, une nouvelle chirurgie adaptée est proposée, dans le cadre d'une stratégie rediscutée en équipe.` },
+      { label: 'Chirurgie de réduction de risque dans des situations très particulières, après avis spécialisé', explication: `Chez certaines femmes présentant un risque héréditaire très élevé, une chirurgie préventive peut être envisagée, toujours après un avis spécialisé et une réflexion accompagnée.` },
     ],
     preparation: [
       'Bilan sénologique complet : mammographie, échographie, IRM si nécessaire et biopsie',
@@ -218,13 +218,13 @@ L'évaluation des ganglions de l'aisselle fait partie intégrante du traitement 
 La chaleur augmente l'efficacité de la chimiothérapie, et son administration locale permet d'atteindre les cellules résiduelles microscopiques tout en limitant le passage dans le reste de l'organisme. Cette approche exigeante s'adresse à des patients rigoureusement sélectionnés en concertation pluridisciplinaire, après un bilan très complet.
 
 À la Clinique Pasteur Tunis, la CHIP est réalisée par une équipe chirurgicale et anesthésique entraînée, avec une surveillance post-opératoire en réanimation. Le patient et ses proches sont longuement informés en amont du déroulement de l'intervention et de la convalescence, qui demande du temps et un accompagnement suivi.`,
-    image: '/images/bloc-operatoire.webp',
+    image: '/images/fiches/carci-chip-chimio-hyperthermie.webp',
     indications: [
-      'Atteinte péritonéale de certains cancers digestifs, dans des cas sélectionnés',
-      'Certaines tumeurs de l\'ovaire avec extension péritonéale',
-      'Pseudomyxome péritonéal',
-      'Mésothéliome péritonéal, après avis spécialisé',
-      'Indication toujours validée en réunion de concertation pluridisciplinaire',
+      { label: 'Atteinte péritonéale de certains cancers digestifs, dans des cas sélectionnés', explication: `Quand un cancer digestif a atteint la membrane qui tapisse l'abdomen, la CHIP offre chez des patients bien sélectionnés une possibilité de traitement là où les options étaient limitées.` },
+      { label: 'Certaines tumeurs de l\'ovaire avec extension péritonéale', explication: `Certains cancers de l'ovaire s'étendent au péritoine : l'association d'une chirurgie complète et d'une chimiothérapie chauffée peut alors renforcer le traitement.` },
+      { label: 'Pseudomyxome péritonéal', explication: `Cette maladie rare, où une substance gélatineuse s'accumule dans l'abdomen, trouve dans la CHIP son traitement de référence.` },
+      { label: 'Mésothéliome péritonéal, après avis spécialisé', explication: `Cette tumeur rare de la membrane abdominale peut bénéficier de la CHIP dans certaines situations, toujours après l'avis d'une équipe spécialisée.` },
+      { label: 'Indication toujours validée en réunion de concertation pluridisciplinaire', explication: `La CHIP est une intervention exigeante : la décision est systématiquement prise collectivement par les chirurgiens, oncologues et radiologues, dans l'intérêt du patient.` },
     ],
     preparation: [
       'Bilan exhaustif : imagerie complète et évaluation précise de l\'étendue des lésions',
@@ -261,14 +261,14 @@ La chaleur augmente l'efficacité de la chimiothérapie, et son administration l
 Le curage est le plus souvent réalisé au cours de la même intervention que l'ablation de la tumeur. Son étendue est définie selon des règles précises, et la technique du ganglion sentinelle permet, dans certaines localisations, de limiter le geste lorsque les premiers relais sont indemnes.
 
 À la Clinique Pasteur Tunis, les curages ganglionnaires sont réalisés par des chirurgiens expérimentés dans chaque spécialité concernée. L'ensemble des ganglions prélevés fait l'objet d'une analyse anatomopathologique dont les résultats, présentés en concertation pluridisciplinaire, orientent les traitements complémentaires.`,
-    image: '/images/surgery-blue-4.webp',
+    image: '/images/fiches/carci-curage-ganglionnaire.webp',
     indications: [
-      'Temps ganglionnaire associé à la chirurgie d\'un cancer du sein',
-      'Curage pelvien des cancers gynécologiques ou urologiques',
-      'Curage cervical associé à la chirurgie thyroïdienne',
-      'Curage réglé des cancers digestifs',
-      'Ganglion sentinelle positif nécessitant un complément de curage',
-      'Adénopathie suspecte à retirer pour analyse',
+      { label: 'Temps ganglionnaire associé à la chirurgie d\'un cancer du sein', explication: `L'analyse des ganglions de l'aisselle fait partie du traitement du cancer du sein : elle est réalisée au cours de la même intervention que l'ablation de la tumeur.` },
+      { label: 'Curage pelvien des cancers gynécologiques ou urologiques', explication: `Pour certains cancers du bassin, retirer les ganglions de drainage complète le traitement et précise l'étendue exacte de la maladie.` },
+      { label: 'Curage cervical associé à la chirurgie thyroïdienne', explication: `Quand un cancer de la thyroïde s'accompagne de ganglions atteints dans le cou, leur ablation lors de la même intervention améliore le contrôle de la maladie.` },
+      { label: 'Curage réglé des cancers digestifs', explication: `L'ablation des relais ganglionnaires selon des règles précises fait partie intégrante de la chirurgie des cancers du tube digestif et conditionne la qualité du traitement.` },
+      { label: 'Ganglion sentinelle positif nécessitant un complément de curage', explication: `Si l'analyse du premier ganglion de drainage révèle des cellules anormales, un curage plus complet peut être nécessaire pour sécuriser le traitement.` },
+      { label: 'Adénopathie suspecte à retirer pour analyse', explication: `Un ganglion anormalement gros ou d'aspect inhabituel peut être retiré pour être analysé en totalité, ce qui apporte un diagnostic précis.` },
     ],
     preparation: [
       'Bilan d\'imagerie précisant les aires ganglionnaires concernées',
@@ -302,13 +302,13 @@ Le curage est le plus souvent réalisé au cours de la même intervention que l'
 Plusieurs techniques existent : reconstruction par prothèse, reconstruction utilisant les propres tissus de la patiente (lambeaux), ou techniques combinées, complétées si besoin par des gestes de symétrisation et la reconstruction de l'aréole. La reconstruction peut être immédiate, dans le même temps que l'ablation, ou différée après la fin des traitements : ce choix est discuté au cas par cas avec l'équipe.
 
 À la Clinique Pasteur Tunis, le projet de reconstruction est abordé dès la préparation du traitement, en concertation avec l'oncologue afin de choisir le moment le plus opportun. Les patientes bénéficient d'une information complète sur les techniques possibles et d'un accompagnement attentif, étape par étape, jusqu'au résultat final.`,
-    image: '/images/esthetique.webp',
+    image: '/images/fiches/carci-reconstruction-post-cancer.webp',
     indications: [
-      'Reconstruction mammaire après mastectomie, immédiate ou différée',
-      'Correction de séquelles d\'un traitement conservateur du sein',
-      'Reconstruction après chirurgie d\'autres localisations (paroi, tissus mous)',
-      'Symétrisation du sein controlatéral',
-      'Reconstruction de l\'aréole et du mamelon en fin de parcours',
+      { label: 'Reconstruction mammaire après mastectomie, immédiate ou différée', explication: `Après l'ablation d'un sein, la reconstruction peut être réalisée dans le même temps opératoire ou plus tard, une fois les traitements terminés : le choix appartient à la patiente, guidée par l'équipe.` },
+      { label: 'Correction de séquelles d\'un traitement conservateur du sein', explication: `Un sein traité peut parfois présenter une déformation ou une asymétrie : des gestes de correction permettent d'harmoniser le résultat.` },
+      { label: 'Reconstruction après chirurgie d\'autres localisations (paroi, tissus mous)', explication: `Lorsque le traitement d'un cancer a nécessité de retirer des tissus ailleurs sur le corps, des techniques de reconstruction restaurent la forme et la fonction de la zone opérée.` },
+      { label: 'Symétrisation du sein controlatéral', explication: `Pour un résultat harmonieux, un geste sur l'autre sein peut être proposé afin d'équilibrer la silhouette après la reconstruction.` },
+      { label: 'Reconstruction de l\'aréole et du mamelon en fin de parcours', explication: `Dernière étape du parcours, cette touche finale redonne au sein reconstruit son apparence naturelle et complète la restauration de l'image corporelle.` },
     ],
     preparation: [
       'Consultation dédiée pour présenter les techniques possibles et leurs étapes',
@@ -344,13 +344,13 @@ Plusieurs techniques existent : reconstruction par prothèse, reconstruction uti
 Selon la localisation, le geste peut être une biopsie-exérèse, qui retire la totalité de la lésion (ganglion, nodule sous-cutané, lésion mammaire), ou une biopsie incisionnelle qui n'en prélève qu'un fragment représentatif. Un repérage radiologique préalable est parfois réalisé pour guider précisément le chirurgien vers une lésion non palpable.
 
 À la Clinique Pasteur Tunis, les biopsies chirurgicales sont réalisées en hospitalisation de jour dans la plupart des cas, sous anesthésie adaptée. L'analyse anatomopathologique des prélèvements est assurée, avec possibilité d'examen extemporané pendant l'intervention lorsque la situation le justifie, et les résultats sont transmis rapidement au médecin pour organiser la suite de la prise en charge.`,
-    image: '/images/radiologie-scanner.webp',
+    image: '/images/fiches/carci-biopsies-chirurgicales.webp',
     indications: [
-      'Ganglion augmenté de volume dont la nature doit être précisée',
-      'Lésion suspecte inaccessible à une ponction guidée par l\'imagerie',
-      'Prélèvements antérieurs insuffisants ou discordants avec l\'imagerie',
-      'Nodule ou masse des tissus mous à retirer pour analyse complète',
-      'Lésion mammaire non palpable nécessitant une exérèse repérée',
+      { label: 'Ganglion augmenté de volume dont la nature doit être précisée', explication: `Un ganglion qui reste gros sans explication mérite d'être analysé : son prélèvement au bloc opératoire, geste simple, permet d'en connaître la nature exacte.` },
+      { label: 'Lésion suspecte inaccessible à une ponction guidée par l\'imagerie', explication: `Certaines lésions sont situées dans des zones que l'aiguille ne peut pas atteindre en sécurité : le prélèvement chirurgical devient alors la meilleure option.` },
+      { label: 'Prélèvements antérieurs insuffisants ou discordants avec l\'imagerie', explication: `Quand les premières biopsies n'ont pas permis de conclure ou ne correspondent pas aux images, un prélèvement chirurgical plus complet lève le doute.` },
+      { label: 'Nodule ou masse des tissus mous à retirer pour analyse complète', explication: `Retirer la lésion en entier permet à la fois de la traiter et de l'analyser dans sa totalité, pour un diagnostic aussi précis que possible.` },
+      { label: 'Lésion mammaire non palpable nécessitant une exérèse repérée', explication: `Pour une anomalie du sein visible uniquement sur les images, un repérage radiologique guide précisément le chirurgien vers la zone à retirer.` },
     ],
     preparation: [
       'Bilan d\'imagerie localisant précisément la lésion',

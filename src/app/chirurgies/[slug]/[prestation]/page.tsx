@@ -103,6 +103,12 @@ export default function PrestationPage({ params }: { params: { slug: string; pre
                 </div>
               </div>
 
+              <figure className="rounded-2xl overflow-hidden border border-gray-200 shadow-sm">
+                <div className="relative aspect-[16/9]">
+                  <Image src={heroImage} alt={prestation.title} fill className="object-cover" sizes="(max-width: 1024px) 100vw, 66vw" />
+                </div>
+              </figure>
+
               {prestation.indications && prestation.indications.length > 0 && (
                 <div>
                   <h2 className="text-2xl font-heading font-bold text-gray-900 mb-6 flex items-center gap-3">
@@ -112,12 +118,19 @@ export default function PrestationPage({ params }: { params: { slug: string; pre
                     Quand est-elle indiquée ?
                   </h2>
                   <div className="grid md:grid-cols-2 gap-3">
-                    {prestation.indications.map((ind: string) => (
-                      <div key={ind} className="flex items-start gap-3 p-4 bg-blue-50 rounded-lg border border-blue-100">
-                        <CheckCircle2 className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
-                        <span className="text-gray-700 text-sm">{ind}</span>
-                      </div>
-                    ))}
+                    {prestation.indications.map((ind: any) => {
+                      const label = typeof ind === 'string' ? ind : ind.label
+                      const explication = typeof ind === 'string' ? null : ind.explication
+                      return (
+                        <div key={label} className="flex items-start gap-3 p-4 bg-blue-50 rounded-lg border border-blue-100">
+                          <CheckCircle2 className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                          <div>
+                            <span className="text-gray-800 text-sm font-semibold">{label}</span>
+                            {explication && <p className="text-gray-600 text-sm mt-1 leading-relaxed">{explication}</p>}
+                          </div>
+                        </div>
+                      )
+                    })}
                   </div>
                 </div>
               )}

@@ -3,6 +3,7 @@ export const servicesCoaching = [
     slug: 'bilan-nutritionnel-complet',
     title: 'Bilan nutritionnel complet',
     shortTitle: 'Bilan nutritionnel',
+    image: '/images/fiches/coach-bilan-nutritionnel-complet.webp',
     description: 'Évaluation complète des habitudes alimentaires, de la composition corporelle et des besoins nutritionnels, point de départ de tout accompagnement personnalisé.',
     fullDescription: `Le bilan nutritionnel est la première étape de tout accompagnement diététique. Il permet de dresser un état des lieux précis : habitudes alimentaires, rythme des repas, préférences et contraintes du quotidien, antécédents médicaux, activité physique et objectifs personnels.
 
@@ -11,14 +12,13 @@ L'évaluation comprend un entretien approfondi avec le nutritionniste, des mesur
 À l'issue du bilan, le nutritionniste remet une synthèse claire et propose, si le patient le souhaite, un programme d'accompagnement adapté : rééquilibrage alimentaire, programme de perte de poids, nutrition thérapeutique ou préparation à une chirurgie bariatrique.
 
 À la Clinique Pasteur Tunis, le bilan nutritionnel se déroule dans un cadre bienveillant et sans jugement. L'objectif n'est jamais d'imposer un régime restrictif, mais de construire avec chaque personne une alimentation durable, compatible avec ses goûts et son mode de vie.`,
-    image: '/images/nutrition.webp',
     indications: [
-      'Souhait de rééquilibrer son alimentation',
-      'Surpoids ou difficultés à gérer son poids',
-      'Fatigue ou troubles digestifs liés à l\'alimentation',
-      'Préparation d\'un programme de perte de poids ou d\'une chirurgie bariatrique',
-      'Maladie chronique nécessitant une adaptation alimentaire',
-      'Reprise d\'une activité sportive avec objectifs nutritionnels',
+      { label: 'Souhait de rééquilibrer son alimentation', explication: `Le bilan fait le point sur les habitudes actuelles et identifie des ajustements simples et réalistes pour mieux manger au quotidien.` },
+      { label: 'Surpoids ou difficultés à gérer son poids', explication: `Comprendre son alimentation et sa composition corporelle est la première étape pour retrouver un poids de forme durablement.` },
+      { label: 'Fatigue ou troubles digestifs liés à l\'alimentation', explication: `Certains inconforts du quotidien s'expliquent par l'alimentation : le bilan aide à repérer ce qui pose problème et comment y remédier.` },
+      { label: 'Préparation d\'un programme de perte de poids ou d\'une chirurgie bariatrique', explication: `Le bilan constitue le point de départ de tout accompagnement structuré, en fixant des objectifs adaptés à chaque situation.` },
+      { label: 'Maladie chronique nécessitant une adaptation alimentaire', explication: `En cas de diabète, d'excès de cholestérol ou d'une autre maladie chronique, le bilan permet d'adapter l'alimentation en cohérence avec le traitement médical.` },
+      { label: 'Reprise d\'une activité sportive avec objectifs nutritionnels', explication: `L'alimentation accompagne l'effort : le bilan aide à ajuster les apports pour soutenir l'entraînement et la récupération.` },
     ],
     preparation: [
       'Apporter ses derniers résultats d\'analyses biologiques si disponibles',
@@ -40,6 +40,7 @@ L'évaluation comprend un entretien approfondi avec le nutritionniste, des mesur
     slug: 'programme-perte-de-poids',
     title: 'Programme de perte de poids personnalisé',
     shortTitle: 'Perte de poids',
+    image: '/images/fiches/coach-programme-perte-de-poids.webp',
     description: 'Accompagnement progressif et durable vers un poids de forme, sans régime restrictif, avec un suivi régulier par le nutritionniste.',
     fullDescription: `Le programme de perte de poids de la clinique repose sur une conviction simple : les régimes restrictifs ne fonctionnent pas dans la durée. L'accompagnement proposé vise une perte de poids progressive et durable, fondée sur un rééquilibrage alimentaire personnalisé, le plaisir de manger et la reprise d'une activité physique adaptée.
 
@@ -48,13 +49,12 @@ Après le bilan nutritionnel initial, le nutritionniste construit avec le patien
 Des consultations de suivi régulières permettent de mesurer les progrès, d'ajuster le programme, de surmonter les périodes de stagnation et de maintenir la motivation. La composition corporelle est suivie à chaque étape, car l'objectif est de perdre de la masse grasse tout en préservant la masse musculaire.
 
 À la Clinique Pasteur Tunis, cet accompagnement bénéficie de l'environnement médical de l'établissement : en cas de besoin, le nutritionniste peut solliciter l'avis d'autres spécialistes de la clinique, pour une prise en charge globale et cohérente de chaque patient.`,
-    image: '/images/repas.webp',
     indications: [
-      'Surpoids avec souhait d\'une perte de poids durable',
-      'Échec de régimes restrictifs répétés',
-      'Poids retentissant sur la santé (articulations, souffle, sommeil)',
-      'Prévention du diabète et des maladies cardiovasculaires',
-      'Souhait de retrouver énergie et bien-être au quotidien',
+      { label: 'Surpoids avec souhait d\'une perte de poids durable', explication: `Le programme vise une perte progressive, fondée sur le rééquilibrage plutôt que sur la privation, pour des résultats qui tiennent dans le temps.` },
+      { label: 'Échec de régimes restrictifs répétés', explication: `Après des régimes trop stricts suivis de reprises de poids, une approche sans interdits aide à sortir de ce cercle et à stabiliser durablement.` },
+      { label: 'Poids retentissant sur la santé (articulations, souffle, sommeil)', explication: `Perdre du poids soulage les articulations, améliore le souffle et la qualité du sommeil : le programme accompagne ces progrès pas à pas.` },
+      { label: 'Prévention du diabète et des maladies cardiovasculaires', explication: `Retrouver un poids de forme réduit le risque de développer un diabète ou des problèmes cardiovasculaires, surtout en cas d'antécédents familiaux.` },
+      { label: 'Souhait de retrouver énergie et bien-être au quotidien', explication: `Une alimentation mieux équilibrée redonne de l'énergie et améliore le confort de vie, bien au-delà de la seule perte de poids.` },
     ],
     preparation: [
       'Réaliser un bilan nutritionnel complet au préalable',
@@ -77,6 +77,7 @@ Des consultations de suivi régulières permettent de mesurer les progrès, d'aj
     slug: 'suivi-nutritionnel-bariatrique',
     title: 'Suivi nutritionnel pré et post chirurgie bariatrique',
     shortTitle: 'Suivi bariatrique',
+    image: '/images/fiches/coach-suivi-nutritionnel-bariatrique.webp',
     description: 'Accompagnement nutritionnel spécialisé avant et après une chirurgie de l\'obésité, essentiel à la réussite du parcours bariatrique.',
     fullDescription: `La chirurgie bariatrique (sleeve, bypass) est un outil puissant contre l'obésité, mais sa réussite repose en grande partie sur l'accompagnement nutritionnel qui l'entoure. Le centre de coaching nutritionnel de la clinique assure ce suivi spécialisé, en coordination étroite avec les chirurgiens bariatriques de l'établissement.
 
@@ -85,13 +86,12 @@ Avant l'intervention, le nutritionniste évalue les habitudes alimentaires, pré
 Après l'opération, l'alimentation évolue par étapes : textures liquides, puis mixées, puis normales, avec un apprentissage progressif des nouvelles sensations de satiété. Le nutritionniste guide le patient à chaque phase, veille à la couverture des besoins en protéines, vitamines et minéraux, et prévient les carences par un suivi attentif.
 
 À la Clinique Pasteur Tunis, ce suivi s'inscrit dans le parcours bariatrique complet de l'établissement, qui a fait sa réputation dans cette discipline : chirurgien, nutritionniste et psychologue travaillent ensemble pour accompagner chaque patient vers un résultat durable et une meilleure qualité de vie.`,
-    image: '/images/bariatrique.webp',
     indications: [
-      'Préparation nutritionnelle avant sleeve, bypass ou autre chirurgie bariatrique',
-      'Suivi post-opératoire après chirurgie de l\'obésité',
-      'Apprentissage des nouvelles habitudes alimentaires après l\'intervention',
-      'Prévention et correction des carences nutritionnelles',
-      'Stagnation ou reprise de poids à distance de la chirurgie',
+      { label: 'Préparation nutritionnelle avant sleeve, bypass ou autre chirurgie bariatrique', explication: `Avant l'opération, le nutritionniste prépare le patient aux changements alimentaires à venir, une étape clé du bilan pré-opératoire.` },
+      { label: 'Suivi post-opératoire après chirurgie de l\'obésité', explication: `Après l'intervention, un accompagnement régulier guide la réalimentation étape par étape et sécurise la perte de poids.` },
+      { label: 'Apprentissage des nouvelles habitudes alimentaires après l\'intervention', explication: `L'estomac opéré impose une nouvelle façon de manger : petites quantités, textures adaptées et écoute de la satiété, apprises progressivement avec le nutritionniste.` },
+      { label: 'Prévention et correction des carences nutritionnelles', explication: `Après une chirurgie de l'obésité, certains nutriments sont moins bien absorbés : le suivi veille aux apports en protéines, vitamines et minéraux.` },
+      { label: 'Stagnation ou reprise de poids à distance de la chirurgie', explication: `Si le poids se stabilise trop tôt ou remonte après l'opération, le nutritionniste analyse la situation et relance la dynamique avec des ajustements ciblés.` },
     ],
     preparation: [
       'Apporter le dossier de chirurgie bariatrique et les comptes rendus opératoires le cas échéant',
@@ -114,6 +114,7 @@ Après l'opération, l'alimentation évolue par étapes : textures liquides, pui
     slug: 'nutrition-therapeutique',
     title: 'Nutrition thérapeutique (diabète, insuffisance rénale, etc.)',
     shortTitle: 'Nutrition thérapeutique',
+    image: '/images/fiches/coach-nutrition-therapeutique.webp',
     description: 'Adaptation de l\'alimentation aux maladies chroniques : diabète, maladies rénales, cardiovasculaires ou digestives, en lien avec le médecin traitant.',
     fullDescription: `Dans de nombreuses maladies chroniques, l'alimentation fait partie intégrante du traitement. Bien menée, elle contribue à équilibrer un diabète, à ménager des reins fragiles, à protéger le cœur et les vaisseaux ou à apaiser des troubles digestifs. La nutrition thérapeutique consiste à adapter l'alimentation à chaque pathologie, sans sacrifier le plaisir de manger.
 
@@ -122,14 +123,13 @@ Le nutritionniste travaille à partir des prescriptions et recommandations du m�
 L'accompagnement est avant tout pédagogique : comprendre les liens entre alimentation et maladie, apprendre à composer ses repas, décrypter les étiquettes, adapter les recettes familiales. Les consultations de suivi permettent d'ajuster les conseils à l'évolution de la maladie et des traitements.
 
 À la Clinique Pasteur Tunis, la nutrition thérapeutique s'appuie sur la collaboration entre le nutritionniste et les médecins de la clinique. Cette coordination garantit une cohérence entre le traitement médical et l'accompagnement alimentaire, au bénéfice de chaque patient.`,
-    image: '/images/medical-consultation.webp',
     indications: [
-      'Diabète de type 1 ou de type 2, diabète gestationnel',
-      'Insuffisance rénale chronique',
-      'Hypertension artérielle et maladies cardiovasculaires',
-      'Excès de cholestérol ou de triglycérides',
-      'Maladies digestives (intestin irritable, maladies inflammatoires)',
-      'Dénutrition ou perte de poids involontaire',
+      { label: 'Diabète de type 1 ou de type 2, diabète gestationnel', explication: `L'alimentation est un pilier du traitement du diabète : bien composer ses repas aide à équilibrer le sucre dans le sang au quotidien.` },
+      { label: 'Insuffisance rénale chronique', explication: `Quand les reins fonctionnent moins bien, adapter les apports en protéines, en sel et en potassium aide à les ménager et à ralentir l'évolution.` },
+      { label: 'Hypertension artérielle et maladies cardiovasculaires', explication: `Une alimentation moins salée et bien équilibrée contribue à contrôler la tension et à protéger le cœur et les vaisseaux.` },
+      { label: 'Excès de cholestérol ou de triglycérides', explication: `Le choix des graisses et l'équilibre des repas aident à faire baisser les graisses du sang, en complément du traitement éventuel.` },
+      { label: 'Maladies digestives (intestin irritable, maladies inflammatoires)', explication: `Identifier les aliments qui déclenchent les symptômes et adapter les repas apporte souvent un vrai soulagement au quotidien.` },
+      { label: 'Dénutrition ou perte de poids involontaire', explication: `Quand l'organisme s'affaiblit, une alimentation enrichie et adaptée aide à reprendre des forces et à retrouver du poids sainement.` },
     ],
     preparation: [
       'Apporter les ordonnances et recommandations du médecin traitant ou du spécialiste',
@@ -151,6 +151,7 @@ L'accompagnement est avant tout pédagogique : comprendre les liens entre alimen
     slug: 'soins-esthetiques-visage',
     title: 'Soins esthétiques du visage',
     shortTitle: 'Esthétique visage',
+    image: '/images/fiches/coach-soins-esthetiques-visage.webp',
     description: 'Soins du visage non chirurgicaux réalisés dans un cadre médical : nettoyage de peau, hydratation profonde, éclat et prévention du vieillissement.',
     fullDescription: `Le centre esthétique de la clinique propose une gamme complète de soins du visage non chirurgicaux, réalisés par des professionnels formés, dans un environnement médicalisé qui garantit hygiène et sécurité. Ces soins visent à préserver la qualité de la peau, raviver l'éclat du teint et prévenir les signes du vieillissement.
 
@@ -159,14 +160,13 @@ Chaque prise en charge débute par un diagnostic de peau : type de peau, hydrata
 Les soins se déroulent dans une atmosphère calme et relaxante, pensée pour faire de chaque séance un moment de bien-être autant que de soin. Des conseils personnalisés sont remis à l'issue de chaque séance pour prolonger les bienfaits à la maison : routine adaptée, protection solaire, hydratation.
 
 À la Clinique Pasteur Tunis, l'environnement médical du centre permet, si la personne le souhaite, un avis complémentaire en médecine esthétique ou une orientation vers les chirurgiens plasticiens de l'établissement, pour une approche cohérente et progressive de chaque demande.`,
-    image: '/images/esthetique.webp',
     indications: [
-      'Teint terne, peau fatiguée ou déshydratée',
-      'Imperfections et pores dilatés',
-      'Premiers signes de l\'âge (ridules, perte d\'éclat)',
-      'Peau sensible nécessitant des soins apaisants',
-      'Préparation de la peau avant un événement',
-      'Entretien régulier de la qualité de la peau',
+      { label: 'Teint terne, peau fatiguée ou déshydratée', explication: `Un soin en profondeur réhydrate la peau et ravive l'éclat du teint dès la première séance.` },
+      { label: 'Imperfections et pores dilatés', explication: `Un nettoyage de peau adapté désincruste les pores et affine le grain de peau, avec des conseils pour entretenir le résultat à la maison.` },
+      { label: 'Premiers signes de l\'âge (ridules, perte d\'éclat)', explication: `Des protocoles anti-âge doux aident à lisser les ridules et à préserver la jeunesse de la peau, sans geste médical.` },
+      { label: 'Peau sensible nécessitant des soins apaisants', explication: `Les peaux réactives bénéficient de soins spécifiques qui calment les rougeurs et renforcent la barrière protectrice de la peau.` },
+      { label: 'Préparation de la peau avant un événement', explication: `Avant un mariage ou une occasion importante, un soin éclat révèle une peau nette et lumineuse.` },
+      { label: 'Entretien régulier de la qualité de la peau', explication: `Des séances régulières entretiennent l'hydratation et l'éclat de la peau, et retardent l'apparition des signes de l'âge.` },
     ],
     preparation: [
       'Venir de préférence sans maquillage ou prévoir un démaquillage sur place',
@@ -191,6 +191,7 @@ Les soins se déroulent dans une atmosphère calme et relaxante, pensée pour fa
     slug: 'soins-esthetiques-corps',
     title: 'Soins esthétiques du corps',
     shortTitle: 'Esthétique corps',
+    image: '/images/fiches/coach-soins-esthetiques-corps.webp',
     description: 'Soins du corps ciblés : fermeté, silhouette, drainage et relaxation, en complément idéal d\'un programme nutritionnel.',
     fullDescription: `Le centre esthétique de la clinique propose des soins du corps qui complètent harmonieusement les accompagnements nutritionnels : soins raffermissants, protocoles ciblant la silhouette, drainages favorisant la circulation et soins relaxants pour dénouer les tensions.
 
@@ -199,13 +200,12 @@ Chaque programme débute par un bilan personnalisé : zones concernées, attente
 Ces soins trouvent tout leur sens en accompagnement d'une perte de poids : ils participent au confort et à la fermeté de la peau pendant l'amincissement, et constituent un moment de bien-être qui soutient la motivation. Ils s'adressent également aux personnes souhaitant simplement prendre soin de leur corps, se détendre ou améliorer leur confort circulatoire.
 
 À la Clinique Pasteur Tunis, les soins du corps s'intègrent dans une approche globale du bien-être, coordonnée avec le coaching nutritionnel. Pour les demandes relevant de la chirurgie, une orientation vers les chirurgiens plasticiens de la clinique peut être proposée, en toute transparence.`,
-    image: '/images/esthetique.webp',
     indications: [
-      'Accompagnement d\'un programme de perte de poids',
-      'Manque de fermeté ou aspect peau d\'orange',
-      'Jambes lourdes et inconfort circulatoire',
-      'Tensions musculaires et besoin de relaxation',
-      'Entretien de la silhouette et bien-être corporel',
+      { label: 'Accompagnement d\'un programme de perte de poids', explication: `Pendant un amincissement, les soins du corps aident la peau à rester ferme et offrent un moment de bien-être qui soutient la motivation.` },
+      { label: 'Manque de fermeté ou aspect peau d\'orange', explication: `Des techniques manuelles et des soins ciblés améliorent progressivement la fermeté et l'aspect de la peau.` },
+      { label: 'Jambes lourdes et inconfort circulatoire', explication: `Les drainages favorisent la circulation et procurent une sensation immédiate de légèreté dans les jambes.` },
+      { label: 'Tensions musculaires et besoin de relaxation', explication: `Les soins relaxants dénouent les tensions accumulées et aident à évacuer le stress du quotidien.` },
+      { label: 'Entretien de la silhouette et bien-être corporel', explication: `Des séances régulières entretiennent la tonicité de la peau et le confort du corps, en complément d'une bonne hygiène de vie.` },
     ],
     preparation: [
       'Signaler ses antécédents médicaux, notamment circulatoires, et les traitements en cours',
@@ -230,6 +230,7 @@ Ces soins trouvent tout leur sens en accompagnement d'une perte de poids : ils p
     slug: 'medecine-esthetique',
     title: 'Médecine esthétique (injections, peelings)',
     shortTitle: 'Médecine esthétique',
+    image: '/images/fiches/coach-medecine-esthetique.webp',
     description: 'Actes de médecine esthétique réalisés par des médecins : injections d\'acide hyaluronique, botox et peelings, dans un cadre médical sécurisé.',
     fullDescription: `La médecine esthétique regroupe les actes non chirurgicaux réalisés par un médecin pour prévenir ou corriger les signes du vieillissement : injections d'acide hyaluronique pour restaurer les volumes et combler les rides, injections de toxine botulique pour détendre les rides d'expression, et peelings pour renouveler la qualité de la peau et unifier le teint.
 
@@ -238,13 +239,12 @@ Chaque prise en charge commence par une consultation médicale : analyse du visa
 Les actes sont réalisés au sein de la clinique, avec des produits d'origine contrôlée et du matériel à usage unique. Cette exigence de cadre médical distingue la prise en charge proposée : chaque geste est effectué par un médecin formé, avec la traçabilité et la sécurité d'un établissement de santé.
 
 À la Clinique Pasteur Tunis, la médecine esthétique s'inscrit dans une approche globale : elle peut compléter un accompagnement nutritionnel, des soins esthétiques réguliers, ou précéder une réflexion sur la chirurgie esthétique avec les chirurgiens plasticiens de l'établissement, si la demande le justifie.`,
-    image: '/images/esthetique.webp',
     indications: [
-      'Rides d\'expression (front, ride du lion, patte d\'oie)',
-      'Perte de volume des pommettes ou des lèvres',
-      'Sillons et plis marqués du visage',
-      'Teint irrégulier, taches ou cicatrices superficielles',
-      'Prévention du vieillissement cutané',
+      { label: 'Rides d\'expression (front, ride du lion, patte d\'oie)', explication: `Des injections très ciblées détendent les muscles responsables de ces rides, pour un visage reposé qui garde toute son expressivité.` },
+      { label: 'Perte de volume des pommettes ou des lèvres', explication: `L'acide hyaluronique redonne du volume de façon naturelle et progressive, en respectant l'harmonie du visage.` },
+      { label: 'Sillons et plis marqués du visage', explication: `Le comblement de ces plis atténue les marques de fatigue et redonne un aspect plus frais et reposé au visage.` },
+      { label: 'Teint irrégulier, taches ou cicatrices superficielles', explication: `Les peelings renouvellent la surface de la peau pour unifier le teint et estomper taches et petites cicatrices, au fil des séances.` },
+      { label: 'Prévention du vieillissement cutané', explication: `Des gestes légers et espacés, décidés avec le médecin, aident à préserver la qualité de la peau avant que les rides ne s'installent.` },
     ],
     preparation: [
       'Consultation médicale préalable obligatoire avec information complète',
@@ -272,6 +272,7 @@ Les actes sont réalisés au sein de la clinique, avec des produits d'origine co
     slug: 'programmes-bien-etre',
     title: 'Programmes bien-être',
     shortTitle: 'Bien-être',
+    image: '/images/fiches/coach-programmes-bien-etre.webp',
     description: 'Programmes personnalisés associant nutrition, soins et conseils d\'hygiène de vie pour retrouver énergie, sérénité et équilibre.',
     fullDescription: `Les programmes bien-être du centre proposent une approche globale de la santé et de la vitalité, au-delà de la seule alimentation. Ils associent, selon les besoins de chacun, un accompagnement nutritionnel, des soins du visage et du corps, et des conseils personnalisés d'hygiène de vie : sommeil, gestion du stress, activité physique.
 
@@ -280,13 +281,12 @@ Chaque programme débute par un entretien complet qui fait le point sur le mode 
 Ces programmes s'adressent à toute personne souhaitant reprendre soin d'elle : période de fatigue ou de stress, reprise en main après un événement de vie, préparation d'une échéance importante, ou simple envie de cultiver son équilibre et sa vitalité au quotidien.
 
 À la Clinique Pasteur Tunis, les programmes bien-être bénéficient de la complémentarité des expertises réunies au sein du centre : nutritionnistes, praticiens esthétiques et médecins travaillent ensemble, avec la possibilité d'un avis médical spécialisé à tout moment si le besoin s'en fait sentir.`,
-    image: '/images/clinic-interior.webp',
     indications: [
-      'Fatigue persistante ou baisse d\'énergie',
-      'Période de stress ou de surmenage',
-      'Envie d\'une reprise en main globale (alimentation, forme, apparence)',
-      'Préparation d\'un événement important',
-      'Recherche d\'un meilleur équilibre de vie au quotidien',
+      { label: 'Fatigue persistante ou baisse d\'énergie', explication: `Le programme recherche les causes de la fatigue dans le mode de vie, comme l'alimentation, le sommeil ou le stress, et agit sur chacune d'elles.` },
+      { label: 'Période de stress ou de surmenage', explication: `Un accompagnement associant conseils d'hygiène de vie et soins relaxants aide à retrouver calme et équilibre.` },
+      { label: 'Envie d\'une reprise en main globale (alimentation, forme, apparence)', explication: `Le parcours combine nutrition, soins et conseils personnalisés pour reprendre soin de soi sur tous les plans en même temps.` },
+      { label: 'Préparation d\'un événement important', explication: `Avant un mariage ou une échéance marquante, un programme sur mesure permet d'arriver au meilleur de sa forme et de son apparence.` },
+      { label: 'Recherche d\'un meilleur équilibre de vie au quotidien', explication: `Les conseils sur le sommeil, le stress, l'activité physique et l'alimentation s'installent progressivement pour des bénéfices durables.` },
     ],
     preparation: [
       'Réfléchir à ses priorités : énergie, silhouette, détente, sommeil',

@@ -11,13 +11,13 @@ Cette technique est indispensable pour la plupart des interventions dites « à 
 La CEC est aujourd'hui une technique parfaitement maîtrisée, encadrée par des protocoles rigoureux de protection du cœur et des organes. À la fin de l'intervention, le cœur reprend progressivement son activité et la machine est retirée en douceur.
 
 À la Clinique Pasteur Tunis, la chirurgie sous CEC est pratiquée dans un bloc opératoire dédié à la chirurgie cardiaque, par une équipe chevronnée de chirurgiens, d'anesthésistes-réanimateurs et de perfusionnistes. Le patient est ensuite accueilli dans l'unité de réanimation post-chirurgie cardiaque pour une surveillance rapprochée.`,
-    image: '/images/cardiovasculaire.webp',
+    image: '/images/fiches/cardiovasc-chirurgie-cardiaque-cec.webp',
     indications: [
-      'Remplacement ou réparation de valves cardiaques',
-      'Pontages coronariens nécessitant un cœur immobile',
-      'Chirurgie de l\'aorte thoracique',
-      'Correction de cardiopathies congénitales',
-      'Interventions combinées (valve et pontage par exemple)',
+      { label: 'Remplacement ou réparation de valves cardiaques', explication: `Quand une valve du cœur fuit ou se rétrécit, le chirurgien doit travailler sur un cœur immobile : la machine cœur-poumon assure la circulation pendant toute la durée du geste.` },
+      { label: 'Pontages coronariens nécessitant un cœur immobile', explication: `Certains pontages demandent une très grande précision : arrêter temporairement le cœur permet de coudre les ponts vasculaires dans les meilleures conditions.` },
+      { label: 'Chirurgie de l\'aorte thoracique', explication: `Lorsque la grande artère qui part du cœur est dilatée ou abîmée, la CEC permet de la remplacer en toute sécurité.` },
+      { label: 'Correction de cardiopathies congénitales', explication: `Pour réparer une malformation du cœur présente depuis la naissance, il faut souvent ouvrir le cœur, ce qui n'est possible que grâce à la CEC.` },
+      { label: 'Interventions combinées (valve et pontage par exemple)', explication: `Quand plusieurs problèmes cardiaques sont traités au cours de la même opération, la CEC offre le temps et la stabilité nécessaires.` },
     ],
     preparation: [
       'Bilan cardiaque complet (échocardiographie, coronarographie si nécessaire)',
@@ -54,12 +54,12 @@ Cette approche est notamment utilisée pour certains pontages coronariens dits �
 Lorsqu'elle est indiquée, cette technique peut permettre une récupération plus rapide et des suites opératoires simplifiées. Le choix entre chirurgie à cœur fermé et chirurgie sous CEC est toujours discuté au cas par cas par l'équipe médico-chirurgicale, en fonction de la pathologie et du profil de chaque patient.
 
 À la Clinique Pasteur Tunis, l'équipe de chirurgie cardiovasculaire maîtrise l'ensemble de ces techniques et sélectionne pour chaque patient l'approche la plus adaptée, avec une surveillance post-opératoire assurée dans une unité de réanimation spécialisée.`,
-    image: '/images/surgery-blue-1.webp',
+    image: '/images/fiches/cardiovasc-chirurgie-cardiaque-coeur-ferme.webp',
     indications: [
-      'Pontage coronarien à cœur battant chez certains patients',
-      'Interventions sur les gros vaisseaux proches du cœur',
-      'Certaines corrections de malformations congénitales',
-      'Patients pour lesquels la circulation extra-corporelle est déconseillée',
+      { label: 'Pontage coronarien à cœur battant chez certains patients', explication: `Chez certains patients, les artères du cœur peuvent être pontées sans arrêter le cœur, ce qui simplifie souvent les suites de l'opération.` },
+      { label: 'Interventions sur les gros vaisseaux proches du cœur', explication: `Certains vaisseaux situés autour du cœur peuvent être opérés sans avoir à ouvrir les cavités cardiaques.` },
+      { label: 'Certaines corrections de malformations congénitales', explication: `Quelques malformations présentes depuis la naissance se corrigent sans arrêter le cœur ni recourir à la machine cœur-poumon.` },
+      { label: 'Patients pour lesquels la circulation extra-corporelle est déconseillée', explication: `Quand l'état de santé rend la machine cœur-poumon risquée, opérer à cœur battant offre une alternative plus douce.` },
     ],
     preparation: [
       'Bilan cardiologique complet avec imagerie',
@@ -95,12 +95,12 @@ Cette approche présente plusieurs avantages pour les patients éligibles : doul
 Toutes les pathologies ne se prêtent pas à cette technique : l'équipe chirurgicale évalue soigneusement chaque dossier afin de déterminer si une approche mini-invasive est possible et sûre, ou si une chirurgie conventionnelle reste préférable.
 
 À la Clinique Pasteur Tunis, la chirurgie cardiaque mini-invasive est pratiquée par une équipe expérimentée, dans des blocs opératoires équipés des dernières technologies, avec un suivi post-opératoire personnalisé en unité spécialisée.`,
-    image: '/images/surgery-blue-2.webp',
+    image: '/images/fiches/cardiovasc-chirurgie-cardiaque-mini-invasive.webp',
     indications: [
-      'Certaines chirurgies de la valve mitrale',
-      'Certaines chirurgies de la valve aortique',
-      'Fermeture de certaines communications intracardiaques',
-      'Patients souhaitant une récupération rapide, lorsque l\'anatomie le permet',
+      { label: 'Certaines chirurgies de la valve mitrale', explication: `La valve mitrale peut souvent être opérée par une petite incision entre les côtes, avec des douleurs réduites et une cicatrice discrète.` },
+      { label: 'Certaines chirurgies de la valve aortique', explication: `Quand l'anatomie s'y prête, la valve aortique est remplacée par un abord limité, sans ouvrir entièrement le thorax.` },
+      { label: 'Fermeture de certaines communications intracardiaques', explication: `Un petit orifice anormal entre les cavités du cœur peut parfois être fermé par cette voie peu invasive.` },
+      { label: 'Patients souhaitant une récupération rapide, lorsque l\'anatomie le permet', explication: `Cette approche s'adresse aux patients qui veulent reprendre plus vite leurs activités, après vérification que leur situation le permet en toute sécurité.` },
     ],
     preparation: [
       'Bilan d\'imagerie approfondi pour vérifier la faisabilité de l\'abord mini-invasif',
@@ -135,13 +135,13 @@ Cette technique permet de dilater des artères rétrécies à l'aide de ballonne
 Les avantages pour le patient sont significatifs : anesthésie souvent plus légère, absence de grande cicatrice, hospitalisation courte et récupération rapide. La chirurgie endovasculaire s'adresse particulièrement aux patients pour lesquels une chirurgie ouverte présenterait des contraintes importantes.
 
 À la Clinique Pasteur Tunis, ces interventions sont réalisées dans une salle de cathétérisme de dernière génération, par une équipe maîtrisant à la fois les techniques endovasculaires et la chirurgie vasculaire conventionnelle, ce qui garantit une prise en charge complète et adaptée à chaque situation.`,
-    image: '/images/surgery-modern.webp',
+    image: '/images/fiches/cardiovasc-chirurgie-endovasculaire.webp',
     indications: [
-      'Anévrisme de l\'aorte abdominale ou thoracique éligible à une endoprothèse',
-      'Rétrécissements des artères des membres inférieurs (artériopathie)',
-      'Sténoses des artères rénales ou digestives',
-      'Certaines lésions des artères carotides',
-      'Patients à risque élevé pour une chirurgie ouverte',
+      { label: 'Anévrisme de l\'aorte abdominale ou thoracique éligible à une endoprothèse', explication: `Quand la grande artère du corps se dilate, une prothèse interne peut être déployée par une simple ponction pour la protéger, sans grande incision.` },
+      { label: 'Rétrécissements des artères des membres inférieurs (artériopathie)', explication: `Quand les artères des jambes se bouchent et provoquent des douleurs à la marche, un ballonnet ou un stent rétablit la circulation.` },
+      { label: 'Sténoses des artères rénales ou digestives', explication: `Les artères qui nourrissent les reins ou l'intestin peuvent être élargies de l'intérieur pour retrouver un bon débit sanguin.` },
+      { label: 'Certaines lésions des artères carotides', explication: `Certains rétrécissements des artères du cou, qui alimentent le cerveau, peuvent être traités par voie interne.` },
+      { label: 'Patients à risque élevé pour une chirurgie ouverte', explication: `Quand une opération classique serait trop éprouvante, cette technique douce offre un traitement efficace avec une récupération rapide.` },
     ],
     preparation: [
       'Bilan d\'imagerie vasculaire (angioscanner) pour planifier l\'intervention',
@@ -178,13 +178,13 @@ Pour réaliser ces ponts, le chirurgien utilise des vaisseaux prélevés sur le 
 Le pontage est indiqué lorsque les lésions coronaires sont trop nombreuses, trop diffuses ou mal situées pour être traitées par angioplastie. Il permet de soulager durablement les douleurs d'angine de poitrine, d'améliorer la qualité de vie et de protéger le cœur.
 
 À la Clinique Pasteur Tunis, le pontage coronarien est réalisé par une équipe chirurgicale de grande expérience, sous circulation extra-corporelle ou à cœur battant selon les cas. La surveillance post-opératoire est assurée dans une unité de réanimation entièrement dédiée à la chirurgie cardiaque.`,
-    image: '/images/surgery-blue-3.webp',
+    image: '/images/fiches/cardiovasc-pontage-coronarien.webp',
     indications: [
-      'Maladie coronaire touchant plusieurs artères',
-      'Rétrécissement du tronc commun de l\'artère coronaire gauche',
-      'Lésions coronaires non accessibles à l\'angioplastie',
-      'Angine de poitrine persistante malgré un traitement médical bien conduit',
-      'Certaines situations associées à un diabète ou à une fonction cardiaque altérée',
+      { label: 'Maladie coronaire touchant plusieurs artères', explication: `Quand plusieurs artères du cœur sont rétrécies à la fois, le pontage permet de rétablir l'irrigation de l'ensemble du muscle cardiaque.` },
+      { label: 'Rétrécissement du tronc commun de l\'artère coronaire gauche', explication: `Cette artère alimente une grande partie du cœur : quand elle se rétrécit, le pontage est souvent la solution la plus sûre et la plus durable.` },
+      { label: 'Lésions coronaires non accessibles à l\'angioplastie', explication: `Quand les rétrécissements sont trop longs ou mal placés pour être dilatés par ballonnet, le chirurgien crée un pont qui contourne la zone malade.` },
+      { label: 'Angine de poitrine persistante malgré un traitement médical bien conduit', explication: `Si les douleurs dans la poitrine persistent malgré les médicaments, le pontage soulage durablement en redonnant du sang au cœur.` },
+      { label: 'Certaines situations associées à un diabète ou à une fonction cardiaque altérée', explication: `Chez certains patients diabétiques ou dont le cœur est affaibli, le pontage offre de meilleurs résultats à long terme.` },
     ],
     preparation: [
       'Coronarographie récente précisant les lésions à traiter',
@@ -220,13 +220,13 @@ Deux grands types de prothèses existent : les prothèses mécaniques, très dur
 Les valves les plus souvent remplacées sont la valve aortique et la valve mitrale. L'intervention est réalisée sous circulation extra-corporelle, par voie classique ou mini-invasive selon les cas.
 
 À la Clinique Pasteur Tunis, le remplacement valvulaire est pratiqué par une équipe chirurgicale expérimentée, avec un contrôle échocardiographique per-opératoire systématique et une surveillance post-opératoire en réanimation cardiaque dédiée.`,
-    image: '/images/surgery-blue-4.webp',
+    image: '/images/fiches/cardiovasc-remplacement-valvulaire.webp',
     indications: [
-      'Rétrécissement aortique serré et symptomatique',
-      'Insuffisance aortique importante',
-      'Insuffisance ou rétrécissement mitral sévère non réparable',
-      'Atteinte valvulaire liée à une infection (endocardite) après stabilisation',
-      'Dégénérescence d\'une prothèse valvulaire posée antérieurement',
+      { label: 'Rétrécissement aortique serré et symptomatique', explication: `Quand la valve aortique s'ouvre mal, le cœur s'épuise et l'essoufflement s'installe : la remplacer redonne au sang un passage normal.` },
+      { label: 'Insuffisance aortique importante', explication: `Quand la valve aortique ne se ferme plus correctement, une partie du sang reflue vers le cœur ; une prothèse rétablit un fonctionnement normal.` },
+      { label: 'Insuffisance ou rétrécissement mitral sévère non réparable', explication: `Quand la valve mitrale est trop abîmée pour être réparée, son remplacement soulage le cœur et fait régresser les symptômes.` },
+      { label: 'Atteinte valvulaire liée à une infection (endocardite) après stabilisation', explication: `Une infection peut endommager une valve cardiaque ; une fois l'infection contrôlée, la valve abîmée est remplacée.` },
+      { label: 'Dégénérescence d\'une prothèse valvulaire posée antérieurement', explication: `Une prothèse posée il y a longtemps peut s'user avec le temps ; une nouvelle intervention permet de la remplacer.` },
     ],
     preparation: [
       'Échocardiographie détaillée et coronarographie de bilan',
@@ -262,12 +262,12 @@ Cette chirurgie conservatrice s'adresse principalement à la valve mitrale, dont
 Les avantages de la réparation sont importants : conservation de la valve naturelle, absence de traitement anticoagulant à vie dans la plupart des cas, meilleure préservation de la fonction cardiaque et excellente durabilité du résultat lorsque la réparation est réalisée par une équipe expérimentée.
 
 À la Clinique Pasteur Tunis, chaque dossier valvulaire est étudié en détail afin de privilégier la réparation chaque fois qu'elle est réalisable. Le résultat est systématiquement contrôlé par échocardiographie pendant l'intervention, garantissant la qualité de la plastie avant la fin de l'opération.`,
-    image: '/images/surgery-blue-5.webp',
+    image: '/images/fiches/cardiovasc-reparation-valvulaire.webp',
     indications: [
-      'Insuffisance mitrale par prolapsus ou dégénérescence des feuillets',
-      'Fuite de la valve tricuspide associée à une autre chirurgie cardiaque',
-      'Certaines fuites valvulaires d\'origine congénitale',
-      'Patients jeunes souhaitant éviter une prothèse et l\'anticoagulation à vie',
+      { label: 'Insuffisance mitrale par prolapsus ou dégénérescence des feuillets', explication: `Quand la valve mitrale fuit parce que ses feuillets se déforment, une plastie répare la valve naturelle du patient plutôt que de la remplacer.` },
+      { label: 'Fuite de la valve tricuspide associée à une autre chirurgie cardiaque', explication: `Si une fuite de la valve tricuspide est constatée lors d'une opération du cœur, elle peut être corrigée dans le même temps opératoire.` },
+      { label: 'Certaines fuites valvulaires d\'origine congénitale', explication: `Certaines valves malformées depuis la naissance peuvent être remodelées pour fonctionner normalement, sans prothèse.` },
+      { label: 'Patients jeunes souhaitant éviter une prothèse et l\'anticoagulation à vie', explication: `Conserver sa propre valve évite le plus souvent de prendre un traitement fluidifiant du sang toute la vie, un avantage précieux chez les patients jeunes.` },
     ],
     preparation: [
       'Échocardiographie transthoracique et transœsophagienne pour analyser la valve',
@@ -302,13 +302,13 @@ La chirurgie de l'aorte consiste à remplacer le segment malade par une prothès
 Ces interventions font partie des plus spécialisées de la chirurgie cardiovasculaire et exigent une équipe entraînée, un plateau technique complet et une réanimation performante. Les techniques modernes, notamment hybrides, associant chirurgie ouverte et endovasculaire, permettent d'adapter le traitement à chaque situation.
 
 La Clinique Pasteur Tunis dispose de l'ensemble des moyens nécessaires à cette chirurgie de haut niveau : bloc opératoire dédié avec circulation extra-corporelle, salle de cathétérisme pour les procédures endovasculaires et réanimation spécialisée pour la surveillance post-opératoire.`,
-    image: '/images/cardiovasculaire.webp',
+    image: '/images/fiches/cardiovasc-chirurgie-aorte.webp',
     indications: [
-      'Anévrisme de l\'aorte ascendante, de la crosse ou de l\'aorte descendante',
-      'Anévrisme de l\'aorte abdominale ayant atteint le seuil de traitement',
-      'Dissection aortique',
-      'Maladies du tissu élastique fragilisant l\'aorte',
-      'Surveillance d\'une dilatation aortique évolutive',
+      { label: 'Anévrisme de l\'aorte ascendante, de la crosse ou de l\'aorte descendante', explication: `Quand un segment de l'aorte situé dans le thorax se dilate, il est remplacé ou renforcé avant que la paroi fragilisée ne se complique.` },
+      { label: 'Anévrisme de l\'aorte abdominale ayant atteint le seuil de traitement', explication: `Quand la dilatation de l'aorte dans l'abdomen devient trop importante, un traitement préventif s'impose pour écarter le risque de rupture.` },
+      { label: 'Dissection aortique', explication: `Une déchirure de la paroi interne de l'aorte est une urgence : la chirurgie répare le segment abîmé et protège les organes.` },
+      { label: 'Maladies du tissu élastique fragilisant l\'aorte', explication: `Certaines maladies rendent la paroi de l'aorte plus fragile ; une chirurgie préventive est parfois proposée avant toute complication.` },
+      { label: 'Surveillance d\'une dilatation aortique évolutive', explication: `Quand une dilatation de l'aorte grossit au fil des contrôles, l'équipe choisit le meilleur moment pour intervenir, sans attendre la complication.` },
     ],
     preparation: [
       'Angioscanner de l\'ensemble de l\'aorte pour planifier l\'intervention',
@@ -344,13 +344,13 @@ Deux grandes approches existent. La chirurgie ouverte consiste à remplacer le s
 Le choix entre ces deux techniques dépend de la localisation de l'anévrisme (aorte abdominale, aorte thoracique, artères périphériques), de sa forme, de l'âge et de l'état général du patient. Cette décision est prise de manière collégiale, après un bilan d'imagerie complet.
 
 À la Clinique Pasteur Tunis, l'équipe cardiovasculaire maîtrise les deux approches, ce qui permet de proposer à chaque patient la solution la plus adaptée à sa situation, avec un suivi organisé au long cours.`,
-    image: '/images/surgery-modern.webp',
+    image: '/images/fiches/cardiovasc-traitement-anevrismes.webp',
     indications: [
-      'Anévrisme de l\'aorte abdominale ayant atteint une taille justifiant le traitement',
-      'Anévrisme de l\'aorte thoracique évolutif',
-      'Anévrismes des artères périphériques (poplitée, fémorale)',
-      'Anévrisme symptomatique ou de croissance rapide',
-      'Découverte fortuite nécessitant une évaluation spécialisée',
+      { label: 'Anévrisme de l\'aorte abdominale ayant atteint une taille justifiant le traitement', explication: `Passé un certain volume, une dilatation de l'aorte doit être traitée pour prévenir tout risque de rupture.` },
+      { label: 'Anévrisme de l\'aorte thoracique évolutif', explication: `Quand la dilatation située dans le thorax continue de grossir, un traitement programmé permet d'agir avant toute complication.` },
+      { label: 'Anévrismes des artères périphériques (poplitée, fémorale)', explication: `Les artères de la jambe peuvent aussi se dilater ; les traiter évite la formation de caillots qui gêneraient la circulation.` },
+      { label: 'Anévrisme symptomatique ou de croissance rapide', explication: `Un anévrisme qui devient douloureux ou qui grossit vite doit être traité sans tarder.` },
+      { label: 'Découverte fortuite nécessitant une évaluation spécialisée', explication: `Un anévrisme découvert par hasard lors d'un examen d'imagerie mérite un avis spécialisé pour décider entre simple surveillance et traitement.` },
     ],
     preparation: [
       'Angioscanner pour mesurer précisément l\'anévrisme et planifier le geste',
@@ -385,13 +385,13 @@ La prise en charge de ces pathologies exige une expertise particulière : le dia
 L'intervention est généralement réalisée sous circulation extra-corporelle, avec des techniques de protection du cœur spécifiquement adaptées. Le suivi au long cours par un cardiologue est un élément essentiel de la prise en charge.
 
 La Clinique Pasteur Tunis prend en charge les cardiopathies congénitales de l'enfant et de l'adulte, grâce à une équipe chirurgicale expérimentée dans ce domaine exigeant et à une réanimation post-chirurgie cardiaque parfaitement équipée pour accueillir ces patients.`,
-    image: '/images/pediatrique.webp',
+    image: '/images/fiches/cardiovasc-chirurgie-cardiopathies-congenitales.webp',
     indications: [
-      'Communication interauriculaire (CIA) ou interventriculaire (CIV)',
-      'Persistance du canal artériel',
-      'Tétralogie de Fallot et malformations complexes',
-      'Anomalies congénitales des valves cardiaques',
-      'Cardiopathies congénitales découvertes à l\'âge adulte',
+      { label: 'Communication interauriculaire (CIA) ou interventriculaire (CIV)', explication: `Un orifice anormal entre les cavités du cœur le fatigue à la longue ; sa fermeture chirurgicale rétablit une circulation normale.` },
+      { label: 'Persistance du canal artériel', explication: `Un petit canal qui devait se fermer après la naissance reste parfois ouvert ; l'intervention le referme et soulage le cœur.` },
+      { label: 'Tétralogie de Fallot et malformations complexes', explication: `Les malformations associant plusieurs anomalies du cœur peuvent être corrigées par une chirurgie spécialisée, avec d'excellents résultats.` },
+      { label: 'Anomalies congénitales des valves cardiaques', explication: `Une valve malformée depuis la naissance peut être réparée ou remplacée pour permettre au cœur de fonctionner normalement.` },
+      { label: 'Cardiopathies congénitales découvertes à l\'âge adulte', explication: `Certaines malformations passent inaperçues pendant des années ; elles peuvent être corrigées même à l'âge adulte.` },
     ],
     preparation: [
       'Bilan cardiologique complet avec échocardiographie détaillée',
@@ -427,13 +427,13 @@ L'implantation est une intervention courte et bien codifiée, réalisée le plus
 Ces dispositifs modernes sont discrets, fiables et dotés d'une grande autonomie. Ils font l'objet de contrôles réguliers en consultation, permettant de vérifier leur fonctionnement et d'ajuster leurs réglages sans nouvelle intervention.
 
 À la Clinique Pasteur Tunis, les implantations de pacemakers et de défibrillateurs sont réalisées par une équipe spécialisée en rythmologie, dans des conditions d'asepsie rigoureuses, avec un programme de suivi personnalisé après l'implantation.`,
-    image: '/images/cardio-ecg.webp',
+    image: '/images/fiches/cardiovasc-pose-pacemaker-defibrillateur.webp',
     indications: [
-      'Ralentissement important du rythme cardiaque (bradycardie symptomatique)',
-      'Blocs de la conduction électrique du cœur',
-      'Syncopes d\'origine cardiaque documentées',
-      'Prévention des troubles du rythme graves chez les patients à risque',
-      'Insuffisance cardiaque nécessitant une protection rythmique',
+      { label: 'Ralentissement important du rythme cardiaque (bradycardie symptomatique)', explication: `Quand le cœur bat trop lentement et provoque fatigue ou malaises, le pacemaker le stimule pour maintenir un rythme adapté.` },
+      { label: 'Blocs de la conduction électrique du cœur', explication: `Quand le courant électrique du cœur circule mal entre ses cavités, le stimulateur prend le relais pour assurer des battements réguliers.` },
+      { label: 'Syncopes d\'origine cardiaque documentées', explication: `Quand des pertes de connaissance sont liées à un rythme cardiaque trop lent, le pacemaker les prévient efficacement.` },
+      { label: 'Prévention des troubles du rythme graves chez les patients à risque', explication: `Chez les patients exposés à des emballements dangereux du cœur, le défibrillateur surveille en permanence et intervient automatiquement si besoin.` },
+      { label: 'Insuffisance cardiaque nécessitant une protection rythmique', explication: `Quand le cœur est affaibli, certains dispositifs l'aident à battre de façon plus harmonieuse et le protègent des troubles du rythme graves.` },
     ],
     preparation: [
       'Bilan cardiologique avec ECG et échocardiographie',

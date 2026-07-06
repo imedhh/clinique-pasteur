@@ -11,13 +11,13 @@ L'intervention est réalisée par la bouche, sous anesthésie générale, sans a
 Les bénéfices sont souvent rapidement perceptibles : sommeil plus paisible, respiration plus libre, diminution nette des épisodes infectieux, meilleur appétit et regain d'énergie chez l'enfant.
 
 À la Clinique Pasteur Tunis, cette intervention est réalisée par des chirurgiens ORL expérimentés en prise en charge pédiatrique, dans un environnement pensé pour rassurer l'enfant et ses parents, le plus souvent dans le cadre d'une hospitalisation courte.`,
-    image: '/images/pediatrique.webp',
+    image: '/images/fiches/orl-amygdalectomie-adenoidectomie.webp',
     indications: [
-      'Angines à répétition malgré un traitement bien conduit',
-      'Ronflements avec pauses respiratoires pendant le sommeil (apnées)',
-      'Obstruction nasale chronique liée aux végétations',
-      'Otites séreuses répétées associées aux végétations',
-      'Amygdales très volumineuses gênant la respiration ou la déglutition',
+      { label: 'Angines à répétition malgré un traitement bien conduit', explication: `Quand les angines reviennent sans cesse malgré des traitements bien suivis, retirer les amygdales met fin à ce cercle d'infections.` },
+      { label: 'Ronflements avec pauses respiratoires pendant le sommeil (apnées)', explication: `Si l'enfant ronfle fort et semble s'arrêter de respirer la nuit, des amygdales ou végétations trop volumineuses en sont souvent la cause ; leur ablation libère la respiration.` },
+      { label: 'Obstruction nasale chronique liée aux végétations', explication: `Des végétations trop développées obligent l'enfant à respirer par la bouche en permanence ; leur retrait rétablit une respiration nasale normale.` },
+      { label: 'Otites séreuses répétées associées aux végétations', explication: `Les végétations peuvent entretenir la présence de liquide derrière le tympan ; les retirer aide les oreilles à mieux s'aérer.` },
+      { label: 'Amygdales très volumineuses gênant la respiration ou la déglutition', explication: `Quand les amygdales sont si grosses qu'elles gênent pour respirer ou pour avaler, leur ablation apporte un soulagement rapide.` },
     ],
     preparation: [
       'Consultation ORL avec examen complet',
@@ -53,13 +53,13 @@ L'intervention est réalisée par voie endoscopique, entièrement par les narine
 Cette chirurgie fonctionnelle respecte au maximum les structures nasales saines. Elle est suivie de soins locaux simples (lavages de nez) qui contribuent grandement à la qualité du résultat.
 
 À la Clinique Pasteur Tunis, la chirurgie des sinus bénéficie d'un équipement endoscopique haute définition et de l'expertise de chirurgiens ORL rompus aux techniques mini-invasives, pour un confort respiratoire durablement retrouvé.`,
-    image: '/images/endoscopie.webp',
+    image: '/images/fiches/orl-chirurgie-des-sinus.webp',
     indications: [
-      'Sinusite chronique résistant au traitement médical',
-      'Polypose naso-sinusienne gênante',
-      'Sinusites aiguës à répétition',
-      'Sinusite d\'origine dentaire ou fongique',
-      'Mucocèle ou kyste sinusien symptomatique',
+      { label: 'Sinusite chronique résistant au traitement médical', explication: `Quand le nez reste bouché et le visage pesant malgré les lavages et les médicaments, la chirurgie rouvre les sinus pour un soulagement durable.` },
+      { label: 'Polypose naso-sinusienne gênante', explication: `Les polypes sont des excroissances bénignes qui bouchent le nez et font souvent perdre l'odorat ; leur ablation restaure le passage de l'air.` },
+      { label: 'Sinusites aiguës à répétition', explication: `Quand les épisodes de sinusite se succèdent au fil de l'année, ouvrir les sinus obstrués aide à casser ce cycle d'infections.` },
+      { label: 'Sinusite d\'origine dentaire ou fongique', explication: `Certaines sinusites proviennent d'une dent ou d'un champignon logé dans le sinus ; la chirurgie retire la cause et assainit la cavité.` },
+      { label: 'Mucocèle ou kyste sinusien symptomatique', explication: `Une poche de sécrétions ou un kyste peut se développer dans un sinus et provoquer douleurs ou pesanteur ; son ablation par les narines fait disparaître la gêne.` },
     ],
     preparation: [
       'Scanner des sinus récent, indispensable pour guider le chirurgien',
@@ -96,13 +96,13 @@ La septoplastie est l'intervention qui corrige cette déviation. Elle est réali
 Il s'agit d'une chirurgie fonctionnelle dont l'objectif est le confort respiratoire. Elle peut être associée, si nécessaire, à un geste sur les cornets (structures internes du nez) pour optimiser le résultat.
 
 À la Clinique Pasteur Tunis, la septoplastie est pratiquée par des chirurgiens ORL expérimentés, dans le cadre d'une hospitalisation courte, avec un accompagnement attentif durant la convalescence.`,
-    image: '/images/chirurgie.webp',
+    image: '/images/fiches/orl-septoplastie.webp',
     indications: [
-      'Obstruction nasale chronique liée à une déviation de la cloison',
-      'Ronflements favorisés par la mauvaise ventilation nasale',
-      'Sinusites répétées entretenues par la déviation',
-      'Saignements de nez récidivants du côté dévié',
-      'Gêne respiratoire à l\'effort',
+      { label: 'Obstruction nasale chronique liée à une déviation de la cloison', explication: `Quand le nez reste bouché en permanence à cause d'une cloison déviée, la redresser rétablit un passage de l'air normal des deux côtés.` },
+      { label: 'Ronflements favorisés par la mauvaise ventilation nasale', explication: `Un nez qui respire mal favorise les ronflements ; améliorer la ventilation nasale contribue à des nuits plus calmes.` },
+      { label: 'Sinusites répétées entretenues par la déviation', explication: `Une cloison déviée peut empêcher les sinus de bien se drainer et entretenir les infections ; sa correction aide à les prévenir.` },
+      { label: 'Saignements de nez récidivants du côté dévié', explication: `L'air qui circule mal du côté dévié assèche et fragilise la muqueuse ; redresser la cloison réduit ces saignements répétés.` },
+      { label: 'Gêne respiratoire à l\'effort', explication: `Quand le souffle manque par le nez dès que l'on marche vite ou que l'on fait du sport, l'intervention redonne un vrai confort respiratoire à l'effort.` },
     ],
     preparation: [
       'Consultation ORL avec examen endoscopique des fosses nasales',
@@ -138,13 +138,13 @@ L'intervention est réalisée sous microscope opératoire, avec des instruments 
 L'objectif est double : fermer durablement le tympan pour protéger l'oreille moyenne, et améliorer l'audition lorsque la perforation en est responsable.
 
 À la Clinique Pasteur Tunis, la tympanoplastie bénéficie d'un microscope opératoire de haute précision et de l'expertise de chirurgiens ORL spécialisés en chirurgie de l'oreille, pour des résultats fiables et durables.`,
-    image: '/images/surgery-blue-1.webp',
+    image: '/images/fiches/orl-tympanoplastie.webp',
     indications: [
-      'Perforation persistante du tympan',
-      'Otites à répétition favorisées par la perforation',
-      'Baisse d\'audition liée à l\'atteinte du tympan',
-      'Écoulements chroniques de l\'oreille',
-      'Gêne au quotidien (protection obligatoire lors des baignades)',
+      { label: 'Perforation persistante du tympan', explication: `Quand un trou dans le tympan ne se referme pas de lui-même, une greffe permet de le fermer durablement et de protéger l'oreille.` },
+      { label: 'Otites à répétition favorisées par la perforation', explication: `Un tympan ouvert laisse entrer l'eau et les microbes dans l'oreille ; sa réparation met fin aux infections répétées.` },
+      { label: 'Baisse d\'audition liée à l\'atteinte du tympan', explication: `Le tympan participe à la transmission des sons ; sa reconstruction peut améliorer nettement l'audition.` },
+      { label: 'Écoulements chroniques de l\'oreille', explication: `Une oreille qui coule régulièrement traduit souvent un tympan perforé ; la fermeture de la perforation permet d'assécher l'oreille.` },
+      { label: 'Gêne au quotidien (protection obligatoire lors des baignades)', explication: `Devoir protéger son oreille à chaque douche ou baignade est contraignant ; une fois le tympan réparé, ces précautions ne sont plus nécessaires.` },
     ],
     preparation: [
       'Examen ORL avec otoscopie et audiogramme récent',
@@ -180,12 +180,12 @@ La chirurgie de l'otite chronique vise d'abord à assainir l'oreille : retirer l
 L'intervention se déroule sous microscope opératoire, avec des instruments de microchirurgie et, lorsque cela est utile, un monitoring du nerf facial qui sécurise le geste chirurgical. Un suivi régulier est ensuite indispensable, en particulier après chirurgie du cholestéatome.
 
 À la Clinique Pasteur Tunis, cette chirurgie spécialisée est assurée par des chirurgiens ORL expérimentés en otologie, avec un plateau technique complet — microscope opératoire et monitoring du nerf facial — garantissant précision et sécurité.`,
-    image: '/images/surgery-blue-2.webp',
+    image: '/images/fiches/orl-chirurgie-otite-chronique.webp',
     indications: [
-      'Otite chronique avec écoulements répétés malgré les traitements',
-      'Cholestéatome de l\'oreille moyenne',
-      'Baisse d\'audition liée aux lésions de l\'oreille moyenne',
-      'Lésions de l\'os mastoïdien associées à l\'infection chronique',
+      { label: 'Otite chronique avec écoulements répétés malgré les traitements', explication: `Quand l'oreille s'infecte et coule malgré les traitements répétés, la chirurgie assainit l'oreille en profondeur et de façon durable.` },
+      { label: 'Cholestéatome de l\'oreille moyenne', explication: `Le cholestéatome est une accumulation de peau dans l'oreille qui peut abîmer les structures voisines ; son retrait chirurgical est indispensable.` },
+      { label: 'Baisse d\'audition liée aux lésions de l\'oreille moyenne', explication: `Quand l'infection chronique a abîmé le tympan ou les osselets, leur reconstruction vise à préserver ou améliorer l'audition.` },
+      { label: 'Lésions de l\'os mastoïdien associées à l\'infection chronique', explication: `L'infection peut s'étendre à l'os situé derrière l'oreille ; son traitement chirurgical élimine ce foyer et protège l'oreille.` },
     ],
     preparation: [
       'Bilan ORL complet avec audiogramme',
@@ -223,12 +223,12 @@ La chirurgie consiste à retirer la partie malade de la glande, voire la glande 
 Les incisions sont dessinées dans les plis naturels de la peau pour un résultat esthétique discret. Toute pièce opératoire est analysée au microscope afin de confirmer la nature exacte de la lésion.
 
 À la Clinique Pasteur Tunis, la chirurgie des glandes salivaires est assurée par des chirurgiens ORL expérimentés en chirurgie cervicale, avec monitoring du nerf facial et instruments de microchirurgie, pour un geste précis et sûr.`,
-    image: '/images/chirurgie2.webp',
+    image: '/images/fiches/orl-chirurgie-glandes-salivaires.webp',
     indications: [
-      'Tumeur de la parotide ou de la glande sous-maxillaire',
-      'Calculs salivaires récidivants avec gonflements douloureux',
-      'Infections répétées d\'une glande salivaire',
-      'Augmentation de volume persistante d\'une glande nécessitant une analyse',
+      { label: 'Tumeur de la parotide ou de la glande sous-maxillaire', explication: `Une boule apparue devant l'oreille ou sous la mâchoire, le plus souvent bénigne, doit être retirée et analysée pour en confirmer la nature.` },
+      { label: 'Calculs salivaires récidivants avec gonflements douloureux', explication: `Des calculs peuvent bloquer l'écoulement de la salive et faire gonfler douloureusement la glande, surtout au moment des repas ; la chirurgie règle le problème à la source.` },
+      { label: 'Infections répétées d\'une glande salivaire', explication: `Quand une glande s'infecte régulièrement malgré les traitements, son ablation met fin à ces épisodes douloureux.` },
+      { label: 'Augmentation de volume persistante d\'une glande nécessitant une analyse', explication: `Une glande qui reste gonflée sans explication doit être examinée ; l'intervention permet une analyse complète et un diagnostic précis.` },
     ],
     preparation: [
       'Imagerie de la glande (échographie, IRM selon les cas)',
@@ -264,12 +264,12 @@ L'intervention est réalisée par une incision horizontale discrète à la base 
 Après une thyroïdectomie totale, un traitement hormonal substitutif quotidien remplace simplement la fonction de la glande : il permet une vie parfaitement normale, avec un suivi biologique régulier.
 
 À la Clinique Pasteur Tunis, la thyroïdectomie est réalisée par des chirurgiens expérimentés en chirurgie cervicale, avec monitoring nerveux, dans le cadre d'une prise en charge coordonnée avec les endocrinologues de la clinique.`,
-    image: '/images/surgery-blue-3.webp',
+    image: '/images/fiches/orl-thyroidectomie.webp',
     indications: [
-      'Nodule thyroïdien suspect ou dont la nature doit être précisée',
-      'Goitre volumineux ou compressif (gêne à la déglutition, à la respiration)',
-      'Hyperthyroïdie résistant au traitement médical',
-      'Cancer de la thyroïde confirmé ou fortement suspecté',
+      { label: 'Nodule thyroïdien suspect ou dont la nature doit être précisée', explication: `Quand un nodule de la thyroïde paraît suspect ou reste indéterminé malgré le bilan, son ablation permet une analyse complète et fiable.` },
+      { label: 'Goitre volumineux ou compressif (gêne à la déglutition, à la respiration)', explication: `Une thyroïde trop volumineuse peut comprimer la gorge et gêner pour avaler ou pour respirer ; son ablation supprime cette compression.` },
+      { label: 'Hyperthyroïdie résistant au traitement médical', explication: `Quand la glande produit trop d'hormones malgré les médicaments, la chirurgie offre une solution définitive à cet emballement de la thyroïde.` },
+      { label: 'Cancer de la thyroïde confirmé ou fortement suspecté', explication: `L'ablation de la glande est le traitement de référence ; prise en charge tôt, cette maladie offre de très bonnes perspectives de guérison dans la plupart des formes.` },
     ],
     preparation: [
       'Bilan hormonal thyroïdien et échographie cervicale récente',
@@ -307,12 +307,12 @@ La chirurgie des cordes vocales est une microchirurgie réalisée par les voies 
 Le repos vocal après l'intervention et, souvent, une rééducation orthophonique complètent le geste chirurgical pour un résultat optimal et durable.
 
 À la Clinique Pasteur Tunis, cette microchirurgie bénéficie d'un microscope opératoire et d'instruments de microchirurgie dédiés, avec des chirurgiens ORL attentifs à la restauration d'une voix naturelle.`,
-    image: '/images/surgery-blue-4.webp',
+    image: '/images/fiches/orl-chirurgie-cordes-vocales.webp',
     indications: [
-      'Enrouement persistant lié à un nodule, un polype ou un kyste',
-      'Œdème chronique des cordes vocales',
-      'Lésion des cordes vocales nécessitant un prélèvement pour analyse',
-      'Fatigue vocale invalidante chez les professionnels de la voix',
+      { label: 'Enrouement persistant lié à un nodule, un polype ou un kyste', explication: `Quand la voix reste enrouée à cause d'une petite lésion bénigne, son retrait en microchirurgie permet de retrouver une voix claire.` },
+      { label: 'Œdème chronique des cordes vocales', explication: `Un gonflement durable des cordes vocales, souvent lié au tabac, rend la voix grave et voilée ; son traitement redonne du timbre à la voix.` },
+      { label: 'Lésion des cordes vocales nécessitant un prélèvement pour analyse', explication: `Certaines lésions doivent être analysées au microscope pour en connaître la nature exacte ; le prélèvement est réalisé avec précision, sans aucune incision.` },
+      { label: 'Fatigue vocale invalidante chez les professionnels de la voix', explication: `Enseignants, chanteurs ou orateurs peuvent voir leur voix s'épuiser à cause d'une lésion ; la corriger leur permet de retrouver leur outil de travail.` },
     ],
     preparation: [
       'Examen ORL avec fibroscopie ou stroboscopie des cordes vocales',
@@ -348,13 +348,13 @@ La chirurgie des tumeurs cervicales a un double objectif : retirer la lésion en
 Le cou concentre des structures nobles — nerfs, vaisseaux — que le chirurgien identifie et préserve avec soin. Les incisions sont placées dans les plis naturels de la peau pour un résultat esthétique le plus discret possible.
 
 À la Clinique Pasteur Tunis, cette chirurgie est réalisée par des chirurgiens ORL disposant d'une solide expertise en chirurgie cervicale, avec un environnement complet — bloc opératoire moderne, réanimation, imagerie — pour une prise en charge sécurisée.`,
-    image: '/images/surgery-blue-5.webp',
+    image: '/images/fiches/orl-chirurgie-tumeurs-cervicales.webp',
     indications: [
-      'Masse cervicale persistante dont la nature doit être précisée',
-      'Kyste congénital du cou (kyste du tractus thyréoglosse, kyste branchial)',
-      'Ganglion cervical augmenté de volume nécessitant une analyse',
-      'Tumeur cervicale bénigne gênante ou évolutive',
-      'Curage ganglionnaire dans le cadre du traitement d\'un cancer ORL',
+      { label: 'Masse cervicale persistante dont la nature doit être précisée', explication: `Toute boule du cou qui persiste mérite un bilan ; son ablation permet de l'analyser précisément et d'adapter la suite de la prise en charge si nécessaire.` },
+      { label: 'Kyste congénital du cou (kyste du tractus thyréoglosse, kyste branchial)', explication: `Ces kystes présents depuis la naissance peuvent gonfler ou s'infecter ; leur retrait complet évite les récidives.` },
+      { label: 'Ganglion cervical augmenté de volume nécessitant une analyse', explication: `Un ganglion qui reste gros doit parfois être retiré pour être analysé au microscope, seule façon d'en connaître la cause avec certitude.` },
+      { label: 'Tumeur cervicale bénigne gênante ou évolutive', explication: `Même bénigne, une masse du cou qui grossit ou qui gêne peut être retirée par une incision discrète cachée dans un pli de la peau.` },
+      { label: 'Curage ganglionnaire dans le cadre du traitement d\'un cancer ORL', explication: `Dans le traitement de certains cancers, le retrait des ganglions du cou fait partie du plan de soins, toujours décidé en concertation avec l'équipe pluridisciplinaire.` },
     ],
     preparation: [
       'Bilan d\'imagerie cervicale (échographie, scanner ou IRM)',
@@ -390,12 +390,12 @@ Lorsque le liquide persiste malgré les traitements, la pose d'aérateurs transt
 Le geste est très court, réalisé sous une brève anesthésie générale chez l'enfant, et l'amélioration de l'audition est le plus souvent immédiate. Les aérateurs s'éliminent généralement d'eux-mêmes après plusieurs mois, une fois leur rôle accompli.
 
 À la Clinique Pasteur Tunis, la pose d'aérateurs est réalisée par des chirurgiens ORL habitués aux tout-petits, dans le cadre rassurant de l'hospitalisation de jour : l'enfant rentre à la maison le jour même.`,
-    image: '/images/pediatrique.webp',
+    image: '/images/fiches/orl-aerateurs-transtympaniques.webp',
     indications: [
-      'Otite séro-muqueuse persistante avec baisse d\'audition',
-      'Otites aiguës à répétition',
-      'Retentissement sur le langage ou les apprentissages chez l\'enfant',
-      'Rétraction du tympan liée à une mauvaise aération de l\'oreille',
+      { label: 'Otite séro-muqueuse persistante avec baisse d\'audition', explication: `Quand du liquide stagne derrière le tympan et que l'enfant entend moins bien, les aérateurs l'évacuent et restaurent l'audition, le plus souvent immédiatement.` },
+      { label: 'Otites aiguës à répétition', explication: `Si les otites se répètent malgré les traitements, les aérateurs permettent à l'oreille de mieux s'aérer et espacent nettement les infections.` },
+      { label: 'Retentissement sur le langage ou les apprentissages chez l\'enfant', explication: `Un enfant qui entend mal apprend moins bien à parler et se concentre difficilement en classe ; rétablir l'audition l'aide à rattraper rapidement.` },
+      { label: 'Rétraction du tympan liée à une mauvaise aération de l\'oreille', explication: `Quand le tympan se creuse par manque d'air dans l'oreille moyenne, l'aérateur rétablit la ventilation et évite que la situation ne s'aggrave.` },
     ],
     preparation: [
       'Examen ORL avec tympanométrie et audiogramme adapté à l\'âge',
@@ -430,13 +430,13 @@ Grâce à des optiques fines et des instruments dédiés, le chirurgien visualis
 L'endoscopie permet également d'atteindre des zones profondes autrefois difficiles d'accès, en respectant les structures voisines, notamment l'orbite et la base du crâne, dont l'anatomie est étudiée en détail sur le scanner pré-opératoire.
 
 À la Clinique Pasteur Tunis, la chirurgie endoscopique naso-sinusienne s'appuie sur un endoscope ORL haute définition et l'expertise de chirurgiens rompus aux techniques mini-invasives, pour des interventions précises, sûres et confortables.`,
-    image: '/images/endoscopie.webp',
+    image: '/images/fiches/orl-chirurgie-endoscopique-naso-sinusienne.webp',
     indications: [
-      'Sinusite chronique et polypose naso-sinusienne',
-      'Obstruction nasale d\'origine sinusienne',
-      'Certaines tumeurs bénignes du nez et des sinus',
-      'Mucocèles et kystes sinusiens',
-      'Dacryocystite chronique (obstruction des voies lacrymales) en collaboration avec les spécialistes concernés',
+      { label: 'Sinusite chronique et polypose naso-sinusienne', explication: `Quand les sinus restent bouchés ou envahis de polypes malgré les traitements, l'endoscopie les rouvre par les narines, sans aucune incision sur le visage.` },
+      { label: 'Obstruction nasale d\'origine sinusienne', explication: `Si le nez bouché vient d'un problème de sinus, l'approche endoscopique traite la cause pour redonner une respiration libre.` },
+      { label: 'Certaines tumeurs bénignes du nez et des sinus', explication: `Des tumeurs bénignes peuvent se développer dans les fosses nasales ; beaucoup se retirent aujourd'hui par les voies naturelles, sous contrôle vidéo.` },
+      { label: 'Mucocèles et kystes sinusiens', explication: `Ces poches de sécrétions qui se développent dans un sinus créent pesanteur et douleurs ; leur ouverture par voie endoscopique fait disparaître la gêne.` },
+      { label: 'Dacryocystite chronique (obstruction des voies lacrymales) en collaboration avec les spécialistes concernés', explication: `Quand le canal des larmes se bouche et que l'œil coule en permanence, un geste endoscopique réalisé par le nez peut rétablir l'écoulement, en lien avec les spécialistes concernés.` },
     ],
     preparation: [
       'Scanner des sinus récent, indispensable à la planification du geste',

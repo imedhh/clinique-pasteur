@@ -9,13 +9,13 @@ export const prestationsPediatrique = [
 L'intervention consiste à refermer le canal resté perméable par une courte incision discrète au niveau du pli de l'aine, ou par cœlioscopie dans certains cas. C'est l'une des interventions les plus fréquentes en chirurgie pédiatrique, avec des suites généralement très simples.
 
 À la Clinique Pasteur Tunis, la prise en charge est assurée par des chirurgiens pédiatres et des anesthésistes habitués aux enfants, dans un environnement rassurant où la présence des parents est facilitée avant et après l'intervention. La sortie a lieu le plus souvent le jour même.`,
-    image: '/images/pediatrique.webp',
+    image: '/images/fiches/pediat-hernie-inguinale-enfant.webp',
     indications: [
-      'Tuméfaction inguinale intermittente constatée chez le nourrisson ou l\'enfant',
-      'Hernie inguinale confirmée par l\'examen clinique du chirurgien pédiatre',
-      'Prévention du risque d\'étranglement herniaire',
-      'Hernie douloureuse ou augmentant de volume',
-      'Hydrocèle communicante persistante',
+      { label: 'Tuméfaction inguinale intermittente constatée chez le nourrisson ou l\'enfant', explication: `Une petite boule qui apparaît au pli de l'aine, surtout quand l'enfant pleure ou fait un effort, est le signe le plus courant de la hernie.` },
+      { label: 'Hernie inguinale confirmée par l\'examen clinique du chirurgien pédiatre', explication: `Chez l'enfant, la hernie ne disparaît pas toute seule : une fois confirmée par le chirurgien, une petite intervention permet de la corriger définitivement.` },
+      { label: 'Prévention du risque d\'étranglement herniaire', explication: `Opérer la hernie évite qu'une partie de l'intestin ne s'y coince, une situation douloureuse qui nécessiterait une intervention en urgence.` },
+      { label: 'Hernie douloureuse ou augmentant de volume', explication: `Quand la hernie devient sensible ou grossit, il est préférable de la corriger sans attendre, pour le confort et la sécurité de l'enfant.` },
+      { label: 'Hydrocèle communicante persistante', explication: `Ce petit gonflement de la bourse, rempli de liquide et lié au même canal resté ouvert, se corrige par la même intervention simple.` },
     ],
     preparation: [
       'Consultation de chirurgie pédiatrique pour confirmer l\'indication',
@@ -50,12 +50,12 @@ L'intervention consiste à refermer le canal resté perméable par une courte in
 Le traitement repose sur l'ablation chirurgicale de l'appendice. Chez l'enfant, l'intervention est le plus souvent réalisée par cœlioscopie, à travers de très petites incisions, ce qui limite la douleur post-opératoire et permet une reprise rapide des activités. Une courte incision classique reste possible selon les situations.
 
 À la Clinique Pasteur Tunis, la prise en charge de l'appendicite de l'enfant est assurée sans délai, de l'accueil aux urgences jusqu'au bloc opératoire, par une équipe de chirurgie et d'anesthésie pédiatriques. L'hospitalisation est courte et les parents sont associés à chaque étape.`,
-    image: '/images/surgery-blue-1.webp',
+    image: '/images/fiches/pediat-appendicectomie-pediatrique.webp',
     indications: [
-      'Appendicite aiguë confirmée par l\'examen clinique et l\'imagerie',
-      'Douleurs de la fosse iliaque droite avec fièvre chez l\'enfant',
-      'Appendicite compliquée (abcès, péritonite) nécessitant une prise en charge urgente',
-      'Doute diagnostique persistant justifiant une exploration cœlioscopique',
+      { label: 'Appendicite aiguë confirmée par l\'examen clinique et l\'imagerie', explication: `Quand l'appendice est enflammé, il doit être retiré rapidement pour éviter les complications ; l'intervention soulage l'enfant dès les premières heures.` },
+      { label: 'Douleurs de la fosse iliaque droite avec fièvre chez l\'enfant', explication: `Une douleur en bas à droite du ventre accompagnée de fièvre fait suspecter une appendicite et justifie une consultation sans tarder.` },
+      { label: 'Appendicite compliquée (abcès, péritonite) nécessitant une prise en charge urgente', explication: `Quand l'infection s'est étendue dans le ventre, une intervention urgente associée à un traitement antibiotique permet la guérison.` },
+      { label: 'Doute diagnostique persistant justifiant une exploration cœlioscopique', explication: `Quand les examens ne permettent pas de trancher, une exploration par caméra à travers de petites incisions confirme le diagnostic et traite le problème dans le même temps.` },
     ],
     preparation: [
       'Évaluation aux urgences : examen clinique, bilan sanguin et échographie abdominale',
@@ -89,13 +89,13 @@ Le traitement repose sur l'ablation chirurgicale de l'appendice. Chez l'enfant, 
 Chaque situation est unique : le moment idéal de l'intervention, la technique employée et le suivi sont définis au cas par cas, en concertation avec les parents et, selon les besoins, avec le pédiatre et les autres spécialistes concernés. L'objectif est toujours de corriger l'anomalie au meilleur moment du développement de l'enfant, avec le geste le moins invasif possible.
 
 À la Clinique Pasteur Tunis, la chirurgie des malformations congénitales bénéficie d'un environnement complet : chirurgiens pédiatres expérimentés, anesthésie pédiatrique dédiée, imagerie sur place et unités de surveillance adaptées. Les parents sont accompagnés à chaque étape du parcours, de la première consultation au suivi post-opératoire.`,
-    image: '/images/surgery-blue-2.webp',
+    image: '/images/fiches/pediat-malformations-congenitales.webp',
     indications: [
-      'Malformation dépistée avant la naissance ou constatée à la naissance',
-      'Anomalie de la paroi abdominale (hernie ombilicale persistante, autres anomalies)',
-      'Kystes et masses congénitales du cou, du thorax ou de l\'abdomen',
-      'Malformations des voies urinaires ou génitales',
-      'Anomalies digestives nécessitant une correction programmée',
+      { label: 'Malformation dépistée avant la naissance ou constatée à la naissance', explication: `Grâce au dépistage, l'intervention peut être préparée sereinement avec les parents et programmée au meilleur moment pour l'enfant.` },
+      { label: 'Anomalie de la paroi abdominale (hernie ombilicale persistante, autres anomalies)', explication: `Une hernie du nombril qui persiste ou une autre anomalie de la paroi du ventre se corrige par un geste simple, aux suites généralement faciles.` },
+      { label: 'Kystes et masses congénitales du cou, du thorax ou de l\'abdomen', explication: `Certaines petites masses présentes dès la naissance méritent d'être retirées pour éviter qu'elles ne grossissent ou ne s'infectent.` },
+      { label: 'Malformations des voies urinaires ou génitales', explication: `Corriger ces anomalies au bon moment protège le fonctionnement des reins et accompagne le développement harmonieux de l'enfant.` },
+      { label: 'Anomalies digestives nécessitant une correction programmée', explication: `Certaines anomalies du tube digestif sont corrigées par une intervention planifiée, au moment le plus favorable du développement de l'enfant.` },
     ],
     preparation: [
       'Bilan complet de la malformation : examen clinique et imagerie adaptée',
@@ -130,13 +130,13 @@ Chaque situation est unique : le moment idéal de l'intervention, la technique e
 Ces interventions sont programmées au meilleur âge pour l'enfant, généralement au cours des premières années de vie, afin d'obtenir un résultat fonctionnel et esthétique optimal tout en préservant le développement ultérieur. Les techniques utilisées sont fines et minutieuses, avec des cicatrices discrètes.
 
 À la Clinique Pasteur Tunis, ces interventions sont réalisées par des chirurgiens pédiatres rompus à la chirurgie urologique de l'enfant, avec une anesthésie pédiatrique dédiée. La plupart des gestes se font en hospitalisation courte, et l'équipe accompagne les parents pour les soins simples à poursuivre à la maison.`,
-    image: '/images/surgery-blue-3.webp',
+    image: '/images/fiches/pediat-urologie-pediatrique.webp',
     indications: [
-      'Hypospadias : orifice urinaire en position anormale chez le garçon',
-      'Cryptorchidie : testicule non descendu après l\'âge habituel de descente spontanée',
-      'Testicule oscillant ou ectopique nécessitant une fixation',
-      'Anomalies du prépuce résistantes au traitement médical',
-      'Certaines anomalies des voies urinaires dépistées par échographie',
+      { label: 'Hypospadias : orifice urinaire en position anormale chez le garçon', explication: `Quand l'orifice urinaire n'est pas à sa place habituelle, une chirurgie fine le reconstruit pour un résultat naturel, tant pour uriner que sur le plan esthétique.` },
+      { label: 'Cryptorchidie : testicule non descendu après l\'âge habituel de descente spontanée', explication: `Quand le testicule n'est pas descendu tout seul dans la bourse, l'intervention le repositionne en douceur afin de protéger sa fonction future.` },
+      { label: 'Testicule oscillant ou ectopique nécessitant une fixation', explication: `Un testicule qui remonte sans cesse ou reste en position anormale peut être fixé en bonne place par un geste simple.` },
+      { label: 'Anomalies du prépuce résistantes au traitement médical', explication: `Quand les crèmes n'ont pas suffi à assouplir un prépuce trop serré, un geste chirurgical adapté règle le problème durablement.` },
+      { label: 'Certaines anomalies des voies urinaires dépistées par échographie', explication: `Certaines anomalies découvertes à l'échographie sont corrigées avant qu'elles ne perturbent le bon fonctionnement des reins.` },
     ],
     preparation: [
       'Consultation spécialisée pour préciser l\'anomalie et le moment idéal de l\'intervention',
@@ -171,12 +171,12 @@ Ces interventions sont programmées au meilleur âge pour l'enfant, généraleme
 Réalisée au bloc opératoire, la circoncision se déroule sous anesthésie adaptée à l'âge de l'enfant, complétée par une anesthésie locale qui assure un réveil confortable. Le geste est bref et les suites sont habituellement très simples, avec une cicatrisation en quelques jours.
 
 À la Clinique Pasteur Tunis, la circoncision est pratiquée par des chirurgiens expérimentés dans un cadre sécurisé et rassurant. L'enfant rentre à la maison le jour même, et les parents reçoivent des consignes claires pour les soins locaux et le suivi.`,
-    image: '/images/pediatrique.webp',
+    image: '/images/fiches/pediat-circoncision.webp',
     indications: [
-      'Circoncision rituelle ou familiale réalisée dans un cadre médical sécurisé',
-      'Phimosis serré résistant au traitement médical',
-      'Infections locales à répétition (balanites)',
-      'Paraphimosis ou gêne fonctionnelle liée au prépuce',
+      { label: 'Circoncision rituelle ou familiale réalisée dans un cadre médical sécurisé', explication: `Réaliser la circoncision au bloc opératoire garantit des conditions stériles, une anesthésie adaptée et un bon contrôle de la douleur, pour la tranquillité des familles.` },
+      { label: 'Phimosis serré résistant au traitement médical', explication: `Quand le prépuce reste trop étroit malgré les traitements, la circoncision apporte une solution définitive et confortable.` },
+      { label: 'Infections locales à répétition (balanites)', explication: `Des infections locales qui reviennent régulièrement peuvent être évitées durablement grâce à ce geste simple.` },
+      { label: 'Paraphimosis ou gêne fonctionnelle liée au prépuce', explication: `Quand le prépuce se coince ou gêne l'enfant au quotidien, la circoncision supprime définitivement le problème.` },
     ],
     preparation: [
       'Consultation pré-opératoire avec le chirurgien',
@@ -210,13 +210,13 @@ Réalisée au bloc opératoire, la circoncision se déroule sous anesthésie ada
 Leur prise en charge chirurgicale est planifiée avec soin : le moment de l'intervention, la technique et le suivi nutritionnel sont adaptés à chaque enfant. Selon les cas, la correction peut être réalisée par voie classique ou par cœlioscopie, afin de limiter le traumatisme opératoire.
 
 À la Clinique Pasteur Tunis, ces interventions s'appuient sur une équipe pluridisciplinaire — chirurgiens pédiatres, pédiatres, anesthésistes et équipe soignante — et sur des unités de surveillance adaptées aux plus petits. Les parents sont étroitement associés au projet de soins et au suivi de leur enfant.`,
-    image: '/images/bloc-operatoire.webp',
+    image: '/images/fiches/pediat-malformations-digestives.webp',
     indications: [
-      'Malformation digestive dépistée en période prénatale ou néonatale',
-      'Sténose hypertrophique du pylore du nourrisson',
-      'Malformations ano-rectales',
-      'Anomalies de rotation intestinale',
-      'Troubles digestifs persistants révélant une anomalie congénitale',
+      { label: 'Malformation digestive dépistée en période prénatale ou néonatale', explication: `Détectée avant la naissance ou dans les premiers jours de vie, l'anomalie est prise en charge selon un calendrier soigneusement adapté à chaque bébé.` },
+      { label: 'Sténose hypertrophique du pylore du nourrisson', explication: `Quand la sortie de l'estomac du nourrisson est trop étroite et provoque des vomissements répétés, une courte intervention rétablit le passage normal des aliments.` },
+      { label: 'Malformations ano-rectales', explication: `Ces anomalies de la zone anale sont corrigées chirurgicalement pour permettre à l'enfant un transit normal et un développement serein.` },
+      { label: 'Anomalies de rotation intestinale', explication: `Quand l'intestin ne s'est pas positionné normalement pendant la grossesse, l'intervention le remet en bonne place et prévient les complications.` },
+      { label: 'Troubles digestifs persistants révélant une anomalie congénitale', explication: `Des vomissements, blocages ou troubles du transit qui durent peuvent révéler une anomalie présente depuis la naissance, qu'une intervention permet de corriger.` },
     ],
     preparation: [
       'Bilan diagnostique complet : imagerie et examens adaptés à l\'âge',
@@ -251,13 +251,13 @@ Leur prise en charge chirurgicale est planifiée avec soin : le moment de l'inte
 La décision opératoire est prise en concertation étroite entre cardiologues pédiatres, chirurgiens cardiaques et anesthésistes, après un bilan cardiologique complet. Le moment de l'intervention est choisi en fonction du type de malformation et du développement de l'enfant.
 
 À la Clinique Pasteur Tunis, la chirurgie des cardiopathies congénitales bénéficie d'un plateau technique cardiovasculaire complet : bloc opératoire équipé pour la chirurgie cardiaque, réanimation dédiée aux suites de chirurgie cardiaque et unité de soins intensifs cardiologiques. L'enfant et sa famille sont accompagnés à chaque étape de ce parcours exigeant.`,
-    image: '/images/cardiovasculaire.webp',
+    image: '/images/fiches/pediat-cardiopathies-congenitales.webp',
     indications: [
-      'Communication interauriculaire ou interventriculaire nécessitant une fermeture',
-      'Persistance du canal artériel',
-      'Anomalies des valves cardiaques de l\'enfant',
-      'Malformations des gros vaisseaux',
-      'Cardiopathies complexes relevant d\'une correction chirurgicale programmée',
+      { label: 'Communication interauriculaire ou interventriculaire nécessitant une fermeture', explication: `Quand un petit orifice fait communiquer anormalement les cavités du cœur et fatigue l'enfant, sa fermeture chirurgicale permet un développement normal.` },
+      { label: 'Persistance du canal artériel', explication: `Ce petit vaisseau, utile pendant la grossesse, doit normalement se fermer après la naissance ; s'il reste ouvert, une intervention le referme.` },
+      { label: 'Anomalies des valves cardiaques de l\'enfant', explication: `Quand une valve du cœur fonctionne mal, sa réparation aide le cœur à travailler efficacement et l'enfant à grandir sereinement.` },
+      { label: 'Malformations des gros vaisseaux', explication: `Certaines anomalies des grandes artères qui partent du cœur sont corrigées chirurgicalement pour rétablir une circulation sanguine normale.` },
+      { label: 'Cardiopathies complexes relevant d\'une correction chirurgicale programmée', explication: `Les malformations associant plusieurs anomalies font l'objet d'une correction planifiée avec soin par l'équipe médico-chirurgicale, au meilleur moment pour l'enfant.` },
     ],
     preparation: [
       'Bilan cardiologique complet : échocardiographie et examens complémentaires',
@@ -293,13 +293,13 @@ La décision opératoire est prise en concertation étroite entre cardiologues p
 Les interventions les plus courantes sont l'ablation des végétations (adénoïdectomie), l'ablation des amygdales (amygdalectomie) et la pose d'aérateurs transtympaniques (« yoyos ») pour drainer les otites séreuses. Ces gestes brefs, réalisés sous anesthésie générale, améliorent nettement le confort respiratoire, le sommeil et l'audition de l'enfant.
 
 À la Clinique Pasteur Tunis, ces interventions sont réalisées en hospitalisation courte, le plus souvent en ambulatoire, par des chirurgiens ORL habitués aux enfants et une équipe d'anesthésie pédiatrique. Les parents reçoivent des consignes simples pour la surveillance et l'alimentation des premiers jours.`,
-    image: '/images/surgery-blue-4.webp',
+    image: '/images/fiches/pediat-orl-pediatrique.webp',
     indications: [
-      'Angines à répétition malgré un traitement médical bien conduit',
-      'Hypertrophie des amygdales ou des végétations gênant la respiration nocturne',
-      'Ronflements avec pauses respiratoires pendant le sommeil',
-      'Otites séreuses persistantes avec baisse d\'audition',
-      'Otites moyennes aiguës à répétition',
+      { label: 'Angines à répétition malgré un traitement médical bien conduit', explication: `Quand les angines reviennent sans cesse malgré les traitements, retirer les amygdales met fin à ce cercle épuisant pour l'enfant et sa famille.` },
+      { label: 'Hypertrophie des amygdales ou des végétations gênant la respiration nocturne', explication: `Des amygdales ou des végétations trop volumineuses gênent la respiration, surtout la nuit ; leur ablation redonne un souffle libre.` },
+      { label: 'Ronflements avec pauses respiratoires pendant le sommeil', explication: `Un enfant qui ronfle fort et semble s'arrêter de respirer dans son sommeil mérite un avis ORL : l'intervention améliore nettement la qualité du sommeil.` },
+      { label: 'Otites séreuses persistantes avec baisse d\'audition', explication: `Du liquide qui stagne derrière le tympan étouffe les sons ; la pose de petits aérateurs le draine et restaure l'audition.` },
+      { label: 'Otites moyennes aiguës à répétition', explication: `Quand les otites se succèdent, les aérateurs transtympaniques aident à espacer les infections et à protéger l'oreille de l'enfant.` },
     ],
     preparation: [
       'Consultation ORL pour confirmer l\'indication opératoire',
@@ -334,13 +334,13 @@ Les interventions les plus courantes sont l'ablation des végétations (adénoï
 La prise en charge va du simple plâtre à l'intervention chirurgicale lorsque la fracture est déplacée ou instable. Les techniques chirurgicales utilisées chez l'enfant sont spécifiques : matériel adapté à la taille de l'os, respect systématique des cartilages de croissance et gestes aussi peu invasifs que possible.
 
 À la Clinique Pasteur Tunis, l'enfant traumatisé est accueilli aux urgences puis pris en charge sans délai : imagerie sur place, avis chirurgical rapide et, si nécessaire, intervention au bloc opératoire par une équipe habituée à la traumatologie de l'enfant. Le suivi en consultation accompagne la consolidation et la reprise progressive des activités.`,
-    image: '/images/urgences-accueil.webp',
+    image: '/images/fiches/pediat-traumatologie-pediatrique.webp',
     indications: [
-      'Fracture déplacée ou instable des membres',
-      'Fracture touchant une zone de croissance nécessitant un avis spécialisé',
-      'Traumatisme du coude, du poignet ou de la cheville de l\'enfant',
-      'Plaies profondes ou traumatismes des parties molles nécessitant une exploration',
-      'Fracture ne pouvant être réduite par simple manipulation',
+      { label: 'Fracture déplacée ou instable des membres', explication: `Quand les fragments osseux se sont écartés, une intervention les remet en bonne position pour permettre une consolidation parfaite.` },
+      { label: 'Fracture touchant une zone de croissance nécessitant un avis spécialisé', explication: `Les zones de croissance de l'os sont précieuses : une fracture qui les touche demande un traitement spécialisé et un suivi attentif jusqu'à la fin de la croissance.` },
+      { label: 'Traumatisme du coude, du poignet ou de la cheville de l\'enfant', explication: `Ces articulations sont souvent touchées lors des chutes ; une prise en charge adaptée à l'enfant garantit une bonne récupération.` },
+      { label: 'Plaies profondes ou traumatismes des parties molles nécessitant une exploration', explication: `Certaines blessures doivent être explorées et réparées au bloc opératoire pour une cicatrisation optimale et sans séquelle.` },
+      { label: 'Fracture ne pouvant être réduite par simple manipulation', explication: `Quand la fracture ne peut pas être remise en place par une simple manœuvre externe, un geste chirurgical adapté à l'os en croissance est réalisé.` },
     ],
     preparation: [
       'Évaluation aux urgences : examen clinique et radiographies',

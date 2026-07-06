@@ -11,13 +11,13 @@ Chaque fois que cela est possible, l'approche laparoscopique (cœlioscopie) est 
 La prise en charge s'inscrit dans une démarche globale : bilan pré-opératoire complet, discussion du dossier en équipe pour les pathologies tumorales, protocoles de récupération améliorée après chirurgie (RAAC) favorisant une convalescence rapide et confortable.
 
 À la Clinique Pasteur Tunis, la chirurgie digestive est assurée par des chirurgiens expérimentés en chirurgie lourde, dans des blocs opératoires équipés de colonnes de cœlioscopie haute définition, avec une équipe anesthésique dédiée et des unités de réanimation disponibles à tout moment.`,
-    image: '/images/chirurgie.webp',
+    image: '/images/fiches/gen-chirurgie-digestive.webp',
     indications: [
-      'Tumeurs bénignes ou malignes de l\'estomac, du côlon ou du rectum',
-      'Maladies inflammatoires de l\'intestin résistantes au traitement médical',
-      'Diverticulite compliquée ou récidivante',
-      'Occlusions et urgences digestives',
-      'Reflux gastro-œsophagien sévère nécessitant une chirurgie',
+      { label: 'Tumeurs bénignes ou malignes de l\'estomac, du côlon ou du rectum', explication: `Qu'elle soit bénigne ou cancéreuse, une tumeur du tube digestif se traite le plus souvent par l'ablation du segment concerné, avec rétablissement du circuit digestif dans le même temps.` },
+      { label: 'Maladies inflammatoires de l\'intestin résistantes au traitement médical', explication: `Quand les médicaments ne suffisent plus à contrôler une maladie de Crohn ou une rectocolite, retirer la portion d'intestin la plus atteinte apporte un réel soulagement.` },
+      { label: 'Diverticulite compliquée ou récidivante', explication: `Des poussées d'infection répétées ou compliquées des diverticules du côlon peuvent justifier l'ablation du segment fragilisé, pour éviter de nouvelles crises.` },
+      { label: 'Occlusions et urgences digestives', explication: `Un blocage du transit ou une autre urgence abdominale peut nécessiter une intervention rapide : les équipes et les blocs sont disponibles à tout moment.` },
+      { label: 'Reflux gastro-œsophagien sévère nécessitant une chirurgie', explication: `Quand les remontées acides persistent malgré un traitement bien suivi, une intervention anti-reflux corrige durablement le problème à sa source.` },
     ],
     preparation: [
       'Bilan d\'imagerie et endoscopique adapté à la pathologie',
@@ -54,12 +54,12 @@ L'intervention est aujourd'hui réalisée dans l'immense majorité des cas par c
 Vivre sans vésicule biliaire est tout à fait normal : la bile, produite par le foie, continue de s'écouler directement dans l'intestin pour assurer la digestion. La plupart des patients ne ressentent aucun changement durable dans leur alimentation.
 
 À la Clinique Pasteur Tunis, la cholécystectomie cœlioscopique est une intervention parfaitement maîtrisée, réalisée dans des blocs équipés de colonnes de cœlioscopie haute définition, souvent dans le cadre d'une hospitalisation courte.`,
-    image: '/images/bloc-hd.webp',
+    image: '/images/fiches/gen-cholecystectomie.webp',
     indications: [
-      'Calculs biliaires responsables de coliques hépatiques répétées',
-      'Cholécystite aiguë (inflammation de la vésicule)',
-      'Complications des calculs (migration, pancréatite biliaire)',
-      'Polypes vésiculaires nécessitant une exérèse',
+      { label: 'Calculs biliaires responsables de coliques hépatiques répétées', explication: `Des douleurs intenses sous les côtes droites, survenant souvent après les repas, signent la présence de calculs : retirer la vésicule met fin définitivement à ces crises.` },
+      { label: 'Cholécystite aiguë (inflammation de la vésicule)', explication: `Quand la vésicule s'infecte ou s'enflamme à cause des calculs, son ablation devient nécessaire, parfois rapidement, pour éviter les complications.` },
+      { label: 'Complications des calculs (migration, pancréatite biliaire)', explication: `Un calcul qui migre dans les canaux biliaires peut provoquer une jaunisse ou une inflammation du pancréas : l'ablation de la vésicule évite les récidives.` },
+      { label: 'Polypes vésiculaires nécessitant une exérèse', explication: `Certaines excroissances de la paroi vésiculaire, en raison de leur taille ou de leur évolution, justifient de retirer la vésicule par précaution.` },
     ],
     preparation: [
       'Échographie abdominale confirmant le diagnostic',
@@ -94,12 +94,12 @@ L'intervention est le plus souvent réalisée par cœlioscopie : trois petites i
 Traitée à temps, l'appendicite guérit sans séquelle et l'absence d'appendice n'a aucune conséquence sur la digestion ni sur la santé. La rapidité de la prise en charge est l'élément clé pour éviter les complications.
 
 À la Clinique Pasteur Tunis, l'appendicectomie est assurée à toute heure grâce au service des urgences ouvert en permanence et aux blocs opératoires disponibles jour et nuit, chez l'adulte comme chez l'enfant.`,
-    image: '/images/surgery-blue-1.webp',
+    image: '/images/fiches/gen-appendicectomie.webp',
     indications: [
-      'Appendicite aiguë confirmée par l\'examen clinique et l\'imagerie',
-      'Suspicion d\'appendicite avec signes cliniques évocateurs',
-      'Appendicite compliquée (abcès, péritonite localisée)',
-      'Douleurs récidivantes de la fosse iliaque droite documentées',
+      { label: 'Appendicite aiguë confirmée par l\'examen clinique et l\'imagerie', explication: `Douleur du bas-ventre droit, fièvre et nausées orientent vers l'appendicite : une fois le diagnostic confirmé, l'ablation rapide de l'appendice permet une guérison sans séquelle.` },
+      { label: 'Suspicion d\'appendicite avec signes cliniques évocateurs', explication: `Quand les signes sont très évocateurs, il est parfois plus sûr d'opérer sans attendre : la cœlioscopie permet de vérifier le diagnostic et de traiter dans le même temps.` },
+      { label: 'Appendicite compliquée (abcès, péritonite localisée)', explication: `Si l'infection s'est étendue autour de l'appendice, l'intervention nettoie soigneusement la zone en plus de retirer l'appendice, avec une surveillance adaptée.` },
+      { label: 'Douleurs récidivantes de la fosse iliaque droite documentées', explication: `Des douleurs qui reviennent régulièrement du côté droit du bas-ventre, explorées et documentées, peuvent conduire à retirer l'appendice pour régler le problème durablement.` },
     ],
     preparation: [
       'Examen clinique, bilan sanguin et imagerie (échographie ou scanner)',
@@ -134,13 +134,13 @@ La cure de hernie consiste à réintégrer le contenu hernié et à réparer sol
 Ces interventions sont réalisées par cœlioscopie chaque fois que c'est possible, avec des suites simples : douleurs limitées, hospitalisation courte et reprise rapide des activités. La technique est choisie en fonction du type de hernie, de sa taille et du profil du patient.
 
 À la Clinique Pasteur Tunis, les cures de hernie sont pratiquées par des chirurgiens expérimentés, en hospitalisation courte dans la plupart des cas, avec des consignes de reprise d'activité personnalisées remises à la sortie.`,
-    image: '/images/surgery-blue-2.webp',
+    image: '/images/fiches/gen-cure-hernie.webp',
     indications: [
-      'Hernie inguinale gênante ou augmentant de volume',
-      'Hernie ombilicale ou de la ligne blanche symptomatique',
-      'Hernie hiatale avec reflux résistant au traitement médical',
-      'Éventration sur cicatrice d\'une chirurgie antérieure',
-      'Prévention du risque d\'étranglement herniaire',
+      { label: 'Hernie inguinale gênante ou augmentant de volume', explication: `Une boule au niveau de l'aine qui grossit ou devient gênante à l'effort mérite d'être réparée : l'intervention est simple et la récupération rapide.` },
+      { label: 'Hernie ombilicale ou de la ligne blanche symptomatique', explication: `Quand une hernie du nombril ou de la ligne médiane du ventre devient douloureuse ou inesthétique, sa réparation chirurgicale règle le problème durablement.` },
+      { label: 'Hernie hiatale avec reflux résistant au traitement médical', explication: `Si une partie de l'estomac remonte dans le thorax et provoque un reflux que les médicaments ne contrôlent plus, l'intervention repositionne l'estomac et reconstitue une barrière anti-reflux.` },
+      { label: 'Éventration sur cicatrice d\'une chirurgie antérieure', explication: `Une ancienne cicatrice abdominale peut se distendre et laisser passer le contenu de l'abdomen : la paroi est alors réparée et renforcée par une prothèse.` },
+      { label: 'Prévention du risque d\'étranglement herniaire', explication: `Opérer une hernie à froid, avant qu'elle ne se bloque brutalement, évite une intervention en urgence et garantit des suites plus simples.` },
     ],
     preparation: [
       'Examen clinique et imagerie si nécessaire',
@@ -176,13 +176,13 @@ Le foie possède une capacité de régénération remarquable qui permet au chir
 Cette chirurgie exigeante requiert une équipe expérimentée en chirurgie lourde, un matériel spécifique et un environnement sécurisé avec réanimation disponible. La stratégie est définie pour chaque patient après un bilan complet et une discussion pluridisciplinaire pour les pathologies tumorales.
 
 À la Clinique Pasteur Tunis, la chirurgie hépato-biliaire bénéficie de blocs opératoires équipés des dernières technologies, d'un monitoring per-opératoire avancé et d'une réanimation polyvalente assurant une surveillance rapprochée des suites opératoires.`,
-    image: '/images/chirurgie2.webp',
+    image: '/images/fiches/gen-chirurgie-foie-voies-biliaires.webp',
     indications: [
-      'Tumeurs du foie bénignes ou malignes accessibles à une résection',
-      'Métastases hépatiques opérables',
-      'Kystes hépatiques volumineux ou symptomatiques',
-      'Calculs de la voie biliaire principale',
-      'Rétrécissements ou tumeurs des voies biliaires',
+      { label: 'Tumeurs du foie bénignes ou malignes accessibles à une résection', explication: `Grâce à sa capacité unique de régénération, le foie tolère l'ablation de sa partie malade : le volume restant reprend progressivement le relais.` },
+      { label: 'Métastases hépatiques opérables', explication: `Lorsqu'un cancer d'un autre organe a essaimé au foie de façon limitée, retirer ces lésions peut s'intégrer dans une stratégie de traitement à visée curative.` },
+      { label: 'Kystes hépatiques volumineux ou symptomatiques', explication: `Un kyste du foie qui grossit, comprime les organes voisins ou provoque des douleurs peut être traité chirurgicalement avec des suites généralement simples.` },
+      { label: 'Calculs de la voie biliaire principale', explication: `Des calculs bloqués dans le canal qui conduit la bile vers l'intestin peuvent provoquer jaunisse et infections : leur extraction rétablit un écoulement normal.` },
+      { label: 'Rétrécissements ou tumeurs des voies biliaires', explication: `Quand le canal biliaire se rétrécit ou est le siège d'une tumeur, une chirurgie spécialisée restaure le passage de la bile vers l'intestin.` },
     ],
     preparation: [
       'Imagerie hépatique complète (scanner, IRM) pour planifier la résection',
@@ -219,13 +219,13 @@ Les interventions sur le pancréas concernent principalement les tumeurs, bénig
 Cette chirurgie exige une planification minutieuse fondée sur une imagerie de haute précision, une équipe rompue à la chirurgie lourde et un environnement post-opératoire sécurisé. Chaque dossier est étudié de façon approfondie, en concertation pluridisciplinaire lorsqu'il s'agit d'une pathologie tumorale.
 
 À la Clinique Pasteur Tunis, la chirurgie pancréatique est réalisée par des chirurgiens expérimentés en chirurgie digestive lourde, avec un monitoring per-opératoire avancé et une réanimation polyvalente assurant la surveillance attentive des premiers jours.`,
-    image: '/images/surgery-blue-3.webp',
+    image: '/images/fiches/gen-chirurgie-pancreas.webp',
     indications: [
-      'Tumeurs du pancréas opérables',
-      'Tumeurs kystiques nécessitant une exérèse',
-      'Pseudokystes compliqués après pancréatite',
-      'Certaines formes de pancréatite chronique douloureuse',
-      'Tumeurs endocrines du pancréas',
+      { label: 'Tumeurs du pancréas opérables', explication: `Lorsque le bilan confirme qu'une tumeur du pancréas peut être retirée, la chirurgie représente la meilleure chance de traitement, réalisée par une équipe hautement spécialisée.` },
+      { label: 'Tumeurs kystiques nécessitant une exérèse', explication: `Certaines lésions kystiques du pancréas présentent un risque d'évolution : les retirer par précaution évite qu'elles ne se transforment avec le temps.` },
+      { label: 'Pseudokystes compliqués après pancréatite', explication: `Après une inflammation du pancréas, des poches de liquide peuvent persister et devenir gênantes ou s'infecter : la chirurgie les traite lorsque c'est nécessaire.` },
+      { label: 'Certaines formes de pancréatite chronique douloureuse', explication: `Quand une inflammation chronique du pancréas provoque des douleurs rebelles aux traitements, un geste chirurgical adapté peut apporter un soulagement durable.` },
+      { label: 'Tumeurs endocrines du pancréas', explication: `Ces tumeurs particulières, qui peuvent sécréter des hormones en excès, sont retirées par une chirurgie souvent conservatrice, adaptée à leur taille et à leur localisation.` },
     ],
     preparation: [
       'Imagerie pancréatique de haute précision (scanner, IRM, écho-endoscopie)',
@@ -263,13 +263,13 @@ Les indications principales sont les tumeurs colorectales, la diverticulite comp
 La cœlioscopie est aujourd'hui l'approche privilégiée : elle permet une chirurgie précise à travers de petites incisions, avec des suites plus confortables. Associée aux protocoles de récupération améliorée après chirurgie (RAAC), elle autorise une réalimentation et une mobilisation précoces.
 
 À la Clinique Pasteur Tunis, les résections coliques sont réalisées par des chirurgiens rompus à la chirurgie digestive lourde et à la cœlioscopie, dans des blocs équipés de colonnes haute définition, avec un accompagnement attentif tout au long de l'hospitalisation.`,
-    image: '/images/bloc-operatoire.webp',
+    image: '/images/fiches/gen-resections-coliques.webp',
     indications: [
-      'Tumeurs du côlon ou du rectum',
-      'Diverticulite sigmoïdienne compliquée ou récidivante',
-      'Maladies inflammatoires de l\'intestin résistantes au traitement',
-      'Polypes volumineux non résécables par endoscopie',
-      'Certaines urgences coliques (perforation, occlusion)',
+      { label: 'Tumeurs du côlon ou du rectum', explication: `L'ablation du segment de côlon porteur de la tumeur, avec ses territoires de drainage, constitue le traitement de référence, aux résultats d'autant meilleurs que la lésion est découverte tôt.` },
+      { label: 'Diverticulite sigmoïdienne compliquée ou récidivante', explication: `Quand les crises d'infection des diverticules se répètent ou se compliquent, retirer le segment fragilisé du côlon met le patient à l'abri de nouvelles poussées.` },
+      { label: 'Maladies inflammatoires de l\'intestin résistantes au traitement', explication: `Si les médicaments ne contrôlent plus l'inflammation, l'ablation de la portion la plus atteinte améliore nettement le confort de vie.` },
+      { label: 'Polypes volumineux non résécables par endoscopie', explication: `Certains polypes sont trop gros ou trop étendus pour être retirés lors d'une coloscopie : une résection chirurgicale du segment concerné devient alors nécessaire.` },
+      { label: 'Certaines urgences coliques (perforation, occlusion)', explication: `Une perforation ou un blocage complet du côlon impose une intervention sans délai : les équipes sont organisées pour opérer à toute heure.` },
     ],
     preparation: [
       'Coloscopie et imagerie précisant la localisation de la lésion',
@@ -306,13 +306,13 @@ Après cette exérèse, le chirurgien reconstruit le circuit digestif en raccord
 La DPC est considérée comme l'une des interventions les plus complexes de la chirurgie digestive. Elle exige une équipe hautement expérimentée, une anesthésie spécialisée, un monitoring per-opératoire avancé et une surveillance post-opératoire en unité de réanimation. Chaque indication est validée après un bilan exhaustif et une discussion pluridisciplinaire.
 
 La Clinique Pasteur Tunis fait partie des établissements disposant de l'expertise et du plateau technique nécessaires à cette chirurgie d'exception : chirurgiens rompus à la chirurgie lourde digestive, réanimation polyvalente et accompagnement personnalisé du patient et de sa famille à chaque étape.`,
-    image: '/images/surgery-blue-4.webp',
+    image: '/images/fiches/gen-duodeno-pancreatectomie-cephalique.webp',
     indications: [
-      'Tumeurs de la tête du pancréas opérables',
-      'Tumeurs de l\'ampoule de Vater',
-      'Tumeurs de la partie basse de la voie biliaire',
-      'Tumeurs du duodénum',
-      'Certaines lésions kystiques ou précancéreuses de la tête du pancréas',
+      { label: 'Tumeurs de la tête du pancréas opérables', explication: `Quand le bilan confirme que la tumeur peut être retirée en totalité, la DPC offre la meilleure perspective de traitement, menée par une équipe rompue à cette chirurgie.` },
+      { label: 'Tumeurs de l\'ampoule de Vater', explication: `Cette petite zone où les canaux biliaire et pancréatique rejoignent l'intestin peut être le siège de tumeurs, souvent révélées par une jaunisse et accessibles à cette intervention.` },
+      { label: 'Tumeurs de la partie basse de la voie biliaire', explication: `Les tumeurs situées à l'extrémité du canal biliaire, près du pancréas, relèvent de la même intervention, qui retire l'ensemble de la région concernée en un seul bloc.` },
+      { label: 'Tumeurs du duodénum', explication: `Le duodénum étant intimement lié à la tête du pancréas, ses tumeurs nécessitent cette même exérèse d'ensemble pour être traitées dans de bonnes conditions.` },
+      { label: 'Certaines lésions kystiques ou précancéreuses de la tête du pancréas', explication: `Retirer une lésion à risque avant sa transformation permet d'agir de façon préventive, au moment le plus favorable pour le patient.` },
     ],
     preparation: [
       'Bilan d\'imagerie exhaustif (scanner, IRM, écho-endoscopie) pour confirmer l\'opérabilité',
@@ -350,13 +350,13 @@ Les tumeurs sécrétantes peuvent provoquer une hypertension artérielle résist
 L'intervention est aujourd'hui réalisée par cœlioscopie dans la grande majorité des cas : cette approche mini-invasive est particulièrement adaptée à ces glandes profondes, offrant une précision optimale, des douleurs réduites et une récupération rapide. La préparation médicale pré-opératoire, menée avec l'endocrinologue, est une étape essentielle pour les tumeurs sécrétantes.
 
 À la Clinique Pasteur Tunis, la chirurgie surrénalienne est conduite en étroite collaboration entre chirurgiens, endocrinologues et anesthésistes, avec un monitoring per-opératoire avancé et une surveillance post-opératoire adaptée au profil hormonal de chaque patient.`,
-    image: '/images/bloc-hd.webp',
+    image: '/images/fiches/gen-chirurgie-surrenales.webp',
     indications: [
-      'Tumeurs surrénaliennes sécrétant un excès d\'hormones',
-      'Phéochromocytome',
-      'Tumeurs surrénaliennes volumineuses ou suspectes',
-      'Hypertension artérielle d\'origine surrénalienne confirmée',
-      'Nodules surrénaliens évolutifs découverts à l\'imagerie',
+      { label: 'Tumeurs surrénaliennes sécrétant un excès d\'hormones', explication: `Quand une tumeur de la glande produit trop d'hormones, elle peut dérégler la tension, le poids ou le métabolisme : son ablation corrige le plus souvent durablement ces troubles.` },
+      { label: 'Phéochromocytome', explication: `Cette tumeur particulière libère des hormones qui font brutalement monter la tension : après une préparation médicale soigneuse, son ablation supprime la cause du problème.` },
+      { label: 'Tumeurs surrénaliennes volumineuses ou suspectes', explication: `Une masse de la surrénale de taille importante ou d'aspect inhabituel à l'imagerie est retirée par précaution, afin d'être analysée et d'écarter tout risque d'évolution.` },
+      { label: 'Hypertension artérielle d\'origine surrénalienne confirmée', explication: `Certaines hypertensions difficiles à équilibrer proviennent d'une glande surrénale : quand le bilan le confirme, la chirurgie permet souvent d'alléger, voire d'arrêter, les traitements.` },
+      { label: 'Nodules surrénaliens évolutifs découverts à l\'imagerie', explication: `Un nodule découvert par hasard et qui grossit au fil des contrôles justifie une ablation, geste aujourd'hui réalisé en douceur par cœlioscopie.` },
     ],
     preparation: [
       'Bilan hormonal complet réalisé avec l\'endocrinologue',
@@ -393,12 +393,12 @@ Le premier temps est chirurgical : le chirurgien réalise une exérèse aussi co
 Cette approche combinée s'adresse à des situations sélectionnées d'atteinte péritonéale, après un bilan approfondi et une validation en réunion de concertation pluridisciplinaire. Elle représente l'un des traitements les plus avancés de la chirurgie oncologique abdominale et exige une équipe spécifiquement formée.
 
 À la Clinique Pasteur Tunis, la CHIP est réalisée par une équipe rompue à la chirurgie digestive lourde, dans un environnement hautement sécurisé, avec une surveillance post-opératoire en réanimation et un accompagnement personnalisé du patient tout au long du parcours.`,
-    image: '/images/surgery-blue-5.webp',
+    image: '/images/fiches/gen-chip-chimio-hyperthermie-intraperitoneale.webp',
     indications: [
-      'Atteintes péritonéales d\'origine colorectale sélectionnées',
-      'Pseudomyxome péritonéal',
-      'Certaines atteintes péritonéales d\'origine ovarienne ou gastrique',
-      'Tumeurs rares du péritoine, après validation pluridisciplinaire',
+      { label: 'Atteintes péritonéales d\'origine colorectale sélectionnées', explication: `Quand un cancer du côlon ou du rectum a atteint la membrane qui tapisse l'abdomen, la CHIP peut offrir, chez des patients bien sélectionnés, une réelle perspective de traitement.` },
+      { label: 'Pseudomyxome péritonéal', explication: `Pour cette maladie rare où une substance gélatineuse envahit progressivement l'abdomen, la CHIP constitue le traitement de référence reconnu.` },
+      { label: 'Certaines atteintes péritonéales d\'origine ovarienne ou gastrique', explication: `Des extensions au péritoine de cancers de l'ovaire ou de l'estomac peuvent, dans des situations précises, bénéficier de cette approche combinée chirurgie et chimiothérapie chauffée.` },
+      { label: 'Tumeurs rares du péritoine, après validation pluridisciplinaire', explication: `Chaque situation rare est étudiée collectivement par les spécialistes concernés avant de proposer la CHIP, afin de garantir que le traitement apportera un bénéfice réel.` },
     ],
     preparation: [
       'Bilan d\'imagerie complet évaluant l\'étendue de l\'atteinte péritonéale',
@@ -435,13 +435,13 @@ Selon la pathologie, le chirurgien retire un seul lobe de la thyroïde (lobectom
 Le point clé de cette chirurgie est la préservation des nerfs récurrents, qui commandent les cordes vocales, et des glandes parathyroïdes saines. L'équipe chirurgicale y consacre une attention méticuleuse, appuyée par des techniques de repérage modernes.
 
 À la Clinique Pasteur Tunis, la chirurgie thyroïdienne et parathyroïdienne est réalisée par des chirurgiens expérimentés, en coordination avec les endocrinologues pour le bilan pré-opératoire et le suivi hormonal après l'intervention.`,
-    image: '/images/chirurgie.webp',
+    image: '/images/fiches/gen-chirurgie-thyroidienne.webp',
     indications: [
-      'Nodules thyroïdiens suspects ou volumineux',
-      'Goitre compressif ou plongeant',
-      'Hyperthyroïdie résistante au traitement médical',
-      'Cancers de la thyroïde',
-      'Hyperparathyroïdie avec excès de calcium confirmé',
+      { label: 'Nodules thyroïdiens suspects ou volumineux', explication: `Un nodule douteux à la ponction ou devenu gênant par sa taille est retiré à la fois pour lever le doute sur sa nature et pour supprimer la gêne.` },
+      { label: 'Goitre compressif ou plongeant', explication: `Quand la thyroïde augmente de volume au point de comprimer la trachée ou de descendre vers le thorax, son ablation soulage la respiration et la déglutition.` },
+      { label: 'Hyperthyroïdie résistante au traitement médical', explication: `Si la glande produit trop d'hormones malgré les médicaments, la chirurgie offre une solution définitive à l'emballement de la thyroïde.` },
+      { label: 'Cancers de la thyroïde', explication: `La chirurgie est le traitement de première intention des cancers thyroïdiens, dont l'évolution est généralement très favorable après l'intervention.` },
+      { label: 'Hyperparathyroïdie avec excès de calcium confirmé', explication: `Quand une glande parathyroïde s'emballe et fait monter le calcium dans le sang, source de fatigue et de fragilité osseuse, son ablation ciblée normalise durablement la situation.` },
     ],
     preparation: [
       'Échographie cervicale et cytoponction si indiquée',

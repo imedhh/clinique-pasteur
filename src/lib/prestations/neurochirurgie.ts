@@ -11,12 +11,12 @@ L'intervention est planifiée à partir d'une IRM pré-opératoire de haute rés
 Chaque tumeur retirée est analysée au microscope afin d'en déterminer la nature exacte. Cette analyse oriente la suite de la prise en charge, toujours discutée en concertation multidisciplinaire, en lien avec les autres spécialistes concernés.
 
 À la Clinique Pasteur Tunis, la chirurgie des tumeurs cérébrales s'appuie sur un plateau technique de pointe — microscope neurochirurgical, neuronavigation, monitoring per-opératoire, IRM haute résolution — et sur une réanimation polyvalente dédiée qui sécurise les suites opératoires.`,
-    image: '/images/neuro-bg.webp',
+    image: '/images/fiches/neurochir-chirurgie-tumeurs-cerebrales.webp',
     indications: [
-      'Tumeur cérébrale découverte à l\'imagerie et accessible à la chirurgie',
-      'Tumeur responsable de maux de tête, de crises d\'épilepsie ou de déficits neurologiques',
-      'Nécessité d\'une analyse précise de la lésion (biopsie ou exérèse)',
-      'Tumeur exerçant un effet de compression sur les structures voisines',
+      { label: 'Tumeur cérébrale découverte à l\'imagerie et accessible à la chirurgie', explication: `Lorsqu'une tumeur est visible à l'IRM et que sa localisation permet de l'atteindre sans danger, la chirurgie est le traitement de première intention pour la retirer.` },
+      { label: 'Tumeur responsable de maux de tête, de crises d\'épilepsie ou de déficits neurologiques', explication: `Quand une tumeur provoque des symptômes qui perturbent la vie quotidienne, son exérèse vise à les faire régresser et à protéger les fonctions du cerveau.` },
+      { label: 'Nécessité d\'une analyse précise de la lésion (biopsie ou exérèse)', explication: `Connaître la nature exacte d'une lésion est indispensable pour choisir le bon traitement. Un prélèvement ou l'ablation complète permet cette analyse au microscope.` },
+      { label: 'Tumeur exerçant un effet de compression sur les structures voisines', explication: `Une tumeur qui appuie sur les zones voisines du cerveau peut altérer leurs fonctions. La retirer lève cette compression et prévient l'aggravation des symptômes.` },
     ],
     preparation: [
       'IRM cérébrale de haute résolution pour la planification chirurgicale',
@@ -55,13 +55,13 @@ L'intervention consiste à libérer la racine nerveuse comprimée en retirant le
 Le soulagement de la douleur du membre est le plus souvent rapide, parfois dès le réveil. La récupération est facilitée par un lever précoce et des conseils posturaux simples.
 
 À la Clinique Pasteur Tunis, la chirurgie de la hernie discale est réalisée sous microscope opératoire par une équipe neurochirurgicale expérimentée, dans le cadre d'une hospitalisation courte et d'un accompagnement attentif de la convalescence.`,
-    image: '/images/surgery-blue-1.webp',
+    image: '/images/fiches/neurochir-chirurgie-hernie-discale.webp',
     indications: [
-      'Sciatique ou cruralgie résistant au traitement médical bien conduit',
-      'Névralgie cervico-brachiale persistante',
-      'Déficit moteur lié à la compression nerveuse',
-      'Douleurs invalidantes altérant la qualité de vie malgré le traitement',
-      'Hernie discale confirmée par IRM et concordante avec les symptômes',
+      { label: 'Sciatique ou cruralgie résistant au traitement médical bien conduit', explication: `Quand la douleur qui descend dans la jambe persiste malgré les médicaments, la rééducation et les infiltrations, retirer le fragment de disque qui comprime le nerf apporte un soulagement le plus souvent rapide.` },
+      { label: 'Névralgie cervico-brachiale persistante', explication: `C'est l'équivalent de la sciatique au niveau du bras : une hernie discale du cou comprime un nerf et provoque une douleur qui irradie dans le membre supérieur. La chirurgie libère ce nerf.` },
+      { label: 'Déficit moteur lié à la compression nerveuse', explication: `Quand le nerf comprimé commence à perdre sa force, par exemple avec un pied ou une main qui répond moins bien, il est important d'intervenir sans tarder pour favoriser la récupération.` },
+      { label: 'Douleurs invalidantes altérant la qualité de vie malgré le traitement', explication: `Lorsque la douleur empêche de dormir, de travailler ou de mener une vie normale malgré un traitement bien suivi, la chirurgie devient une option raisonnable et efficace.` },
+      { label: 'Hernie discale confirmée par IRM et concordante avec les symptômes', explication: `L'intervention n'est proposée que lorsque l'imagerie montre une hernie qui correspond exactement aux douleurs ressenties, gage d'un bon résultat chirurgical.` },
     ],
     preparation: [
       'IRM récente du rachis confirmant la hernie',
@@ -99,13 +99,13 @@ Lorsque la gêne à la marche devient invalidante malgré le traitement médical
 L'objectif principal est de récupérer un périmètre de marche confortable et une meilleure autonomie au quotidien. Le lever est précoce et la marche reprise dès les premiers jours.
 
 À la Clinique Pasteur Tunis, cette intervention est réalisée par une équipe neurochirurgicale expérimentée en chirurgie du rachis, avec un accompagnement personnalisé de la récupération, notamment chez les patients les plus âgés.`,
-    image: '/images/surgery-blue-2.webp',
+    image: '/images/fiches/neurochir-chirurgie-canal-lombaire-etroit.webp',
     indications: [
-      'Réduction douloureuse du périmètre de marche (claudication neurogène)',
-      'Douleurs ou fourmillements des jambes soulagés par la position penchée en avant',
-      'Échec du traitement médical et de la rééducation',
-      'Rétrécissement significatif confirmé par IRM ou scanner',
-      'Retentissement important sur l\'autonomie au quotidien',
+      { label: 'Réduction douloureuse du périmètre de marche (claudication neurogène)', explication: `Les nerfs à l'étroit dans le bas du dos font apparaître douleurs et lourdeurs dans les jambes après quelques pas, obligeant à s'arrêter. La chirurgie leur redonne de l'espace pour marcher plus loin.` },
+      { label: 'Douleurs ou fourmillements des jambes soulagés par la position penchée en avant', explication: `Le fait d'être soulagé en se penchant en avant, par exemple appuyé sur un caddie, est très caractéristique du canal lombaire étroit et oriente vers ce diagnostic.` },
+      { label: 'Échec du traitement médical et de la rééducation', explication: `La chirurgie n'est envisagée que lorsque les médicaments, les infiltrations et la rééducation n'apportent plus un soulagement suffisant.` },
+      { label: 'Rétrécissement significatif confirmé par IRM ou scanner', explication: `L'imagerie permet de visualiser précisément le rétrécissement du canal et de vérifier qu'il explique bien les symptômes avant de proposer l'intervention.` },
+      { label: 'Retentissement important sur l\'autonomie au quotidien', explication: `Quand faire ses courses, se promener ou simplement se déplacer chez soi devient difficile, l'intervention vise avant tout à redonner de l'indépendance.` },
     ],
     preparation: [
       'IRM ou scanner lombaire récent',
@@ -141,13 +141,13 @@ L'arthrodèse consiste à solidariser définitivement deux ou plusieurs vertèbr
 La planification est rigoureuse, fondée sur une imagerie complète, et le geste est réalisé avec un contrôle radiologique per-opératoire garantissant le positionnement précis des implants. Le lever est précoce, et la consolidation osseuse se poursuit pendant plusieurs mois, accompagnée d'une rééducation adaptée.
 
 À la Clinique Pasteur Tunis, la chirurgie de stabilisation du rachis est assurée par une équipe neurochirurgicale expérimentée, avec un plateau d'imagerie complet et une surveillance post-opératoire attentive, pour un retour progressif et sécurisé aux activités.`,
-    image: '/images/surgery-blue-3.webp',
+    image: '/images/fiches/neurochir-chirurgie-rachis-stabilisation-arthrodese.webp',
     indications: [
-      'Glissement vertébral (spondylolisthésis) douloureux ou évolutif',
-      'Instabilité vertébrale source de douleurs chroniques',
-      'Fracture vertébrale nécessitant une stabilisation',
-      'Usure discale évoluée résistant aux traitements',
-      'Déformations du rachis nécessitant une correction',
+      { label: 'Glissement vertébral (spondylolisthésis) douloureux ou évolutif', explication: `Quand une vertèbre glisse progressivement sur celle du dessous, elle provoque des douleurs et peut comprimer les nerfs. La fusion des vertèbres stoppe ce glissement.` },
+      { label: 'Instabilité vertébrale source de douleurs chroniques', explication: `Un mouvement anormal entre deux vertèbres peut entretenir des douleurs de dos persistantes. Les solidariser supprime ce mouvement douloureux.` },
+      { label: 'Fracture vertébrale nécessitant une stabilisation', explication: `Certaines fractures de la colonne sont instables et doivent être fixées par des implants pour protéger la moelle et les nerfs pendant la consolidation.` },
+      { label: 'Usure discale évoluée résistant aux traitements', explication: `Quand un disque très usé reste douloureux malgré tous les traitements médicaux, la fusion du segment concerné peut apporter un soulagement durable.` },
+      { label: 'Déformations du rachis nécessitant une correction', explication: `Certaines courbures anormales de la colonne s'aggravent avec le temps et justifient une correction chirurgicale pour restaurer un bon équilibre du dos.` },
     ],
     preparation: [
       'Bilan d\'imagerie complet (IRM, scanner, radiographies dynamiques)',
@@ -186,12 +186,12 @@ Le traitement chirurgical consiste à évacuer l'hématome pour lever la compres
 La rapidité de la prise en charge est un élément déterminant du pronostic : c'est pourquoi l'organisation de la clinique permet une prise en charge neurochirurgicale sans délai, du service des urgences au bloc opératoire.
 
 À la Clinique Pasteur Tunis, la chirurgie des hématomes intracrâniens bénéficie d'un circuit complet et réactif : urgences, scanner disponible en permanence, bloc opératoire et réanimation polyvalente dédiée, garantissant une prise en charge rapide et sécurisée à toute heure.`,
-    image: '/images/surgery-blue-4.webp',
+    image: '/images/fiches/neurochir-chirurgie-hematomes-intracraniens.webp',
     indications: [
-      'Hématome sous-dural chronique symptomatique (maux de tête, confusion, faiblesse)',
-      'Hématome extradural ou sous-dural aigu après traumatisme crânien',
-      'Hématome intracérébral accessible à la chirurgie',
-      'Hématome exerçant une compression significative visible au scanner',
+      { label: 'Hématome sous-dural chronique symptomatique (maux de tête, confusion, faiblesse)', explication: `Chez la personne âgée, une poche de sang peut se former lentement autour du cerveau, parfois après un choc minime oublié. Son drainage par un petit orifice soulage rapidement les symptômes.` },
+      { label: 'Hématome extradural ou sous-dural aigu après traumatisme crânien', explication: `Après un traumatisme crânien important, un saignement peut comprimer rapidement le cerveau. Son évacuation en urgence est alors déterminante.` },
+      { label: 'Hématome intracérébral accessible à la chirurgie', explication: `Certains saignements situés à l'intérieur même du cerveau peuvent être évacués chirurgicalement lorsque leur position le permet et que cela améliore le pronostic.` },
+      { label: 'Hématome exerçant une compression significative visible au scanner', explication: `C'est le scanner qui guide la décision : quand l'hématome comprime nettement le cerveau, l'intervention lève cette pression et protège les fonctions cérébrales.` },
     ],
     preparation: [
       'Scanner cérébral en urgence pour localiser et mesurer l\'hématome',
@@ -228,12 +228,12 @@ Le principe est d'identifier avec précision la zone du cerveau d'où partent le
 L'intervention elle-même est réalisée sous microscope, guidée par la neuronavigation et sécurisée par le monitoring neurophysiologique per-opératoire. L'objectif est une réduction majeure, voire une disparition des crises, avec à la clé une transformation de la qualité de vie.
 
 À la Clinique Pasteur Tunis, cette prise en charge s'appuie sur la collaboration étroite entre le service de neurochirurgie et le centre d'explorations neurophysiologiques de la clinique, qui assure les bilans vidéo-EEG pré-chirurgicaux et le monitoring per-opératoire.`,
-    image: '/images/neuro-eeg.webp',
+    image: '/images/fiches/neurochir-traitement-chirurgical-epilepsie.webp',
     indications: [
-      'Épilepsie résistant aux traitements médicamenteux bien conduits',
-      'Crises invalidantes retentissant sur la vie quotidienne, scolaire ou professionnelle',
-      'Zone épileptogène identifiée et accessible à un geste chirurgical',
-      'Bilan pré-chirurgical complet concluant à une indication opératoire',
+      { label: 'Épilepsie résistant aux traitements médicamenteux bien conduits', explication: `Quand les crises persistent malgré plusieurs traitements antiépileptiques bien suivis, une solution chirurgicale peut être étudiée chez certains patients soigneusement sélectionnés.` },
+      { label: 'Crises invalidantes retentissant sur la vie quotidienne, scolaire ou professionnelle', explication: `Des crises fréquentes limitent la conduite, le travail, les études et la vie sociale. L'objectif de la chirurgie est de réduire fortement, voire de supprimer ces crises.` },
+      { label: 'Zone épileptogène identifiée et accessible à un geste chirurgical', explication: `L'intervention n'est possible que si la région du cerveau d'où partent les crises est localisée avec précision et peut être traitée sans toucher aux fonctions essentielles.` },
+      { label: 'Bilan pré-chirurgical complet concluant à une indication opératoire', explication: `Enregistrements des crises, IRM et évaluation neuropsychologique sont analysés en équipe : la chirurgie n'est proposée que si toutes ces données concordent.` },
     ],
     preparation: [
       'Bilan vidéo-EEG prolongé au centre d\'explorations neurophysiologiques',
@@ -270,12 +270,12 @@ Le traitement dépend du type de malformation, de sa localisation et de son hist
 Lorsque la chirurgie est retenue, elle est réalisée sous microscope opératoire avec l'aide de la neuronavigation : exclusion d'un anévrisme par la pose d'un clip, exérèse d'un cavernome ou d'une malformation artério-veineuse accessible. Le monitoring neurophysiologique sécurise le geste dans les zones fonctionnelles.
 
 À la Clinique Pasteur Tunis, cette chirurgie hautement spécialisée bénéficie d'un plateau technique de pointe — microscope neurochirurgical, neuronavigation, imagerie haute résolution — et d'une réanimation polyvalente dédiée qui encadre étroitement les suites opératoires.`,
-    image: '/images/neuro-bg.webp',
+    image: '/images/fiches/neurochir-chirurgie-malformations-vasculaires-cerebrales.webp',
     indications: [
-      'Anévrisme cérébral nécessitant un traitement préventif ou après saignement',
-      'Malformation artério-veineuse symptomatique ou à risque',
-      'Cavernome responsable de crises d\'épilepsie ou de saignements',
-      'Malformation vasculaire découverte lors d\'un bilan et jugée à risque en concertation',
+      { label: 'Anévrisme cérébral nécessitant un traitement préventif ou après saignement', explication: `Un anévrisme est une petite poche fragile sur une artère du cerveau. Le traiter permet d'écarter le risque de saignement, ou d'éviter une récidive lorsqu'un saignement s'est déjà produit.` },
+      { label: 'Malformation artério-veineuse symptomatique ou à risque', explication: `Cette communication anormale entre artères et veines peut provoquer maux de tête, crises ou saignements. Son traitement est décidé au cas par cas par une équipe multidisciplinaire.` },
+      { label: 'Cavernome responsable de crises d\'épilepsie ou de saignements', explication: `Un cavernome est un amas de petits vaisseaux fragiles. Lorsqu'il saigne ou déclenche des crises d'épilepsie, son ablation chirurgicale peut être recommandée.` },
+      { label: 'Malformation vasculaire découverte lors d\'un bilan et jugée à risque en concertation', explication: `Certaines malformations découvertes par hasard ne nécessitent qu'une surveillance ; d'autres, jugées à risque après discussion en équipe, bénéficient d'un traitement préventif.` },
     ],
     preparation: [
       'Imagerie vasculaire complète (angio-scanner, angio-IRM, artériographie selon les cas)',
@@ -313,13 +313,13 @@ Concrètement, les images pré-opératoires du patient sont chargées dans le sy
 Les bénéfices sont concrets : des ouvertures crâniennes plus petites et parfaitement centrées, un accès plus direct à la lésion, un respect accru des zones sensibles du cerveau et, au total, des interventions plus précises et plus sûres. La neuronavigation est particulièrement précieuse pour les tumeurs profondes, les lésions de petite taille et la chirurgie des zones fonctionnelles.
 
 À la Clinique Pasteur Tunis, le service de neurochirurgie dispose d'un système de neuronavigation couplé à l'IRM pré-opératoire de haute résolution, utilisé en routine pour la chirurgie crânienne, au bénéfice direct de la sécurité des patients.`,
-    image: '/images/radiologie-irm.webp',
+    image: '/images/fiches/neurochir-neuronavigation.webp',
     indications: [
-      'Chirurgie des tumeurs cérébrales, en particulier profondes ou de petite taille',
-      'Biopsies cérébrales ciblées',
-      'Chirurgie proche des zones fonctionnelles (motricité, langage)',
-      'Chirurgie de l\'épilepsie',
-      'Certaines interventions sur les malformations vasculaires',
+      { label: 'Chirurgie des tumeurs cérébrales, en particulier profondes ou de petite taille', explication: `Pour atteindre une lésion profonde ou minuscule, le guidage par neuronavigation permet de suivre le chemin le plus court et le plus sûr à travers le cerveau.` },
+      { label: 'Biopsies cérébrales ciblées', explication: `Quand un simple prélèvement est nécessaire pour analyser une lésion, la neuronavigation guide l'aiguille avec une précision millimétrique.` },
+      { label: 'Chirurgie proche des zones fonctionnelles (motricité, langage)', explication: `À proximité des régions qui commandent le mouvement ou la parole, ce guidage aide le chirurgien à préserver ces fonctions essentielles.` },
+      { label: 'Chirurgie de l\'épilepsie', explication: `La zone d'où partent les crises est repérée sur l'imagerie puis retrouvée avec exactitude au bloc opératoire grâce à la neuronavigation.` },
+      { label: 'Certaines interventions sur les malformations vasculaires', explication: `Pour aborder une malformation des vaisseaux du cerveau, le guidage permet une ouverture parfaitement centrée et un accès plus direct et plus sûr.` },
     ],
     preparation: [
       'IRM cérébrale de haute résolution réalisée avant l\'intervention selon un protocole dédié',
@@ -352,13 +352,13 @@ La chirurgie de libération nerveuse consiste à ouvrir le tunnel anatomique res
 En cas de lésion traumatique d'un nerf (plaie, étirement), une réparation microchirurgicale peut être réalisée : suture directe du nerf ou greffe nerveuse sous microscope. La récupération est alors progressive, le nerf repoussant lentement, et s'accompagne d'une rééducation adaptée.
 
 À la Clinique Pasteur Tunis, la chirurgie des nerfs périphériques est réalisée sous microscope opératoire par une équipe neurochirurgicale expérimentée, en lien avec le centre d'explorations neurophysiologiques de la clinique qui assure les électromyogrammes de diagnostic et de suivi.`,
-    image: '/images/surgery-blue-5.webp',
+    image: '/images/fiches/neurochir-chirurgie-nerfs-peripheriques.webp',
     indications: [
-      'Syndrome du canal carpien avec fourmillements gênants ou perte de force',
-      'Compression du nerf ulnaire au coude',
-      'Autres syndromes de compression nerveuse confirmés par électromyogramme',
-      'Lésion traumatique d\'un nerf nécessitant une réparation',
-      'Tumeur bénigne d\'un nerf périphérique',
+      { label: 'Syndrome du canal carpien avec fourmillements gênants ou perte de force', explication: `Le nerf comprimé au poignet provoque des fourmillements des doigts, surtout la nuit, puis une perte de force. Une courte intervention le libère et soulage rapidement ces symptômes.` },
+      { label: 'Compression du nerf ulnaire au coude', explication: `Ce nerf, celui qui provoque une décharge électrique quand on se cogne le coude, peut être comprimé et entraîner fourmillements et faiblesse des derniers doigts. Sa libération chirurgicale évite l'aggravation.` },
+      { label: 'Autres syndromes de compression nerveuse confirmés par électromyogramme', explication: `D'autres nerfs des bras ou des jambes peuvent être coincés dans des passages étroits. L'électromyogramme confirme la compression avant de proposer la libération.` },
+      { label: 'Lésion traumatique d\'un nerf nécessitant une réparation', explication: `Après une plaie ou un étirement, un nerf sectionné peut être réparé sous microscope. Le nerf repousse ensuite lentement, avec une récupération progressive.` },
+      { label: 'Tumeur bénigne d\'un nerf périphérique', explication: `Certaines petites tumeurs bénignes se développent sur les nerfs et deviennent gênantes ou douloureuses. Elles sont retirées en préservant soigneusement le nerf.` },
     ],
     preparation: [
       'Électromyogramme (EMG) confirmant la compression ou la lésion',
@@ -394,12 +394,12 @@ Le traitement repose d'abord sur des médicaments spécifiques, efficaces chez l
 Des techniques moins invasives (thermocoagulation, compression par ballonnet) peuvent également être proposées selon l'âge, l'état général et les préférences du patient. Le choix de la technique est discuté au cas par cas avec le neurochirurgien.
 
 À la Clinique Pasteur Tunis, la prise en charge de la névralgie du trijumeau associe une évaluation précise — IRM de haute résolution recherchant le conflit entre vaisseau et nerf — et l'expertise d'une équipe neurochirurgicale disposant du microscope opératoire et du monitoring per-opératoire.`,
-    image: '/images/surgery-blue-1.webp',
+    image: '/images/fiches/neurochir-traitement-nevralgie-trijumeau.webp',
     indications: [
-      'Névralgie du trijumeau résistant au traitement médicamenteux',
-      'Effets indésirables des médicaments empêchant leur poursuite',
-      'Conflit entre un vaisseau et le nerf trijumeau identifié à l\'IRM',
-      'Douleurs faciales invalidantes retentissant sur l\'alimentation et la vie sociale',
+      { label: 'Névralgie du trijumeau résistant au traitement médicamenteux', explication: `Quand les douleurs fulgurantes du visage persistent malgré les médicaments spécifiques, une solution chirurgicale peut apporter un soulagement durable.` },
+      { label: 'Effets indésirables des médicaments empêchant leur poursuite', explication: `Certains patients tolèrent mal les traitements de la névralgie (somnolence, vertiges). La chirurgie offre alors une alternative pour ne pas rester sans solution.` },
+      { label: 'Conflit entre un vaisseau et le nerf trijumeau identifié à l\'IRM', explication: `Dans de nombreux cas, la douleur vient d'une petite artère qui bat au contact du nerf. Quand l'IRM montre ce conflit, l'interposition d'un coussinet protecteur traite la cause même de la névralgie.` },
+      { label: 'Douleurs faciales invalidantes retentissant sur l\'alimentation et la vie sociale', explication: `Quand parler, mastiquer ou se brosser les dents déclenche des décharges insupportables, la vie quotidienne devient très difficile. L'intervention vise à retrouver une vie normale.` },
     ],
     preparation: [
       'IRM cérébrale de haute résolution centrée sur le nerf trijumeau',

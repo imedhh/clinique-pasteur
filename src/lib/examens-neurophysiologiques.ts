@@ -2,6 +2,7 @@ export interface ExamenNeurophysiologique {
   slug: string;
   title: string;
   shortTitle: string;
+  image?: string;
   description: string;
   fullDescription: string;
   preparation: string[];
@@ -9,7 +10,7 @@ export interface ExamenNeurophysiologique {
   duree: string;
   resultats: string;
   risques: string[];
-  indications: string[];
+  indications: { label: string; explication: string }[];
 }
 
 export const examensNeurophysiologiques: ExamenNeurophysiologique[] = [
@@ -17,6 +18,7 @@ export const examensNeurophysiologiques: ExamenNeurophysiologique[] = [
     slug: 'eeg-standard',
     title: 'Électroencéphalogramme (EEG) standard',
     shortTitle: 'EEG standard',
+    image: '/images/fiches/neuro-eeg-standard.webp',
     description:
       "Enregistrement de l'activité électrique cérébrale au repos et lors de stimulations, permettant de détecter des anomalies fonctionnelles du cerveau.",
     fullDescription: `L'électroencéphalogramme (EEG) standard est un examen non invasif qui enregistre l'activité électrique du cerveau à l'aide d'électrodes placées sur le cuir chevelu. Il constitue l'un des examens fondamentaux en neurologie, offrant une fenêtre directe sur le fonctionnement cérébral en temps réel.
@@ -48,21 +50,22 @@ Au cours de l'enregistrement, des épreuves d'activation sont réalisées : l'hy
       'Les résultats sont interprétés par le médecin neurophysiologiste et un compte-rendu détaillé est généralement disponible sous 24 à 48 heures. En cas d\'urgence, une interprétation immédiate peut être réalisée.',
     risques: [],
     indications: [
-      'Suspicion ou suivi d\'épilepsie',
-      'Crises convulsives fébriles chez l\'enfant',
-      'Malaises avec perte de connaissance inexpliquée',
-      'Troubles de la conscience ou confusion mentale',
-      'Céphalées chroniques ou inhabituelles',
-      'Troubles du comportement ou troubles cognitifs',
-      'Encéphalopathies métaboliques ou toxiques',
-      'Suivi de traitements antiépileptiques',
-      'Bilan pré-opératoire neurochirurgical',
+      { label: 'Suspicion ou suivi d\'épilepsie', explication: `Cet examen aide à savoir si des crises pourraient être d'origine épileptique et à surveiller l'évolution d'une épilepsie déjà connue.` },
+      { label: 'Crises convulsives fébriles chez l\'enfant', explication: `Il est proposé lorsqu'un enfant fait des convulsions au cours de fortes fièvres, pour mieux comprendre ces épisodes et rassurer les parents.` },
+      { label: 'Malaises avec perte de connaissance inexpliquée', explication: `Après un malaise avec perte de connaissance sans cause évidente, l'examen recherche une éventuelle origine cérébrale.` },
+      { label: 'Troubles de la conscience ou confusion mentale', explication: `Il est utile pour explorer des états de confusion ou une conscience altérée dont la cause n'est pas encore identifiée.` },
+      { label: 'Céphalées chroniques ou inhabituelles', explication: `Il peut être demandé face à des maux de tête persistants ou d'apparition inhabituelle, afin d'écarter une cause neurologique.` },
+      { label: 'Troubles du comportement ou troubles cognitifs', explication: `Il apporte des informations lorsque des changements de comportement ou des difficultés de mémoire et de raisonnement inquiètent.` },
+      { label: 'Encéphalopathies métaboliques ou toxiques', explication: `Il aide le médecin à évaluer le retentissement sur le cerveau de certains déséquilibres du métabolisme ou d'intoxications.` },
+      { label: 'Suivi de traitements antiépileptiques', explication: `Il permet de vérifier l'effet d'un traitement contre l'épilepsie et d'ajuster la prise en charge au fil du temps.` },
+      { label: 'Bilan pré-opératoire neurochirurgical', explication: `Il fait partie des examens préparatoires avant une intervention sur le cerveau, pour évaluer son fonctionnement.` },
     ],
   },
   {
     slug: 'eeg-sommeil',
     title: 'Électroencéphalogramme de sommeil',
     shortTitle: 'EEG de sommeil',
+    image: '/images/fiches/neuro-eeg-sommeil.webp',
     description:
       "Enregistrement de l'activité électrique cérébrale pendant le sommeil, particulièrement utile pour détecter des anomalies épileptiques qui n'apparaissent qu'au cours du sommeil.",
     fullDescription: `L'électroencéphalogramme de sommeil est un examen neurophysiologique qui enregistre l'activité électrique du cerveau pendant les différentes phases du sommeil. De nombreuses anomalies épileptiques ne se manifestent que pendant le sommeil, rendant cet examen indispensable dans certaines situations cliniques.
@@ -95,21 +98,22 @@ La Clinique Pasteur de Tunis dispose d'un environnement spécialement aménagé 
       'Le compte-rendu est établi par le neurophysiologiste après analyse détaillée de l\'enregistrement de veille et de sommeil. Les résultats sont disponibles sous 48 heures.',
     risques: [],
     indications: [
-      'EEG de veille normal malgré une forte suspicion d\'épilepsie',
-      'Épilepsies focales bénignes de l\'enfant (pointes centro-temporales)',
-      'Épilepsie-absence de l\'enfant',
-      'Syndrome de Landau-Kleffner',
-      'Pointes-ondes continues du sommeil (POCS)',
-      'Épilepsies du lobe temporal',
-      'Troubles paroxystiques du sommeil à différencier de l\'épilepsie',
-      'Parasomnies nécessitant un diagnostic différentiel avec l\'épilepsie',
-      'Suivi post-thérapeutique de certaines épilepsies',
+      { label: 'EEG de veille normal malgré une forte suspicion d\'épilepsie', explication: `Il est proposé quand un premier examen à l'éveil n'a rien montré alors que les signes cliniques font fortement penser à une épilepsie, certaines anomalies n'apparaissant que pendant le sommeil.` },
+      { label: 'Épilepsies focales bénignes de l\'enfant (pointes centro-temporales)', explication: `Il aide à repérer ce type d'épilepsie de l'enfant dont les anomalies sont surtout visibles durant le sommeil.` },
+      { label: 'Épilepsie-absence de l\'enfant', explication: `Il contribue à confirmer les brèves absences que peut présenter un enfant et à orienter la prise en charge.` },
+      { label: 'Syndrome de Landau-Kleffner', explication: `Il est utile lorsque des troubles du langage chez l'enfant font suspecter cette forme particulière d'épilepsie liée au sommeil.` },
+      { label: 'Pointes-ondes continues du sommeil (POCS)', explication: `Il permet de rechercher une activité électrique anormale très fréquente pendant le sommeil, qui peut retentir sur les apprentissages de l'enfant.` },
+      { label: 'Épilepsies du lobe temporal', explication: `Il aide à mettre en évidence des anomalies de cette région du cerveau qui se révèlent souvent au cours du sommeil.` },
+      { label: 'Troubles paroxystiques du sommeil à différencier de l\'épilepsie', explication: `Il aide à distinguer une véritable crise d'épilepsie d'autres phénomènes survenant pendant le sommeil.` },
+      { label: 'Parasomnies nécessitant un diagnostic différentiel avec l\'épilepsie', explication: `Il est demandé pour faire la différence entre des comportements anormaux du sommeil et des crises d'épilepsie.` },
+      { label: 'Suivi post-thérapeutique de certaines épilepsies', explication: `Il permet de contrôler l'évolution et l'effet du traitement dans certaines épilepsies liées au sommeil.` },
     ],
   },
   {
     slug: 'video-eeg-prolonge',
     title: 'Vidéo-EEG prolongé (monitoring continu)',
     shortTitle: 'Vidéo-EEG',
+    image: '/images/fiches/neuro-video-eeg-prolonge.webp',
     description:
       "Enregistrement simultané et prolongé de l'activité électrique cérébrale et du comportement du patient par vidéo, permettant de corréler les manifestations cliniques aux anomalies EEG.",
     fullDescription: `Le vidéo-EEG prolongé est un examen de référence qui combine l'enregistrement continu de l'activité électrique cérébrale (EEG) avec une surveillance vidéo synchronisée du patient. Cette technique permet d'établir une corrélation précise entre les manifestations cliniques observées et les anomalies électriques cérébrales correspondantes.
@@ -146,19 +150,20 @@ La Clinique Pasteur de Tunis dispose d'une unité de vidéo-EEG équipée de mat
       'Très rarement, état de mal épileptique nécessitant une intervention médicale immédiate (équipe de réanimation disponible).',
     ],
     indications: [
-      'Bilan pré-chirurgical de l\'épilepsie pharmaco-résistante',
-      'Diagnostic différentiel entre crises épileptiques et crises psychogènes non épileptiques',
-      'Classification précise du type d\'épilepsie',
-      'Localisation du foyer épileptogène avant chirurgie',
-      'Quantification des crises et des anomalies intercritiques',
-      'Évaluation de l\'efficacité d\'un traitement antiépileptique',
-      'Événements paroxystiques de nature indéterminée',
+      { label: 'Bilan pré-chirurgical de l\'épilepsie pharmaco-résistante', explication: `Il est réalisé quand les médicaments ne suffisent pas à contrôler l'épilepsie et qu'une opération est envisagée, pour bien préparer cette décision.` },
+      { label: 'Diagnostic différentiel entre crises épileptiques et crises psychogènes non épileptiques', explication: `En filmant les crises tout en enregistrant l'activité du cerveau, il aide à distinguer une véritable crise d'épilepsie d'un malaise d'une autre nature.` },
+      { label: 'Classification précise du type d\'épilepsie', explication: `Il permet de préciser la forme exacte d'épilepsie afin de choisir le traitement le mieux adapté.` },
+      { label: 'Localisation du foyer épileptogène avant chirurgie', explication: `Il aide à repérer la zone du cerveau d'où partent les crises, information essentielle avant une intervention.` },
+      { label: 'Quantification des crises et des anomalies intercritiques', explication: `Il permet de compter et de mieux caractériser les crises et les anomalies observées entre les crises.` },
+      { label: 'Évaluation de l\'efficacité d\'un traitement antiépileptique', explication: `Il aide à vérifier si un traitement fonctionne bien en observant les crises et l'activité cérébrale sur une période prolongée.` },
+      { label: 'Événements paroxystiques de nature indéterminée', explication: `Il est utile face à des épisodes soudains et répétés dont la cause reste à préciser.` },
     ],
   },
   {
     slug: 'emg-detection',
     title: 'Électromyogramme (EMG) de détection',
     shortTitle: 'EMG de détection',
+    image: '/images/fiches/neuro-emg-detection.webp',
     description:
       "Examen d'exploration de l'activité électrique des muscles au repos et lors de la contraction, permettant de diagnostiquer les atteintes musculaires et nerveuses périphériques.",
     fullDescription: `L'électromyogramme (EMG) de détection est un examen neurophysiologique qui analyse l'activité électrique des muscles à l'aide d'une électrode-aiguille fine insérée dans le muscle. Cet examen permet d'évaluer l'intégrité de l'unité motrice, c'est-à-dire l'ensemble formé par le motoneurone, son axone et les fibres musculaires qu'il innerve.
@@ -195,21 +200,22 @@ Cet examen est fondamental dans le diagnostic des neuropathies périphériques, 
       'Risque infectieux extrêmement faible grâce à l\'utilisation d\'aiguilles stériles à usage unique.',
     ],
     indications: [
-      'Suspicion de maladie du motoneurone (sclérose latérale amyotrophique)',
-      'Radiculopathies cervicales ou lombaires (sciatique, cruralgie)',
-      'Neuropathies périphériques (diabétique, alcoolique, inflammatoire)',
-      'Syndrome du canal carpien et autres syndromes canalaires',
-      'Myopathies et dystrophies musculaires',
-      'Myosites et polymyosites',
-      'Faiblesse musculaire inexpliquée',
-      'Amyotrophie localisée ou diffuse',
-      'Fasciculations ou crampes musculaires persistantes',
+      { label: 'Suspicion de maladie du motoneurone (sclérose latérale amyotrophique)', explication: `Il aide le médecin à explorer une maladie touchant les nerfs qui commandent les muscles lorsque des signes évocateurs apparaissent.` },
+      { label: 'Radiculopathies cervicales ou lombaires (sciatique, cruralgie)', explication: `Il est utile face à une douleur irradiant dans le bras ou la jambe, pour préciser si une racine nerveuse est comprimée.` },
+      { label: 'Neuropathies périphériques (diabétique, alcoolique, inflammatoire)', explication: `Il permet d'explorer une atteinte des nerfs, par exemple liée au diabète, et d'en apprécier l'importance.` },
+      { label: 'Syndrome du canal carpien et autres syndromes canalaires', explication: `Il aide à confirmer une compression d'un nerf, comme au poignet, à l'origine de fourmillements ou d'engourdissements.` },
+      { label: 'Myopathies et dystrophies musculaires', explication: `Il contribue à distinguer une maladie du muscle lui-même d'une atteinte du nerf qui le commande.` },
+      { label: 'Myosites et polymyosites', explication: `Il aide à explorer une inflammation des muscles responsable d'une faiblesse ou de douleurs.` },
+      { label: 'Faiblesse musculaire inexpliquée', explication: `Il est proposé quand une perte de force sans cause évidente nécessite d'être explorée.` },
+      { label: 'Amyotrophie localisée ou diffuse', explication: `Il aide à comprendre l'origine d'une fonte musculaire, qu'elle touche une zone précise ou l'ensemble du corps.` },
+      { label: 'Fasciculations ou crampes musculaires persistantes', explication: `Il est utile face à des secousses ou des crampes musculaires répétées et gênantes.` },
     ],
   },
   {
     slug: 'vitesses-conduction-nerveuse',
     title: 'Étude des vitesses de conduction nerveuse (VCN)',
     shortTitle: 'Conduction nerveuse (VCN)',
+    image: '/images/fiches/neuro-vitesses-conduction-nerveuse.webp',
     description:
       "Mesure de la vitesse et de la qualité de transmission de l'influx nerveux le long des nerfs périphériques, essentielle au diagnostic des neuropathies.",
     fullDescription: `L'étude des vitesses de conduction nerveuse (VCN) est un examen neurophysiologique qui mesure la capacité des nerfs périphériques à conduire l'influx électrique. En stimulant un nerf en un point et en recueillant la réponse en un autre point, on peut calculer la vitesse de conduction, l'amplitude de la réponse et d'autres paramètres reflétant l'intégrité du nerf.
@@ -245,21 +251,22 @@ La Clinique Pasteur de Tunis utilise des appareils d'électroneuromyographie num
       'Aucun risque pour les patients porteurs de pacemaker si les précautions sont respectées.',
     ],
     indications: [
-      'Syndrome du canal carpien',
-      'Syndrome du canal de Guyon (nerf ulnaire au poignet)',
-      'Compression du nerf ulnaire au coude',
-      'Polyneuropathies (diabétique, alcoolique, toxique, inflammatoire)',
-      'Polyradiculonévrite aiguë (syndrome de Guillain-Barré)',
-      'Polyradiculonévrite chronique (PIDC)',
-      'Mononeuropathies et multinévrites',
-      'Neuropathies héréditaires (maladie de Charcot-Marie-Tooth)',
-      'Surveillance de traitements neurotoxiques (chimiothérapie)',
+      { label: 'Syndrome du canal carpien', explication: `Il aide à confirmer la compression du nerf au niveau du poignet, souvent responsable de fourmillements dans la main.` },
+      { label: 'Syndrome du canal de Guyon (nerf ulnaire au poignet)', explication: `Il explore une compression d'un autre nerf au poignet pouvant gêner certains doigts.` },
+      { label: 'Compression du nerf ulnaire au coude', explication: `Il est utile face à des fourmillements ou une faiblesse liés à une compression du nerf au niveau du coude.` },
+      { label: 'Polyneuropathies (diabétique, alcoolique, toxique, inflammatoire)', explication: `Il permet d'évaluer une atteinte diffuse des nerfs, par exemple liée au diabète, et d'en préciser la nature.` },
+      { label: 'Polyradiculonévrite aiguë (syndrome de Guillain-Barré)', explication: `Il aide à reconnaître rapidement cette atteinte des nerfs d'installation brutale, qui nécessite une prise en charge urgente.` },
+      { label: 'Polyradiculonévrite chronique (PIDC)', explication: `Il contribue au diagnostic d'une atteinte des nerfs évoluant sur une longue durée et pouvant bénéficier d'un traitement.` },
+      { label: 'Mononeuropathies et multinévrites', explication: `Il aide à explorer l'atteinte d'un ou de plusieurs nerfs distincts pour en comprendre l'origine.` },
+      { label: 'Neuropathies héréditaires (maladie de Charcot-Marie-Tooth)', explication: `Il apporte des éléments utiles lorsqu'une maladie familiale des nerfs est suspectée.` },
+      { label: 'Surveillance de traitements neurotoxiques (chimiothérapie)', explication: `Il permet de surveiller les nerfs chez des patients recevant des traitements pouvant les affecter.` },
     ],
   },
   {
     slug: 'potentiels-evoques-visuels',
     title: 'Potentiels évoqués visuels (PEV)',
     shortTitle: 'PEV',
+    image: '/images/fiches/neuro-potentiels-evoques-visuels.webp',
     description:
       "Enregistrement de la réponse électrique du cortex visuel à une stimulation lumineuse, permettant d'évaluer l'intégrité des voies visuelles du nerf optique au cortex occipital.",
     fullDescription: `Les potentiels évoqués visuels (PEV) sont un examen neurophysiologique qui mesure la réponse électrique du cortex visuel occipital à une stimulation visuelle standardisée. L'examen consiste à enregistrer, à l'aide d'électrodes placées sur le scalp en regard du cortex occipital, les signaux électriques générés par le cerveau en réponse à un stimulus visuel, le plus souvent un damier alternant affiché sur un écran.
@@ -291,20 +298,21 @@ La Clinique Pasteur de Tunis réalise les PEV selon les protocoles standardisés
       'Le neurophysiologiste analyse les tracés et compare les latences et amplitudes aux valeurs normatives. Les résultats sont disponibles sous 24 à 48 heures. Un allongement de la latence P100 ou une asymétrie inter-oculaire significative sont les principales anomalies recherchées.',
     risques: [],
     indications: [
-      'Suspicion de sclérose en plaques (recherche de névrite optique infraclinique)',
-      'Névrite optique rétrobulbaire',
-      'Neuropathie optique (compressive, toxique, ischémique, héréditaire)',
-      'Baisse d\'acuité visuelle inexpliquée',
-      'Tumeurs comprimant les voies visuelles (adénome hypophysaire, méningiome)',
-      'Surveillance de pathologies démyélinisantes',
-      'Évaluation fonctionnelle des voies visuelles chez les enfants non coopérants',
-      'Bilan de neurosarcoïdose ou de maladie de Behçet avec atteinte neurologique',
+      { label: 'Suspicion de sclérose en plaques (recherche de névrite optique infraclinique)', explication: `Il aide à détecter une atteinte du nerf optique, parfois sans symptôme, dans le cadre du bilan d'une sclérose en plaques.` },
+      { label: 'Névrite optique rétrobulbaire', explication: `Il est utile pour explorer une inflammation du nerf optique responsable d'une baisse de vision.` },
+      { label: 'Neuropathie optique (compressive, toxique, ischémique, héréditaire)', explication: `Il permet d'évaluer le fonctionnement du nerf optique lorsqu'il est atteint pour différentes raisons.` },
+      { label: 'Baisse d\'acuité visuelle inexpliquée', explication: `Il aide à préciser l'origine d'une diminution de la vision dont la cause n'est pas encore établie.` },
+      { label: 'Tumeurs comprimant les voies visuelles (adénome hypophysaire, méningiome)', explication: `Il apporte des informations quand une masse peut appuyer sur les voies de la vision.` },
+      { label: 'Surveillance de pathologies démyélinisantes', explication: `Il permet de suivre l'évolution de maladies qui touchent la gaine protectrice des nerfs, dont ceux de la vision.` },
+      { label: 'Évaluation fonctionnelle des voies visuelles chez les enfants non coopérants', explication: `Il offre un moyen d'évaluer la vision de façon objective chez un enfant qui ne peut pas coopérer à un examen classique.` },
+      { label: 'Bilan de neurosarcoïdose ou de maladie de Behçet avec atteinte neurologique', explication: `Il aide à explorer le retentissement de ces maladies inflammatoires lorsqu'elles touchent le système nerveux.` },
     ],
   },
   {
     slug: 'potentiels-evoques-auditifs',
     title: 'Potentiels évoqués auditifs (PEA)',
     shortTitle: 'PEA',
+    image: '/images/fiches/neuro-potentiels-evoques-auditifs.webp',
     description:
       "Enregistrement des réponses électriques des voies auditives du nerf cochléaire au tronc cérébral, permettant d'évaluer l'audition et l'intégrité des voies auditives centrales.",
     fullDescription: `Les potentiels évoqués auditifs (PEA) du tronc cérébral, également appelés PEAEP (potentiels évoqués auditifs précoces), enregistrent les réponses électriques générées par les voies auditives en réponse à une stimulation sonore (clics ou tone bursts). L'examen recueille une série d'ondes (I à V) dont chacune correspond à un relais anatomique précis des voies auditives, du nerf cochléaire au colliculus inférieur.
@@ -336,20 +344,21 @@ La Clinique Pasteur de Tunis dispose d'un équipement de PEA performant, permett
       'Les résultats sont interprétés par le neurophysiologiste et mis en corrélation avec les données cliniques et audiométriques. Le compte-rendu est disponible sous 24 à 48 heures.',
     risques: [],
     indications: [
-      'Suspicion de neurinome de l\'acoustique (schwannome vestibulaire)',
-      'Surdité de perception unilatérale ou asymétrique',
-      'Dépistage de la surdité néonatale',
-      'Sclérose en plaques (recherche d\'atteinte infraclinique du tronc cérébral)',
-      'Lésions du tronc cérébral (vasculaires, tumorales, inflammatoires)',
-      'Surveillance en réanimation (coma, mort encéphalique)',
-      'Évaluation objective de l\'audition chez les patients non coopérants',
-      'Acouphènes unilatéraux nécessitant une exploration',
+      { label: 'Suspicion de neurinome de l\'acoustique (schwannome vestibulaire)', explication: `Il aide à explorer une tumeur bénigne du nerf de l'audition lorsqu'elle est suspectée.` },
+      { label: 'Surdité de perception unilatérale ou asymétrique', explication: `Il est utile face à une baisse d'audition touchant surtout une oreille, pour en préciser l'origine.` },
+      { label: 'Dépistage de la surdité néonatale', explication: `Il permet de vérifier l'audition d'un nouveau-né de façon objective, sans qu'il ait besoin de coopérer.` },
+      { label: 'Sclérose en plaques (recherche d\'atteinte infraclinique du tronc cérébral)', explication: `Il aide à repérer une atteinte discrète des voies de l'audition dans le cadre du bilan d'une sclérose en plaques.` },
+      { label: 'Lésions du tronc cérébral (vasculaires, tumorales, inflammatoires)', explication: `Il apporte des informations sur le fonctionnement d'une région profonde du cerveau lorsqu'elle peut être atteinte.` },
+      { label: 'Surveillance en réanimation (coma, mort encéphalique)', explication: `Il aide l'équipe médicale à évaluer l'état du cerveau chez des patients en situation critique.` },
+      { label: 'Évaluation objective de l\'audition chez les patients non coopérants', explication: `Il offre un moyen fiable de tester l'audition chez une personne qui ne peut pas répondre aux tests habituels.` },
+      { label: 'Acouphènes unilatéraux nécessitant une exploration', explication: `Il est proposé face à des bruits perçus dans une seule oreille pour en rechercher la cause.` },
     ],
   },
   {
     slug: 'potentiels-evoques-somesthesiques',
     title: 'Potentiels évoqués somesthésiques (PES)',
     shortTitle: 'PES',
+    image: '/images/fiches/neuro-potentiels-evoques-somesthesiques.webp',
     description:
       "Enregistrement des réponses électriques des voies sensitives depuis les nerfs périphériques jusqu'au cortex cérébral, évaluant l'intégrité de la voie lemniscale.",
     fullDescription: `Les potentiels évoqués somesthésiques (PES) explorent la voie sensitive lemniscale (voie de la sensibilité profonde et du tact épicritique) dans son intégralité, depuis les nerfs périphériques jusqu'au cortex pariétal. L'examen consiste à stimuler électriquement un nerf périphérique (habituellement le nerf médian au poignet ou le nerf tibial postérieur à la cheville) et à recueillir les réponses à différents niveaux le long des voies sensitives.
@@ -383,21 +392,22 @@ La Clinique Pasteur de Tunis réalise les PES selon les recommandations internat
       'Sensation désagréable lors des stimulations électriques, généralement bien tolérée.',
     ],
     indications: [
-      'Sclérose en plaques (recherche d\'atteinte infraclinique des voies sensitives)',
-      'Myélopathie cervicarthrosique (compression médullaire cervicale)',
-      'Compression médullaire d\'autre origine (tumorale, hernie discale)',
-      'Lésions médullaires traumatiques',
-      'Syndrome de la queue de cheval',
-      'Atteintes du tronc cérébral',
-      'Monitoring per-opératoire lors de chirurgies rachidiennes',
-      'Évaluation pronostique dans les comas et les traumatismes crâniens graves',
-      'Myélites inflammatoires ou infectieuses',
+      { label: 'Sclérose en plaques (recherche d\'atteinte infraclinique des voies sensitives)', explication: `Il aide à repérer une atteinte discrète des voies de la sensibilité dans le cadre du bilan d'une sclérose en plaques.` },
+      { label: 'Myélopathie cervicarthrosique (compression médullaire cervicale)', explication: `Il est utile lorsqu'une usure des vertèbres du cou comprime la moelle épinière, pour en évaluer le retentissement.` },
+      { label: 'Compression médullaire d\'autre origine (tumorale, hernie discale)', explication: `Il permet d'apprécier le fonctionnement de la moelle épinière lorsqu'elle est comprimée par une hernie ou une masse.` },
+      { label: 'Lésions médullaires traumatiques', explication: `Il aide à évaluer les voies de la sensibilité après un traumatisme de la moelle épinière.` },
+      { label: 'Syndrome de la queue de cheval', explication: `Il est utile pour explorer l'atteinte des nerfs situés au bas de la colonne, à l'origine de troubles sensitifs.` },
+      { label: 'Atteintes du tronc cérébral', explication: `Il apporte des informations sur les voies de la sensibilité passant par une région profonde du cerveau.` },
+      { label: 'Monitoring per-opératoire lors de chirurgies rachidiennes', explication: `Il permet de surveiller la moelle épinière en temps réel pendant une opération de la colonne, pour la protéger.` },
+      { label: 'Évaluation pronostique dans les comas et les traumatismes crâniens graves', explication: `Il aide l'équipe médicale à évaluer l'état du cerveau chez des patients gravement atteints.` },
+      { label: 'Myélites inflammatoires ou infectieuses', explication: `Il est utile pour explorer une inflammation ou une infection de la moelle épinière.` },
     ],
   },
   {
     slug: 'potentiels-evoques-moteurs',
     title: 'Potentiels évoqués moteurs (PEM)',
     shortTitle: 'PEM',
+    image: '/images/fiches/neuro-potentiels-evoques-moteurs.webp',
     description:
       "Évaluation de la voie motrice cortico-spinale par stimulation magnétique transcrânienne, mesurant le temps de conduction motrice centrale du cortex moteur aux muscles.",
     fullDescription: `Les potentiels évoqués moteurs (PEM) explorent l'intégrité de la voie motrice cortico-spinale (voie pyramidale) en utilisant la stimulation magnétique transcrânienne (TMS). Une bobine magnétique placée sur le cuir chevelu génère un champ magnétique bref et puissant qui induit un courant électrique dans le cortex moteur, activant les neurones pyramidaux. La réponse musculaire résultante est enregistrée par des électrodes de surface.
@@ -434,20 +444,21 @@ La Clinique Pasteur de Tunis dispose d'un stimulateur magnétique transcrânien 
       'Céphalées transitoires possibles après l\'examen.',
     ],
     indications: [
-      'Sclérose en plaques (évaluation de l\'atteinte de la voie pyramidale)',
-      'Myélopathie cervicarthrosique',
-      'Sclérose latérale amyotrophique (SLA) et maladies du motoneurone',
-      'Compression médullaire',
-      'Paraparésie ou tétraparésie d\'origine indéterminée',
-      'Déficit moteur central inexpliqué',
-      'Suivi post-thérapeutique des pathologies de la voie motrice',
-      'Distinction entre atteinte centrale et périphérique de la voie motrice',
+      { label: 'Sclérose en plaques (évaluation de l\'atteinte de la voie pyramidale)', explication: `Il aide à évaluer les voies qui commandent les mouvements dans le cadre du bilan d'une sclérose en plaques.` },
+      { label: 'Myélopathie cervicarthrosique', explication: `Il est utile lorsqu'une usure des vertèbres du cou comprime la moelle épinière et gêne la commande des mouvements.` },
+      { label: 'Sclérose latérale amyotrophique (SLA) et maladies du motoneurone', explication: `Il apporte des éléments pour explorer les maladies touchant les nerfs qui commandent les muscles.` },
+      { label: 'Compression médullaire', explication: `Il permet d'apprécier le retentissement d'une compression de la moelle épinière sur la motricité.` },
+      { label: 'Paraparésie ou tétraparésie d\'origine indéterminée', explication: `Il aide à comprendre l'origine d'une faiblesse touchant les membres inférieurs ou l'ensemble des membres.` },
+      { label: 'Déficit moteur central inexpliqué', explication: `Il est proposé face à une perte de force liée au système nerveux central dont la cause reste à préciser.` },
+      { label: 'Suivi post-thérapeutique des pathologies de la voie motrice', explication: `Il permet de suivre l'évolution et l'effet des traitements dans les maladies affectant la commande des mouvements.` },
+      { label: 'Distinction entre atteinte centrale et périphérique de la voie motrice', explication: `Il aide à savoir si une faiblesse provient du cerveau et de la moelle ou plutôt des nerfs périphériques.` },
     ],
   },
   {
     slug: 'bilan-pre-chirurgical-epilepsie',
     title: "Bilan pré-chirurgical de l'épilepsie",
     shortTitle: 'Bilan pré-chirurgical épilepsie',
+    image: '/images/fiches/neuro-bilan-pre-chirurgical-epilepsie.webp',
     description:
       "Évaluation multidisciplinaire complète visant à identifier précisément le foyer épileptogène chez les patients atteints d'épilepsie pharmaco-résistante candidats à la chirurgie.",
     fullDescription: `Le bilan pré-chirurgical de l'épilepsie est un programme d'évaluation multidisciplinaire exhaustif destiné aux patients souffrant d'épilepsie pharmaco-résistante. Environ 30 % des patients épileptiques ne répondent pas de manière satisfaisante aux traitements médicamenteux, et pour certains d'entre eux, la chirurgie de l'épilepsie offre une possibilité de guérison ou d'amélioration significative.
@@ -485,17 +496,18 @@ La Clinique Pasteur de Tunis coordonne le bilan pré-chirurgical de l'épilepsie
       'Risques liés au test de Wada : réaction allergique au produit de contraste, accident vasculaire (exceptionnel).',
     ],
     indications: [
-      'Épilepsie pharmaco-résistante (échec d\'au moins 2 traitements antiépileptiques bien conduits)',
-      'Crises épileptiques invalidantes altérant la qualité de vie',
-      'Épilepsie temporale mésiale avec sclérose hippocampique',
-      'Épilepsie lésionnelle (tumeur, malformation corticale, cavernome)',
-      'Épilepsie partielle avec foyer supposé unique et opérable',
+      { label: 'Épilepsie pharmaco-résistante (échec d\'au moins 2 traitements antiépileptiques bien conduits)', explication: `Ce bilan s'adresse aux personnes dont l'épilepsie continue malgré plusieurs traitements bien suivis, pour envisager d'autres solutions.` },
+      { label: 'Crises épileptiques invalidantes altérant la qualité de vie', explication: `Il est proposé lorsque les crises retentissent fortement sur le quotidien et justifient une évaluation approfondie.` },
+      { label: 'Épilepsie temporale mésiale avec sclérose hippocampique', explication: `Il aide à préciser ce type d'épilepsie fréquent, souvent accessible à une intervention.` },
+      { label: 'Épilepsie lésionnelle (tumeur, malformation corticale, cavernome)', explication: `Il est utile quand les crises sont liées à une anomalie visible du cerveau pouvant être opérée.` },
+      { label: 'Épilepsie partielle avec foyer supposé unique et opérable', explication: `Il permet de vérifier que les crises partent d'une seule zone du cerveau qui pourrait être retirée en toute sécurité.` },
     ],
   },
   {
     slug: 'monitoring-neurophysiologique-per-operatoire',
     title: 'Monitoring neurophysiologique per-opératoire',
     shortTitle: 'Monitoring per-opératoire',
+    image: '/images/fiches/neuro-monitoring-neurophysiologique-per-operatoire.webp',
     description:
       "Surveillance en temps réel de la fonction nerveuse pendant les interventions chirurgicales à risque neurologique, permettant de prévenir les lésions nerveuses irréversibles.",
     fullDescription: `Le monitoring neurophysiologique per-opératoire (MNPO) consiste en la surveillance continue et en temps réel des fonctions nerveuses pendant une intervention chirurgicale. L'objectif est de détecter précocement toute souffrance du système nerveux (cerveau, moelle épinière, nerfs crâniens ou périphériques) afin d'alerter le chirurgien et de permettre une modification immédiate du geste opératoire avant la survenue d'une lésion irréversible.
@@ -531,21 +543,22 @@ La Clinique Pasteur de Tunis propose un service de monitoring per-opératoire as
       'Morsure de langue possible lors de la stimulation transcrânienne motrice (protège-dents mis en place systématiquement).',
     ],
     indications: [
-      'Chirurgie de la scoliose et des déformations rachidiennes',
-      'Chirurgie des tumeurs médullaires intracanalaires',
-      'Chirurgie des tumeurs de la base du crâne',
-      'Chirurgie de la fosse postérieure (neurinome de l\'acoustique)',
-      'Chirurgie thyroïdienne et parathyroïdienne (monitoring du nerf récurrent)',
-      'Chirurgie carotidienne (endartériectomie)',
-      'Chirurgie des anévrismes intracrâniens',
-      'Chirurgie des nerfs périphériques',
-      'Chirurgie de l\'épilepsie (cartographie corticale)',
+      { label: 'Chirurgie de la scoliose et des déformations rachidiennes', explication: `Il permet de surveiller la moelle épinière pendant la correction d'une déformation de la colonne, pour éviter toute lésion.` },
+      { label: 'Chirurgie des tumeurs médullaires intracanalaires', explication: `Il aide à protéger la moelle épinière lors du retrait d'une tumeur située dans le canal de la colonne.` },
+      { label: 'Chirurgie des tumeurs de la base du crâne', explication: `Il surveille les nerfs proches lors d'une opération délicate à la base du crâne.` },
+      { label: 'Chirurgie de la fosse postérieure (neurinome de l\'acoustique)', explication: `Il aide à préserver les nerfs de l'audition et du visage pendant l'ablation d'une tumeur.` },
+      { label: 'Chirurgie thyroïdienne et parathyroïdienne (monitoring du nerf récurrent)', explication: `Il permet de surveiller le nerf de la voix pendant une opération de la thyroïde, pour éviter une atteinte des cordes vocales.` },
+      { label: 'Chirurgie carotidienne (endartériectomie)', explication: `Il aide à surveiller le cerveau pendant une intervention sur l'artère du cou qui l'irrigue.` },
+      { label: 'Chirurgie des anévrismes intracrâniens', explication: `Il surveille en temps réel le fonctionnement du cerveau lors du traitement d'une dilatation d'une artère cérébrale.` },
+      { label: 'Chirurgie des nerfs périphériques', explication: `Il aide à protéger et à repérer les nerfs pendant une intervention qui les concerne directement.` },
+      { label: 'Chirurgie de l\'épilepsie (cartographie corticale)', explication: `Il aide à repérer les zones importantes du cerveau à préserver lors d'une opération de l'épilepsie.` },
     ],
   },
   {
     slug: 'etude-jonction-neuromusculaire',
     title: 'Étude de la jonction neuromusculaire',
     shortTitle: 'Jonction neuromusculaire',
+    image: '/images/fiches/neuro-etude-jonction-neuromusculaire.webp',
     description:
       "Exploration de la transmission de l'influx nerveux entre le nerf et le muscle, essentielle au diagnostic de la myasthénie et des syndromes myasthéniques.",
     fullDescription: `L'étude de la jonction neuromusculaire est un examen neurophysiologique spécialisé qui évalue la transmission synaptique entre le nerf moteur et le muscle. Elle repose principalement sur deux techniques : la stimulation nerveuse répétitive (SNR) et, dans certains cas, l'EMG de fibre unique (single fiber EMG).
@@ -581,14 +594,14 @@ La Clinique Pasteur de Tunis propose l'ensemble des techniques d'exploration de 
       'En cas d\'EMG de fibre unique : légère douleur lors de l\'insertion de l\'aiguille.',
     ],
     indications: [
-      'Suspicion de myasthénie (ptosis, diplopie, fatigabilité musculaire)',
-      'Myasthénie connue : évaluation de la sévérité et suivi thérapeutique',
-      'Suspicion de syndrome de Lambert-Eaton',
-      'Botulisme',
-      'Intoxications aux organophosphorés',
-      'Syndromes myasthéniques congénitaux',
-      'Fatigabilité musculaire inexpliquée',
-      'Diagnostic différentiel entre myasthénie et myopathie',
+      { label: 'Suspicion de myasthénie (ptosis, diplopie, fatigabilité musculaire)', explication: `Il aide à explorer cette maladie lorsqu'apparaissent une paupière tombante, une vision double ou une fatigue musculaire inhabituelle.` },
+      { label: 'Myasthénie connue : évaluation de la sévérité et suivi thérapeutique', explication: `Il permet de mesurer l'importance de la maladie et de suivre l'effet du traitement dans le temps.` },
+      { label: 'Suspicion de syndrome de Lambert-Eaton', explication: `Il aide à reconnaître cette maladie proche de la myasthénie, qui se manifeste par une faiblesse des muscles.` },
+      { label: 'Botulisme', explication: `Il apporte des éléments utiles pour explorer les troubles musculaires liés à cette intoxication rare.` },
+      { label: 'Intoxications aux organophosphorés', explication: `Il aide à évaluer le retentissement de ces substances toxiques sur la transmission entre nerf et muscle.` },
+      { label: 'Syndromes myasthéniques congénitaux', explication: `Il est utile pour explorer des formes de faiblesse musculaire présentes depuis la naissance.` },
+      { label: 'Fatigabilité musculaire inexpliquée', explication: `Il est proposé quand une fatigue musculaire anormale nécessite d'être explorée.` },
+      { label: 'Diagnostic différentiel entre myasthénie et myopathie', explication: `Il aide à distinguer un problème de transmission entre nerf et muscle d'une maladie du muscle lui-même.` },
     ],
   },
 ];

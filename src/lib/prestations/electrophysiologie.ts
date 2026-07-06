@@ -11,13 +11,13 @@ Cet examen permet de comprendre l'origine exacte de palpitations, de malaises ou
 L'exploration électrophysiologique constitue souvent la première étape d'un traitement par ablation : lorsque le circuit responsable de l'arythmie est identifié, il peut être traité dans le même temps, évitant une seconde procédure.
 
 À la Clinique Pasteur Tunis, cet examen est réalisé dans une salle d'électrophysiologie totalement équipée et dédiée à la rythmologie, par une équipe spécialisée qui accompagne le patient à chaque étape.`,
-    image: '/images/cardiovasculaire.webp',
+    image: '/images/fiches/ep-exploration-electrophysiologique.webp',
     indications: [
-      'Palpitations récidivantes inexpliquées',
-      'Syncopes ou malaises suspects d\'origine rythmique',
-      'Caractérisation d\'une tachycardie documentée sur un ECG',
-      'Évaluation du risque rythmique dans certaines cardiopathies',
-      'Bilan avant une éventuelle ablation',
+      { label: 'Palpitations récidivantes inexpliquées', explication: `Quand le cœur s'emballe régulièrement sans que les examens habituels n'en trouvent la cause, cette exploration enregistre les signaux électriques directement à l'intérieur du cœur pour identifier l'origine du problème.` },
+      { label: 'Syncopes ou malaises suspects d\'origine rythmique', explication: `Après des pertes de connaissance inexpliquées, l'examen recherche un trouble électrique du cœur, trop rapide ou trop lent, qui pourrait en être responsable.` },
+      { label: 'Caractérisation d\'une tachycardie documentée sur un ECG', explication: `Lorsqu'un emballement du cœur a été enregistré, cette étude précise son mécanisme exact et sa localisation, des informations indispensables pour choisir le bon traitement.` },
+      { label: 'Évaluation du risque rythmique dans certaines cardiopathies', explication: `Certaines maladies cardiaques peuvent favoriser des troubles du rythme graves : l'exploration teste la sensibilité électrique du cœur et aide à décider des mesures de protection.` },
+      { label: 'Bilan avant une éventuelle ablation', explication: `Avant de traiter définitivement une arythmie, il faut cartographier précisément le circuit anormal ; ce repérage est souvent suivi de l'ablation lors de la même séance.` },
     ],
     preparation: [
       'Bilan cardiologique avec ECG et échocardiographie',
@@ -54,13 +54,13 @@ La procédure débute par une exploration électrophysiologique qui cartographie
 Cette technique s'applique à de nombreux troubles du rythme : tachycardies jonctionnelles, flutter auriculaire, fibrillation auriculaire, certaines extrasystoles et tachycardies ventriculaires. Dans de nombreux cas, elle permet de guérir l'arythmie et d'interrompre les traitements médicamenteux au long cours.
 
 À la Clinique Pasteur Tunis, les ablations sont réalisées dans une salle d'électrophysiologie dédiée, équipée d'un système de cartographie tridimensionnelle des arythmies et de cathéters de dernière génération, par une équipe spécialisée en rythmologie interventionnelle.`,
-    image: '/images/cardiovasculaire.webp',
+    image: '/images/fiches/ep-ablation-radiofrequence.webp',
     indications: [
-      'Tachycardies jonctionnelles récidivantes',
-      'Flutter auriculaire',
-      'Fibrillation auriculaire symptomatique',
-      'Extrasystoles ventriculaires nombreuses et gênantes',
-      'Arythmies mal contrôlées par les médicaments ou chez des patients souhaitant s\'en passer',
+      { label: 'Tachycardies jonctionnelles récidivantes', explication: `Ces crises de cœur rapide, souvent gênantes au quotidien, sont liées à un petit circuit électrique anormal que l'ablation permet le plus souvent de supprimer définitivement.` },
+      { label: 'Flutter auriculaire', explication: `Ce trouble du rythme suit un circuit bien connu dans l'oreillette ; l'ablation interrompt ce circuit et offre d'excellents résultats durables.` },
+      { label: 'Fibrillation auriculaire symptomatique', explication: `Quand cette arythmie fréquente provoque palpitations, fatigue ou essoufflement, l'ablation aide à retrouver un rythme régulier et une meilleure qualité de vie.` },
+      { label: 'Extrasystoles ventriculaires nombreuses et gênantes', explication: `Des battements supplémentaires très fréquents peuvent devenir pénibles et fatiguer le cœur à la longue ; neutraliser leur foyer d'origine fait disparaître ces symptômes.` },
+      { label: 'Arythmies mal contrôlées par les médicaments ou chez des patients souhaitant s\'en passer', explication: `Lorsque le traitement médicamenteux est insuffisant, mal toléré ou contraignant, l'ablation offre une alternative durable qui permet souvent d'arrêter les médicaments.` },
     ],
     preparation: [
       'Bilan cardiologique complet avec documentation de l\'arythmie',
@@ -97,13 +97,13 @@ Le principe repose sur l'isolation électrique des veines pulmonaires, zones d'o
 La procédure est guidée par un système de cartographie tridimensionnelle qui reconstruit l'anatomie de l'oreillette en temps réel et permet un traitement d'une grande précision. L'objectif est de restaurer durablement un rythme régulier, d'améliorer la qualité de vie et de réduire le recours aux médicaments antiarythmiques.
 
 À la Clinique Pasteur Tunis, l'ablation de la fibrillation auriculaire est réalisée dans la salle d'électrophysiologie dédiée, l'un des centres de référence en rythmologie en Tunisie, avec une surveillance post-procédure attentive et un suivi personnalisé.`,
-    image: '/images/cardiovasculaire.webp',
+    image: '/images/fiches/ep-ablation-fibrillation-auriculaire.webp',
     indications: [
-      'Fibrillation auriculaire symptomatique malgré un traitement médicamenteux',
-      'Fibrillation auriculaire paroxystique récidivante',
-      'Intolérance ou contre-indication aux médicaments antiarythmiques',
-      'Fibrillation auriculaire retentissant sur la fonction cardiaque',
-      'Patients souhaitant une stratégie de contrôle durable du rythme',
+      { label: 'Fibrillation auriculaire symptomatique malgré un traitement médicamenteux', explication: `Quand les médicaments ne parviennent plus à calmer les palpitations, l'essoufflement ou la fatigue liés à la fibrillation, l'ablation devient l'option de choix pour retrouver un rythme régulier.` },
+      { label: 'Fibrillation auriculaire paroxystique récidivante', explication: `Lorsque les crises reviennent régulièrement puis s'arrêtent d'elles-mêmes, intervenir à ce stade offre les meilleures chances de succès durable.` },
+      { label: 'Intolérance ou contre-indication aux médicaments antiarythmiques', explication: `Si les traitements du rythme provoquent des effets indésirables ou sont déconseillés dans votre situation, l'ablation permet de contrôler l'arythmie sans en dépendre.` },
+      { label: 'Fibrillation auriculaire retentissant sur la fonction cardiaque', explication: `Une fibrillation prolongée peut affaiblir le muscle cardiaque ; restaurer un rythme régulier aide alors le cœur à récupérer sa force de contraction.` },
+      { label: 'Patients souhaitant une stratégie de contrôle durable du rythme', explication: `Pour les personnes qui préfèrent une solution de fond plutôt qu'un traitement médicamenteux à vie, l'ablation vise un retour durable au rythme normal.` },
     ],
     preparation: [
       'Bilan cardiologique avec échocardiographie, incluant si besoin une échographie transœsophagienne',
@@ -140,12 +140,12 @@ L'ablation est aujourd'hui le traitement de référence du flutter commun. Elle 
 Il s'agit de l'une des procédures d'ablation les plus efficaces et les mieux codifiées de la rythmologie : le circuit du flutter étant bien connu et accessible, le traitement offre d'excellents résultats durables et permet le plus souvent d'éviter les médicaments antiarythmiques au long cours.
 
 À la Clinique Pasteur Tunis, l'ablation du flutter est réalisée en salle d'électrophysiologie dédiée par une équipe expérimentée, dans le cadre d'une hospitalisation courte, avec un suivi rythmologique organisé après la procédure.`,
-    image: '/images/cardiovasculaire.webp',
+    image: '/images/fiches/ep-ablation-flutter-auriculaire.webp',
     indications: [
-      'Flutter auriculaire symptomatique (palpitations, essoufflement, fatigue)',
-      'Flutter récidivant malgré un traitement médicamenteux',
-      'Flutter retentissant sur la fonction cardiaque',
-      'Préférence du patient pour un traitement curatif plutôt que médicamenteux au long cours',
+      { label: 'Flutter auriculaire symptomatique (palpitations, essoufflement, fatigue)', explication: `Quand ce rythme rapide et régulier de l'oreillette se fait sentir au quotidien, l'ablation permet de supprimer le circuit responsable et de faire disparaître les symptômes.` },
+      { label: 'Flutter récidivant malgré un traitement médicamenteux', explication: `Si les crises reviennent malgré les médicaments, l'ablation constitue le traitement de référence, avec d'excellentes chances de guérison définitive.` },
+      { label: 'Flutter retentissant sur la fonction cardiaque', explication: `Un flutter qui se prolonge peut fatiguer le muscle cardiaque ; interrompre le circuit anormal permet au cœur de retrouver progressivement son efficacité.` },
+      { label: 'Préférence du patient pour un traitement curatif plutôt que médicamenteux au long cours', explication: `Plutôt que de prendre des médicaments pendant des années, il est possible de choisir cette procédure bien codifiée qui traite la cause même de l'arythmie.` },
     ],
     preparation: [
       'ECG documentant le flutter et bilan cardiologique avec échocardiographie',
@@ -181,13 +181,13 @@ L'ablation des tachycardies ventriculaires est une procédure de rythmologie ava
 Cette procédure permet de réduire significativement les épisodes de tachycardie, d'améliorer la qualité de vie et, chez les patients porteurs d'un défibrillateur, de diminuer le nombre de thérapies délivrées par l'appareil. Elle est réalisée par une équipe entraînée, dans un environnement de haute sécurité.
 
 À la Clinique Pasteur Tunis, l'ablation des tachycardies ventriculaires bénéficie d'une salle d'électrophysiologie totalement équipée, d'un système de cartographie 3D des arythmies et de la proximité immédiate des unités de soins intensifs cardiologiques, garantissant une prise en charge optimale.`,
-    image: '/images/cardiovasculaire.webp',
+    image: '/images/fiches/ep-ablation-tachycardies-ventriculaires.webp',
     indications: [
-      'Tachycardies ventriculaires récidivantes symptomatiques',
-      'Extrasystoles ventriculaires très nombreuses retentissant sur la fonction cardiaque',
-      'Réduction des interventions d\'un défibrillateur implanté',
-      'Tachycardies ventriculaires mal contrôlées par les médicaments',
-      'Certaines tachycardies survenant sur cœur sain, accessibles à un traitement curatif',
+      { label: 'Tachycardies ventriculaires récidivantes symptomatiques', explication: `Quand des emballements du cœur naissant dans les ventricules se répètent et provoquent malaises ou palpitations, l'ablation cible leur origine pour en réduire fortement la fréquence.` },
+      { label: 'Extrasystoles ventriculaires très nombreuses retentissant sur la fonction cardiaque', explication: `Des battements supplémentaires extrêmement fréquents peuvent affaiblir le muscle cardiaque avec le temps ; supprimer leur foyer permet au cœur de récupérer.` },
+      { label: 'Réduction des interventions d\'un défibrillateur implanté', explication: `Chez les patients porteurs d'un défibrillateur qui délivre des chocs répétés, l'ablation diminue le nombre d'arythmies et donc les interventions de l'appareil, améliorant nettement le confort de vie.` },
+      { label: 'Tachycardies ventriculaires mal contrôlées par les médicaments', explication: `Lorsque le traitement médicamenteux ne suffit plus à prévenir les crises, cette procédure spécialisée offre une solution complémentaire efficace.` },
+      { label: 'Certaines tachycardies survenant sur cœur sain, accessibles à un traitement curatif', explication: `Chez des personnes au cœur par ailleurs normal, certaines formes de tachycardie ventriculaire peuvent être guéries définitivement par une ablation ciblée.` },
     ],
     preparation: [
       'Bilan cardiologique approfondi avec échocardiographie et, si besoin, IRM cardiaque',
@@ -225,13 +225,13 @@ L'implantation est indiquée lorsque le cœur présente un ralentissement excess
 L'intervention est courte et bien codifiée, réalisée sous anesthésie locale avec une sédation légère. Les pacemakers actuels sont discrets, dotés d'une grande autonomie et s'adaptent automatiquement à l'activité du patient, qui peut mener une vie tout à fait normale.
 
 À la Clinique Pasteur Tunis, l'implantation est réalisée par une équipe spécialisée en rythmologie dans des conditions d'asepsie rigoureuses. Un programme de contrôles réguliers du dispositif est ensuite organisé en consultation.`,
-    image: '/images/cardio-ecg.webp',
+    image: '/images/fiches/ep-implantation-pacemaker.webp',
     indications: [
-      'Bradycardie symptomatique (fatigue, vertiges, malaises)',
-      'Blocs auriculo-ventriculaires de haut degré',
-      'Maladie du sinus avec pauses cardiaques',
-      'Syncopes documentées d\'origine rythmique lente',
-      'Certaines fibrillations auriculaires à conduction lente',
+      { label: 'Bradycardie symptomatique (fatigue, vertiges, malaises)', explication: `Quand le cœur bat trop lentement et que cela se traduit par une fatigue inhabituelle, des vertiges ou des malaises, le pacemaker rétablit un rythme adapté et fait disparaître ces symptômes.` },
+      { label: 'Blocs auriculo-ventriculaires de haut degré', explication: `Lorsque le courant électrique ne passe plus correctement entre le haut et le bas du cœur, le stimulateur prend le relais pour garantir des battements réguliers en toute circonstance.` },
+      { label: 'Maladie du sinus avec pauses cardiaques', explication: `Si le stimulateur naturel du cœur devient défaillant et marque des pauses, le pacemaker veille en permanence et intervient dès que le rythme ralentit trop.` },
+      { label: 'Syncopes documentées d\'origine rythmique lente', explication: `Quand des pertes de connaissance sont dues à un ralentissement excessif du cœur prouvé par les enregistrements, l'implantation d'un pacemaker prévient efficacement les récidives.` },
+      { label: 'Certaines fibrillations auriculaires à conduction lente', explication: `Chez certains patients en fibrillation auriculaire, le cœur bat globalement trop lentement ; le stimulateur assure alors une fréquence cardiaque suffisante au quotidien.` },
     ],
     preparation: [
       'Bilan cardiologique avec ECG, Holter et échocardiographie',
@@ -268,13 +268,13 @@ Le DAI est proposé aux patients présentant un risque de trouble du rythme vent
 Les défibrillateurs actuels assurent également les fonctions d'un pacemaker classique et peuvent traiter de nombreuses arythmies par une stimulation rapide indolore, la délivrance d'un choc restant réservée aux situations qui l'exigent.
 
 À la Clinique Pasteur Tunis, l'implantation du DAI est réalisée par l'équipe de rythmologie dans des conditions de sécurité optimales, avec des tests complets du dispositif et un programme de suivi personnalisé en consultation.`,
-    image: '/images/cardio-ecg.webp',
+    image: '/images/fiches/ep-implantation-defibrillateur.webp',
     indications: [
-      'Antécédent de trouble du rythme ventriculaire grave',
-      'Insuffisance cardiaque avec fonction ventriculaire altérée',
-      'Certaines cardiomyopathies à risque rythmique',
-      'Maladies rythmiques héréditaires exposant à des arythmies sévères',
-      'Prévention chez des patients identifiés à risque par le bilan cardiologique',
+      { label: 'Antécédent de trouble du rythme ventriculaire grave', explication: `Après un épisode d'arythmie sévère, le défibrillateur protège en permanence contre une récidive en intervenant automatiquement dès qu'un rythme dangereux est détecté.` },
+      { label: 'Insuffisance cardiaque avec fonction ventriculaire altérée', explication: `Quand le cœur est affaibli, le risque de trouble du rythme grave augmente ; le dispositif agit comme une assurance de sécurité permanente et silencieuse.` },
+      { label: 'Certaines cardiomyopathies à risque rythmique', explication: `Certaines maladies du muscle cardiaque exposent à des emballements dangereux ; le défibrillateur veille en continu et traite instantanément toute arythmie menaçante.` },
+      { label: 'Maladies rythmiques héréditaires exposant à des arythmies sévères', explication: `Dans les maladies électriques du cœur d'origine génétique, le dispositif offre une protection continue, y compris pendant le sommeil, contre les arythmies graves.` },
+      { label: 'Prévention chez des patients identifiés à risque par le bilan cardiologique', explication: `Lorsque les examens révèlent un risque élevé de trouble du rythme sévère, le défibrillateur est proposé à titre préventif, avant même qu'un accident ne survienne.` },
     ],
     preparation: [
       'Bilan cardiologique complet avec échocardiographie',
@@ -311,12 +311,12 @@ La resynchronisation cardiaque (CRT) consiste à implanter un stimulateur partic
 Les bénéfices attendus sont concrets : diminution de l'essoufflement, meilleure tolérance à l'effort, amélioration de la qualité de vie et, chez de nombreux patients, amélioration progressive de la fonction cardiaque au fil des mois. Le dispositif peut être associé à une fonction défibrillateur lorsque le profil du patient le justifie.
 
 À la Clinique Pasteur Tunis, l'implantation des dispositifs de resynchronisation est réalisée par l'équipe de rythmologie dans la salle dédiée, avec une optimisation fine des réglages et un suivi conjoint avec le cardiologue traitant.`,
-    image: '/images/cardio-ecg.webp',
+    image: '/images/fiches/ep-resynchronisation-cardiaque.webp',
     indications: [
-      'Insuffisance cardiaque symptomatique malgré un traitement médical optimal',
-      'Désynchronisation des contractions ventriculaires visible sur l\'ECG',
-      'Fonction ventriculaire gauche altérée documentée par échocardiographie',
-      'Patients déjà porteurs d\'un stimulateur nécessitant une amélioration de la stimulation',
+      { label: 'Insuffisance cardiaque symptomatique malgré un traitement médical optimal', explication: `Quand l'essoufflement et la fatigue persistent alors que le traitement médicamenteux est déjà bien conduit, la resynchronisation apporte une aide mécanique supplémentaire au cœur.` },
+      { label: 'Désynchronisation des contractions ventriculaires visible sur l\'ECG', explication: `Si le tracé électrique montre que les parois du cœur ne se contractent plus ensemble, le dispositif recoordonne les battements pour rendre chaque contraction plus efficace.` },
+      { label: 'Fonction ventriculaire gauche altérée documentée par échocardiographie', explication: `Lorsque l'échographie confirme que le ventricule gauche a perdu de sa force, la stimulation simultanée des deux ventricules peut l'aider à récupérer progressivement.` },
+      { label: 'Patients déjà porteurs d\'un stimulateur nécessitant une amélioration de la stimulation', explication: `Chez certains patients déjà appareillés, passer à un dispositif de resynchronisation permet d'obtenir une contraction plus harmonieuse et de meilleurs résultats sur les symptômes.` },
     ],
     preparation: [
       'Bilan complet de l\'insuffisance cardiaque avec échocardiographie détaillée',
@@ -353,13 +353,13 @@ Ces examens sont précieux car de nombreux troubles du rythme et anomalies tensi
 Le Holter ECG est particulièrement utile pour explorer des palpitations, des malaises ou des vertiges, surveiller un trouble du rythme connu ou vérifier l'efficacité d'un traitement. Le Holter tensionnel permet de confirmer une hypertension, de dépister une hypertension nocturne ou d'ajuster un traitement antihypertenseur.
 
 À la Clinique Pasteur Tunis, la pose du Holter est rapide et indolore, réalisée par une équipe dédiée. L'analyse des enregistrements est effectuée par les cardiologues, et les résultats sont transmis avec un compte rendu détaillé.`,
-    image: '/images/cardio-ecg.webp',
+    image: '/images/fiches/ep-holter-ecg-tensionnel.webp',
     indications: [
-      'Palpitations, malaises ou vertiges inexpliqués',
-      'Recherche d\'un trouble du rythme intermittent',
-      'Surveillance de l\'efficacité d\'un traitement antiarythmique',
-      'Suspicion d\'hypertension artérielle ou hypertension difficile à équilibrer',
-      'Évaluation de la tension artérielle nocturne',
+      { label: 'Palpitations, malaises ou vertiges inexpliqués', explication: `Quand ces symptômes surviennent par épisodes imprévisibles, l'enregistrement prolongé dans la vie quotidienne permet de capter ce qu'une consultation ponctuelle ne peut pas voir.` },
+      { label: 'Recherche d\'un trouble du rythme intermittent', explication: `Certaines arythmies vont et viennent sans prévenir ; en surveillant le cœur jour et nuit, le Holter maximise les chances de les enregistrer au moment où elles se produisent.` },
+      { label: 'Surveillance de l\'efficacité d\'un traitement antiarythmique', explication: `Sous traitement contre un trouble du rythme, l'enregistrement continu vérifie que les épisodes ont bien diminué et que le rythme reste régulier au fil de la journée.` },
+      { label: 'Suspicion d\'hypertension artérielle ou hypertension difficile à équilibrer', explication: `La mesure répétée de la tension dans les conditions de vie réelles confirme ou écarte une hypertension et aide à ajuster finement le traitement quand la tension résiste.` },
+      { label: 'Évaluation de la tension artérielle nocturne', explication: `La tension doit normalement baisser pendant le sommeil ; seul un enregistrement de nuit permet de vérifier ce comportement, important pour la santé du cœur.` },
     ],
     preparation: [
       'Prendre une douche avant la pose (l\'appareil ne doit pas être mouillé pendant l\'enregistrement)',
@@ -393,14 +393,14 @@ Cet examen est un outil essentiel de la cardiologie : il aide à rechercher une 
 Le déroulement est simple : équipé d'électrodes et d'un brassard tensionnel, le patient marche sur un tapis roulant dont la vitesse et la pente augmentent par paliers, sous la surveillance constante d'un médecin. L'effort est adapté à chacun et interrompu dès que les informations nécessaires sont recueillies ou à la demande du patient.
 
 À la Clinique Pasteur Tunis, le test d'effort est réalisé dans un environnement sécurisé, avec un monitoring continu et la présence permanente d'une équipe médicale entraînée, tous les moyens de prise en charge étant immédiatement disponibles sur place.`,
-    image: '/images/cardio-ecg.webp',
+    image: '/images/fiches/ep-test-effort.webp',
     indications: [
-      'Douleurs thoraciques à l\'effort à explorer',
-      'Essoufflement inhabituel pendant l\'exercice',
-      'Évaluation après un traitement cardiologique ou une intervention',
-      'Recherche de troubles du rythme déclenchés par l\'effort',
-      'Bilan avant la reprise d\'une activité sportive',
-      'Évaluation de la capacité fonctionnelle',
+      { label: 'Douleurs thoraciques à l\'effort à explorer', explication: `Lorsqu'une gêne dans la poitrine apparaît en marchant ou en montant les escaliers, ce test reproduit l'effort sous surveillance pour vérifier le bon fonctionnement du cœur.` },
+      { label: 'Essoufflement inhabituel pendant l\'exercice', explication: `Si vous vous essoufflez plus vite qu'avant pour des activités habituelles, l'examen aide à déterminer si le cœur en est la cause.` },
+      { label: 'Évaluation après un traitement cardiologique ou une intervention', explication: `Après la mise en place d'un traitement ou une intervention sur le cœur, le test confirme que celui-ci supporte de nouveau l'effort dans de bonnes conditions.` },
+      { label: 'Recherche de troubles du rythme déclenchés par l\'effort', explication: `Certaines palpitations n'apparaissent que pendant l'exercice ; l'épreuve permet de les provoquer dans un cadre sécurisé afin de les enregistrer et de les analyser.` },
+      { label: 'Bilan avant la reprise d\'une activité sportive', explication: `Avant de se remettre au sport, notamment après une longue pause ou un problème de santé, le test vérifie que le cœur est prêt à suivre.` },
+      { label: 'Évaluation de la capacité fonctionnelle', explication: `L'examen mesure objectivement le niveau d'effort que vous pouvez fournir, un repère utile pour suivre votre condition physique et adapter vos activités.` },
     ],
     preparation: [
       'Prévoir une tenue de sport et des chaussures confortables',

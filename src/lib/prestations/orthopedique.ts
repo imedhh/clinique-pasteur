@@ -11,14 +11,14 @@ Elle s'adresse principalement aux patients souffrant d'une usure avancée du car
 Les techniques actuelles privilégient les voies d'abord mini-invasives, qui respectent au maximum les muscles et permettent une récupération plus rapide. La rééducation débute très tôt, souvent dès le lendemain de l'intervention, avec l'aide de l'équipe de kinésithérapie.
 
 À la Clinique Pasteur Tunis, la pose de prothèse totale de hanche est réalisée par des chirurgiens orthopédistes expérimentés, dans des blocs opératoires modernes, avec un protocole de récupération améliorée après chirurgie et un suivi personnalisé jusqu'à la reprise complète des activités.`,
-    image: '/images/surgery-blue-1.webp',
+    image: '/images/fiches/ortho-prothese-totale-hanche.webp',
     indications: [
-      'Coxarthrose (usure du cartilage de la hanche) évoluée et invalidante',
-      'Douleurs de hanche résistantes au traitement médical',
-      'Nécrose de la tête fémorale',
-      'Séquelles de fracture du col du fémur',
-      'Polyarthrite rhumatoïde ou autres rhumatismes inflammatoires touchant la hanche',
-      'Séquelles de malformations ou de traumatismes de la hanche',
+      { label: 'Coxarthrose (usure du cartilage de la hanche) évoluée et invalidante', explication: `Lorsque le cartilage de la hanche est très usé, chaque pas devient douloureux et la vie quotidienne s'en trouve limitée. Le remplacement de l'articulation permet de retrouver une marche confortable.` },
+      { label: 'Douleurs de hanche résistantes au traitement médical', explication: `Quand les médicaments, la rééducation et les infiltrations ne soulagent plus suffisamment, la prothèse devient la solution la plus efficace pour supprimer durablement la douleur.` },
+      { label: 'Nécrose de la tête fémorale', explication: `Il s'agit d'une souffrance de l'os de la tête du fémur, qui se fragilise et se déforme faute d'une bonne irrigation sanguine. La prothèse remplace la zone abîmée et fait disparaître la douleur.` },
+      { label: 'Séquelles de fracture du col du fémur', explication: `Après certaines fractures de la hanche, l'articulation peut rester douloureuse ou mal consolidée. La mise en place d'une prothèse permet de retrouver un appui stable et indolore.` },
+      { label: 'Polyarthrite rhumatoïde ou autres rhumatismes inflammatoires touchant la hanche', explication: `Ces maladies inflammatoires peuvent détruire progressivement le cartilage de la hanche. Lorsque l'articulation est trop abîmée, la prothèse redonne mobilité et confort.` },
+      { label: 'Séquelles de malformations ou de traumatismes de la hanche', explication: `Une hanche malformée depuis l'enfance ou marquée par un ancien accident peut s'user prématurément. La prothèse corrige ces séquelles et restaure une articulation fonctionnelle.` },
     ],
     preparation: [
       'Consultation avec le chirurgien orthopédiste et bilan radiologique complet',
@@ -59,14 +59,14 @@ L'intervention est soigneusement planifiée à partir de radiographies et, si be
 La rééducation commence dès les premiers jours : le patient se lève et marche rapidement avec l'aide du kinésithérapeute, puis poursuit un programme progressif de renforcement et de récupération des amplitudes articulaires.
 
 À la Clinique Pasteur Tunis, cette intervention est pratiquée dans des conditions optimales de sécurité, avec un protocole de récupération améliorée, une prise en charge efficace de la douleur post-opératoire et un accompagnement de rééducation personnalisé.`,
-    image: '/images/surgery-blue-2.webp',
+    image: '/images/fiches/ortho-prothese-totale-genou.webp',
     indications: [
-      'Gonarthrose (arthrose du genou) évoluée et douloureuse',
-      'Échec des traitements médicaux et des infiltrations',
-      'Déformation progressive du genou (genou arqué ou en X)',
-      'Rhumatismes inflammatoires détruisant l\'articulation',
-      'Séquelles de fractures articulaires du genou',
-      'Gêne majeure à la marche et dans les activités quotidiennes',
+      { label: 'Gonarthrose (arthrose du genou) évoluée et douloureuse', explication: `Quand le cartilage du genou est très usé, la douleur devient quasi permanente et gêne la marche comme le repos. La prothèse remplace les surfaces abîmées et supprime cette douleur.` },
+      { label: 'Échec des traitements médicaux et des infiltrations', explication: `Lorsque médicaments, infiltrations et rééducation ne suffisent plus à soulager le genou, la chirurgie prothétique devient la solution durable pour retrouver une vie active.` },
+      { label: 'Déformation progressive du genou (genou arqué ou en X)', explication: `L'usure inégale du genou peut le faire dévier vers l'intérieur ou l'extérieur, ce qui aggrave la douleur. La prothèse corrige cette déformation et réaligne la jambe.` },
+      { label: 'Rhumatismes inflammatoires détruisant l\'articulation', explication: `Certaines maladies inflammatoires attaquent le cartilage et détruisent progressivement le genou. La prothèse redonne une articulation stable et indolore.` },
+      { label: 'Séquelles de fractures articulaires du genou', explication: `Une fracture ayant touché la surface articulaire peut laisser un genou irrégulier qui s'use plus vite. La prothèse permet de restaurer une articulation lisse et fonctionnelle.` },
+      { label: 'Gêne majeure à la marche et dans les activités quotidiennes', explication: `Quand se déplacer, monter les escaliers ou simplement rester debout devient une épreuve, l'intervention vise à redonner autonomie et confort au quotidien.` },
     ],
     preparation: [
       'Bilan radiographique complet et planification de l\'intervention',
@@ -105,13 +105,13 @@ Cette intervention s'adresse aux patients souffrant d'arthrose de l'épaule (oma
 La récupération repose sur une immobilisation courte suivie d'une rééducation douce et progressive, encadrée par le chirurgien et le kinésithérapeute. Les gestes simples du quotidien sont récupérés en quelques semaines, la mobilité continuant de s'améliorer pendant plusieurs mois.
 
 À la Clinique Pasteur Tunis, la chirurgie prothétique de l'épaule est réalisée par des chirurgiens orthopédistes spécialisés dans le membre supérieur, avec une planification précise de chaque implant et un accompagnement de rééducation sur mesure.`,
-    image: '/images/surgery-blue-3.webp',
+    image: '/images/fiches/ortho-prothese-epaule.webp',
     indications: [
-      'Omarthrose (arthrose de l\'épaule) douloureuse et invalidante',
-      'Rupture massive et irréparable de la coiffe des rotateurs avec perte de fonction',
-      'Séquelles de fractures complexes de l\'extrémité supérieure de l\'humérus',
-      'Nécrose de la tête humérale',
-      'Rhumatismes inflammatoires détruisant l\'articulation de l\'épaule',
+      { label: 'Omarthrose (arthrose de l\'épaule) douloureuse et invalidante', explication: `Lorsque le cartilage de l'épaule est usé, lever le bras devient douloureux, y compris pour les gestes simples comme se coiffer. La prothèse supprime ce frottement douloureux.` },
+      { label: 'Rupture massive et irréparable de la coiffe des rotateurs avec perte de fonction', explication: `Quand les tendons de l'épaule sont trop abîmés pour être réparés, le bras perd sa force. La prothèse inversée est conçue pour fonctionner malgré cette usure et redonner de la mobilité.` },
+      { label: 'Séquelles de fractures complexes de l\'extrémité supérieure de l\'humérus', explication: `Certaines fractures de l'épaule laissent des séquelles douloureuses ou une articulation déformée. La prothèse permet alors de retrouver un bras utilisable au quotidien.` },
+      { label: 'Nécrose de la tête humérale', explication: `Il s'agit d'une souffrance de l'os de la tête de l'humérus, qui se déforme faute d'une bonne vascularisation. Le remplacement prothétique soulage la douleur et préserve le mouvement.` },
+      { label: 'Rhumatismes inflammatoires détruisant l\'articulation de l\'épaule', explication: `Les rhumatismes inflammatoires peuvent détruire progressivement l'épaule. Lorsque les traitements ne suffisent plus, la prothèse redonne confort et amplitude de mouvement.` },
     ],
     preparation: [
       'Bilan d\'imagerie complet (radiographies, scanner ou IRM de l\'épaule)',
@@ -149,14 +149,14 @@ Cette approche permet de traiter de nombreuses lésions : déchirures méniscale
 L'intervention est le plus souvent réalisée en ambulatoire ou au cours d'une hospitalisation courte : le patient rentre chez lui le jour même ou le lendemain, avec des consignes précises et un programme de rééducation adapté à la lésion traitée.
 
 À la Clinique Pasteur Tunis, les arthroscopies sont réalisées avec un équipement d'imagerie haute définition, par des chirurgiens orthopédistes rompus aux techniques mini-invasives, dans un parcours de soins fluide de la consultation à la rééducation.`,
-    image: '/images/bloc-hd.webp',
+    image: '/images/fiches/ortho-arthroscopie.webp',
     indications: [
-      'Lésions méniscales du genou (déchirure, anse de seau)',
-      'Lésions du cartilage articulaire',
-      'Conflit sous-acromial et lésions de la coiffe des rotateurs de l\'épaule',
-      'Instabilité de l\'épaule ou de la cheville',
-      'Corps étrangers intra-articulaires',
-      'Raideurs articulaires nécessitant une libération',
+      { label: 'Lésions méniscales du genou (déchirure, anse de seau)', explication: `Les ménisques sont les amortisseurs du genou : lorsqu'ils se déchirent, ils provoquent douleurs et blocages. L'arthroscopie permet de les réparer ou de retirer le fragment abîmé par de toutes petites incisions.` },
+      { label: 'Lésions du cartilage articulaire', explication: `Une zone de cartilage abîmée peut accrocher et faire souffrir l'articulation. L'arthroscopie permet de la traiter sans ouvrir largement l'articulation.` },
+      { label: 'Conflit sous-acromial et lésions de la coiffe des rotateurs de l\'épaule', explication: `Un frottement anormal entre les tendons de l'épaule et l'os situé au-dessus provoque des douleurs, surtout la nuit et bras levé. L'arthroscopie libère ce conflit et répare les tendons si besoin.` },
+      { label: 'Instabilité de l\'épaule ou de la cheville', explication: `Quand une articulation se déboîte ou se dérobe de façon répétée, les ligaments peuvent être retendus ou réparés sous arthroscopie pour retrouver la confiance dans ses mouvements.` },
+      { label: 'Corps étrangers intra-articulaires', explication: `De petits fragments d'os ou de cartilage peuvent se détacher et flotter dans l'articulation, causant blocages et douleurs. L'arthroscopie permet de les retirer simplement.` },
+      { label: 'Raideurs articulaires nécessitant une libération', explication: `Lorsqu'une articulation reste enraidie malgré la rééducation, un geste de libération sous arthroscopie aide à récupérer des amplitudes de mouvement confortables.` },
     ],
     preparation: [
       'Consultation avec le chirurgien et bilan d\'imagerie (IRM le plus souvent)',
@@ -192,14 +192,14 @@ Ces interventions ne sont proposées qu'après un traitement médical bien condu
 Les techniques modernes privilégient les abords mini-invasifs qui respectent les muscles du dos, réduisent les douleurs post-opératoires et raccourcissent l'hospitalisation. Le lever est précoce et la reprise des activités s'effectue progressivement, guidée par l'équipe soignante.
 
 À la Clinique Pasteur Tunis, la chirurgie du rachis bénéficie d'un plateau technique complet, avec amplificateur de brillance au bloc opératoire, surveillance post-opératoire attentive et coordination étroite avec les équipes de rééducation.`,
-    image: '/images/surgery-blue-4.webp',
+    image: '/images/fiches/ortho-chirurgie-rachis.webp',
     indications: [
-      'Hernie discale avec sciatique ou cruralgie résistant au traitement médical',
-      'Canal lombaire étroit gênant la marche',
-      'Scoliose ou déformation évolutive de la colonne',
-      'Instabilité vertébrale (spondylolisthésis)',
-      'Compression nerveuse avec déficit neurologique',
-      'Certaines fractures vertébrales',
+      { label: 'Hernie discale avec sciatique ou cruralgie résistant au traitement médical', explication: `Un fragment de disque peut comprimer un nerf et provoquer une douleur qui descend dans la jambe. Quand les traitements médicaux ne suffisent plus, la chirurgie libère le nerf et soulage la douleur.` },
+      { label: 'Canal lombaire étroit gênant la marche', explication: `Avec l'âge, le canal qui abrite les nerfs du bas du dos peut se rétrécir et rendre la marche pénible. L'intervention redonne de l'espace aux nerfs pour marcher plus loin et plus confortablement.` },
+      { label: 'Scoliose ou déformation évolutive de la colonne', explication: `Lorsqu'une courbure de la colonne s'aggrave et retentit sur la posture, la respiration ou la douleur, une correction chirurgicale peut être proposée pour stabiliser et redresser le dos.` },
+      { label: 'Instabilité vertébrale (spondylolisthésis)', explication: `Une vertèbre qui glisse sur sa voisine peut créer des douleurs chroniques et menacer les nerfs. La chirurgie stabilise les vertèbres entre elles pour supprimer ce mouvement douloureux.` },
+      { label: 'Compression nerveuse avec déficit neurologique', explication: `Quand un nerf comprimé commence à perdre sa force ou sa sensibilité, il est important de le libérer rapidement pour favoriser une bonne récupération.` },
+      { label: 'Certaines fractures vertébrales', explication: `Certaines fractures de la colonne sont instables ou menacent les nerfs et doivent être fixées chirurgicalement pour consolider dans une bonne position.` },
     ],
     preparation: [
       'Bilan d\'imagerie complet (IRM, scanner, radiographies)',
@@ -238,14 +238,14 @@ La plupart de ces interventions sont réalisées en ambulatoire, sous anesthési
 La récupération est facilitée par des protocoles de mobilisation précoce et, lorsque c'est nécessaire, par des séances de rééducation spécialisée de la main. Les consignes post-opératoires simples (surélévation, mobilisation douce des doigts) contribuent à des suites confortables.
 
 À la Clinique Pasteur Tunis, la chirurgie de la main est assurée par des chirurgiens expérimentés dans un circuit ambulatoire fluide, de la consultation au suivi post-opératoire, avec une attention particulière portée au confort et à la reprise rapide des activités.`,
-    image: '/images/chirurgie.webp',
+    image: '/images/fiches/ortho-chirurgie-main-poignet.webp',
     indications: [
-      'Syndrome du canal carpien (fourmillements et douleurs de la main)',
-      'Doigt à ressaut (blocage douloureux d\'un doigt)',
-      'Maladie de Dupuytren (rétraction des doigts)',
-      'Kyste synovial du poignet',
-      'Arthrose de la base du pouce (rhizarthrose)',
-      'Fractures et lésions tendineuses ou nerveuses de la main',
+      { label: 'Syndrome du canal carpien (fourmillements et douleurs de la main)', explication: `Un nerf comprimé au poignet provoque des fourmillements dans les doigts, souvent la nuit. Une courte intervention libère le nerf et fait disparaître ces sensations désagréables.` },
+      { label: 'Doigt à ressaut (blocage douloureux d\'un doigt)', explication: `Un tendon qui coulisse mal fait claquer ou bloquer le doigt lorsqu'on le plie. Un geste simple libère le passage du tendon et redonne un mouvement fluide.` },
+      { label: 'Maladie de Dupuytren (rétraction des doigts)', explication: `Une membrane de la paume s'épaissit et attire progressivement les doigts vers la main, empêchant de les tendre. La chirurgie libère cette rétraction pour retrouver une main ouverte.` },
+      { label: 'Kyste synovial du poignet', explication: `Cette petite boule bénigne remplie de liquide apparaît souvent sur le dos du poignet. Elle est retirée lorsqu'elle devient douloureuse ou gênante.` },
+      { label: 'Arthrose de la base du pouce (rhizarthrose)', explication: `L'usure de l'articulation à la base du pouce rend douloureux les gestes de pince, comme tourner une clé ou ouvrir un bocal. La chirurgie soulage la douleur et préserve l'usage du pouce.` },
+      { label: 'Fractures et lésions tendineuses ou nerveuses de la main', explication: `La main est un organe de précision : ses fractures et ses plaies de tendons ou de nerfs sont réparées avec minutie pour préserver au mieux la mobilité et la sensibilité des doigts.` },
     ],
     preparation: [
       'Consultation avec le chirurgien et examens complémentaires si besoin (électromyogramme, radiographies, échographie)',
@@ -282,14 +282,14 @@ Les techniques modernes, notamment percutanées et mini-invasives, permettent de
 Dans la majorité des cas, l'intervention est réalisée en ambulatoire et la marche est reprise dès le jour même à l'aide d'une chaussure post-opératoire spécifique, sans plâtre ni cannes dans de nombreuses situations.
 
 À la Clinique Pasteur Tunis, la chirurgie du pied est pratiquée par des chirurgiens orthopédistes maîtrisant les techniques mini-invasives, dans un parcours ambulatoire confortable avec des consignes de suivi claires et un accompagnement jusqu'à la reprise d'un chaussage normal.`,
-    image: '/images/chirurgie2.webp',
+    image: '/images/fiches/ortho-chirurgie-pied.webp',
     indications: [
-      'Hallux valgus (déviation du gros orteil) douloureux ou gênant le chaussage',
-      'Griffes d\'orteils',
-      'Névrome de Morton (douleurs de l\'avant-pied)',
-      'Métatarsalgies (douleurs d\'appui sous l\'avant-pied)',
-      'Arthrose du gros orteil (hallux rigidus)',
-      'Certaines douleurs chroniques du talon',
+      { label: 'Hallux valgus (déviation du gros orteil) douloureux ou gênant le chaussage', explication: `Le gros orteil dévie vers les autres et fait saillir un « oignon » qui frotte dans la chaussure. La chirurgie réaligne l'orteil pour retrouver un chaussage confortable.` },
+      { label: 'Griffes d\'orteils', explication: `Les orteils se recroquevillent et frottent contre la chaussure, créant douleurs et durillons. Un geste chirurgical simple leur redonne une position naturelle.` },
+      { label: 'Névrome de Morton (douleurs de l\'avant-pied)', explication: `Un petit nerf irrité entre les orteils provoque des décharges électriques ou des brûlures à la marche. L'intervention supprime cette irritation lorsque les semelles et infiltrations ne suffisent plus.` },
+      { label: 'Métatarsalgies (douleurs d\'appui sous l\'avant-pied)', explication: `Des appuis mal répartis sous l'avant du pied provoquent des douleurs comme si l'on marchait sur des cailloux. La chirurgie rééquilibre ces appuis.` },
+      { label: 'Arthrose du gros orteil (hallux rigidus)', explication: `L'usure de l'articulation du gros orteil le rend raide et douloureux à chaque pas. L'intervention soulage la douleur et facilite le déroulé du pas.` },
+      { label: 'Certaines douleurs chroniques du talon', explication: `Quand une douleur persistante du talon résiste aux semelles, à la rééducation et aux traitements médicaux, un geste chirurgical ciblé peut être proposé.` },
     ],
     preparation: [
       'Consultation spécialisée et radiographies du pied en charge',
@@ -326,14 +326,14 @@ La prise en charge débute dès l'arrivée aux urgences : évaluation clinique, 
 Après le traitement initial, le suivi comprend des contrôles radiologiques réguliers, l'adaptation de l'immobilisation et un programme de rééducation destiné à restaurer la mobilité, la force et l'autonomie.
 
 À la Clinique Pasteur Tunis, les urgences traumatologiques sont prises en charge à toute heure, avec un accès direct au plateau d'imagerie, des blocs opératoires disponibles en permanence et une équipe orthopédique assurant la continuité des soins de l'urgence à la rééducation.`,
-    image: '/images/bloc-operatoire.webp',
+    image: '/images/fiches/ortho-traumatologie.webp',
     indications: [
-      'Fractures des membres, du poignet, de la cheville ou de la hanche',
-      'Luxations articulaires (épaule, coude, doigts)',
-      'Entorses graves avec lésion ligamentaire',
-      'Traumatismes sportifs',
-      'Plaies profondes de la main ou des membres',
-      'Traumatismes multiples nécessitant une évaluation complète',
+      { label: 'Fractures des membres, du poignet, de la cheville ou de la hanche', explication: `Après une chute ou un accident, un os cassé doit être remis en bonne position puis immobilisé ou fixé chirurgicalement pour consolider correctement.` },
+      { label: 'Luxations articulaires (épaule, coude, doigts)', explication: `Une articulation déboîtée doit être remise en place rapidement pour soulager la douleur et éviter les complications. La prise en charge est assurée en urgence.` },
+      { label: 'Entorses graves avec lésion ligamentaire', explication: `Quand des ligaments sont déchirés, une simple immobilisation ne suffit pas toujours : une évaluation spécialisée détermine si une réparation est nécessaire pour garder une articulation stable.` },
+      { label: 'Traumatismes sportifs', explication: `Les blessures du sport, des ligaments aux fractures, bénéficient d'une prise en charge adaptée à l'objectif de reprise de l'activité physique.` },
+      { label: 'Plaies profondes de la main ou des membres', explication: `Une plaie profonde peut toucher des tendons, des nerfs ou des vaisseaux : elle doit être explorée et réparée au bloc opératoire pour préserver la fonction du membre.` },
+      { label: 'Traumatismes multiples nécessitant une évaluation complète', explication: `Après un accident important, un bilan complet avec imagerie permet de n'ignorer aucune lésion et d'organiser les soins dans le bon ordre.` },
     ],
     preparation: [
       'Aucune préparation : prise en charge en urgence à toute heure',
@@ -370,13 +370,13 @@ L'intervention est réalisée sous arthroscopie : le nouveau ligament est confec
 La rééducation est un élément clé du résultat : elle débute dès les premiers jours et suit un protocole progressif encadré, allant de la récupération de la marche au renforcement musculaire, puis à la réathlétisation. La reprise des sports de pivot s'envisage après plusieurs mois, sur validation du chirurgien.
 
 À la Clinique Pasteur Tunis, la ligamentoplastie du LCA est réalisée sous arthroscopie haute définition par des chirurgiens spécialisés en chirurgie du sport, avec un protocole de rééducation détaillé remis au patient dès l'intervention.`,
-    image: '/images/surgery-blue-5.webp',
+    image: '/images/fiches/ortho-ligamentoplastie-genou.webp',
     indications: [
-      'Rupture du ligament croisé antérieur avec instabilité du genou',
-      'Dérobements du genou dans la vie quotidienne ou sportive',
-      'Souhait de reprise des sports de pivot (football, tennis, ski, sports de combat)',
-      'Rupture du LCA associée à une lésion méniscale réparable',
-      'Instabilité chronique exposant les ménisques et le cartilage',
+      { label: 'Rupture du ligament croisé antérieur avec instabilité du genou', explication: `Ce ligament central du genou ne cicatrise pas seul après une rupture. Quand le genou devient instable, sa reconstruction permet de retrouver un appui sûr.` },
+      { label: 'Dérobements du genou dans la vie quotidienne ou sportive', explication: `La sensation que le genou « lâche » lors d'un changement de direction ou d'un simple pas de côté traduit une instabilité que la reconstruction du ligament vient corriger.` },
+      { label: 'Souhait de reprise des sports de pivot (football, tennis, ski, sports de combat)', explication: `Ces sports sollicitent fortement les rotations du genou et exigent un ligament solide. La reconstruction est proposée aux sportifs qui souhaitent les reprendre en sécurité.` },
+      { label: 'Rupture du LCA associée à une lésion méniscale réparable', explication: `Quand le ménisque est également touché, le réparer en même temps que le ligament augmente les chances de conserver un genou sain sur le long terme.` },
+      { label: 'Instabilité chronique exposant les ménisques et le cartilage', explication: `Un genou qui reste instable use prématurément ses ménisques et son cartilage. Stabiliser le genou protège l'articulation pour l'avenir.` },
     ],
     preparation: [
       'Bilan clinique et IRM du genou confirmant la rupture',
@@ -414,13 +414,13 @@ Lorsque le traitement médical (rééducation, infiltrations) ne suffit plus, la
 Après l'intervention, l'épaule est protégée par une attelle pendant quelques semaines, le temps que le tendon cicatrise sur l'os. La rééducation, d'abord douce puis progressivement active, permet de récupérer la mobilité puis la force sur plusieurs mois.
 
 À la Clinique Pasteur Tunis, la chirurgie de la coiffe des rotateurs est pratiquée sous arthroscopie par des chirurgiens spécialisés dans l'épaule, avec un protocole de rééducation personnalisé et un suivi régulier jusqu'à la récupération complète.`,
-    image: '/images/surgery-blue-1.webp',
+    image: '/images/fiches/ortho-chirurgie-tendons-coiffe.webp',
     indications: [
-      'Rupture des tendons de la coiffe des rotateurs confirmée par l\'imagerie',
-      'Douleurs d\'épaule persistantes malgré le traitement médical',
-      'Douleurs nocturnes gênant le sommeil',
-      'Perte de force lors de l\'élévation du bras',
-      'Rupture traumatique chez un patient actif',
+      { label: 'Rupture des tendons de la coiffe des rotateurs confirmée par l\'imagerie', explication: `Lorsque l'échographie ou l'IRM confirme qu'un tendon de l'épaule est rompu, sa réparation permet de le rattacher à l'os avant que la lésion ne s'aggrave.` },
+      { label: 'Douleurs d\'épaule persistantes malgré le traitement médical', explication: `Quand la rééducation et les infiltrations ne soulagent plus l'épaule, la réparation chirurgicale des tendons devient la solution pour retrouver le confort.` },
+      { label: 'Douleurs nocturnes gênant le sommeil', explication: `La douleur d'épaule qui réveille la nuit ou empêche de dormir sur le côté est très évocatrice d'une atteinte des tendons ; elle s'améliore nettement après la réparation.` },
+      { label: 'Perte de force lors de l\'élévation du bras', explication: `Quand lever le bras devient difficile ou impossible, c'est souvent le signe qu'un tendon rompu ne joue plus son rôle. Le réinsérer redonne progressivement la force.` },
+      { label: 'Rupture traumatique chez un patient actif', explication: `Après une chute ou un effort violent chez une personne active, la réparation rapide du tendon offre les meilleures chances de récupération complète.` },
     ],
     preparation: [
       'Bilan d\'imagerie (échographie, IRM ou arthroscanner de l\'épaule)',
@@ -457,13 +457,13 @@ Elle est indiquée lorsque la fracture est déplacée, instable, articulaire, ou
 Le choix du matériel et de la technique dépend de l'os concerné, du type de fracture et du profil du patient. L'intervention est réalisée sous contrôle radiologique per-opératoire, garantissant un positionnement précis des implants. Le matériel est généralement bien toléré et n'est retiré que s'il devient gênant.
 
 À la Clinique Pasteur Tunis, les ostéosynthèses sont réalisées dans des blocs opératoires équipés d'un amplificateur de brillance et d'un matériel d'ostéosynthèse complet, par une équipe orthopédique disponible pour les urgences comme pour la chirurgie programmée.`,
-    image: '/images/surgery-modern.webp',
+    image: '/images/fiches/ortho-osteosynthese.webp',
     indications: [
-      'Fractures déplacées ou instables des membres',
-      'Fractures articulaires nécessitant une réduction anatomique',
-      'Fractures du col du fémur ou de la région de la hanche',
-      'Fractures ne pouvant être traitées efficacement par plâtre',
-      'Pseudarthrose (absence de consolidation d\'une fracture ancienne)',
+      { label: 'Fractures déplacées ou instables des membres', explication: `Quand les fragments osseux sont déplacés ou risquent de bouger sous un simple plâtre, une fixation par plaque, vis ou clou les maintient en bonne position pendant la consolidation.` },
+      { label: 'Fractures articulaires nécessitant une réduction anatomique', explication: `Une fracture qui traverse une articulation doit être reconstituée avec une grande précision pour éviter l'usure prématurée de l'articulation.` },
+      { label: 'Fractures du col du fémur ou de la région de la hanche', explication: `Ces fractures fréquentes, notamment après une chute, nécessitent le plus souvent une fixation chirurgicale rapide pour permettre de se relever et de remarcher au plus tôt.` },
+      { label: 'Fractures ne pouvant être traitées efficacement par plâtre', explication: `Certaines localisations ou certains types de fracture consolident mal sous plâtre : la fixation chirurgicale offre alors une stabilité plus fiable et une mobilisation plus rapide.` },
+      { label: 'Pseudarthrose (absence de consolidation d\'une fracture ancienne)', explication: `Quand une fracture ancienne n'a jamais consolidé et reste douloureuse, une nouvelle fixation, souvent associée à une greffe osseuse, relance la cicatrisation de l'os.` },
     ],
     preparation: [
       'Bilan radiologique précis de la fracture (radiographies, scanner si besoin)',

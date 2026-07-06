@@ -11,12 +11,12 @@ L'intervention peut être réalisée par voie ouverte classique ou par voie lapa
 La décision opératoire est toujours prise dans le cadre d'une concertation multidisciplinaire, en tenant compte des caractéristiques de la maladie et de l'état général du patient. Le chirurgien s'attache, chaque fois que cela est possible, à préserver les structures nerveuses impliquées dans la continence et la fonction sexuelle.
 
 À la Clinique Pasteur Tunis, la prostatectomie radicale est réalisée par une équipe urologique expérimentée en chirurgie oncologique, avec un environnement sécurisé comprenant bloc opératoire moderne, service de réanimation et suivi post-opératoire attentif.`,
-    image: '/images/surgery-blue-1.webp',
+    image: '/images/fiches/urochir-prostatectomie-radicale.webp',
     indications: [
-      'Cancer de la prostate localisé confirmé par biopsie',
-      'Patient en bon état général pouvant bénéficier d\'un traitement curatif',
-      'Décision validée en réunion de concertation pluridisciplinaire',
-      'Alternative ou complément aux autres traitements selon le stade de la maladie',
+      { label: 'Cancer de la prostate localisé confirmé par biopsie', explication: `Lorsque le cancer est encore limité à la prostate, retirer la glande en totalité offre une réelle chance de guérison définitive.` },
+      { label: 'Patient en bon état général pouvant bénéficier d\'un traitement curatif', explication: `Cette chirurgie s'adresse aux patients dont l'état de santé permet de viser la guérison complète, après une évaluation attentive par l'équipe médicale.` },
+      { label: 'Décision validée en réunion de concertation pluridisciplinaire', explication: `Chaque dossier est discuté par plusieurs spécialistes (urologue, oncologue, radiothérapeute) afin de s'assurer que la chirurgie est la meilleure option pour ce patient précis.` },
+      { label: 'Alternative ou complément aux autres traitements selon le stade de la maladie', explication: `Selon les caractéristiques de la maladie, la chirurgie peut remplacer ou compléter d'autres traitements comme la radiothérapie. Le choix est toujours personnalisé.` },
     ],
     preparation: [
       'Bilan pré-opératoire complet (analyses sanguines, bilan cardiaque)',
@@ -54,13 +54,13 @@ L'utilisation d'un résecteur bipolaire moderne permet une intervention précise
 La RTUP améliore de façon durable les symptômes urinaires liés à l'adénome : difficultés à uriner, jet faible, levers nocturnes fréquents, envies pressantes. Elle est proposée lorsque le traitement médicamenteux ne suffit plus ou en cas de complications.
 
 À la Clinique Pasteur Tunis, la RTUP est pratiquée avec un équipement endoscopique de dernière génération, par des urologues expérimentés, dans le cadre d'une hospitalisation courte et confortable.`,
-    image: '/images/endoscopie.webp',
+    image: '/images/fiches/urochir-resection-transuretrale-prostate.webp',
     indications: [
-      'Hyperplasie bénigne de la prostate avec gêne urinaire importante',
-      'Échec ou intolérance du traitement médicamenteux',
-      'Rétentions urinaires répétées',
-      'Infections urinaires à répétition liées à l\'adénome',
-      'Retentissement de l\'obstacle prostatique sur la vessie ou les reins',
+      { label: 'Hyperplasie bénigne de la prostate avec gêne urinaire importante', explication: `Avec l'âge, la prostate peut grossir et gêner l'écoulement de l'urine : jet faible, levers nocturnes, envies pressantes. Retirer la partie qui obstrue redonne un confort urinaire durable.` },
+      { label: 'Échec ou intolérance du traitement médicamenteux', explication: `Quand les médicaments ne soulagent plus les troubles urinaires ou provoquent des effets indésirables gênants, l'intervention devient la solution de référence.` },
+      { label: 'Rétentions urinaires répétées', explication: `L'impossibilité soudaine d'uriner, qui oblige à poser une sonde en urgence, signe un obstacle prostatique devenu trop important : la chirurgie lève cet obstacle.` },
+      { label: 'Infections urinaires à répétition liées à l\'adénome', explication: `Une vessie qui se vide mal favorise la stagnation des urines et les infections. Traiter l'obstacle prostatique aide à rompre ce cercle vicieux.` },
+      { label: 'Retentissement de l\'obstacle prostatique sur la vessie ou les reins', explication: `Quand l'obstacle finit par fatiguer la vessie ou retentir sur les reins, il est important d'intervenir pour protéger l'ensemble de l'appareil urinaire.` },
     ],
     preparation: [
       'Bilan pré-opératoire avec analyse d\'urines (les urines doivent être stériles)',
@@ -97,12 +97,12 @@ Chaque fois que cela est possible, l'intervention est réalisée par voie laparo
 Vivre avec un seul rein est tout à fait compatible avec une vie normale : le rein restant assure l'ensemble de la fonction rénale, sous réserve d'un suivi médical régulier.
 
 À la Clinique Pasteur Tunis, la néphrectomie est réalisée par des urologues rompus à la chirurgie laparoscopique lourde, avec une colonne de cœlioscopie dédiée et un environnement de réanimation permettant une prise en charge sécurisée de bout en bout.`,
-    image: '/images/surgery-blue-2.webp',
+    image: '/images/fiches/urochir-nephrectomie.webp',
     indications: [
-      'Tumeur du rein confirmée par l\'imagerie',
-      'Rein détruit ou non fonctionnel (infections répétées, calculs, obstruction chronique)',
-      'Rein à l\'origine d\'une hypertension artérielle sévère résistante',
-      'Certaines malformations rénales symptomatiques',
+      { label: 'Tumeur du rein confirmée par l\'imagerie', explication: `Lorsque le scanner ou l'IRM met en évidence une tumeur du rein, son ablation, totale ou limitée à la zone malade, constitue le traitement de référence.` },
+      { label: 'Rein détruit ou non fonctionnel (infections répétées, calculs, obstruction chronique)', explication: `Un rein qui ne fonctionne plus peut devenir une source d'infections et de douleurs. Le retirer supprime ces complications, le rein restant assurant l'ensemble du travail.` },
+      { label: 'Rein à l\'origine d\'une hypertension artérielle sévère résistante', explication: `Dans certains cas rares, un rein malade entretient une tension artérielle très élevée que les médicaments ne parviennent pas à contrôler. Son ablation peut aider à la normaliser.` },
+      { label: 'Certaines malformations rénales symptomatiques', explication: `Quand une malformation du rein provoque douleurs, infections ou calculs à répétition, la chirurgie peut être la meilleure façon de régler durablement le problème.` },
     ],
     preparation: [
       'Bilan d\'imagerie complet (scanner ou IRM) pour préciser la lésion',
@@ -140,13 +140,13 @@ Les techniques actuelles sont très majoritairement mini-invasives. La lithotrit
 Le choix de la technique dépend de la taille, de la localisation et de la composition du calcul, ainsi que de l'anatomie du patient. Un bilan métabolique peut être proposé à distance pour comprendre l'origine des calculs et prévenir les récidives par des mesures simples, notamment une bonne hydratation.
 
 À la Clinique Pasteur Tunis, le traitement des calculs bénéficie d'un plateau technique complet : urétéroscopes souples et rigides, laser de lithotritie et imagerie per-opératoire, permettant une prise en charge efficace et adaptée à chaque situation.`,
-    image: '/images/surgery-blue-3.webp',
+    image: '/images/fiches/urochir-chirurgie-calculs-renaux.webp',
     indications: [
-      'Calcul urinaire ne s\'éliminant pas spontanément',
-      'Coliques néphrétiques répétées ou douleur persistante',
-      'Calcul obstructif menaçant la fonction du rein',
-      'Infections urinaires associées à un calcul',
-      'Calculs volumineux du rein nécessitant une fragmentation',
+      { label: 'Calcul urinaire ne s\'éliminant pas spontanément', explication: `Beaucoup de petits calculs s'évacuent seuls avec une bonne hydratation. Quand un calcul reste bloqué, sa fragmentation au laser permet de s'en débarrasser sans incision.` },
+      { label: 'Coliques néphrétiques répétées ou douleur persistante', explication: `Les crises de colique néphrétique comptent parmi les douleurs les plus intenses. Traiter le calcul responsable met fin à ces épisodes et évite leur répétition.` },
+      { label: 'Calcul obstructif menaçant la fonction du rein', explication: `Un calcul qui bloque l'écoulement de l'urine met le rein sous pression et peut l'abîmer. Le lever rapidement protège la fonction rénale.` },
+      { label: 'Infections urinaires associées à un calcul', explication: `Un calcul peut entretenir des infections urinaires, situation qui peut devenir sérieuse. Le retirer permet de traiter l'infection à sa source.` },
+      { label: 'Calculs volumineux du rein nécessitant une fragmentation', explication: `Les gros calculs ne peuvent pas s'éliminer naturellement : le laser les réduit en fines poussières ou en petits fragments faciles à extraire ou à évacuer.` },
     ],
     preparation: [
       'Analyse d\'urines récente : les urines doivent être stériles avant l\'intervention',
@@ -183,13 +183,13 @@ Réalisée à l'aide d'un urétéroscope rigide ou souple selon la zone à attei
 L'urétéroscope souple, grâce à son extrémité orientable, permet d'accéder à l'ensemble des cavités rénales avec une grande précision, y compris dans les zones difficiles d'accès.
 
 À la Clinique Pasteur Tunis, l'urétéroscopie est réalisée au bloc opératoire avec un équipement endoscopique complet (urétéroscopes souples et rigides, laser), par des urologues expérimentés, le plus souvent dans le cadre d'une hospitalisation courte.`,
-    image: '/images/endoscopie.webp',
+    image: '/images/fiches/urochir-ureteroscopie.webp',
     indications: [
-      'Calcul de l\'uretère ou du rein à fragmenter',
-      'Exploration d\'une anomalie visible à l\'imagerie',
-      'Recherche de la cause d\'un saignement urinaire',
-      'Biopsie d\'une lésion de la voie excrétrice',
-      'Traitement de certains rétrécissements de l\'uretère',
+      { label: 'Calcul de l\'uretère ou du rein à fragmenter', explication: `L'urétéroscope remonte par les voies naturelles jusqu'au calcul, qui est alors fragmenté au laser sous contrôle de la vue, sans aucune incision.` },
+      { label: 'Exploration d\'une anomalie visible à l\'imagerie', explication: `Quand le scanner ou l'échographie montre une image inhabituelle dans l'uretère ou le rein, l'exploration endoscopique permet de la voir directement et d'en préciser la nature.` },
+      { label: 'Recherche de la cause d\'un saignement urinaire', explication: `La présence de sang dans les urines doit toujours être expliquée. L'urétéroscopie permet d'inspecter l'ensemble de la voie urinaire pour en trouver l'origine.` },
+      { label: 'Biopsie d\'une lésion de la voie excrétrice', explication: `Si une lésion est découverte sur la paroi de l'uretère ou des cavités du rein, un petit prélèvement est réalisé dans le même temps pour être analysé au microscope.` },
+      { label: 'Traitement de certains rétrécissements de l\'uretère', explication: `Un passage rétréci de l'uretère peut gêner l'écoulement de l'urine. Certains rétrécissements se traitent directement par voie endoscopique, sans ouvrir.` },
     ],
     preparation: [
       'Analyse d\'urines récente : les urines doivent être stériles',
@@ -225,12 +225,12 @@ L'intervention comprend l'ablation de la vessie et des tissus voisins concernés
 Il s'agit d'une chirurgie majeure, préparée avec soin : bilan complet, optimisation de l'état général et information détaillée du patient et de ses proches. La décision et la technique de reconstruction sont discutées en concertation multidisciplinaire et adaptées à chaque patient.
 
 À la Clinique Pasteur Tunis, la cystectomie est prise en charge par une équipe chirurgicale et anesthésique expérimentée en chirurgie urologique lourde, avec un service de réanimation dédié qui sécurise les suites opératoires et un accompagnement attentif tout au long du parcours.`,
-    image: '/images/bloc-operatoire.webp',
+    image: '/images/fiches/urochir-cystectomie.webp',
     indications: [
-      'Tumeur de la vessie infiltrant le muscle vésical',
-      'Tumeurs superficielles à haut risque résistant aux traitements endoscopiques',
-      'Récidives tumorales multiples malgré un traitement bien conduit',
-      'Certaines situations où la vessie ne peut plus assurer sa fonction',
+      { label: 'Tumeur de la vessie infiltrant le muscle vésical', explication: `Quand la tumeur a pénétré dans le muscle de la paroi vésicale, retirer la vessie devient le traitement de référence pour viser la guérison.` },
+      { label: 'Tumeurs superficielles à haut risque résistant aux traitements endoscopiques', explication: `Certaines tumeurs encore superficielles mais agressives continuent d'évoluer malgré les résections par les voies naturelles : la cystectomie est alors proposée avant qu'elles ne progressent.` },
+      { label: 'Récidives tumorales multiples malgré un traitement bien conduit', explication: `Quand les tumeurs réapparaissent sans cesse malgré des traitements répétés et bien suivis, l'ablation de la vessie permet de couper court à cette évolution.` },
+      { label: 'Certaines situations où la vessie ne peut plus assurer sa fonction', explication: `Une vessie très abîmée, douloureuse ou qui ne retient plus les urines peut, dans de rares cas, justifier son remplacement par un nouveau circuit urinaire.` },
     ],
     preparation: [
       'Bilan d\'extension complet (scanner, examens biologiques)',
@@ -269,12 +269,12 @@ La technique de référence chez la femme est la pose d'une bandelette sous-uré
 Avant toute chirurgie, un bilan urodynamique complet est réalisé afin de caractériser précisément le mécanisme des fuites et de proposer le traitement le plus adapté.
 
 À la Clinique Pasteur Tunis, cette prise en charge bénéficie d'un atout majeur : le centre d'explorations urodynamiques intégré à la clinique, qui permet un parcours fluide, du bilan initial jusqu'à l'intervention et au suivi.`,
-    image: '/images/urodynamique.webp',
+    image: '/images/fiches/urochir-chirurgie-incontinence-urinaire.webp',
     indications: [
-      'Incontinence urinaire d\'effort gênante au quotidien',
-      'Échec ou insuffisance de la rééducation périnéale',
-      'Fuites confirmées et caractérisées par le bilan urodynamique',
-      'Incontinence mixte à composante d\'effort prédominante',
+      { label: 'Incontinence urinaire d\'effort gênante au quotidien', explication: `Des fuites à la toux, au rire, au port de charges ou pendant le sport peuvent devenir très handicapantes. La pose d'une bandelette de soutien y remédie de façon durable.` },
+      { label: 'Échec ou insuffisance de la rééducation périnéale', explication: `La rééducation du périnée est toujours la première étape. Quand elle ne suffit pas à contrôler les fuites, la chirurgie prend le relais.` },
+      { label: 'Fuites confirmées et caractérisées par le bilan urodynamique', explication: `Avant toute intervention, un bilan spécialisé analyse précisément le mécanisme des fuites afin de choisir la technique la mieux adaptée à chaque patiente.` },
+      { label: 'Incontinence mixte à composante d\'effort prédominante', explication: `Quand fuites d'effort et envies pressantes coexistent, la chirurgie est proposée si la part liée à l'effort domine, car c'est elle qu'elle corrige le mieux.` },
     ],
     preparation: [
       'Bilan urodynamique préalable au centre d\'explorations de la clinique',
@@ -309,13 +309,13 @@ La chirurgie des malformations urogénitales vise à restaurer une anatomie et u
 Ces interventions demandent une expertise particulière, une planification soigneuse à partir de l'imagerie et une information claire des patients et des familles, notamment lorsqu'il s'agit d'enfants.
 
 À la Clinique Pasteur Tunis, ces interventions sont réalisées par des urologues expérimentés, en collaboration avec l'équipe de chirurgie pédiatrique lorsque le patient est un enfant, dans un environnement adapté et rassurant.`,
-    image: '/images/surgery-blue-4.webp',
+    image: '/images/fiches/urochir-chirurgie-malformations-urogenitales.webp',
     indications: [
-      'Hypospadias et anomalies du méat urinaire',
-      'Reflux vésico-urétéral symptomatique',
-      'Syndrome de la jonction pyélo-urétérale (rétrécissement entre rein et uretère)',
-      'Testicule non descendu',
-      'Autres malformations de l\'appareil urinaire ou génital nécessitant une correction',
+      { label: 'Hypospadias et anomalies du méat urinaire', explication: `Quand l'orifice urinaire n'est pas positionné normalement à la naissance, une intervention reconstructrice restaure une anatomie et une miction normales, avec un résultat esthétique soigné.` },
+      { label: 'Reflux vésico-urétéral symptomatique', explication: `Lorsque l'urine remonte anormalement de la vessie vers le rein et provoque des infections répétées, la correction chirurgicale protège le rein pour l'avenir.` },
+      { label: 'Syndrome de la jonction pyélo-urétérale (rétrécissement entre rein et uretère)', explication: `Un passage trop étroit à la sortie du rein gêne l'écoulement de l'urine et le fait se dilater. L'intervention élargit ce passage et préserve la fonction rénale.` },
+      { label: 'Testicule non descendu', explication: `Quand un testicule n'est pas descendu spontanément dans la bourse, la chirurgie le repositionne afin de protéger sa fonction future et de faciliter sa surveillance.` },
+      { label: 'Autres malformations de l\'appareil urinaire ou génital nécessitant une correction', explication: `Chaque malformation est unique : le geste est adapté au cas par cas, avec pour objectifs une fonction normale, la préservation de la fertilité et un bon résultat esthétique.` },
     ],
     preparation: [
       'Bilan d\'imagerie précis (échographie, parfois scanner ou scintigraphie)',
@@ -350,12 +350,12 @@ Bien qu'il s'agisse d'un geste simple, la circoncision mérite d'être réalisé
 L'intervention se pratique le plus souvent en ambulatoire : l'enfant ou l'adulte entre le matin et repart le jour même. La cicatrisation est rapide et les soins locaux sont simples, expliqués en détail à la sortie.
 
 À la Clinique Pasteur Tunis, la circoncision est réalisée au bloc opératoire dans un cadre sécurisé et rassurant, avec une attention particulière portée au confort de l'enfant et à l'accompagnement des parents.`,
-    image: '/images/bloc-hd.webp',
+    image: '/images/fiches/urochir-circoncision.webp',
     indications: [
-      'Phimosis (prépuce trop étroit) gênant ou persistant',
-      'Infections locales répétées (balanites)',
-      'Paraphimosis ou gêne fonctionnelle',
-      'Demande familiale pour motif culturel ou religieux, dans un cadre médical sécurisé',
+      { label: 'Phimosis (prépuce trop étroit) gênant ou persistant', explication: `Quand le prépuce reste trop serré pour se rétracter normalement, il peut gêner la toilette et la miction. La circoncision règle définitivement le problème.` },
+      { label: 'Infections locales répétées (balanites)', explication: `Des inflammations ou infections répétées du gland et du prépuce sont favorisées par un prépuce étroit. Le retirer supprime la cause de ces épisodes.` },
+      { label: 'Paraphimosis ou gêne fonctionnelle', explication: `Un prépuce étroit qui reste bloqué en arrière du gland constitue une urgence, et une gêne répétée dans la vie quotidienne justifie également l'intervention.` },
+      { label: 'Demande familiale pour motif culturel ou religieux, dans un cadre médical sécurisé', explication: `Réaliser la circoncision au bloc opératoire, avec une anesthésie adaptée et un chirurgien expérimenté, garantit un geste précis, indolore et des suites simples.` },
     ],
     preparation: [
       'Consultation préalable avec le chirurgien',
@@ -390,12 +390,12 @@ Le traitement chirurgical consiste à interrompre les veines dilatées afin de r
 Il s'agit d'une chirurgie ambulatoire dans la grande majorité des cas : le patient rentre chez lui le jour même et reprend rapidement ses activités habituelles, en évitant simplement les efforts physiques intenses pendant quelques semaines.
 
 À la Clinique Pasteur Tunis, la cure de varicocèle est réalisée par des urologues expérimentés, dans le cadre confortable de l'hospitalisation de jour, avec un suivi adapté lorsque l'intervention s'inscrit dans un parcours de fertilité.`,
-    image: '/images/surgery-blue-5.webp',
+    image: '/images/fiches/urochir-varicocele.webp',
     indications: [
-      'Varicocèle responsable de douleurs ou de pesanteur scrotale',
-      'Retentissement sur les paramètres du sperme dans un bilan de fertilité',
-      'Varicocèle volumineuse et gênante',
-      'Diminution de volume du testicule chez l\'adolescent',
+      { label: 'Varicocèle responsable de douleurs ou de pesanteur scrotale', explication: `Ces veines dilatées autour du testicule peuvent créer une sensation de poids ou de gêne, surtout en fin de journée. Les interrompre fait disparaître cette pesanteur.` },
+      { label: 'Retentissement sur les paramètres du sperme dans un bilan de fertilité', explication: `La varicocèle peut réchauffer le testicule et altérer la qualité du sperme. Son traitement fait partie des gestes proposés dans certains parcours de fertilité masculine.` },
+      { label: 'Varicocèle volumineuse et gênante', explication: `Quand les veines dilatées deviennent visibles ou gênantes au quotidien, une courte intervention en ambulatoire permet de s'en débarrasser.` },
+      { label: 'Diminution de volume du testicule chez l\'adolescent', explication: `Chez le jeune en pleine croissance, une varicocèle qui freine le développement du testicule justifie un traitement pour préserver son avenir.` },
     ],
     preparation: [
       'Échographie scrotale de confirmation',
@@ -430,12 +430,12 @@ La voie laparoscopique est aujourd'hui la technique de référence pour cette ch
 La préparation de l'intervention est essentielle, en particulier pour les tumeurs sécrétantes : elle se fait en étroite collaboration avec l'endocrinologue et l'équipe d'anesthésie afin d'équilibrer les sécrétions hormonales avant le geste chirurgical.
 
 À la Clinique Pasteur Tunis, la surrénalectomie laparoscopique est réalisée par des chirurgiens rompus à la cœlioscopie avancée, avec une colonne de cœlioscopie dédiée et une surveillance post-opératoire adaptée, en lien avec les endocrinologues.`,
-    image: '/images/bloc-operatoire.webp',
+    image: '/images/fiches/urochir-chirurgie-surrenale-laparoscopique.webp',
     indications: [
-      'Tumeur surrénalienne sécrétant des hormones en excès',
-      'Tumeur surrénalienne de taille significative découverte à l\'imagerie',
-      'Lésion surrénalienne suspecte nécessitant une analyse complète',
-      'Certaines hypertensions artérielles d\'origine surrénalienne',
+      { label: 'Tumeur surrénalienne sécrétant des hormones en excès', explication: `Certaines tumeurs de la surrénale produisent trop d'hormones, ce qui dérègle la tension, le poids ou le moral. Retirer la glande met fin à cette production excessive.` },
+      { label: 'Tumeur surrénalienne de taille significative découverte à l\'imagerie', explication: `Au-delà d'une certaine taille, une tumeur de la surrénale est retirée par prudence, même sans symptôme, afin d'écarter tout doute sur sa nature.` },
+      { label: 'Lésion surrénalienne suspecte nécessitant une analyse complète', explication: `Quand l'imagerie ne permet pas d'affirmer que la lésion est bénigne, son ablation permet une analyse complète au microscope et lève l'incertitude.` },
+      { label: 'Certaines hypertensions artérielles d\'origine surrénalienne', explication: `Une tension élevée difficile à équilibrer peut parfois venir d'une petite tumeur surrénalienne. Son ablation peut normaliser la tension ou alléger nettement le traitement.` },
     ],
     preparation: [
       'Bilan hormonal complet en collaboration avec l\'endocrinologue',

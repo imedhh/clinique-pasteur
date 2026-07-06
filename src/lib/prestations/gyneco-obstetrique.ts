@@ -11,13 +11,13 @@ Tout au long du travail, le bien-être de la maman et du bébé est surveillé e
 La maternité de la clinique présente une particularité rassurante : les box d'accouchement sont mitoyens à une salle de césarienne. Si la situation venait à l'exiger, une prise en charge chirurgicale peut être réalisée immédiatement, sans transfert.
 
 À la Clinique Pasteur Tunis, l'équipe obstétricale est disponible 24h/24. Après la naissance, la maman et son bébé sont installés dans une chambre dédiée de la maternité, où l'équipe accompagne les premiers jours : allaitement, soins du nouveau-né et conseils pour le retour à la maison.`,
-    image: '/images/maternite.webp',
+    image: '/images/fiches/gyneco-accouchement-naturel-assiste.webp',
     indications: [
-      'Grossesse au terme avec accord de l\'obstétricien pour la voie basse',
-      'Début de travail spontané',
-      'Déclenchement programmé sur indication médicale',
-      'Souhait d\'un accouchement physiologique dans un cadre sécurisé',
-      'Accouchement avec ou sans péridurale, selon le choix de la maman',
+      { label: 'Grossesse au terme avec accord de l\'obstétricien pour la voie basse', explication: `Lorsque la grossesse arrive à son terme et que l'obstétricien confirme que les conditions sont favorables, l'accouchement par voie naturelle peut être envisagé en toute confiance.` },
+      { label: 'Début de travail spontané', explication: `Quand les contractions démarrent d'elles-mêmes, l'équipe de la maternité accueille la future maman à toute heure pour accompagner la naissance.` },
+      { label: 'Déclenchement programmé sur indication médicale', explication: `Dans certaines situations, l'obstétricien peut décider de déclencher l'accouchement afin de protéger la santé de la maman ou du bébé.` },
+      { label: 'Souhait d\'un accouchement physiologique dans un cadre sécurisé', explication: `Pour les mamans qui souhaitent une naissance la plus naturelle possible, tout en bénéficiant de la sécurité d'un environnement médicalisé.` },
+      { label: 'Accouchement avec ou sans péridurale, selon le choix de la maman', explication: `La péridurale est proposée mais jamais imposée : chaque maman choisit la façon dont elle souhaite vivre sa naissance.` },
     ],
     preparation: [
       'Suivi régulier de la grossesse avec l\'obstétricien',
@@ -54,14 +54,14 @@ L'intervention est le plus souvent réalisée sous anesthésie locorégionale (r
 La maternité de la clinique dispose d'une salle de césarienne dédiée, mitoyenne aux box d'accouchement : cette configuration permet une prise en charge immédiate en cas d'urgence, sans transfert. Le pédiatre est présent pour accueillir le nouveau-né et réaliser les premiers examens.
 
 À la Clinique Pasteur Tunis, l'équipe obstétricale, anesthésique et pédiatrique est disponible 24h/24. Après l'intervention, la maman est surveillée en salle de réveil puis rejoint sa chambre avec son bébé, où l'équipe l'accompagne dans les premiers gestes malgré les suites opératoires.`,
-    image: '/images/surgery-blue-1.webp',
+    image: '/images/fiches/gyneco-cesarienne.webp',
     indications: [
-      'Position du bébé ne permettant pas la voie basse (siège, transverse)',
-      'Antécédents de césarienne ou de chirurgie utérine selon l\'avis de l\'obstétricien',
-      'Placenta bas inséré (placenta praevia)',
-      'Grossesse multiple selon les situations',
-      'Anomalies du travail ou du rythme cardiaque fœtal nécessitant une naissance rapide',
-      'Raisons médicales maternelles contre-indiquant la voie basse',
+      { label: 'Position du bébé ne permettant pas la voie basse (siège, transverse)', explication: `Quand le bébé se présente par le siège ou en travers, la césarienne offre une naissance plus sûre pour lui comme pour sa maman.` },
+      { label: 'Antécédents de césarienne ou de chirurgie utérine selon l\'avis de l\'obstétricien', explication: `Une cicatrice utérine laissée par une opération précédente peut rendre la voie basse plus délicate ; l'obstétricien évalue alors la solution la plus sûre.` },
+      { label: 'Placenta bas inséré (placenta praevia)', explication: `Lorsque le placenta est situé trop bas et recouvre le passage du bébé, la césarienne devient nécessaire pour éviter tout saignement.` },
+      { label: 'Grossesse multiple selon les situations', explication: `Attendre des jumeaux ou plus peut, selon leur position et le déroulement de la grossesse, conduire à préférer une naissance par césarienne.` },
+      { label: 'Anomalies du travail ou du rythme cardiaque fœtal nécessitant une naissance rapide', explication: `Si le bébé montre des signes de fatigue pendant le travail, une césarienne en urgence permet de le faire naître rapidement et en toute sécurité.` },
+      { label: 'Raisons médicales maternelles contre-indiquant la voie basse', explication: `Certaines conditions de santé de la maman rendent l'accouchement par voie basse déconseillé ; la césarienne protège alors la mère et l'enfant.` },
     ],
     preparation: [
       'Consultation d\'anesthésie obligatoire avant l\'intervention',
@@ -99,13 +99,13 @@ Plusieurs voies d'abord sont possibles et le choix est adapté à chaque situati
 Le gynécologue explique lors des consultations préalables les conséquences de l'intervention, notamment l'arrêt des règles et l'impossibilité de grossesse ultérieure, ainsi que les bénéfices attendus sur les symptômes. Cette décision partagée, jamais précipitée, est au cœur de la démarche de l'équipe.
 
 À la Clinique Pasteur Tunis, les chirurgiens gynécologues privilégient les voies mini-invasives chaque fois que possible, pour des suites plus simples et une récupération plus rapide. La patiente est entourée par une équipe attentive, de la consultation pré-opératoire au suivi après l'intervention.`,
-    image: '/images/surgery-blue-2.webp',
+    image: '/images/fiches/gyneco-hysterectomie.webp',
     indications: [
-      'Fibromes utérins volumineux ou symptomatiques résistants au traitement',
-      'Saignements abondants invalidants non contrôlés par les traitements',
-      'Adénomyose sévère',
-      'Prolapsus utérin selon les situations',
-      'Lésions précancéreuses ou cancéreuses de l\'utérus ou du col',
+      { label: 'Fibromes utérins volumineux ou symptomatiques résistants au traitement', explication: `Quand des fibromes importants provoquent des symptômes gênants malgré les traitements, retirer l'utérus permet de s'en libérer définitivement.` },
+      { label: 'Saignements abondants invalidants non contrôlés par les traitements', explication: `Des règles très abondantes qui épuisent au quotidien et ne répondent plus aux médicaments peuvent justifier cette intervention pour retrouver une vie normale.` },
+      { label: 'Adénomyose sévère', explication: `Dans cette maladie, du tissu semblable à la muqueuse utérine s'infiltre dans le muscle de l'utérus et provoque douleurs et saignements ; l'intervention permet de les faire disparaître.` },
+      { label: 'Prolapsus utérin selon les situations', explication: `Quand l'utérus descend et provoque une gêne importante, son retrait peut faire partie du traitement de la descente d'organes.` },
+      { label: 'Lésions précancéreuses ou cancéreuses de l\'utérus ou du col', explication: `Face à certaines lésions du col ou du corps de l'utérus, l'intervention permet de traiter la maladie et de protéger durablement la santé.` },
     ],
     preparation: [
       'Consultations pré-opératoires avec le gynécologue et l\'anesthésiste',
@@ -142,13 +142,13 @@ Contrairement à l'hystérectomie, la myomectomie préserve l'utérus et donc la
 Le bilan pré-opératoire, notamment par échographie et parfois IRM, permet de cartographier précisément les fibromes et de choisir la meilleure stratégie. Le gynécologue explique à chaque patiente les bénéfices attendus et les modalités de surveillance ultérieure, les fibromes pouvant parfois récidiver au fil du temps.
 
 À la Clinique Pasteur Tunis, les chirurgiens gynécologues maîtrisent l'ensemble des techniques de myomectomie et privilégient les approches mini-invasives chaque fois que possible, pour préserver au mieux l'utérus et faciliter la récupération.`,
-    image: '/images/surgery-blue-3.webp',
+    image: '/images/fiches/gyneco-myomectomie.webp',
     indications: [
-      'Fibromes responsables de saignements abondants ou d\'anémie',
-      'Douleurs pelviennes ou sensation de pesanteur liées aux fibromes',
-      'Fibromes gênant un projet de grossesse ou impliqués dans une infertilité',
-      'Fibromes comprimant les organes voisins (vessie, rectum)',
-      'Augmentation de volume d\'un fibrome nécessitant son ablation',
+      { label: 'Fibromes responsables de saignements abondants ou d\'anémie', explication: `Quand les fibromes provoquent des règles très abondantes qui fatiguent l'organisme, leur retrait permet de retrouver énergie et confort.` },
+      { label: 'Douleurs pelviennes ou sensation de pesanteur liées aux fibromes', explication: `Les fibromes peuvent peser sur le bas-ventre et gêner les gestes du quotidien ; leur ablation soulage durablement ces sensations.` },
+      { label: 'Fibromes gênant un projet de grossesse ou impliqués dans une infertilité', explication: `Certains fibromes peuvent compliquer la venue d'un bébé ; les retirer tout en conservant l'utérus préserve pleinement le projet de grossesse.` },
+      { label: 'Fibromes comprimant les organes voisins (vessie, rectum)', explication: `Un fibrome volumineux peut appuyer sur la vessie ou le rectum et perturber leur fonctionnement ; l'intervention lève cette compression.` },
+      { label: 'Augmentation de volume d\'un fibrome nécessitant son ablation', explication: `Quand un fibrome grossit de façon notable, le chirurgien peut recommander de le retirer avant qu'il ne devienne plus gênant.` },
     ],
     preparation: [
       'Bilan d\'imagerie précis (échographie, IRM si nécessaire) pour cartographier les fibromes',
@@ -185,14 +185,14 @@ L'intervention est réalisée par cœlioscopie : à travers de petites incisions
 La cœlioscopie a également une valeur diagnostique : elle permet de confirmer la maladie, d'en évaluer l'étendue et d'adapter la stratégie de traitement. La décision opératoire est toujours pesée avec la patiente, en fonction de l'intensité des symptômes, du projet de grossesse et des traitements déjà essayés.
 
 À la Clinique Pasteur Tunis, la prise en charge de l'endométriose associe le chirurgien gynécologue et, selon les besoins, d'autres spécialistes de la clinique. L'objectif est double : soulager durablement la douleur et préserver ou améliorer la fertilité, avec un accompagnement attentif avant et après l'intervention.`,
-    image: '/images/surgery-blue-4.webp',
+    image: '/images/fiches/gyneco-chirurgie-endometriose.webp',
     indications: [
-      'Douleurs de règles intenses résistant aux traitements médicaux',
-      'Douleurs pelviennes chroniques invalidantes',
-      'Douleurs lors des rapports',
-      'Endométriome ovarien (kyste d\'endométriose)',
-      'Infertilité associée à une endométriose',
-      'Confirmation diagnostique lorsque l\'imagerie ne suffit pas',
+      { label: 'Douleurs de règles intenses résistant aux traitements médicaux', explication: `Quand les règles restent très douloureuses malgré les médicaments, la chirurgie retire les lésions responsables pour un soulagement durable.` },
+      { label: 'Douleurs pelviennes chroniques invalidantes', explication: `Des douleurs du bas-ventre présentes presque en permanence peuvent être liées à l'endométriose ; leur traitement chirurgical améliore nettement la qualité de vie.` },
+      { label: 'Douleurs lors des rapports', explication: `L'endométriose peut rendre l'intimité douloureuse ; retirer les lésions en cause aide à retrouver une vie de couple sereine.` },
+      { label: 'Endométriome ovarien (kyste d\'endométriose)', explication: `Il s'agit d'un kyste d'endométriose développé sur l'ovaire ; la chirurgie le retire délicatement en préservant au maximum l'ovaire.` },
+      { label: 'Infertilité associée à une endométriose', explication: `Quand l'endométriose complique la venue d'un bébé, la chirurgie peut améliorer les chances de grossesse, naturellement ou avec une aide médicale.` },
+      { label: 'Confirmation diagnostique lorsque l\'imagerie ne suffit pas', explication: `Quand les examens d'imagerie ne permettent pas de conclure, la cœlioscopie confirme la maladie et la traite dans le même temps.` },
     ],
     preparation: [
       'Bilan d\'imagerie spécialisé (échographie pelvienne, IRM) pour cartographier les lésions',
@@ -230,14 +230,14 @@ Les interventions sont réalisées par des techniques mini-invasives : l'hystér
 La chirurgie s'inscrit toujours dans un bilan de fertilité complet du couple, mené avec le gynécologue. Selon les situations, elle peut suffire à permettre une grossesse naturelle ou préparer au mieux une assistance médicale à la procréation.
 
 À la Clinique Pasteur Tunis, les chirurgiens gynécologues accompagnent les couples avec écoute et discrétion, en expliquant à chaque étape les bénéfices attendus de la chirurgie et la place qu'elle occupe dans le projet global de grossesse.`,
-    image: '/images/surgery-blue-5.webp',
+    image: '/images/fiches/gyneco-chirurgie-infertilite.webp',
     indications: [
-      'Polype ou cloison de la cavité utérine',
-      'Fibrome déformant la cavité utérine',
-      'Adhérences intra-utérines ou pelviennes',
-      'Atteinte des trompes (obstruction, hydrosalpinx)',
-      'Kystes ovariens gênant la fonction ovarienne',
-      'Endométriose associée à une infertilité',
+      { label: 'Polype ou cloison de la cavité utérine', explication: `Une petite excroissance ou une cloison à l'intérieur de l'utérus peut gêner l'implantation de l'embryon ; leur retrait redonne à la cavité sa forme naturelle.` },
+      { label: 'Fibrome déformant la cavité utérine', explication: `Quand un fibrome déforme l'intérieur de l'utérus, il peut empêcher une grossesse de s'installer ; son ablation restaure des conditions favorables.` },
+      { label: 'Adhérences intra-utérines ou pelviennes', explication: `Des accolements de tissus, souvent apparus après une infection ou une intervention, peuvent gêner la fertilité ; la chirurgie les libère en douceur.` },
+      { label: 'Atteinte des trompes (obstruction, hydrosalpinx)', explication: `Des trompes bouchées ou abîmées empêchent la rencontre entre l'ovule et les spermatozoïdes ; la chirurgie peut les traiter ou préparer au mieux une aide à la procréation.` },
+      { label: 'Kystes ovariens gênant la fonction ovarienne', explication: `Certains kystes perturbent le bon fonctionnement de l'ovaire ; les retirer avec précaution aide à préserver l'ovulation.` },
+      { label: 'Endométriose associée à une infertilité', explication: `Quand l'endométriose est en cause dans la difficulté à concevoir, son traitement chirurgical améliore les perspectives de grossesse.` },
     ],
     preparation: [
       'Bilan de fertilité complet du couple au préalable',
@@ -274,13 +274,13 @@ Lorsque la gêne devient significative et que la rééducation ne suffit plus, u
 Le bilan pré-opératoire évalue précisément chaque compartiment du pelvis et recherche des troubles urinaires associés, parfois à l'aide d'un bilan urodynamique réalisé au centre d'explorations urodynamiques de la clinique. Cette évaluation complète permet de proposer la technique la plus adaptée à chaque situation.
 
 À la Clinique Pasteur Tunis, la cure de prolapsus bénéficie de la collaboration entre gynécologues et urologues de l'établissement. L'objectif est de redonner à chaque patiente confort et confiance dans sa vie quotidienne, avec des techniques éprouvées et un accompagnement attentif.`,
-    image: '/images/bloc-operatoire.webp',
+    image: '/images/fiches/gyneco-cure-prolapsus.webp',
     indications: [
-      'Sensation de pesanteur pelvienne ou de boule vaginale',
-      'Descente de la vessie (cystocèle), de l\'utérus ou du rectum',
-      'Gêne au quotidien ou lors des activités physiques',
-      'Troubles urinaires associés au prolapsus',
-      'Échec ou insuffisance de la rééducation périnéale',
+      { label: 'Sensation de pesanteur pelvienne ou de boule vaginale', explication: `Cette sensation désagréable traduit un relâchement des soutiens naturels du pelvis ; l'intervention remet les organes en place et fait disparaître la gêne.` },
+      { label: 'Descente de la vessie (cystocèle), de l\'utérus ou du rectum', explication: `Quand un organe descend dans le vagin, la chirurgie le repositionne solidement pour retrouver un confort durable.` },
+      { label: 'Gêne au quotidien ou lors des activités physiques', explication: `Si la descente d'organes limite les gestes de tous les jours ou la pratique d'une activité physique, l'intervention permet de reprendre une vie active sereinement.` },
+      { label: 'Troubles urinaires associés au prolapsus', explication: `Le prolapsus peut s'accompagner de fuites ou de difficultés à uriner ; leur prise en charge est intégrée au traitement chirurgical.` },
+      { label: 'Échec ou insuffisance de la rééducation périnéale', explication: `Quand les séances de rééducation ne suffisent plus à soulager, la chirurgie prend le relais pour un résultat durable.` },
     ],
     preparation: [
       'Bilan pelvien complet avec le chirurgien',
@@ -317,14 +317,14 @@ L'intervention de référence est la cœlioscopie : à travers de petites incisi
 Le bilan pré-opératoire, associant échographie, parfois IRM et dosages biologiques, permet de caractériser au mieux la lésion et de planifier le geste le plus adapté. En cas de doute sur la nature de la lésion, une analyse peut être réalisée pendant l'intervention pour adapter immédiatement le geste chirurgical.
 
 À la Clinique Pasteur Tunis, la chirurgie ovarienne est réalisée par des gynécologues expérimentés en cœlioscopie, avec le souci constant de préserver la fonction ovarienne et la fertilité. Les suites sont généralement simples, avec un retour rapide à la vie normale.`,
-    image: '/images/chirurgie.webp',
+    image: '/images/fiches/gyneco-chirurgie-ovarienne.webp',
     indications: [
-      'Kyste ovarien persistant ou augmentant de volume',
-      'Kyste provoquant des douleurs pelviennes',
-      'Caractéristiques échographiques nécessitant une exérèse',
-      'Suspicion de torsion de l\'ovaire (urgence)',
-      'Endométriome ovarien',
-      'Lésion ovarienne à analyser',
+      { label: 'Kyste ovarien persistant ou augmentant de volume', explication: `Un kyste qui ne disparaît pas spontanément ou qui continue de grossir mérite d'être retiré pour éviter les complications et vérifier sa nature.` },
+      { label: 'Kyste provoquant des douleurs pelviennes', explication: `Quand un kyste est responsable de douleurs du bas-ventre, son ablation apporte un soulagement rapide et durable.` },
+      { label: 'Caractéristiques échographiques nécessitant une exérèse', explication: `Certains aspects observés à l'échographie conduisent, par prudence, à retirer le kyste afin de l'analyser précisément.` },
+      { label: 'Suspicion de torsion de l\'ovaire (urgence)', explication: `Quand l'ovaire se tord sur lui-même, il s'agit d'une urgence : une intervention rapide permet de le détordre et, le plus souvent, de le préserver.` },
+      { label: 'Endométriome ovarien', explication: `Ce kyste lié à l'endométriose est retiré délicatement, en préservant au maximum le tissu sain de l'ovaire.` },
+      { label: 'Lésion ovarienne à analyser', explication: `Quand la nature d'une lésion de l'ovaire est incertaine, la retirer permet de l'analyser et de proposer le suivi le plus adapté.` },
     ],
     preparation: [
       'Bilan d\'imagerie complet (échographie pelvienne, IRM si nécessaire)',
@@ -361,13 +361,13 @@ Ses indications sont variées : évacuation de la cavité utérine après une fa
 Le curetage est généralement réalisé en hospitalisation de jour : la patiente est admise le matin, le geste est bref, et le retour à domicile a lieu le jour même après quelques heures de surveillance. Lorsqu'il est réalisé dans un contexte de fausse couche, l'équipe entoure la patiente avec une attention particulière, en veillant autant au confort physique qu'au soutien moral.
 
 À la Clinique Pasteur Tunis, ce geste est réalisé au bloc opératoire, dans des conditions optimales de sécurité, par des gynécologues expérimentés. Les prélèvements éventuels sont adressés à l'analyse et les résultats sont expliqués lors de la consultation de suivi.`,
-    image: '/images/bloc-hd.webp',
+    image: '/images/fiches/gyneco-curetage.webp',
     indications: [
-      'Évacuation de la cavité utérine après une fausse couche',
-      'Saignements utérins anormaux à explorer',
-      'Prélèvement de la muqueuse utérine à visée diagnostique',
-      'Rétention après un accouchement ou une fausse couche',
-      'Certaines anomalies de la muqueuse utérine',
+      { label: 'Évacuation de la cavité utérine après une fausse couche', explication: `Après une fausse couche, ce geste doux permet de vider complètement l'utérus et d'éviter les saignements prolongés ou l'infection.` },
+      { label: 'Saignements utérins anormaux à explorer', explication: `Des saignements inhabituels méritent d'être compris ; le curetage permet de prélever la muqueuse utérine pour l'analyser.` },
+      { label: 'Prélèvement de la muqueuse utérine à visée diagnostique', explication: `Analyser un échantillon de la paroi interne de l'utérus aide le gynécologue à poser un diagnostic précis et à proposer le traitement adapté.` },
+      { label: 'Rétention après un accouchement ou une fausse couche', explication: `Quand des fragments restent dans l'utérus après une naissance ou une fausse couche, le curetage les retire pour permettre une bonne récupération.` },
+      { label: 'Certaines anomalies de la muqueuse utérine', explication: `Certaines anomalies de la paroi interne de l'utérus peuvent être traitées par ce geste simple, réalisé par les voies naturelles, sans aucune incision.` },
     ],
     preparation: [
       'Consultation pré-anesthésique au préalable',
@@ -403,12 +403,12 @@ Le geste est réalisé par les voies naturelles, sans aucune incision, le plus s
 La conisation préserve la fertilité : les grossesses restent possibles après l'intervention. Le gynécologue en tient compte dans la technique utilisée, en retirant le tissu nécessaire tout en préservant au maximum la longueur du col, et adapte le suivi des grossesses ultérieures si besoin.
 
 À la Clinique Pasteur Tunis, la conisation s'inscrit dans un parcours complet de dépistage et de suivi des lésions du col, coordonné par les gynécologues de l'établissement. Un calendrier de surveillance par frottis est établi après l'intervention pour s'assurer de la guérison durable.`,
-    image: '/images/chirurgie2.webp',
+    image: '/images/fiches/gyneco-conisation-col-uterin.webp',
     indications: [
-      'Lésions précancéreuses du col confirmées par biopsie',
-      'Anomalies persistantes du frottis nécessitant un traitement',
-      'Discordance entre frottis, colposcopie et biopsie nécessitant une analyse complète',
-      'Surveillance impossible d\'une lésion située dans le canal du col',
+      { label: 'Lésions précancéreuses du col confirmées par biopsie', explication: `Retirer la petite zone du col porteuse de cellules anormales empêche leur éventuelle évolution vers un cancer : c'est un geste de prévention essentiel.` },
+      { label: 'Anomalies persistantes du frottis nécessitant un traitement', explication: `Quand le frottis reste anormal au fil des contrôles, la conisation traite la zone concernée et permet de retrouver la sérénité.` },
+      { label: 'Discordance entre frottis, colposcopie et biopsie nécessitant une analyse complète', explication: `Quand les examens ne concordent pas entre eux, retirer puis analyser en totalité le fragment du col apporte une réponse claire et fiable.` },
+      { label: 'Surveillance impossible d\'une lésion située dans le canal du col', explication: `Quand la lésion se situe à l'intérieur du canal du col, difficile à surveiller par les examens habituels, son retrait est la solution la plus sûre.` },
     ],
     preparation: [
       'Colposcopie et biopsies préalables confirmant l\'indication',
@@ -445,13 +445,13 @@ Pour les lésions bénignes, l'intervention consiste à retirer la lésion par u
 Chaque situation de cancer est étudiée dans le cadre d'une concertation pluridisciplinaire réunissant chirurgien, oncologue et radiologue, afin de définir la stratégie la plus adaptée. La patiente est informée à chaque étape et accompagnée, y compris sur le plan psychologique, tout au long de son parcours.
 
 À la Clinique Pasteur Tunis, la chirurgie du sein bénéficie du plateau complet de l'établissement : imagerie dédiée (mammographie, échographie, IRM), analyses extemporanées disponibles pendant l'intervention et chirurgiens expérimentés, pour une prise en charge à la fois rigoureuse et profondément humaine.`,
-    image: '/images/surgery-modern.webp',
+    image: '/images/fiches/gyneco-chirurgie-du-sein.webp',
     indications: [
-      'Nodule ou masse du sein nécessitant une exérèse',
-      'Tumeur bénigne volumineuse ou gênante (adénofibrome)',
-      'Lésion suspecte à la mammographie ou à l\'échographie',
-      'Cancer du sein confirmé par biopsie',
-      'Écoulement mamelonnaire à explorer chirurgicalement',
+      { label: 'Nodule ou masse du sein nécessitant une exérèse', explication: `Quand une boule est découverte dans le sein, la retirer permet de l'analyser complètement et de traiter le problème à sa source.` },
+      { label: 'Tumeur bénigne volumineuse ou gênante (adénofibrome)', explication: `Même bénigne, une tumeur qui grossit ou gêne au quotidien peut être retirée par une incision discrète qui préserve la forme du sein.` },
+      { label: 'Lésion suspecte à la mammographie ou à l\'échographie', explication: `Quand l'imagerie révèle une image inhabituelle, l'intervention permet d'en avoir le cœur net et d'agir sans tarder si nécessaire.` },
+      { label: 'Cancer du sein confirmé par biopsie', explication: `Le traitement chirurgical retire la tumeur, en conservant le sein chaque fois que possible, dans le cadre d'un parcours de soins coordonné et accompagné.` },
+      { label: 'Écoulement mamelonnaire à explorer chirurgicalement', explication: `Un écoulement inhabituel du mamelon peut nécessiter une petite intervention pour en identifier la cause précise et la traiter.` },
     ],
     preparation: [
       'Bilan d\'imagerie complet (mammographie, échographie, IRM si nécessaire)',

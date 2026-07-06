@@ -11,13 +11,13 @@ Chaque rhinoplastie est unique : l'analyse du visage, des proportions et des sou
 L'intervention se déroule sous anesthésie générale, par voie fermée (incisions cachées à l'intérieur des narines) ou ouverte selon les corrections à réaliser. Les techniques actuelles, dites de préservation, respectent au maximum les structures naturelles du nez pour des suites plus douces.
 
 À la Clinique Pasteur Tunis, la rhinoplastie est pratiquée par des chirurgiens plasticiens expérimentés dans un environnement médical complet et sécurisé, avec une consultation personnalisée approfondie et un suivi attentif jusqu'au résultat final.`,
-    image: '/images/esthetique.webp',
+    image: '/images/fiches/esth-rhinoplastie.webp',
     indications: [
-      'Bosse nasale ou nez jugé trop volumineux',
-      'Pointe du nez large, tombante ou projetée',
-      'Déviation du nez d\'origine congénitale ou traumatique',
-      'Gêne respiratoire associée à une déviation de la cloison',
-      'Souhait d\'harmonisation du profil',
+      { label: 'Bosse nasale ou nez jugé trop volumineux', explication: `Lorsqu'une bosse ou un volume important du nez crée un complexe au quotidien, l'intervention permet d'affiner le profil de façon naturelle.` },
+      { label: 'Pointe du nez large, tombante ou projetée', explication: `Une pointe trop large ou qui tombe peut alourdir l'ensemble du visage ; son remodelage redonne finesse et équilibre au nez.` },
+      { label: 'Déviation du nez d\'origine congénitale ou traumatique', explication: `Qu'il soit dévié depuis la naissance ou à la suite d'un choc, le nez peut être redressé pour retrouver un axe droit et harmonieux.` },
+      { label: 'Gêne respiratoire associée à une déviation de la cloison', explication: `Quand la respiration est gênée par une cloison déviée, un geste fonctionnel est associé au remodelage pour respirer à nouveau librement.` },
+      { label: 'Souhait d\'harmonisation du profil', explication: `Certaines personnes souhaitent simplement un profil plus équilibré ; le projet est alors défini sur mesure en consultation, dans le respect des traits du visage.` },
     ],
     preparation: [
       'Consultation approfondie avec analyse du visage et photographies',
@@ -54,13 +54,13 @@ La technique moderne agit en profondeur sur le plan musculaire (SMAS) et pas uni
 Le lifting peut être associé, dans le même temps opératoire, à d'autres gestes de rajeunissement : blépharoplastie pour les paupières, lipofilling pour restaurer les volumes, afin d'obtenir un résultat global et harmonieux.
 
 À la Clinique Pasteur Tunis, le lifting cervico-facial est réalisé par des chirurgiens plasticiens confirmés, dans un cadre chirurgical complet, avec une hospitalisation confortable en chambre adaptée et un suivi post-opératoire rapproché jusqu'à la récupération complète.`,
-    image: '/images/surgery-blue-1.webp',
+    image: '/images/fiches/esth-lifting-cervico-facial.webp',
     indications: [
-      'Relâchement de l\'ovale du visage et apparition de bajoues',
-      'Peau du cou distendue ou fripée',
-      'Plis d\'amertume marqués',
-      'Affaissement des joues et perte des volumes du visage',
-      'Souhait d\'un rajeunissement naturel et durable',
+      { label: 'Relâchement de l\'ovale du visage et apparition de bajoues', explication: `Avec le temps, les contours du visage se relâchent et des bajoues apparaissent ; le lifting redessine un ovale net et reposé.` },
+      { label: 'Peau du cou distendue ou fripée', explication: `Quand la peau du cou se détend et se fripe, l'intervention la retend en douceur pour un cou lisse et tonique.` },
+      { label: 'Plis d\'amertume marqués', explication: `Ces plis qui descendent des coins de la bouche donnent un air triste ou sévère ; leur correction adoucit l'expression du visage.` },
+      { label: 'Affaissement des joues et perte des volumes du visage', explication: `Lorsque les joues s'affaissent et que le visage se creuse, le lifting repositionne les tissus en profondeur et peut être complété par une restauration des volumes.` },
+      { label: 'Souhait d\'un rajeunissement naturel et durable', explication: `Pour celles et ceux qui veulent paraître reposés sans changer leurs traits, le lifting offre un résultat discret qui reste stable de nombreuses années.` },
     ],
     preparation: [
       'Consultation détaillée avec analyse du visage et photographies',
@@ -99,13 +99,13 @@ Pour les paupières supérieures, l'incision est dissimulée dans le pli naturel
 C'est une intervention douce, souvent réalisée en ambulatoire, dont les suites sont simples : quelques jours d'œdème et d'ecchymoses, des soins locaux légers, puis une reprise rapide de la vie sociale.
 
 À la Clinique Pasteur Tunis, la blépharoplastie est pratiquée par des chirurgiens plasticiens dans des conditions de bloc opératoire optimales, avec un parcours ambulatoire confortable et un suivi attentif de la cicatrisation.`,
-    image: '/images/esthetique.webp',
+    image: '/images/fiches/esth-blepharoplastie.webp',
     indications: [
-      'Excès de peau des paupières supérieures alourdissant le regard',
-      'Poches graisseuses sous les yeux',
-      'Aspect fatigué du regard malgré un bon repos',
-      'Relâchement cutané des paupières inférieures',
-      'Gêne visuelle liée à un excès cutané important de la paupière supérieure',
+      { label: 'Excès de peau des paupières supérieures alourdissant le regard', explication: `Quand la peau en excès retombe sur la paupière et alourdit le regard, son retrait rouvre l'œil et rafraîchit l'expression.` },
+      { label: 'Poches graisseuses sous les yeux', explication: `Les poches sous les yeux donnent un air fatigué en permanence ; l'intervention les fait disparaître durablement.` },
+      { label: 'Aspect fatigué du regard malgré un bon repos', explication: `Lorsque l'entourage vous trouve l'air fatigué alors que vous dormez bien, la chirurgie des paupières redonne au regard son éclat naturel.` },
+      { label: 'Relâchement cutané des paupières inférieures', explication: `Une peau détendue et froissée sous les yeux peut être retendue discrètement, avec une cicatrice cachée juste sous les cils.` },
+      { label: 'Gêne visuelle liée à un excès cutané important de la paupière supérieure', explication: `Quand la peau qui retombe finit par gêner la vue, son retrait apporte à la fois un confort au quotidien et un regard plus ouvert.` },
     ],
     preparation: [
       'Consultation avec le chirurgien et photographies du regard',
@@ -142,13 +142,13 @@ L'intervention peut être réalisée dès que l'enfant en exprime le souhait, l'
 Le geste consiste à recréer les plis du cartilage et à repositionner le pavillon de façon symétrique et naturelle, sans aspect « collé » artificiel. Un bandeau de protection est porté quelques semaines, principalement la nuit, pour protéger le résultat.
 
 À la Clinique Pasteur Tunis, l'otoplastie est réalisée en ambulatoire dans la grande majorité des cas, avec une prise en charge douce et rassurante adaptée aux enfants comme aux adultes, et un suivi jusqu'à la cicatrisation complète.`,
-    image: '/images/chirurgie.webp',
+    image: '/images/fiches/esth-otoplastie.webp',
     indications: [
-      'Oreilles décollées uni ou bilatérales',
-      'Absence de plissure naturelle du cartilage (défaut de pli de l\'anthélix)',
-      'Excès de cartilage de la conque projetant l\'oreille en avant',
-      'Gêne esthétique ou retentissement psychologique, notamment chez l\'enfant',
-      'Asymétrie marquée entre les deux oreilles',
+      { label: 'Oreilles décollées uni ou bilatérales', explication: `Qu'une seule oreille ou les deux soient décollées, l'intervention les repositionne près de la tête de façon naturelle et définitive.` },
+      { label: 'Absence de plissure naturelle du cartilage (défaut de pli de l\'anthélix)', explication: `Quand le pli naturel de l'oreille ne s'est pas formé, le chirurgien le recrée pour redonner au pavillon son relief habituel.` },
+      { label: 'Excès de cartilage de la conque projetant l\'oreille en avant', explication: `Un cartilage trop développé au centre de l'oreille la pousse vers l'avant ; sa réduction permet de la rapprocher du crâne.` },
+      { label: 'Gêne esthétique ou retentissement psychologique, notamment chez l\'enfant', explication: `Quand les moqueries ou la gêne pèsent sur la confiance en soi, notamment à l'école, une correction simple met fin à cette souffrance.` },
+      { label: 'Asymétrie marquée entre les deux oreilles', explication: `Si une oreille est nettement plus décollée que l'autre, l'intervention rétablit la symétrie pour un résultat harmonieux.` },
     ],
     preparation: [
       'Consultation avec le chirurgien et examen des oreilles',
@@ -185,13 +185,13 @@ Le choix de l'implant — forme ronde ou anatomique, volume, projection — et d
 Les implants utilisés sont des prothèses de dernière génération répondant aux normes internationales les plus strictes. Les incisions sont courtes et discrètes, le plus souvent dans le sillon sous-mammaire, et les techniques actuelles rendent les suites opératoires nettement plus confortables qu'autrefois.
 
 À la Clinique Pasteur Tunis, l'augmentation mammaire est réalisée dans un bloc opératoire aux normes internationales, avec une hospitalisation courte en chambre confortable et un suivi régulier du résultat et des implants dans le temps.`,
-    image: '/images/surgery-blue-2.webp',
+    image: '/images/fiches/esth-augmentation-mammaire.webp',
     indications: [
-      'Seins jugés trop petits (hypoplasie mammaire)',
-      'Perte de volume après grossesse, allaitement ou amaigrissement',
-      'Asymétrie mammaire',
-      'Malformation du sein (seins tubéreux)',
-      'Souhait d\'une poitrine plus harmonieuse en accord avec la silhouette',
+      { label: 'Seins jugés trop petits (hypoplasie mammaire)', explication: `Quand la poitrine s'est peu développée et que cela pèse sur le bien-être, les prothèses apportent un volume naturel et proportionné à la silhouette.` },
+      { label: 'Perte de volume après grossesse, allaitement ou amaigrissement', explication: `Après une grossesse ou une perte de poids, les seins peuvent paraître vidés ; l'intervention leur redonne leur galbe d'origine.` },
+      { label: 'Asymétrie mammaire', explication: `Lorsqu'un sein est nettement plus petit que l'autre, des implants adaptés permettent de rétablir l'équilibre de la poitrine.` },
+      { label: 'Malformation du sein (seins tubéreux)', explication: `Certains seins se développent avec une forme resserrée particulière ; la chirurgie corrige cette forme et restaure une poitrine harmonieuse.` },
+      { label: 'Souhait d\'une poitrine plus harmonieuse en accord avec la silhouette', explication: `Le projet est défini avec la patiente lors de consultations dédiées, avec des essais de volume, pour un résultat en accord avec sa morphologie et ses attentes.` },
     ],
     preparation: [
       'Consultations avec essais de volume et choix des implants',
@@ -230,13 +230,13 @@ L'intervention retire l'excès de glande, de graisse et de peau, remonte l'aréo
 Les cicatrices, situées autour de l'aréole et verticalement sous celle-ci, parfois complétées dans le sillon, s'estompent progressivement et restent dissimulées dans les sous-vêtements. Le soulagement des douleurs du dos est ressenti très rapidement après l'intervention.
 
 À la Clinique Pasteur Tunis, la réduction mammaire est pratiquée par des chirurgiens plasticiens expérimentés, avec une hospitalisation courte, une prise en charge attentive de la douleur et un accompagnement de la cicatrisation jusqu'au résultat final.`,
-    image: '/images/surgery-blue-3.webp',
+    image: '/images/fiches/esth-reduction-mammaire.webp',
     indications: [
-      'Hypertrophie mammaire avec douleurs de dos, de cou ou d\'épaules',
-      'Irritations ou macérations dans le sillon sous-mammaire',
-      'Gêne dans la pratique sportive et la vie quotidienne',
-      'Asymétrie mammaire importante',
-      'Retentissement esthétique et psychologique d\'une poitrine trop volumineuse',
+      { label: 'Hypertrophie mammaire avec douleurs de dos, de cou ou d\'épaules', explication: `Quand le poids de la poitrine tire sur le dos, la nuque et les épaules jour après jour, l'alléger soulage ces douleurs très rapidement.` },
+      { label: 'Irritations ou macérations dans le sillon sous-mammaire', explication: `Une poitrine lourde favorise rougeurs et irritations sous les seins, surtout par temps chaud ; la réduction fait disparaître cette gêne.` },
+      { label: 'Gêne dans la pratique sportive et la vie quotidienne', explication: `Courir, faire du sport ou simplement trouver des vêtements adaptés devient difficile ; l'intervention redonne aisance et liberté de mouvement.` },
+      { label: 'Asymétrie mammaire importante', explication: `Quand un sein est nettement plus volumineux que l'autre, la réduction permet de retrouver une poitrine symétrique et équilibrée.` },
+      { label: 'Retentissement esthétique et psychologique d\'une poitrine trop volumineuse', explication: `Regards pesants, difficultés d'habillement, mal-être : la réduction mammaire redonne confort physique et confiance en soi.` },
     ],
     preparation: [
       'Consultation avec le chirurgien et photographies',
@@ -276,13 +276,13 @@ L'intervention remonte le sein, recentre l'aréole et remodèle la glande pour r
 Les cicatrices dépendent de l'importance de la ptôse : parfois limitées au pourtour de l'aréole, elles comportent le plus souvent un trajet vertical sous l'aréole. Elles s'estompent progressivement et restent invisibles dans les décolletés.
 
 À la Clinique Pasteur Tunis, la mastopexie est réalisée sur mesure par des chirurgiens plasticiens, seule ou combinée à une prothèse ou un lipofilling, avec une hospitalisation courte et un suivi de cicatrisation attentif jusqu'au résultat définitif.`,
-    image: '/images/surgery-blue-4.webp',
+    image: '/images/fiches/esth-lifting-seins-mastopexie.webp',
     indications: [
-      'Affaissement des seins après grossesse ou allaitement',
-      'Ptôse mammaire après perte de poids importante',
-      'Relâchement du sein lié à l\'âge',
-      'Aréoles basses regardant vers le bas',
-      'Décolleté vidé avec perte du galbe supérieur du sein',
+      { label: 'Affaissement des seins après grossesse ou allaitement', explication: `Après une grossesse ou un allaitement, les seins peuvent tomber et se vider ; le lifting les remonte et leur redonne leur galbe.` },
+      { label: 'Ptôse mammaire après perte de poids importante', explication: `Une perte de poids marquée laisse souvent la poitrine affaissée ; l'intervention la remodèle pour l'accorder à la nouvelle silhouette.` },
+      { label: 'Relâchement du sein lié à l\'âge', explication: `Avec les années, les tissus du sein se détendent naturellement ; la mastopexie restaure une poitrine tonique et bien positionnée.` },
+      { label: 'Aréoles basses regardant vers le bas', explication: `Quand l'aréole descend et s'oriente vers le bas, elle est recentrée en bonne position pour un sein d'aspect naturel.` },
+      { label: 'Décolleté vidé avec perte du galbe supérieur du sein', explication: `Lorsque le haut du sein paraît creux dans les décolletés, le remodelage, parfois complété d'une prothèse ou de graisse, restaure ce galbe.` },
     ],
     preparation: [
       'Consultation avec définition du projet (lifting seul ou associé à une prothèse)',
@@ -320,13 +320,13 @@ Une liposuccion des flancs est fréquemment associée pour affiner l'ensemble de
 L'intervention est particulièrement bénéfique lorsque la distension cutanée s'accompagne d'un écartement des muscles droits de l'abdomen (diastasis), qu'elle corrige dans le même temps, améliorant à la fois l'esthétique et le confort fonctionnel.
 
 À la Clinique Pasteur Tunis, l'abdominoplastie est réalisée dans des blocs opératoires aux normes internationales, avec une hospitalisation confortable, une gestion attentive de la douleur et un accompagnement personnalisé de la convalescence jusqu'au résultat définitif.`,
-    image: '/images/surgery-blue-5.webp',
+    image: '/images/fiches/esth-abdominoplastie.webp',
     indications: [
-      'Excès de peau abdominale après grossesses ou perte de poids',
-      'Relâchement de la paroi musculaire (diastasis des muscles droits)',
-      'Peau vergeturée et distendue sous le nombril',
-      'Tablier abdominal gênant au quotidien',
-      'Silhouette abdominale ne répondant plus au sport ni aux régimes',
+      { label: 'Excès de peau abdominale après grossesses ou perte de poids', explication: `Quand la peau du ventre reste distendue après des grossesses ou un amaigrissement, l'intervention la retire pour retrouver un ventre plat.` },
+      { label: 'Relâchement de la paroi musculaire (diastasis des muscles droits)', explication: `Lorsque les muscles du ventre se sont écartés, notamment après une grossesse, ils sont rapprochés pour retendre la paroi et améliorer le confort.` },
+      { label: 'Peau vergeturée et distendue sous le nombril', explication: `La peau abîmée et vergeturée située sous le nombril est justement celle qui est retirée lors de l'intervention, ce qui améliore nettement l'aspect du ventre.` },
+      { label: 'Tablier abdominal gênant au quotidien', explication: `Quand un repli de peau retombe sur le bas du ventre et gêne l'habillement, l'hygiène ou la marche, son retrait apporte un vrai soulagement.` },
+      { label: 'Silhouette abdominale ne répondant plus au sport ni aux régimes', explication: `Quand ni le sport ni l'alimentation ne viennent à bout d'un ventre relâché, la chirurgie corrige ce que les efforts seuls ne peuvent plus changer.` },
     ],
     preparation: [
       'Consultation avec le chirurgien plasticien et définition du projet',
@@ -366,13 +366,13 @@ Le geste est réalisé à l'aide de fines canules introduites par de minuscules 
 Les cellules graisseuses retirées ne se reforment pas : le résultat est durable, à condition de conserver une hygiène de vie équilibrée. Plusieurs zones peuvent être traitées au cours de la même intervention, et la graisse prélevée peut être réutilisée en lipofilling.
 
 À la Clinique Pasteur Tunis, la liposuccion est pratiquée avec des canules de dernière génération par des chirurgiens plasticiens expérimentés, en ambulatoire ou en hospitalisation courte selon l'étendue, avec un suivi attentif de la convalescence.`,
-    image: '/images/bloc-operatoire.webp',
+    image: '/images/fiches/esth-liposuccion.webp',
     indications: [
-      'Amas graisseux localisés résistant au régime et au sport',
-      'Culotte de cheval, poignées d\'amour, ventre, cuisses ou genoux',
-      'Double menton',
-      'Silhouette manquant d\'harmonie malgré un poids stable',
-      'Remodelage complémentaire lors d\'une autre chirurgie de la silhouette',
+      { label: 'Amas graisseux localisés résistant au régime et au sport', explication: `Certaines rondeurs persistent malgré une bonne hygiène de vie ; la liposuccion les retire définitivement pour affiner la silhouette.` },
+      { label: 'Culotte de cheval, poignées d\'amour, ventre, cuisses ou genoux', explication: `Ces zones stockent une graisse particulièrement difficile à déloger ; leur aspiration ciblée redessine les contours du corps de façon harmonieuse.` },
+      { label: 'Double menton', explication: `Un double menton peut alourdir le visage même chez une personne mince ; son aspiration redéfinit l'ovale et le profil.` },
+      { label: 'Silhouette manquant d\'harmonie malgré un poids stable', explication: `À poids normal, certaines disproportions peuvent persister ; la liposuccion rééquilibre la silhouette là où c'est nécessaire.` },
+      { label: 'Remodelage complémentaire lors d\'une autre chirurgie de la silhouette', explication: `La liposuccion complète souvent une autre intervention, comme une abdominoplastie, pour un résultat d'ensemble plus fluide et régulier.` },
     ],
     preparation: [
       'Consultation avec analyse des zones à traiter',
@@ -409,13 +409,13 @@ La graisse réinjectée s'intègre durablement aux tissus : la part qui prend sa
 Le lipofilling peut être réalisé seul, notamment pour le rajeunissement du visage, ou en complément d'une autre intervention : lifting, chirurgie mammaire, remodelage des fesses (BBL). Le double bénéfice — affiner la zone de prélèvement et restaurer la zone receveuse — en fait une technique particulièrement appréciée.
 
 À la Clinique Pasteur Tunis, le lipofilling est pratiqué par des chirurgiens plasticiens maîtrisant les techniques de prélèvement et de réinjection les plus douces, garantissant une prise de greffe optimale et un résultat naturel.`,
-    image: '/images/esthetique.webp',
+    image: '/images/fiches/esth-lipofilling.webp',
     indications: [
-      'Cernes creux, pommettes ou tempes dégarnies',
-      'Perte des volumes du visage liée à l\'âge',
-      'Augmentation naturelle et modérée du volume des seins ou des fesses',
-      'Rajeunissement du dos des mains',
-      'Correction de dépressions ou d\'irrégularités localisées',
+      { label: 'Cernes creux, pommettes ou tempes dégarnies', explication: `Quand le regard se creuse et que les reliefs du visage s'estompent, la réinjection de graisse comble ces zones en douceur.` },
+      { label: 'Perte des volumes du visage liée à l\'âge', explication: `Avec les années, le visage perd ses volumes et paraît fatigué ; le lipofilling les restaure pour un effet reposé et naturel.` },
+      { label: 'Augmentation naturelle et modérée du volume des seins ou des fesses', explication: `Pour celles qui souhaitent un peu plus de volume sans implant, la propre graisse de la patiente offre une solution entièrement naturelle.` },
+      { label: 'Rajeunissement du dos des mains', explication: `Quand les mains se creusent et laissent apparaître veines et tendons, l'injection de graisse leur redonne un aspect plus jeune.` },
+      { label: 'Correction de dépressions ou d\'irrégularités localisées', explication: `Un creux ou une irrégularité apparus après un traumatisme ou une intervention peuvent être comblés durablement par la graisse du patient.` },
     ],
     preparation: [
       'Consultation avec évaluation des zones donneuses et receveuses',
@@ -451,13 +451,13 @@ Le programme est établi sur mesure lors d'une consultation approfondie : bodyli
 Ces chirurgies sont envisagées une fois le poids stabilisé depuis plusieurs mois et l'état nutritionnel équilibré, conditions essentielles à une bonne cicatrisation. Les cicatrices, inévitables, sont positionnées pour rester dissimulées dans les sous-vêtements et s'estompent avec le temps.
 
 À la Clinique Pasteur Tunis, le body contouring bénéficie de la collaboration étroite entre les chirurgiens plasticiens et l'équipe bariatrique de l'établissement, offrant une continuité de prise en charge unique, de la perte de poids jusqu'à la restauration complète de la silhouette.`,
-    image: '/images/surgery-modern.webp',
+    image: '/images/fiches/esth-body-contouring.webp',
     indications: [
-      'Excès cutanés multiples après perte de poids importante',
-      'Relâchement de la ceinture abdominale et des fesses',
-      'Excès de peau de la face interne des bras ou des cuisses',
-      'Affaissement de la poitrine après amaigrissement',
-      'Poids stabilisé depuis plusieurs mois',
+      { label: 'Excès cutanés multiples après perte de poids importante', explication: `Après un grand amaigrissement, la peau distendue persiste souvent sur plusieurs zones du corps ; un programme sur mesure les corrige étape par étape.` },
+      { label: 'Relâchement de la ceinture abdominale et des fesses', explication: `Quand le ventre, les hanches et les fesses se relâchent ensemble, un remodelage circulaire redonne du galbe à toute la ceinture du corps.` },
+      { label: 'Excès de peau de la face interne des bras ou des cuisses', explication: `La peau qui pend sous les bras ou à l'intérieur des cuisses gêne l'habillement et les mouvements ; un lifting ciblé la retire.` },
+      { label: 'Affaissement de la poitrine après amaigrissement', explication: `La perte de poids vide et fait tomber la poitrine ; une chirurgie mammaire adaptée lui redonne forme et tenue.` },
+      { label: 'Poids stabilisé depuis plusieurs mois', explication: `Un poids stable est la condition essentielle avant de se lancer : il garantit une bonne cicatrisation et un résultat qui dure.` },
     ],
     preparation: [
       'Stabilisation du poids et bilan nutritionnel complet',
@@ -496,13 +496,13 @@ Ces demandes, longtemps taboues, sont aujourd'hui fréquentes et parfaitement l�
 Les interventions sont courtes, réalisées le plus souvent en ambulatoire, avec des techniques de suture résorbable qui simplifient les suites. La cicatrisation de ces tissus est rapide et de bonne qualité, avec des résultats discrets et naturels.
 
 À la Clinique Pasteur Tunis, la chirurgie intime est prise en charge dans le respect absolu de la confidentialité, par des chirurgiens plasticiens expérimentés, avec un parcours ambulatoire discret et un suivi post-opératoire attentif.`,
-    image: '/images/chirurgie2.webp',
+    image: '/images/fiches/esth-chirurgie-intime.webp',
     indications: [
-      'Hypertrophie des petites lèvres source d\'inconfort physique',
-      'Gêne aux frottements, au sport ou à l\'habillement',
-      'Gêne psychologique ou dans la vie intime',
-      'Asymétrie marquée',
-      'Demande de restauration après accouchements',
+      { label: 'Hypertrophie des petites lèvres source d\'inconfort physique', explication: `Quand des petites lèvres trop développées créent une gêne réelle au quotidien, une réduction discrète apporte un soulagement durable.` },
+      { label: 'Gêne aux frottements, au sport ou à l\'habillement', explication: `Vélo, sport, vêtements ajustés : lorsque ces situations deviennent inconfortables, l'intervention met fin aux frottements douloureux.` },
+      { label: 'Gêne psychologique ou dans la vie intime', explication: `Un complexe dans l'intimité peut peser lourdement sur le bien-être ; la correction chirurgicale aide à retrouver aisance et confiance en soi.` },
+      { label: 'Asymétrie marquée', explication: `Une différence nette entre les deux côtés peut être source de gêne ; l'intervention rétablit un aspect équilibré et naturel.` },
+      { label: 'Demande de restauration après accouchements', explication: `Après des accouchements, certaines femmes souhaitent restaurer les tissus modifiés ; des gestes adaptés le permettent en toute discrétion.` },
     ],
     preparation: [
       'Consultation dédiée dans un cadre confidentiel',
@@ -537,13 +537,13 @@ Les techniques actuelles de microgreffes, comme la FUE (extraction folliculaire 
 La séance se déroule sous anesthésie locale, en position confortable, et ne nécessite pas d'hospitalisation. Les suites sont simples : de petites croûtes disparaissent en quelques jours et la repousse s'installe progressivement au fil des mois.
 
 À la Clinique Pasteur Tunis, la greffe de cheveux est réalisée dans un environnement médical rigoureux, avec une évaluation capillaire personnalisée, une planification précise du résultat et un suivi de la repousse jusqu'au résultat définitif.`,
-    image: '/images/esthetique.webp',
+    image: '/images/fiches/esth-greffe-cheveux.webp',
     indications: [
-      'Calvitie masculine (alopécie androgénétique) stabilisée',
-      'Éclaircissement des cheveux chez la femme',
-      'Golfes frontaux dégarnis ou ligne frontale reculée',
-      'Tonsure clairsemée',
-      'Cicatrices du cuir chevelu à camoufler',
+      { label: 'Calvitie masculine (alopécie androgénétique) stabilisée', explication: `Quand la chute des cheveux s'est stabilisée, la greffe redensifie durablement les zones dégarnies avec les propres cheveux du patient.` },
+      { label: 'Éclaircissement des cheveux chez la femme', explication: `Chez la femme, une chevelure qui se clairsème peut être densifiée par microgreffes, après un bilan pour en comprendre la cause.` },
+      { label: 'Golfes frontaux dégarnis ou ligne frontale reculée', explication: `Quand le front se dégarnit sur les côtés ou que la ligne des cheveux recule, la greffe redessine une implantation naturelle et discrète.` },
+      { label: 'Tonsure clairsemée', explication: `La zone du sommet du crâne qui s'éclaircit peut être densifiée par des greffons prélevés dans la couronne, où les cheveux sont faits pour durer toute la vie.` },
+      { label: 'Cicatrices du cuir chevelu à camoufler', explication: `Une cicatrice visible dans les cheveux, après une blessure ou une intervention, peut être masquée par l'implantation de greffons.` },
     ],
     preparation: [
       'Consultation d\'évaluation capillaire et définition du plan de greffe',
@@ -580,13 +580,13 @@ L'acide hyaluronique, substance naturellement présente dans la peau, comble les
 Ces traitements sont réalisés en consultation, à l'aide d'aiguilles très fines ou de canules douces, après application d'une crème anesthésiante si besoin. Les effets sont temporaires et s'entretiennent par des séances régulières, ce qui permet d'ajuster le résultat au fil du temps.
 
 À la Clinique Pasteur Tunis, les injections sont exclusivement pratiquées par des médecins qualifiés, avec des produits d'origine contrôlée et un matériel d'injection de haute précision, dans le cadre d'une approche du rajeunissement mesurée et naturelle.`,
-    image: '/images/esthetique.webp',
+    image: '/images/fiches/esth-injections-esthetiques.webp',
     indications: [
-      'Rides d\'expression du front, de la glabelle (ride du lion) et des pattes d\'oie',
-      'Sillons nasogéniens et plis d\'amertume',
-      'Perte de volume des pommettes, des lèvres ou des tempes',
-      'Cernes creux',
-      'Prévention et entretien du vieillissement du visage',
+      { label: 'Rides d\'expression du front, de la glabelle (ride du lion) et des pattes d\'oie', explication: `Ces rides creusées par les expressions répétées sont adoucies par la toxine botulique, pour un regard reposé sans figer le visage.` },
+      { label: 'Sillons nasogéniens et plis d\'amertume', explication: `Les sillons qui encadrent la bouche marquent le visage ; leur comblement à l'acide hyaluronique les atténue immédiatement.` },
+      { label: 'Perte de volume des pommettes, des lèvres ou des tempes', explication: `Quand certaines zones du visage se creusent ou s'affinent, des injections ciblées restaurent les volumes avec un rendu naturel.` },
+      { label: 'Cernes creux', explication: `Un creux sous les yeux donne un air fatigué en permanence ; son comblement délicat éclaire le regard.` },
+      { label: 'Prévention et entretien du vieillissement du visage', explication: `Des séances régulières et mesurées permettent d'accompagner le vieillissement en douceur, sans transformation visible du visage.` },
     ],
     preparation: [
       'Consultation préalable avec analyse du visage et définition du plan de traitement',

@@ -11,13 +11,13 @@ L'intervention est réalisée entièrement par cœlioscopie, à travers de petit
 La sleeve s'inscrit dans un parcours global : elle est précédée d'un bilan complet et d'une préparation multidisciplinaire, puis suivie d'un accompagnement nutritionnel et médical au long cours. C'est cet accompagnement, associé aux nouvelles habitudes alimentaires, qui garantit un résultat durable.
 
 À la Clinique Pasteur Tunis, centre reconnu en chirurgie de l'obésité, la sleeve gastrectomie est réalisée par des équipes chirurgicales expérimentées, dans un bloc dédié à la cœlioscopie, avec un programme de suivi nutritionnel et psychologique intégré à la clinique.`,
-    image: '/images/bariatrique.webp',
+    image: '/images/fiches/baria-sleeve-gastrectomie.webp',
     indications: [
-      'Obésité sévère ou morbide définie par l\'équipe médicale',
-      'Échec des tentatives de perte de poids par régimes bien conduits',
-      'Obésité associée à des complications (diabète, hypertension, apnées du sommeil)',
-      'Patient motivé, prêt à s\'engager dans un suivi à long terme',
-      'Validation du dossier par l\'équipe multidisciplinaire',
+      { label: 'Obésité sévère ou morbide définie par l\'équipe médicale', explication: `L'intervention s'adresse aux personnes dont l'excès de poids important retentit sur la santé au quotidien, après une évaluation complète par l'équipe médicale.` },
+      { label: 'Échec des tentatives de perte de poids par régimes bien conduits', explication: `Lorsque les régimes et les prises en charge médicales bien suivis n'ont pas permis une perte de poids durable, la chirurgie devient une option à envisager sereinement.` },
+      { label: 'Obésité associée à des complications (diabète, hypertension, apnées du sommeil)', explication: `Quand l'excès de poids s'accompagne de maladies comme le diabète, l'hypertension ou les apnées du sommeil, la perte de poids obtenue par la chirurgie contribue souvent à les améliorer.` },
+      { label: 'Patient motivé, prêt à s\'engager dans un suivi à long terme', explication: `La réussite repose en grande partie sur l'implication du patient : de nouvelles habitudes alimentaires et un suivi régulier sont indispensables après l'opération.` },
+      { label: 'Validation du dossier par l\'équipe multidisciplinaire', explication: `Chaque dossier est étudié par l'ensemble des spécialistes concernés afin de s'assurer que la sleeve est bien la solution la plus adaptée à la situation du patient.` },
     ],
     preparation: [
       'Bilan pré-opératoire complet (biologique, cardiologique, endoscopique)',
@@ -57,13 +57,13 @@ Cette double action en fait une intervention particulièrement efficace, notamme
 Le bypass nécessite un engagement durable : une supplémentation en vitamines et un suivi médical et nutritionnel réguliers sont indispensables à vie pour prévenir les carences. En contrepartie, il offre une perte de poids importante et durable et une amélioration notable des maladies associées.
 
 À la Clinique Pasteur Tunis, le bypass gastrique est pratiqué par des chirurgiens bariatriques expérimentés au sein d'une équipe multidisciplinaire complète, avec un protocole de suivi structuré qui accompagne chaque patient bien au-delà de l'intervention.`,
-    image: '/images/bariatrique.webp',
+    image: '/images/fiches/baria-bypass-gastrique.webp',
     indications: [
-      'Obésité sévère ou morbide validée par l\'équipe multidisciplinaire',
-      'Diabète de type 2 associé à l\'obésité',
-      'Reflux gastro-œsophagien important associé à l\'obésité',
-      'Échec ou insuffisance de résultat d\'une première chirurgie bariatrique',
-      'Patient motivé, acceptant un suivi et une supplémentation à long terme',
+      { label: 'Obésité sévère ou morbide validée par l\'équipe multidisciplinaire', explication: `Le bypass est proposé lorsque l'excès de poids important met la santé en danger et que l'ensemble des spécialistes a confirmé que la chirurgie est la meilleure option.` },
+      { label: 'Diabète de type 2 associé à l\'obésité', explication: `Cette intervention agit aussi sur la régulation du sucre dans le sang : elle est particulièrement intéressante quand un diabète accompagne l'obésité, avec une amélioration souvent rapide.` },
+      { label: 'Reflux gastro-œsophagien important associé à l\'obésité', explication: `Le montage du bypass protège l'œsophage des remontées acides : il est souvent préféré quand un reflux gênant existe déjà avant l'opération.` },
+      { label: 'Échec ou insuffisance de résultat d\'une première chirurgie bariatrique', explication: `Lorsqu'une première intervention n'a pas donné le résultat espéré, la conversion en bypass permet dans de nombreux cas de relancer une perte de poids durable.` },
+      { label: 'Patient motivé, acceptant un suivi et une supplémentation à long terme', explication: `Après un bypass, la prise quotidienne de vitamines et des consultations régulières sont nécessaires à vie : l'adhésion du patient à ce suivi est essentielle.` },
     ],
     preparation: [
       'Bilan pré-opératoire complet (biologique, cardiologique, endoscopie digestive)',
@@ -102,13 +102,13 @@ Comme les autres interventions bariatriques, il agit à la fois sur le volume de
 Le mini bypass est réalisé entièrement sous cœlioscopie et s'accompagne, comme le bypass classique, d'une supplémentation vitaminique et d'un suivi médical et nutritionnel réguliers à long terme.
 
 À la Clinique Pasteur Tunis, le mini bypass gastrique fait partie de l'éventail complet des techniques bariatriques proposées, permettant de recommander à chaque patient l'intervention la mieux adaptée à sa situation, dans le cadre d'un parcours de soins coordonné.`,
-    image: '/images/bariatrique.webp',
+    image: '/images/fiches/baria-mini-bypass-gastrique.webp',
     indications: [
-      'Obésité sévère ou morbide validée par l\'équipe multidisciplinaire',
-      'Diabète de type 2 ou autres complications associées à l\'obésité',
-      'Situation anatomique ou médicale faisant préférer cette technique au bypass en Y',
-      'Chirurgie de révision après une première intervention bariatrique dans certains cas',
-      'Patient motivé, acceptant le suivi et la supplémentation à long terme',
+      { label: 'Obésité sévère ou morbide validée par l\'équipe multidisciplinaire', explication: `Comme les autres chirurgies de l'obésité, le mini bypass s'adresse aux personnes dont l'excès de poids retentit sérieusement sur la santé, après validation du dossier en équipe.` },
+      { label: 'Diabète de type 2 ou autres complications associées à l\'obésité', explication: `L'intervention agit sur les mécanismes hormonaux qui régulent la faim et la glycémie, ce qui aide à améliorer le diabète et les autres maladies liées à l'obésité.` },
+      { label: 'Situation anatomique ou médicale faisant préférer cette technique au bypass en Y', explication: `Chez certains patients, la configuration de l'abdomen ou l'état de santé général rend ce montage plus simple et plus sûr que le bypass classique : le choix est discuté au cas par cas.` },
+      { label: 'Chirurgie de révision après une première intervention bariatrique dans certains cas', explication: `Le mini bypass peut être proposé pour corriger ou convertir une première chirurgie de l'obésité dont le résultat est insuffisant, selon la situation de chaque patient.` },
+      { label: 'Patient motivé, acceptant le suivi et la supplémentation à long terme', explication: `Un engagement durable est nécessaire : vitamines quotidiennes et consultations régulières font partie intégrante du traitement et garantissent un résultat stable.` },
     ],
     preparation: [
       'Bilan pré-opératoire complet (biologique, cardiologique, endoscopie digestive)',
@@ -147,13 +147,13 @@ C'est la technique bariatrique la moins invasive et la seule totalement réversi
 L'efficacité de l'anneau repose fortement sur l'implication du patient : le respect des consignes alimentaires et la régularité du suivi conditionnent la qualité de la perte de poids. Les ajustements de serrage sont réalisés progressivement lors des consultations de suivi.
 
 À la Clinique Pasteur Tunis, la pose d'anneau gastrique s'inscrit dans le même parcours multidisciplinaire que les autres interventions bariatriques, avec des consultations d'ajustement régulières et un accompagnement nutritionnel personnalisé.`,
-    image: '/images/bloc-hd.webp',
+    image: '/images/fiches/baria-anneau-gastrique.webp',
     indications: [
-      'Obésité validée par l\'équipe multidisciplinaire',
-      'Souhait d\'une technique réversible et peu invasive',
-      'Patient jeune ou souhaitant préserver l\'intégrité de son estomac',
-      'Capacité à suivre des consignes alimentaires précises',
-      'Engagement dans un suivi régulier avec ajustements de l\'anneau',
+      { label: 'Obésité validée par l\'équipe multidisciplinaire', explication: `L'anneau s'adresse aux personnes dont l'excès de poids justifie une aide chirurgicale, après une évaluation complète confirmant que cette technique douce est adaptée.` },
+      { label: 'Souhait d\'une technique réversible et peu invasive', explication: `C'est la seule intervention bariatrique totalement réversible : l'anneau peut être desserré ou retiré à tout moment, sans agrafage ni section de l'estomac.` },
+      { label: 'Patient jeune ou souhaitant préserver l\'intégrité de son estomac', explication: `L'estomac reste intact sous l'anneau : cette option rassure les patients qui ne souhaitent pas de modification définitive de leur anatomie.` },
+      { label: 'Capacité à suivre des consignes alimentaires précises', explication: `L'efficacité de l'anneau dépend directement du respect des consignes : manger lentement, bien mastiquer et adapter les textures font partie du traitement.` },
+      { label: 'Engagement dans un suivi régulier avec ajustements de l\'anneau', explication: `Le serrage de l'anneau est ajusté progressivement lors des consultations : cette régularité du suivi conditionne la qualité de la perte de poids.` },
     ],
     preparation: [
       'Bilan pré-opératoire complet',
@@ -192,13 +192,13 @@ Chaque cas est unique et nécessite une évaluation approfondie : bilan endoscop
 Ces interventions sont techniquement plus exigeantes qu'une première chirurgie, en raison des adhérences et des modifications anatomiques existantes. Elles requièrent une équipe chirurgicale expérimentée et un plateau technique complet.
 
 La Clinique Pasteur Tunis, grâce à son important volume d'activité bariatrique, dispose de l'expérience nécessaire pour prendre en charge ces situations complexes, y compris pour des patients opérés initialement dans d'autres établissements, en Tunisie comme à l'étranger.`,
-    image: '/images/surgery-blue-4.webp',
+    image: '/images/fiches/baria-chirurgie-revision-bariatrique.webp',
     indications: [
-      'Reprise de poids après une première chirurgie bariatrique',
-      'Perte de poids insuffisante malgré un suivi bien conduit',
-      'Reflux gastro-œsophagien invalidant après sleeve gastrectomie',
-      'Complication ou intolérance d\'un anneau gastrique',
-      'Dilatation de la poche gastrique ou anomalie du montage initial',
+      { label: 'Reprise de poids après une première chirurgie bariatrique', explication: `Quand le poids remonte malgré une première opération, une réintervention adaptée permet dans de nombreux cas de relancer une perte de poids durable.` },
+      { label: 'Perte de poids insuffisante malgré un suivi bien conduit', explication: `Si le résultat de la première chirurgie reste en deçà des attentes alors que le suivi a été respecté, une conversion vers une autre technique peut être proposée.` },
+      { label: 'Reflux gastro-œsophagien invalidant après sleeve gastrectomie', explication: `Des remontées acides gênantes peuvent apparaître après une sleeve : la conversion en bypass soulage efficacement ce reflux tout en poursuivant la perte de poids.` },
+      { label: 'Complication ou intolérance d\'un anneau gastrique', explication: `Un anneau mal toléré, source de vomissements ou d'inconfort, peut être retiré et remplacé par une autre technique bariatrique mieux adaptée.` },
+      { label: 'Dilatation de la poche gastrique ou anomalie du montage initial', explication: `Avec le temps, le montage initial peut se distendre ou se déformer et perdre en efficacité : la révision corrige cette anomalie anatomique.` },
     ],
     preparation: [
       'Bilan complet du montage existant (endoscopie, imagerie)',
@@ -237,13 +237,13 @@ Le ballon est un dispositif temporaire : il est retiré après quelques mois, é
 Cette solution s'adresse aux patients dont l'excès de poids ne relève pas encore de la chirurgie, à ceux qui souhaitent éviter une intervention chirurgicale, ou en préparation d'une chirurgie bariatrique chez certains patients.
 
 À la Clinique Pasteur Tunis, la pose et le retrait du ballon intragastrique sont réalisés en ambulatoire dans le service d'endoscopie, sous sédation, avec un programme d'accompagnement nutritionnel intégré pendant toute la durée du traitement.`,
-    image: '/images/endoscopie.webp',
+    image: '/images/fiches/baria-ballon-intragastrique.webp',
     indications: [
-      'Surpoids ou obésité modérée ne relevant pas d\'une chirurgie',
-      'Refus ou contre-indication à la chirurgie bariatrique',
-      'Préparation à une chirurgie bariatrique chez certains patients',
-      'Souhait d\'une solution temporaire et sans intervention chirurgicale',
-      'Motivation à modifier durablement ses habitudes alimentaires',
+      { label: 'Surpoids ou obésité modérée ne relevant pas d\'une chirurgie', explication: `Le ballon s'adresse aux personnes dont l'excès de poids est réel mais ne justifie pas encore une opération : il offre une aide efficace sans geste chirurgical.` },
+      { label: 'Refus ou contre-indication à la chirurgie bariatrique', explication: `Lorsqu'une opération n'est pas souhaitée ou n'est pas possible pour des raisons médicales, le ballon constitue une alternative douce posée par simple endoscopie.` },
+      { label: 'Préparation à une chirurgie bariatrique chez certains patients', explication: `Chez certains patients, une première perte de poids obtenue grâce au ballon facilite et sécurise une chirurgie bariatrique programmée ensuite.` },
+      { label: 'Souhait d\'une solution temporaire et sans intervention chirurgicale', explication: `Le ballon est retiré après quelques mois : il convient à ceux qui recherchent un coup de pouce limité dans le temps, sans modification de leur anatomie.` },
+      { label: 'Motivation à modifier durablement ses habitudes alimentaires', explication: `Le ballon est un tremplin : c'est le travail sur les habitudes alimentaires, accompagné par le suivi diététique, qui permet de conserver le résultat après son retrait.` },
     ],
     preparation: [
       'Consultation avec l\'équipe médicale et évaluation nutritionnelle',
@@ -281,13 +281,13 @@ Ce bilan est multidisciplinaire : il associe des examens biologiques complets, u
 Au-delà des examens, cette période de préparation permet au patient de bien comprendre l'intervention envisagée, ses bénéfices attendus et les engagements qu'elle implique, notamment en matière d'alimentation et de suivi. C'est aussi le moment d'amorcer les premiers changements d'habitudes qui faciliteront les suites opératoires.
 
 À la Clinique Pasteur Tunis, l'ensemble du bilan pré-opératoire peut être réalisé sur place, grâce au plateau technique complet de l'établissement, avec une coordination des rendez-vous qui simplifie le parcours, y compris pour les patients venant de l'étranger.`,
-    image: '/images/medical-consultation.webp',
+    image: '/images/fiches/baria-bilan-preoperatoire.webp',
     indications: [
-      'Tout patient candidat à une chirurgie bariatrique',
-      'Confirmation de l\'indication opératoire par l\'équipe multidisciplinaire',
-      'Choix de la technique chirurgicale la plus adaptée',
-      'Dépistage des maladies associées à l\'obésité',
-      'Préparation de l\'anesthésie dans les meilleures conditions',
+      { label: 'Tout patient candidat à une chirurgie bariatrique', explication: `Ce bilan est une étape obligatoire et rassurante du parcours : il concerne chaque personne envisageant une chirurgie de l'obésité, avant toute programmation opératoire.` },
+      { label: 'Confirmation de l\'indication opératoire par l\'équipe multidisciplinaire', explication: `Les résultats du bilan permettent à l'ensemble des spécialistes de confirmer que la chirurgie est réellement la meilleure option pour le patient.` },
+      { label: 'Choix de la technique chirurgicale la plus adaptée', explication: `Chaque patient est différent : les examens aident à choisir entre les différentes techniques bariatriques celle qui correspond le mieux à son profil.` },
+      { label: 'Dépistage des maladies associées à l\'obésité', explication: `Le bilan recherche les maladies souvent liées à l'excès de poids, comme le diabète ou les apnées du sommeil, afin de les prendre en charge avant l'opération.` },
+      { label: 'Préparation de l\'anesthésie dans les meilleures conditions', explication: `Connaître précisément l'état du cœur, des poumons et de l'organisme permet à l'anesthésiste d'adapter sa technique et de sécuriser l'intervention.` },
     ],
     preparation: [
       'Apporter l\'ensemble de ses documents médicaux et résultats d\'examens antérieurs',
@@ -324,13 +324,13 @@ Après l'intervention, l'alimentation est réintroduite par étapes : textures l
 À plus long terme, les consultations régulières permettent de surveiller l'équilibre nutritionnel, d'adapter la supplémentation en vitamines et minéraux, de consolider les nouvelles habitudes et de prévenir la reprise de poids. Ce suivi s'inscrit dans la durée et fait partie intégrante du traitement chirurgical de l'obésité.
 
 À la Clinique Pasteur Tunis, le coaching nutritionnel est intégré au parcours bariatrique : les patients bénéficient de consultations programmées avant et après l'intervention, avec des plans alimentaires personnalisés et un interlocuteur disponible pour répondre à leurs questions à chaque étape.`,
-    image: '/images/nutrition.webp',
+    image: '/images/fiches/baria-suivi-nutritionnel.webp',
     indications: [
-      'Préparation à toute chirurgie bariatrique',
-      'Accompagnement des phases de réalimentation post-opératoires',
-      'Prévention et correction des carences nutritionnelles',
-      'Consolidation des nouvelles habitudes alimentaires',
-      'Prévention de la reprise de poids à long terme',
+      { label: 'Préparation à toute chirurgie bariatrique', explication: `Avant l'opération, le nutritionniste évalue les habitudes alimentaires et amorce les premiers changements qui faciliteront l'adaptation après la chirurgie.` },
+      { label: 'Accompagnement des phases de réalimentation post-opératoires', explication: `Après l'intervention, l'alimentation reprend par étapes, des textures liquides aux plats normaux : chaque phase est guidée pour un maximum de confort et de sécurité.` },
+      { label: 'Prévention et correction des carences nutritionnelles', explication: `Les apports en protéines, vitamines et minéraux sont surveillés régulièrement afin de préserver l'énergie, les muscles et la santé générale.` },
+      { label: 'Consolidation des nouvelles habitudes alimentaires', explication: `Les consultations régulières aident à ancrer durablement une alimentation équilibrée et adaptée, clé du succès à long terme de la chirurgie.` },
+      { label: 'Prévention de la reprise de poids à long terme', explication: `Un accompagnement qui s'inscrit dans la durée permet de repérer tôt les écarts et de réajuster le cap avant que le poids ne remonte.` },
     ],
     preparation: [
       'Apporter un relevé de ses habitudes alimentaires si demandé',
@@ -360,13 +360,13 @@ Avant la chirurgie, l'entretien psychologique fait partie du bilan pré-opérato
 Après l'opération, un soutien peut être proposé pour accompagner la transformation corporelle, renforcer la motivation dans les phases de plateau, travailler sur le comportement alimentaire et prévenir les difficultés d'adaptation. Cet accompagnement est adapté aux besoins de chacun, ponctuel ou régulier.
 
 À la Clinique Pasteur Tunis, l'accompagnement psychologique est intégré à l'approche multidisciplinaire du centre de chirurgie bariatrique : le psychologue travaille en coordination avec le chirurgien et le nutritionniste pour offrir à chaque patient un parcours cohérent et bienveillant.`,
-    image: '/images/consultation.webp',
+    image: '/images/fiches/baria-accompagnement-psychologique.webp',
     indications: [
-      'Évaluation psychologique dans le cadre du bilan pré-opératoire',
-      'Préparation aux changements liés à la chirurgie bariatrique',
-      'Accompagnement des troubles du comportement alimentaire',
-      'Soutien pendant les phases d\'adaptation post-opératoires',
-      'Renforcement de la motivation et de l\'image de soi',
+      { label: 'Évaluation psychologique dans le cadre du bilan pré-opératoire', explication: `Un entretien avant l'opération permet de vérifier que le patient aborde la chirurgie avec des attentes réalistes et dans de bonnes conditions psychologiques.` },
+      { label: 'Préparation aux changements liés à la chirurgie bariatrique', explication: `La chirurgie transforme le rapport à l'alimentation et l'image de soi : en parler en amont aide à vivre ces changements plus sereinement.` },
+      { label: 'Accompagnement des troubles du comportement alimentaire', explication: `Grignotages, compulsions ou alimentation émotionnelle peuvent compromettre le résultat : un travail spécifique aide à les comprendre et à les apaiser.` },
+      { label: 'Soutien pendant les phases d\'adaptation post-opératoires', explication: `Après l'opération, des moments de doute ou de plateau sont normaux : un soutien ponctuel ou régulier aide à traverser ces étapes avec confiance.` },
+      { label: 'Renforcement de la motivation et de l\'image de soi', explication: `L'accompagnement aide à s'approprier son nouveau corps et à entretenir la motivation, deux facteurs essentiels de la réussite durable du parcours.` },
     ],
     preparation: [
       'Aucune préparation particulière',
@@ -395,13 +395,13 @@ L'intervention la plus fréquente est l'abdominoplastie : elle retire l'excès d
 Ces interventions sont envisagées une fois le poids stabilisé depuis plusieurs mois, avec un bon équilibre nutritionnel, conditions indispensables à une cicatrisation de qualité et à un résultat durable.
 
 À la Clinique Pasteur Tunis, la chirurgie réparatrice post-amaigrissement est assurée par des chirurgiens plasticiens travaillant en coordination avec l'équipe bariatrique, ce qui garantit une continuité de prise en charge du début du parcours de perte de poids jusqu'à la restauration complète de la silhouette.`,
-    image: '/images/surgery-blue-2.webp',
+    image: '/images/fiches/baria-chirurgie-reparatrice-post-amaigrissement.webp',
     indications: [
-      'Excès de peau abdominale après perte de poids importante',
-      'Irritations ou infections cutanées dans les plis',
-      'Gêne fonctionnelle dans les mouvements ou l\'habillement',
-      'Relâchement de la paroi abdominale',
-      'Poids stabilisé depuis plusieurs mois avec bon équilibre nutritionnel',
+      { label: 'Excès de peau abdominale après perte de poids importante', explication: `Après un amaigrissement important, la peau distendue ne se rétracte pas toujours : l'intervention retire ce surplus pour redessiner la silhouette.` },
+      { label: 'Irritations ou infections cutanées dans les plis', explication: `Les replis de peau peuvent macérer et s'irriter, surtout en période chaude : supprimer l'excès cutané met fin à ces désagréments du quotidien.` },
+      { label: 'Gêne fonctionnelle dans les mouvements ou l\'habillement', explication: `Quand le tablier de peau gêne la marche, le sport ou le choix des vêtements, la chirurgie réparatrice redonne aisance et confort corporel.` },
+      { label: 'Relâchement de la paroi abdominale', explication: `Les muscles du ventre distendus par les années de surpoids peuvent être remis en tension pendant la même intervention, pour un ventre plus plat et plus tonique.` },
+      { label: 'Poids stabilisé depuis plusieurs mois avec bon équilibre nutritionnel', explication: `L'intervention est programmée une fois le poids stable et l'organisme bien nourri : ces conditions garantissent une belle cicatrisation et un résultat durable.` },
     ],
     preparation: [
       'Stabilisation du poids depuis plusieurs mois',
