@@ -15,6 +15,23 @@ const nextConfig = {
   },
   compress: true,
   poweredByHeader: false,
+  async redirects() {
+    // Les actes de cathétérisme ont quitté « Explorations cardiaques » pour la
+    // spécialité « Cathétérisme » (Chirurgies). On redirige les anciennes URLs.
+    const actes = ['coronarographie', 'catheterisme-cardiaque', 'angioplastie-stent', 'valvuloplastie-percutanee']
+    const bases = ['/explorations/explorations-cardiaques', '/centres/explorations-cardiaques']
+    const redirs = []
+    for (const base of bases) {
+      for (const acte of actes) {
+        redirs.push({
+          source: `${base}/${acte}`,
+          destination: `/chirurgies/cardiologie-interventionnelle/${acte}`,
+          permanent: true,
+        })
+      }
+    }
+    return redirs
+  },
   async headers() {
     return [
       {

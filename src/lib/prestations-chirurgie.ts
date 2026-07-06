@@ -12,6 +12,7 @@ import { prestationsCoelioscopique } from './prestations/coelioscopique'
 import { prestationsCarcinologique } from './prestations/carcinologique'
 import { prestationsGynecoObstetrique } from './prestations/gyneco-obstetrique'
 import { prestationsElectrophysiologie } from './prestations/electrophysiologie'
+import { prestationsCatheterisme } from './prestations/catheterisme'
 
 export const prestationsByChirurgie: Record<string, any[]> = {
   'chirurgie-cardiovasculaire': prestationsCardiovasculaire,
@@ -28,4 +29,5 @@ export const prestationsByChirurgie: Record<string, any[]> = {
   'chirurgie-carcinologique': prestationsCarcinologique,
   'chirurgie-gyneco-obstetrique': prestationsGynecoObstetrique,
   'electrophysiologie': prestationsElectrophysiologie,
+  'cardiologie-interventionnelle': prestationsCatheterisme,
 }

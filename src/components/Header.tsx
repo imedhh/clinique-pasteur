@@ -30,6 +30,7 @@ const navigation = [
       { name: 'ORL', href: '/chirurgies/chirurgie-orl' },
       { name: 'Gynéco-Obstétrique', href: '/chirurgies/chirurgie-gyneco-obstetrique' },
       { name: 'Électrophysiologie', href: '/chirurgies/electrophysiologie' },
+      { name: 'Cathétérisme cardiaque', href: '/chirurgies/cardiologie-interventionnelle' },
       { name: 'Toutes les chirurgies', href: '/chirurgies' },
     ],
   },

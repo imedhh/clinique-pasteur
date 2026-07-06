@@ -489,6 +489,33 @@ export const chirurgies = [
       'Suivi post-implantation rigoureux',
     ],
   },
+  {
+    slug: 'cardiologie-interventionnelle',
+    title: 'Cathétérisme & Cardiologie Interventionnelle',
+    shortTitle: 'Cathétérisme',
+    icon: 'HeartPulse',
+    color: 'red',
+    description: 'Exploration et traitement des artères du cœur par cathétérisme, sans chirurgie ouverte.',
+    heroDescription: 'La Clinique Pasteur dispose d\'une salle de cathétérisme cardiaque dédiée, permettant le diagnostic et le traitement des maladies coronaires et valvulaires par voie percutanée. Coronarographie, angioplastie avec pose de stent et valvuloplastie y sont réalisées par une équipe de cardiologues interventionnels expérimentés.',
+    prestations: [
+      'Coronarographie diagnostique',
+      'Cathétérisme cardiaque droit et gauche',
+      'Angioplastie coronaire avec pose de stent',
+      'Valvuloplastie percutanée',
+    ],
+    equipements: [
+      'Salle de cathétérisme cardiaque dédiée',
+      'Système d\'angiographie de dernière génération',
+      'Monitoring hémodynamique en temps réel',
+      'Unité de soins intensifs cardiologiques (USIC) attenante',
+    ],
+    avantages: [
+      'Traitement des artères du cœur sans chirurgie ouverte',
+      'Récupération plus rapide qu\'une chirurgie classique',
+      'Équipe de cardiologie interventionnelle expérimentée',
+      'Prise en charge coordonnée avec la chirurgie cardiaque et la réanimation',
+    ],
+  },
 ];
 
 export const centres = [
@@ -527,10 +554,6 @@ export const centres = [
       'Holter ECG (24h-48h)',
       'Holter tensionnel (MAPA)',
       'Épreuve d\'effort sur tapis roulant',
-      'Coronarographie diagnostique',
-      'Cathétérisme cardiaque droit et gauche',
-      'Angioplastie coronaire',
-      'Valvuloplastie percutanée',
     ],
   },
   {
@@ -705,7 +728,7 @@ export const explorations = [
     shortTitle: 'Cardiaques',
     icon: 'HeartPulse',
     description: 'Explorations cardiaques non invasives et invasives avec un plateau technique de dernière génération pour le diagnostic complet des pathologies cardiovasculaires.',
-    fullDescription: 'Le centre d\'explorations cardiaques de la Clinique Pasteur Tunis regroupe l\'ensemble des examens diagnostiques du cœur et des vaisseaux au sein d\'un service autonome et entièrement dédié. Équipé d\'appareils d\'échocardiographie de dernière génération, d\'un système Holter numérique avancé et d\'une salle de cathétérisme cardiaque performante, le centre assure une prise en charge rapide et précise de toutes les pathologies cardiovasculaires. L\'équipe de cardiologues spécialisés réalise quotidiennement des explorations non invasives et invasives, du simple électrocardiogramme à la coronarographie diagnostique et interventionnelle. Le centre joue un rôle central dans le parcours de soins cardiovasculaire de la clinique, en collaboration étroite avec les services de chirurgie cardiaque, de réanimation cardiologique et d\'électrophysiologie.',
+    fullDescription: 'Le centre d\'explorations cardiaques de la Clinique Pasteur Tunis regroupe l\'ensemble des examens diagnostiques non invasifs du cœur et des vaisseaux au sein d\'un service autonome et entièrement dédié. Équipé d\'appareils d\'échocardiographie de dernière génération et d\'un système Holter numérique avancé, le centre assure une prise en charge rapide et précise, du simple électrocardiogramme à l\'échocardiographie de stress et à l\'épreuve d\'effort. Les actes invasifs de cardiologie interventionnelle (coronarographie, angioplastie, valvuloplastie, cathétérisme) sont réalisés dans la salle de cathétérisme dédiée. Le centre joue un rôle central dans le parcours de soins cardiovasculaire de la clinique, en collaboration étroite avec les services de chirurgie cardiaque, de réanimation cardiologique et d\'électrophysiologie.',
     services: [
       'Électrocardiogramme (ECG) de repos',
       'Électrocardiogramme d\'effort sur tapis roulant',
