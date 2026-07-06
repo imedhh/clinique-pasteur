@@ -51,6 +51,7 @@ const navigation = [
       { name: 'Cardiologie interventionnelle', href: '/centres/cardiologie-interventionnelle' },
       { name: 'Radiologie & Imagerie', href: '/centres/radiologie' },
       { name: 'Endoscopie', href: '/centres/endoscopie' },
+      { name: 'Hôpital de jour (chimiothérapie)', href: '/centres/hospitalisation-jour' },
       { name: 'Nutrition & Esthétique', href: '/centres/coaching-nutritionnel-esthetique' },
       { name: 'Tous les centres', href: '/centres' },
     ],

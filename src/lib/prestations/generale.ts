@@ -423,46 +423,4 @@ Cette approche combinée s'adresse à des situations sélectionnées d'atteinte 
       'Fatigue prolongée nécessitant une convalescence accompagnée',
     ],
   },
-  {
-    slug: 'chirurgie-thyroidienne',
-    title: 'Chirurgie thyroïdienne et parathyroïdienne',
-    shortTitle: 'Chirurgie de la thyroïde',
-    description: 'Ablation partielle ou totale de la thyroïde et chirurgie des glandes parathyroïdes, avec préservation attentive des nerfs de la voix.',
-    fullDescription: `La thyroïde est une glande située à la base du cou, qui produit les hormones régulant le métabolisme de l'organisme. Les glandes parathyroïdes, quatre petites glandes situées juste derrière elle, contrôlent quant à elles le taux de calcium. La chirurgie de ces glandes traite les nodules, les goitres, certains dérèglements hormonaux et les tumeurs.
-
-Selon la pathologie, le chirurgien retire un seul lobe de la thyroïde (lobectomie) ou la glande entière (thyroïdectomie totale). Pour les parathyroïdes, l'intervention cible la ou les glandes anormales responsables d'un excès de calcium. L'incision, discrète et placée dans un pli naturel du cou, laisse une cicatrice fine qui s'estompe avec le temps.
-
-Le point clé de cette chirurgie est la préservation des nerfs récurrents, qui commandent les cordes vocales, et des glandes parathyroïdes saines. L'équipe chirurgicale y consacre une attention méticuleuse, appuyée par des techniques de repérage modernes.
-
-À la Clinique Pasteur Tunis, la chirurgie thyroïdienne et parathyroïdienne est réalisée par des chirurgiens expérimentés, en coordination avec les endocrinologues pour le bilan pré-opératoire et le suivi hormonal après l'intervention.`,
-    image: '/images/fiches/gen-chirurgie-thyroidienne.webp',
-    indications: [
-      { label: 'Nodules thyroïdiens suspects ou volumineux', explication: `Un nodule douteux à la ponction ou devenu gênant par sa taille est retiré à la fois pour lever le doute sur sa nature et pour supprimer la gêne.` },
-      { label: 'Goitre compressif ou plongeant', explication: `Quand la thyroïde augmente de volume au point de comprimer la trachée ou de descendre vers le thorax, son ablation soulage la respiration et la déglutition.` },
-      { label: 'Hyperthyroïdie résistante au traitement médical', explication: `Si la glande produit trop d'hormones malgré les médicaments, la chirurgie offre une solution définitive à l'emballement de la thyroïde.` },
-      { label: 'Cancers de la thyroïde', explication: `La chirurgie est le traitement de première intention des cancers thyroïdiens, dont l'évolution est généralement très favorable après l'intervention.` },
-      { label: 'Hyperparathyroïdie avec excès de calcium confirmé', explication: `Quand une glande parathyroïde s'emballe et fait monter le calcium dans le sang, source de fatigue et de fragilité osseuse, son ablation ciblée normalise durablement la situation.` },
-    ],
-    preparation: [
-      'Échographie cervicale et cytoponction si indiquée',
-      'Bilan hormonal thyroïdien et calcique',
-      'Examen des cordes vocales avant l\'intervention si nécessaire',
-      'Consultation d\'anesthésie',
-      'Être à jeun 6 heures avant l\'intervention',
-    ],
-    deroulement: [
-      'Anesthésie générale',
-      'Incision discrète dans un pli naturel du cou',
-      'Repérage et préservation minutieuse des nerfs de la voix et des parathyroïdes',
-      'Ablation du lobe, de la glande entière ou de la parathyroïde anormale',
-      'Vérification de l\'hémostase et fermeture soigneuse pour un résultat esthétique',
-    ],
-    duree: '1 à 2 heures 30 selon le geste',
-    resultats: 'La sortie a lieu généralement après 24 à 48 heures. La voix et le taux de calcium sont surveillés durant l\'hospitalisation. En cas de thyroïdectomie totale, un traitement hormonal substitutif quotidien, simple et bien toléré, est mis en place avec l\'endocrinologue. La cicatrice devient très discrète en quelques mois.',
-    risques: [
-      'Modification transitoire de la voix possible, régressant dans la grande majorité des cas',
-      'Baisse passagère du calcium après thyroïdectomie totale, surveillée et corrigée si besoin',
-      'Petit hématome cervical rare, surveillé durant l\'hospitalisation',
-    ],
-  },
 ];

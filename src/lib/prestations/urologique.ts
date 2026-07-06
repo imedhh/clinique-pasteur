@@ -460,4 +460,45 @@ La préparation de l'intervention est essentielle, en particulier pour les tumeu
       'Déséquilibre hormonal transitoire, corrigé par un traitement adapté',
     ],
   },
+  {
+    slug: 'rezum-prostate',
+    title: 'Rezūm — traitement de l\'adénome de la prostate par vapeur d\'eau',
+    shortTitle: 'Rezūm (vapeur d\'eau)',
+    description: 'Traitement mini-invasif de l\'hypertrophie bénigne de la prostate par vapeur d\'eau, sans incision, en préservant la fonction sexuelle.',
+    fullDescription: `Le Rezūm est un traitement mini-invasif de l'adénome de la prostate (hypertrophie bénigne de la prostate), cette augmentation de volume fréquente avec l'âge qui gêne l'écoulement des urines. Plutôt que de retirer le tissu par chirurgie, le Rezūm utilise la chaleur de la vapeur d'eau pour faire fondre progressivement l'excès de tissu prostatique.
+
+L'intervention se fait par les voies naturelles, à travers l'urètre, sans aucune incision. Une fine sonde munie d'une caméra est introduite, et de petites quantités de vapeur d'eau sont injectées dans la partie de la prostate qui comprime le canal urinaire. Dans les semaines qui suivent, cette zone se résorbe, le canal se libère et le jet urinaire s'améliore.
+
+Réalisé le plus souvent sous anesthésie locale ou légère sédation et en ambulatoire, le Rezūm préserve la continence et surtout la fonction sexuelle, notamment l'éjaculation, ce qui n'est pas toujours le cas avec la chirurgie classique. C'est une option particulièrement intéressante pour les patients souhaitant éviter une intervention lourde ou préserver leur sexualité.
+
+À la Clinique Pasteur Tunis, le Rezūm est proposé par l'équipe d'urologie dans le cadre d'une prise en charge personnalisée de l'adénome de la prostate.`,
+    image: '/images/fiches/urochir-rezum-prostate.webp',
+    indications: [
+      { label: 'Symptômes urinaires liés à un adénome de la prostate', explication: `Jet faible, envies pressantes, levers nocturnes fréquents : quand la prostate augmentée gêne l'écoulement des urines, le Rezūm libère le passage en douceur.` },
+      { label: 'Gêne persistante malgré le traitement médical', explication: `Lorsque les médicaments ne suffisent plus à soulager les troubles urinaires, le Rezūm offre une solution durable sans chirurgie lourde.` },
+      { label: 'Souhait de préserver la fonction sexuelle', explication: `Le Rezūm respecte l'éjaculation et la fonction sexuelle, ce qui en fait une option de choix pour les patients qui veulent préserver cet aspect.` },
+      { label: 'Patient souhaitant éviter une intervention lourde', explication: `Chez les hommes fragiles ou réticents à une chirurgie classique, le Rezūm permet un traitement efficace, rapide et bien toléré.` },
+    ],
+    preparation: [
+      'Bilan urologique (débitmétrie, échographie, évaluation de la prostate)',
+      'Analyse d\'urine pour écarter une infection',
+      'Adaptation éventuelle de certains traitements selon l\'avis médical',
+      'Consultation d\'anesthésie',
+    ],
+    deroulement: [
+      'Intervention par les voies naturelles (urètre), sans incision',
+      'Anesthésie locale ou légère sédation',
+      'Introduction d\'une fine sonde munie d\'une caméra',
+      'Injection de micro-doses de vapeur d\'eau dans le tissu prostatique en excès',
+      'Retrait de la sonde ; l\'excès de tissu se résorbe dans les semaines suivantes',
+      'Retour à domicile le jour même dans la plupart des cas',
+    ],
+    duree: '15 à 30 minutes',
+    resultats: 'L\'amélioration du jet et du confort urinaire est progressive sur quelques semaines, le temps que la prostate se résorbe. Une sonde urinaire est parfois laissée quelques jours. La continence et la fonction sexuelle sont préservées, et la reprise des activités est rapide.',
+    risques: [
+      'Sonde urinaire temporaire pendant quelques jours après le geste',
+      'Brûlures urinaires passagères et présence transitoire de sang dans les urines',
+      'Amélioration progressive et non immédiate, le temps de l\'effet de la vapeur',
+    ],
+  },
 ];

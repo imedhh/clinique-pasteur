@@ -254,9 +254,9 @@ Les incisions sont dessinées dans les plis naturels de la peau pour un résulta
   },
   {
     slug: 'thyroidectomie',
-    title: 'Thyroïdectomie',
-    shortTitle: 'Thyroïdectomie',
-    description: 'Ablation partielle ou totale de la glande thyroïde, réalisée avec monitoring des nerfs de la voix pour une sécurité optimale.',
+    title: 'Chirurgie thyroïdienne et parathyroïdienne',
+    shortTitle: 'Thyroïde & parathyroïdes',
+    description: 'Ablation partielle ou totale de la glande thyroïde et chirurgie des glandes parathyroïdes, réalisée avec monitoring des nerfs de la voix pour une sécurité optimale.',
     fullDescription: `La thyroïdectomie est l'ablation chirurgicale de la glande thyroïde, en totalité ou en partie (lobectomie). Elle est indiquée en cas de nodules suspects ou volumineux, de goitre compressif, d'hyperthyroïdie résistante au traitement médical ou de cancer de la thyroïde.
 
 L'intervention est réalisée par une incision horizontale discrète à la base du cou, dessinée dans un pli naturel de la peau. Le chirurgien porte une attention particulière à deux structures essentielles : les nerfs récurrents, qui commandent les cordes vocales, et les glandes parathyroïdes, qui régulent le calcium. Le monitoring nerveux per-opératoire sécurise leur préservation.
@@ -270,6 +270,7 @@ Après une thyroïdectomie totale, un traitement hormonal substitutif quotidien 
       { label: 'Goitre volumineux ou compressif (gêne à la déglutition, à la respiration)', explication: `Une thyroïde trop volumineuse peut comprimer la gorge et gêner pour avaler ou pour respirer ; son ablation supprime cette compression.` },
       { label: 'Hyperthyroïdie résistant au traitement médical', explication: `Quand la glande produit trop d'hormones malgré les médicaments, la chirurgie offre une solution définitive à cet emballement de la thyroïde.` },
       { label: 'Cancer de la thyroïde confirmé ou fortement suspecté', explication: `L'ablation de la glande est le traitement de référence ; prise en charge tôt, cette maladie offre de très bonnes perspectives de guérison dans la plupart des formes.` },
+      { label: 'Hyperparathyroïdie avec excès de calcium confirmé', explication: `Quand une glande parathyroïde s'emballe et fait monter le calcium dans le sang, source de fatigue et de fragilité osseuse, son ablation ciblée normalise durablement la situation.` },
     ],
     preparation: [
       'Bilan hormonal thyroïdien et échographie cervicale récente',

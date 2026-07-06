@@ -22,6 +22,8 @@ const nextConfig = {
     const dest = '/centres/cardiologie-interventionnelle'
     const actesCathe = ['coronarographie', 'catheterisme-cardiaque', 'angioplastie-stent', 'valvuloplastie-percutanee']
     const redirs = [
+      // La thyroïde passe de Chirurgie générale à Chirurgie ORL
+      { source: '/chirurgies/chirurgie-generale/chirurgie-thyroidienne', destination: '/chirurgies/chirurgie-orl/thyroidectomie', permanent: true },
       { source: '/chirurgies/electrophysiologie', destination: dest, permanent: true },
       { source: '/chirurgies/electrophysiologie/:slug', destination: `${dest}/:slug`, permanent: true },
       { source: '/chirurgies/cardiologie-interventionnelle', destination: dest, permanent: true },
