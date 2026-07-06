@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import { Phone, Mail, Clock, CheckCircle2, Shield, FileText } from 'lucide-react'
 import { clinicInfo } from '@/lib/data'
 import DevisForm from '@/components/DevisForm'
@@ -11,8 +12,12 @@ export const metadata: Metadata = {
 export default function DevisPage() {
   return (
     <>
-      <section className="relative py-20 gradient-green text-white">
-        <div className="container-custom px-4">
+      <section className="relative py-20 gradient-green text-white overflow-hidden">
+        <div className="absolute inset-0">
+          <Image src="/images/medical-team.webp" alt="Équipe Clinique Pasteur Tunis" fill className="object-cover" />
+          <div className="absolute inset-0 bg-emerald-900/85" />
+        </div>
+        <div className="container-custom px-4 relative">
           <div className="max-w-3xl">
             <span className="text-amber-100 font-semibold text-sm uppercase tracking-wider">Devis gratuit</span>
             <h1 className="text-4xl md:text-5xl font-heading font-bold mt-2 mb-6">Demandez votre Devis Personnalisé</h1>

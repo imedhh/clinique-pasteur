@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import Image from 'next/image'
 import { Phone, Mail, MapPin, Clock, ArrowRight, MessageCircle } from 'lucide-react'
 import { clinicInfo } from '@/lib/data'
 import ContactForm from '@/components/ContactForm'
@@ -13,8 +14,12 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <>
-      <section className="relative py-20 gradient-dark text-white">
-        <div className="container-custom px-4">
+      <section className="relative py-20 text-white overflow-hidden">
+        <div className="absolute inset-0">
+          <Image src="/images/clinic-exterior.webp" alt="Clinique Pasteur Tunis" fill className="object-cover" />
+          <div className="absolute inset-0 bg-[#0a1628]/85" />
+        </div>
+        <div className="container-custom px-4 relative">
           <span className="text-clinic-gold font-semibold text-sm uppercase tracking-wider">Contact</span>
           <h1 className="text-4xl md:text-5xl font-heading font-bold mt-2 mb-6">Contactez-nous</h1>
           <p className="text-xl text-gray-300 leading-relaxed max-w-3xl">

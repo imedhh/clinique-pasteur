@@ -1,7 +1,9 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import Image from 'next/image'
 import { ArrowRight, Stethoscope } from 'lucide-react'
 import { centres } from '@/lib/data'
+import { examsByCentre } from '@/lib/examens-index'
 
 export const metadata: Metadata = {
   title: 'Nos Centres Médicaux',
@@ -30,25 +32,36 @@ export default function CentresPage() {
               <Link
                 key={centre.slug}
                 href={`/centres/${centre.slug}`}
-                className="bg-white rounded-2xl p-8 shadow-md card-hover group border border-gray-100"
+                className="bg-white rounded-2xl shadow-md card-hover group border border-gray-100 overflow-hidden flex flex-col"
               >
-                <div className="w-14 h-14 rounded-xl gradient-green flex items-center justify-center mb-5">
-                  <Stethoscope className="w-7 h-7 text-white" />
+                <div className="relative aspect-[16/9] overflow-hidden">
+                  <Image
+                    src={examsByCentre[centre.slug]?.[0]?.image || '/images/hospital-modern.webp'}
+                    alt={centre.title}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    sizes="(max-width: 1024px) 100vw, 33vw"
+                  />
+                  <div className="absolute top-3 left-3 w-11 h-11 rounded-xl gradient-green flex items-center justify-center shadow-lg">
+                    <Stethoscope className="w-5 h-5 text-white" />
+                  </div>
                 </div>
-                <h2 className="text-xl font-heading font-bold text-gray-900 mb-3 group-hover:text-clinic-green transition">
-                  {centre.title}
-                </h2>
-                <p className="text-gray-600 text-sm leading-relaxed mb-4">{centre.description}</p>
-                <ul className="space-y-1 mb-4">
-                  {centre.services.slice(0, 4).map((s) => (
-                    <li key={s} className="text-gray-500 text-xs flex items-center gap-1.5">
-                      <span className="w-1.5 h-1.5 rounded-full bg-clinic-green flex-shrink-0" /> {s}
-                    </li>
-                  ))}
-                </ul>
-                <span className="text-clinic-green font-semibold text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
-                  En savoir plus <ArrowRight className="w-4 h-4" />
-                </span>
+                <div className="p-8">
+                  <h2 className="text-xl font-heading font-bold text-gray-900 mb-3 group-hover:text-clinic-green transition">
+                    {centre.title}
+                  </h2>
+                  <p className="text-gray-600 text-sm leading-relaxed mb-4">{centre.description}</p>
+                  <ul className="space-y-1 mb-4">
+                    {centre.services.slice(0, 4).map((s) => (
+                      <li key={s} className="text-gray-500 text-xs flex items-center gap-1.5">
+                        <span className="w-1.5 h-1.5 rounded-full bg-clinic-green flex-shrink-0" /> {s}
+                      </li>
+                    ))}
+                  </ul>
+                  <span className="text-clinic-green font-semibold text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
+                    En savoir plus <ArrowRight className="w-4 h-4" />
+                  </span>
+                </div>
               </Link>
             ))}
           </div>

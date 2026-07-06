@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import Image from 'next/image'
 import { notFound } from 'next/navigation'
 import { ArrowRight, CheckCircle2, Phone, ArrowLeft, Shield, Stethoscope, Award, ChevronRight, Clock } from 'lucide-react'
 import { chirurgies, clinicInfo } from '@/lib/data'
@@ -29,12 +30,17 @@ export default function ChirurgiePage({ params }: { params: { slug: string } }) 
   const otherChirurgies = chirurgies.filter((c) => c.slug !== params.slug).slice(0, 4)
   const prestationsDetail = prestationsByChirurgie[params.slug] || []
   const hasDetailedPrestations = prestationsDetail.length > 0
+  const heroImage = prestationsDetail[0]?.image || '/images/surgery-modern.webp'
 
   return (
     <>
       {/* Hero */}
-      <section className="relative py-20 gradient-dark text-white">
-        <div className="container-custom px-4">
+      <section className="relative py-20 text-white overflow-hidden">
+        <div className="absolute inset-0">
+          <Image src={heroImage} alt={chir.title} fill className="object-cover" />
+          <div className="absolute inset-0 bg-[#0a1628]/88" />
+        </div>
+        <div className="container-custom px-4 relative">
           <Link href="/chirurgies" className="inline-flex items-center gap-2 text-gray-400 hover:text-white transition mb-6 text-sm">
             <ArrowLeft className="w-4 h-4" /> Toutes les chirurgies
           </Link>
