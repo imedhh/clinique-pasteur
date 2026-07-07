@@ -6,6 +6,7 @@ import { notFound } from 'next/navigation'
 import '../globals.css'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+import AppointmentFab from '@/components/AppointmentFab'
 import { locales, defaultLocale, dir, htmlLang, type Locale } from '@/lib/i18n/config'
 import { getDictionary } from '@/lib/i18n/dictionaries'
 
@@ -54,6 +55,7 @@ export default function LocaleLayout({ children, params }: { children: React.Rea
         <main id="contenu" className="flex-grow">{children}</main>
         <Footer locale={locale} dict={d} />
         <Chatbot locale={locale} />
+        <AppointmentFab />
         <Script src="https://analytics.upstone.io/script.js" data-website-id="ded8ffe4-c0b3-4d78-a492-b6b2237ce700" strategy="afterInteractive" />
       </body>
     </html>

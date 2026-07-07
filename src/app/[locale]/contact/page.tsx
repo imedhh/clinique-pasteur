@@ -18,9 +18,9 @@ export async function generateMetadata({ params }: { params: { locale: string } 
 export default function ContactPage({ params }: { params: { locale: string } }) {
   const { clinicInfo } = getContent(params.locale as any)
   const CUI: any = {
-    fr: { badge: 'Contact', title: 'Contactez-nous', desc: "Notre équipe est à votre disposition pour répondre à toutes vos questions. N'hésitez pas à nous contacter par téléphone, email ou via le formulaire ci-dessous.", cPhone: 'Téléphone', cEmerg: 'Urgences', cEmail: 'Email', cAddr: 'Adresse', sStd: 'Standard', s247: '24h/24 - 7j/7', sMail: 'Réponse sous 24h', sCity: '1003 Tunis, Tunisie', formTitle: 'Envoyez-nous un message', formSub: 'Nous vous répondrons dans les plus brefs délais.', hoursTitle: "Horaires d'ouverture", hUrg: 'Service des urgences', h247full: '24h/24 - 7j/7', hStd: 'Standard téléphonique', h247: '24h/24', hConsult: 'Consultations', hConsultH: 'Lun - Sam : 8h-18h', hSales: 'Service commercial', hSalesH: 'Lun - Ven : 8h-17h', followUs: 'Suivez-nous' },
-    en: { badge: 'Contact', title: 'Contact us', desc: 'Our team is here to answer all your questions. Feel free to reach us by phone, email or through the form below.', cPhone: 'Phone', cEmerg: 'Emergencies', cEmail: 'Email', cAddr: 'Address', sStd: 'Reception', s247: '24/7', sMail: 'Reply within 24h', sCity: '1003 Tunis, Tunisia', formTitle: 'Send us a message', formSub: 'We will get back to you as soon as possible.', hoursTitle: 'Opening hours', hUrg: 'Emergency department', h247full: '24/7', hStd: 'Phone reception', h247: '24/7', hConsult: 'Consultations', hConsultH: 'Mon - Sat: 8am-6pm', hSales: 'Sales department', hSalesH: 'Mon - Fri: 8am-5pm', followUs: 'Follow us' },
-    ar: { badge: 'اتصل بنا', title: 'اتصل بنا', desc: 'فريقنا في خدمتك للإجابة عن جميع أسئلتك. لا تتردد في الاتصال بنا هاتفياً أو عبر البريد الإلكتروني أو من خلال النموذج أدناه.', cPhone: 'الهاتف', cEmerg: 'الطوارئ', cEmail: 'البريد الإلكتروني', cAddr: 'العنوان', sStd: 'المقسم', s247: 'على مدار الساعة طوال الأسبوع', sMail: 'الرد خلال 24 ساعة', sCity: '1003 تونس، تونس', formTitle: 'أرسل لنا رسالة', formSub: 'سنرد عليكم في أقرب وقت ممكن.', hoursTitle: 'أوقات العمل', hUrg: 'قسم الطوارئ', h247full: 'على مدار الساعة طوال الأسبوع', hStd: 'المقسم الهاتفي', h247: 'على مدار الساعة', hConsult: 'الاستشارات', hConsultH: 'الاثنين - السبت: 8ص-6م', hSales: 'القسم التجاري', hSalesH: 'الاثنين - الجمعة: 8ص-5م', followUs: 'تابعونا' },
+    fr: { badge: 'Contact', title: 'Contactez-nous', desc: "Notre équipe est à votre disposition pour répondre à toutes vos questions. N'hésitez pas à nous contacter par téléphone, email ou via le formulaire ci-dessous.", cPhone: 'Téléphone', cEmerg: 'Urgences', cEmail: 'Email', cAddr: 'Adresse', sStd: 'Standard', s247: '24h/24 - 7j/7', sMail: 'Réponse sous 24h', sCity: '1003 Tunis, Tunisie', formTitle: 'Envoyez-nous un message', formSub: 'Nous vous répondrons dans les plus brefs délais.', hoursTitle: "Horaires d'ouverture", hUrg: 'Service des urgences', h247full: '24h/24 - 7j/7', hStd: 'Standard téléphonique', h247: '24h/24', hConsult: 'Consultations', hConsultH: 'Lun - Sam : 8h-18h', hSales: 'Service commercial', hSalesH: 'Lun - Ven : 8h-17h', followUs: 'Suivez-nous', deptTitle: 'Numéros directs par service', dRadio: 'Radiologie', dCardio: 'Explorations cardiaques', dNutri: 'Centre de nutrition', dDG: 'Direction générale' },
+    en: { badge: 'Contact', title: 'Contact us', desc: 'Our team is here to answer all your questions. Feel free to reach us by phone, email or through the form below.', cPhone: 'Phone', cEmerg: 'Emergencies', cEmail: 'Email', cAddr: 'Address', sStd: 'Reception', s247: '24/7', sMail: 'Reply within 24h', sCity: '1003 Tunis, Tunisia', formTitle: 'Send us a message', formSub: 'We will get back to you as soon as possible.', hoursTitle: 'Opening hours', hUrg: 'Emergency department', h247full: '24/7', hStd: 'Phone reception', h247: '24/7', hConsult: 'Consultations', hConsultH: 'Mon - Sat: 8am-6pm', hSales: 'Sales department', hSalesH: 'Mon - Fri: 8am-5pm', followUs: 'Follow us', deptTitle: 'Direct department numbers', dRadio: 'Radiology', dCardio: 'Cardiac investigations', dNutri: 'Nutrition centre', dDG: 'General management' },
+    ar: { badge: 'اتصل بنا', title: 'اتصل بنا', desc: 'فريقنا في خدمتك للإجابة عن جميع أسئلتك. لا تتردد في الاتصال بنا هاتفياً أو عبر البريد الإلكتروني أو من خلال النموذج أدناه.', cPhone: 'الهاتف', cEmerg: 'الطوارئ', cEmail: 'البريد الإلكتروني', cAddr: 'العنوان', sStd: 'المقسم', s247: 'على مدار الساعة طوال الأسبوع', sMail: 'الرد خلال 24 ساعة', sCity: '1003 تونس، تونس', formTitle: 'أرسل لنا رسالة', formSub: 'سنرد عليكم في أقرب وقت ممكن.', hoursTitle: 'أوقات العمل', hUrg: 'قسم الطوارئ', h247full: 'على مدار الساعة طوال الأسبوع', hStd: 'المقسم الهاتفي', h247: 'على مدار الساعة', hConsult: 'الاستشارات', hConsultH: 'الاثنين - السبت: 8ص-6م', hSales: 'القسم التجاري', hSalesH: 'الاثنين - الجمعة: 8ص-5م', followUs: 'تابعونا', deptTitle: 'أرقام مباشرة حسب القسم', dRadio: 'الأشعة', dCardio: 'الاستكشافات القلبية', dNutri: 'مركز التغذية', dDG: 'الإدارة العامة' },
   }
   const t = CUI[params.locale] || CUI.fr
   return (
@@ -44,9 +44,9 @@ export default function ContactPage({ params }: { params: { locale: string } }) 
           {/* Contact Cards */}
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
             {[
-              { icon: Phone, title: t.cPhone, value: clinicInfo.phone, href: `tel:$<span dir="ltr">{clinicInfo.phone}</span>`, sub: t.sStd },
-              { icon: Phone, title: t.cEmerg, value: clinicInfo.urgences, href: `tel:$<span dir="ltr">{clinicInfo.urgences}</span>`, sub: t.s247, urgent: true },
-              { icon: Mail, title: t.cEmail, value: clinicInfo.email, href: `mailto:$<span dir="ltr">{clinicInfo.email}</span>`, sub: t.sMail },
+              { icon: Phone, title: t.cPhone, value: clinicInfo.phone, href: `tel:${clinicInfo.phone}`, sub: t.sStd },
+              { icon: Phone, title: t.cEmerg, value: clinicInfo.urgences, href: `tel:${clinicInfo.urgences}`, sub: t.s247, urgent: true },
+              { icon: Mail, title: t.cEmail, value: clinicInfo.email, href: `mailto:${clinicInfo.email}`, sub: t.sMail },
               { icon: MapPin, title: t.cAddr, value: 'Centre Urbain Nord', href: clinicInfo.googleMaps, sub: t.sCity },
             ].map(({ icon: Icon, title, value, href, sub, urgent }) => (
               <a
@@ -64,6 +64,26 @@ export default function ContactPage({ params }: { params: { locale: string } }) 
                 <p className="text-gray-500 text-sm mt-1">{sub}</p>
               </a>
             ))}
+          </div>
+
+          {/* Numéros directs par service */}
+          <div className="bg-white rounded-2xl shadow-md border border-gray-100 p-6 md:p-8 mb-16">
+            <h3 className="text-xl font-heading font-bold text-gray-900 mb-6 flex items-center gap-2">
+              <Phone className="w-5 h-5 text-clinic-green" /> {t.deptTitle}
+            </h3>
+            <div className="grid sm:grid-cols-2 gap-3">
+              {[
+                { label: t.dRadio, tel: '36402036', disp: '36 402 036' },
+                { label: t.dCardio, tel: '36402034', disp: '36 402 034' },
+                { label: t.dNutri, tel: '36402025', disp: '36 402 025' },
+                { label: t.dDG, tel: '36402027', disp: '36 402 027' },
+              ].map((d) => (
+                <a key={d.tel} href={`tel:+216${d.tel}`} className="flex items-center justify-between gap-3 p-4 rounded-xl border border-gray-100 hover:border-green-200 hover:bg-green-50 transition">
+                  <span className="text-gray-700 font-medium text-sm">{d.label}</span>
+                  <span dir="ltr" className="text-clinic-green font-bold text-sm whitespace-nowrap">+216 {d.disp}</span>
+                </a>
+              ))}
+            </div>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12">
