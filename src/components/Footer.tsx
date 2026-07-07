@@ -4,24 +4,30 @@ import { Phone, Mail, MapPin, Clock, ArrowRight } from 'lucide-react'
 import { clinicInfo } from '@/lib/data'
 import SocialLinks from '@/components/SocialLinks'
 
-export default function Footer({ dict }: { locale?: string; dict?: any } = {}) {
+export default function Footer({ locale = 'fr', dict }: { locale?: string; dict?: any } = {}) {
+  const FUI: any = {
+    fr: { ctaTitle: "Besoin d'un avis médical ou d'un devis ?", ctaDesc: "Notre équipe commerciale est à votre disposition pour répondre à toutes vos questions et vous accompagner dans votre parcours de soins.", ctaQuote: 'Demander un Devis Gratuit', callUs: 'Appelez-nous', about: 'Clinique pluridisciplinaire de référence au Centre Urbain Nord de Tunis. De nombreuses spécialités médicales et chirurgicales, équipements de dernière technologie.', colSurgeries: 'Nos Chirurgies', colCentres: 'Nos Centres', colContact: 'Contact', emergency: 'Urgences', rights: 'Tous droits réservés.' },
+    en: { ctaTitle: 'Need medical advice or a quote?', ctaDesc: 'Our team is here to answer all your questions and support you throughout your care journey.', ctaQuote: 'Get a Free Quote', callUs: 'Call us', about: 'A leading multidisciplinary clinic in the Centre Urbain Nord of Tunis. A wide range of medical and surgical specialties, with state-of-the-art equipment.', colSurgeries: 'Our Surgeries', colCentres: 'Our Centres', colContact: 'Contact', emergency: 'Emergency', rights: 'All rights reserved.' },
+    ar: { ctaTitle: 'هل تحتاج إلى استشارة طبية أو عرض أسعار؟', ctaDesc: 'فريقنا في خدمتك للإجابة عن جميع أسئلتك ومرافقتك في مسار علاجك.', ctaQuote: 'اطلب عرض أسعار مجاني', callUs: 'اتصل بنا', about: 'مصحة متعددة التخصصات ومرجعية في المركز العمراني الشمالي بتونس. العديد من التخصصات الطبية والجراحية بأحدث التجهيزات.', colSurgeries: 'جراحاتنا', colCentres: 'مراكزنا', colContact: 'اتصل بنا', emergency: 'الطوارئ', rights: 'جميع الحقوق محفوظة.' },
+  }
+  const t = FUI[locale] || FUI.fr
   return (
     <footer className="gradient-dark text-white">
       {/* CTA Banner */}
       <div className="gradient-green">
         <div className="container-custom px-4 py-12 text-center">
           <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-            Besoin d&apos;un avis médical ou d&apos;un devis ?
+            {t.ctaTitle}
           </h2>
           <p className="text-green-100 text-lg mb-8 max-w-2xl mx-auto">
-            Notre équipe commerciale est à votre disposition pour répondre à toutes vos questions et vous accompagner dans votre parcours de soins.
+            {t.ctaDesc}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/devis" className="btn-gold text-lg">
-              Demander un Devis Gratuit <ArrowRight className="w-5 h-5 ml-2" />
+              {t.ctaQuote} <ArrowRight className="w-5 h-5 ml-2" />
             </Link>
             <a href="tel:+21636402000" className="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-clinic-green transition-all duration-300 text-lg">
-              <Phone className="w-5 h-5 mr-2" /> Appelez-nous
+              <Phone className="w-5 h-5 mr-2" /> {t.callUs}
             </a>
           </div>
         </div>
@@ -36,14 +42,14 @@ export default function Footer({ dict }: { locale?: string; dict?: any } = {}) {
               <Image src="/images/logo-fr.png" alt="Clinique Pasteur Tunis" width={483} height={97} className="h-9 w-auto" />
             </div>
             <p className="text-gray-400 text-sm leading-relaxed mb-6">
-              Clinique pluridisciplinaire de référence au Centre Urbain Nord de Tunis. De nombreuses spécialités médicales et chirurgicales, équipements de dernière technologie.
+              {t.about}
             </p>
             <SocialLinks size="sm" />
           </div>
 
           {/* Chirurgies */}
           <div>
-            <h3 className="text-lg font-heading font-bold mb-6 text-clinic-gold">Nos Chirurgies</h3>
+            <h3 className="text-lg font-heading font-bold mb-6 text-clinic-gold">{t.colSurgeries}</h3>
             <ul className="space-y-3">
               {[
                 { name: 'Cardiovasculaire', href: '/chirurgies/chirurgie-cardiovasculaire' },
@@ -65,7 +71,7 @@ export default function Footer({ dict }: { locale?: string; dict?: any } = {}) {
 
           {/* Centres */}
           <div>
-            <h3 className="text-lg font-heading font-bold mb-6 text-clinic-gold">Nos Centres</h3>
+            <h3 className="text-lg font-heading font-bold mb-6 text-clinic-gold">{t.colCentres}</h3>
             <ul className="space-y-3">
               {[
                 { name: 'Urgences 24h/24', href: '/centres/urgences' },
@@ -86,7 +92,7 @@ export default function Footer({ dict }: { locale?: string; dict?: any } = {}) {
 
           {/* Contact */}
           <div>
-            <h3 className="text-lg font-heading font-bold mb-6 text-clinic-gold">Contact</h3>
+            <h3 className="text-lg font-heading font-bold mb-6 text-clinic-gold">{t.colContact}</h3>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-clinic-green mt-0.5 flex-shrink-0" />
@@ -96,7 +102,7 @@ export default function Footer({ dict }: { locale?: string; dict?: any } = {}) {
                 <Phone className="w-5 h-5 text-clinic-green flex-shrink-0" />
                 <div>
                   <a href={`tel:${clinicInfo.phone}`} className="text-white font-semibold text-sm hover:text-clinic-gold transition block">{clinicInfo.phone}</a>
-                  <a href={`tel:${clinicInfo.urgences}`} className="text-red-400 text-xs font-medium hover:text-red-300 transition">Urgences: {clinicInfo.urgences}</a>
+                  <a href={`tel:${clinicInfo.urgences}`} className="text-red-400 text-xs font-medium hover:text-red-300 transition">{t.emergency}: {clinicInfo.urgences}</a>
                 </div>
               </li>
               <li className="flex items-center gap-3">
@@ -116,7 +122,7 @@ export default function Footer({ dict }: { locale?: string; dict?: any } = {}) {
       <div className="border-t border-white/10">
         <div className="container-custom px-4 py-6 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-gray-500 text-sm">
-            &copy; {new Date().getFullYear()} Clinique Pasteur Tunis. Tous droits réservés.
+            &copy; {new Date().getFullYear()} Clinique Pasteur Tunis. {t.rights}
           </p>
           <div className="flex gap-6 text-sm text-gray-500">
             <Link href="/mentions-legales" className="hover:text-white transition">{dict?.footer?.legalNotice || 'Mentions légales'}</Link>

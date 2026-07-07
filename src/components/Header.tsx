@@ -144,7 +144,7 @@ export default function Header({ locale = 'fr', dict }: { locale?: string; dict?
           <div className="flex items-center gap-6">
             <span className="flex items-center gap-2">
               <MapPin className="w-3.5 h-3.5 text-clinic-gold" />
-              Centre Urbain Nord, Tunis
+              {t.address}
             </span>
             <span className="flex items-center gap-2">
               <Mail className="w-3.5 h-3.5 text-clinic-gold" />
@@ -154,10 +154,10 @@ export default function Header({ locale = 'fr', dict }: { locale?: string; dict?
           <div className="flex items-center gap-6">
             <span className="flex items-center gap-2">
               <Clock className="w-3.5 h-3.5 text-clinic-gold" />
-              Ouvert 24h/24 - 7j/7
+              {t.open247}
             </span>
             <a href="tel:+21636402076" className="flex items-center gap-2 bg-red-600 px-3 py-1 rounded text-xs font-bold hover:bg-red-700 transition">
-              <Phone className="w-3.5 h-3.5" /> Urgences: 36 402 076
+              <Phone className="w-3.5 h-3.5" /> {t.emergency}: 36 402 076
             </a>
           </div>
         </div>
@@ -220,7 +220,7 @@ export default function Header({ locale = 'fr', dict }: { locale?: string; dict?
                 type="button"
                 className="lg:hidden p-2 rounded-lg hover:bg-gray-100 active:bg-gray-200"
                 onClick={() => setMobileOpen(!mobileOpen)}
-                aria-label="Menu"
+                aria-label={t.menu}
                 aria-expanded={mobileOpen}
                 style={{ WebkitTapHighlightColor: 'transparent', touchAction: 'manipulation' }}
               >
@@ -265,7 +265,7 @@ export default function Header({ locale = 'fr', dict }: { locale?: string; dict?
               type="button"
               onClick={() => setMobileOpen(false)}
               style={{ padding: 8, WebkitTapHighlightColor: 'transparent', touchAction: 'manipulation' }}
-              aria-label="Fermer le menu"
+              aria-label={t.closeMenu}
             >
               <X className="w-6 h-6 text-gray-700" />
             </button>

@@ -8,21 +8,21 @@ interface Message {
   content: string
 }
 
-const CHAT_UI: Record<string, { welcome: string; title: string; status: string; placeholder: string; note: string; open: string }> = {
+const CHAT_UI: Record<string, { welcome: string; title: string; status: string; placeholder: string; note: string; open: string; help: string; helpSub: string }> = {
   fr: {
     welcome: 'Bonjour ! Je suis l\'assistant de la Clinique Pasteur de Tunis. Je peux vous renseigner sur nos services, les préparations aux examens, les horaires, comment venir... Comment puis-je vous aider ?',
     title: 'Assistant Clinique Pasteur', status: 'En ligne 24h/24', placeholder: 'Posez votre question...',
-    note: 'Assistant informatif uniquement. Pour tout avis médical, consultez votre médecin.', open: 'Ouvrir l\'assistant',
+    note: 'Assistant informatif uniquement. Pour tout avis médical, consultez votre médecin.', open: 'Ouvrir l\'assistant', help: 'Besoin d\'aide ?', helpSub: 'Notre assistant IA est là',
   },
   en: {
     welcome: 'Hello! I am the Clinique Pasteur Tunis assistant. I can help you with our services, exam preparation, opening hours, how to get here... How can I help you?',
     title: 'Clinique Pasteur Assistant', status: 'Online 24/7', placeholder: 'Ask your question...',
-    note: 'Informational assistant only. For any medical advice, please consult your doctor.', open: 'Open assistant',
+    note: 'Informational assistant only. For any medical advice, please consult your doctor.', open: 'Open assistant', help: 'Need help?', helpSub: 'Our AI assistant is here',
   },
   ar: {
     welcome: 'مرحبًا! أنا المساعد الآلي لعيادة باستور تونس. يمكنني إرشادك حول خدماتنا والتحضير للفحوصات وأوقات العمل وكيفية الوصول... كيف يمكنني مساعدتك؟',
     title: 'مساعد عيادة باستور', status: 'متصل على مدار الساعة', placeholder: 'اطرح سؤالك...',
-    note: 'مساعد للمعلومات فقط. لأي استشارة طبية، يُرجى مراجعة طبيبك.', open: 'فتح المساعد',
+    note: 'مساعد للمعلومات فقط. لأي استشارة طبية، يُرجى مراجعة طبيبك.', open: 'فتح المساعد', help: 'هل تحتاج مساعدة؟', helpSub: 'مساعدنا الآلي في خدمتك',
   },
 }
 
@@ -133,8 +133,8 @@ export default function Chatbot({ locale = 'fr' }: { locale?: string } = {}) {
             color: '#333', maxWidth: 200, cursor: 'pointer',
           }}
         >
-          <span style={{ fontWeight: 600 }}>Besoin d&apos;aide ?</span><br />
-          <span style={{ color: '#666', fontSize: 12 }}>Notre assistant IA est là</span>
+          <span style={{ fontWeight: 600 }}>{t.help}</span><br />
+          <span style={{ color: '#666', fontSize: 12 }}>{t.helpSub}</span>
         </div>
       )}
 
