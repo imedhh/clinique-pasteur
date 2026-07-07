@@ -74,7 +74,7 @@ export default function CentresPage({ params }: { params: { locale: string } }) 
               >
                 <div className="relative aspect-[16/9] overflow-hidden">
                   <Image
-                    src={examsByCentre[centre.slug]?.[0]?.image || '/images/hospital-modern.webp'}
+                    src={(centre.slug === 'explorations-cardiaques' ? '/images/fiches/home-explo-cardiaque.webp' : examsByCentre[centre.slug]?.[0]?.image) || '/images/hospital-modern.webp'}
                     alt={centre.title}
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500"

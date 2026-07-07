@@ -39,7 +39,7 @@ const FLAGS: Record<string, React.ReactNode> = {
 }
 const CODES: Record<string, string> = { fr: 'FR', en: 'EN', ar: 'AR' }
 
-export default function LanguageSwitcher({ className = '', dark = false }: { className?: string; dark?: boolean }) {
+export default function LanguageSwitcher({ className = '', dark = false, compact = false }: { className?: string; dark?: boolean; compact?: boolean }) {
   const pathname = usePathname() || '/'
   const parts = pathname.split('/')
   const hasLoc = (locales as readonly string[]).includes(parts[1])
@@ -66,7 +66,7 @@ export default function LanguageSwitcher({ className = '', dark = false }: { cla
             >
               {FLAGS[l]}
             </span>
-            <span className="text-xs font-bold uppercase leading-none">{CODES[l]}</span>
+            {!compact && <span className="text-xs font-bold uppercase leading-none">{CODES[l]}</span>}
           </NextLink>
         )
       })}

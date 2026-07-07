@@ -178,8 +178,8 @@ export default function Header({ locale = 'fr', dict }: { locale?: string; dict?
         <div className="container-custom px-4">
           <div className="flex items-center justify-between">
             {/* Logo */}
-            <Link href="/">
-              <Image src="/images/logo-fr.png" alt="Clinique Pasteur Tunis" width={483} height={97} className="h-10 sm:h-12 w-auto" />
+            <Link href="/" className="shrink-0">
+              <Image src="/images/logo-fr.png" alt="Clinique Pasteur Tunis" width={483} height={97} className="h-9 sm:h-12 w-auto" priority />
             </Link>
 
             {/* Desktop Nav */}
@@ -217,7 +217,7 @@ export default function Header({ locale = 'fr', dict }: { locale?: string; dict?
 
             {/* CTA + Mobile Button */}
             <div className="flex items-center gap-2 sm:gap-3">
-              <LanguageSwitcher className="lg:hidden" />
+              <LanguageSwitcher className="lg:hidden" compact />
               <Link href="/devis" className="hidden md:inline-flex btn-primary text-sm" style={{ padding: '10px 20px' }}>
                 {dict?.common?.requestQuote || 'Demander un Devis'}
               </Link>
