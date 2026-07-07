@@ -2,7 +2,7 @@
 import { useState } from 'react'
 import { Send, CheckCircle2, Loader2 } from 'lucide-react'
 
-export default function DevisForm() {
+export default function DevisForm({ locale = 'fr' }: { locale?: string } = {}) {
   const [submitted, setSubmitted] = useState(false)
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')
