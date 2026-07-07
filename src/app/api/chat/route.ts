@@ -23,9 +23,11 @@ export async function POST(req: Request) {
   }
 
   let messages: unknown
+  let locale = 'fr'
   try {
     const body = await req.json()
     messages = body?.messages
+    if (typeof body?.locale === 'string') locale = body.locale
   } catch {
     return new Response('Requête invalide', { status: 400 })
   }
@@ -45,9 +47,14 @@ export async function POST(req: Request) {
     }
   }
 
+  const langInstruction: Record<string, string> = {
+    fr: 'IMPORTANT : réponds EXCLUSIVEMENT en français, quelle que soit la langue de la question.',
+    en: 'IMPORTANT: reply EXCLUSIVELY in English, regardless of the language of the question. Translate any French information from your knowledge base into natural English.',
+    ar: 'هام: أجب حصريًا باللغة العربية الفصحى، مهما كانت لغة السؤال. ترجم أي معلومة فرنسية من قاعدة معارفك إلى عربية سليمة وطبيعية.',
+  }
   const result = streamText({
     model: anthropic('claude-haiku-4-5-20251001'),
-    system: SYSTEM_PROMPT,
+    system: `${SYSTEM_PROMPT}\n\n${langInstruction[locale] || langInstruction.fr}`,
     messages: messages as { role: 'user' | 'assistant'; content: string }[],
     maxOutputTokens: 1024,
   })

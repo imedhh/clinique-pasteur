@@ -1,9 +1,10 @@
 'use client'
 import { useState, useEffect, useCallback } from 'react'
-import Link from 'next/link'
+import Link from '@/components/I18nLink'
 import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { Phone, Menu, X, ChevronDown, ChevronRight, Clock, Mail, MapPin } from 'lucide-react'
+import LanguageSwitcher from '@/components/LanguageSwitcher'
 
 const navigation = [
   { name: 'Accueil', href: '/' },
@@ -59,7 +60,7 @@ const navigation = [
   { name: 'Contact', href: '/contact' },
 ]
 
-export default function Header() {
+export default function Header({ dict }: { locale?: string; dict?: any } = {}) {
   const [scrolled, setScrolled] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
   const [openDropdown, setOpenDropdown] = useState<string | null>(null)
@@ -176,8 +177,9 @@ export default function Header() {
 
             {/* CTA + Mobile Button */}
             <div className="flex items-center gap-2 sm:gap-3">
+              <LanguageSwitcher />
               <Link href="/devis" className="hidden md:inline-flex btn-primary text-sm" style={{ padding: '10px 20px' }}>
-                Demander un Devis
+                {dict?.common?.requestQuote || 'Demander un Devis'}
               </Link>
               <a href="tel:+21636402000" className="hidden sm:flex items-center gap-2 text-clinic-green font-semibold text-sm">
                 <Phone className="w-4 h-4" /> 36 402 000

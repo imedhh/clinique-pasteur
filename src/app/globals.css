@@ -199,3 +199,15 @@ summary:focus-visible,
     transition-duration: 0.01ms !important;
   }
 }
+
+/* ===== i18n : police arabe + RTL ===== */
+[lang="ar"] body,
+[lang="ar"] {
+  font-family: var(--font-arabic), 'Cairo', 'Segoe UI', Tahoma, sans-serif;
+}
+[lang="ar"] h1, [lang="ar"] h2, [lang="ar"] h3,
+[lang="ar"] h4, [lang="ar"] h5, [lang="ar"] h6,
+[lang="ar"] .font-heading {
+  font-family: var(--font-arabic), 'Cairo', 'Segoe UI', serif;
+}
+[dir="rtl"] .skip-link { left: auto; right: 6px; }

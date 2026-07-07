@@ -8,14 +8,29 @@ interface Message {
   content: string
 }
 
-export default function Chatbot() {
+const CHAT_UI: Record<string, { welcome: string; title: string; status: string; placeholder: string; note: string; open: string }> = {
+  fr: {
+    welcome: 'Bonjour ! Je suis l\'assistant de la Clinique Pasteur de Tunis. Je peux vous renseigner sur nos services, les préparations aux examens, les horaires, comment venir... Comment puis-je vous aider ?',
+    title: 'Assistant Clinique Pasteur', status: 'En ligne 24h/24', placeholder: 'Posez votre question...',
+    note: 'Assistant informatif uniquement. Pour tout avis médical, consultez votre médecin.', open: 'Ouvrir l\'assistant',
+  },
+  en: {
+    welcome: 'Hello! I am the Clinique Pasteur Tunis assistant. I can help you with our services, exam preparation, opening hours, how to get here... How can I help you?',
+    title: 'Clinique Pasteur Assistant', status: 'Online 24/7', placeholder: 'Ask your question...',
+    note: 'Informational assistant only. For any medical advice, please consult your doctor.', open: 'Open assistant',
+  },
+  ar: {
+    welcome: 'مرحبًا! أنا المساعد الآلي لعيادة باستور تونس. يمكنني إرشادك حول خدماتنا والتحضير للفحوصات وأوقات العمل وكيفية الوصول... كيف يمكنني مساعدتك؟',
+    title: 'مساعد عيادة باستور', status: 'متصل على مدار الساعة', placeholder: 'اطرح سؤالك...',
+    note: 'مساعد للمعلومات فقط. لأي استشارة طبية، يُرجى مراجعة طبيبك.', open: 'فتح المساعد',
+  },
+}
+
+export default function Chatbot({ locale = 'fr' }: { locale?: string } = {}) {
+  const t = CHAT_UI[locale] || CHAT_UI.fr
   const [open, setOpen] = useState(false)
   const [messages, setMessages] = useState<Message[]>([
-    {
-      id: 'welcome',
-      role: 'assistant',
-      content: 'Bonjour ! Je suis l\'assistant de la Clinique Pasteur de Tunis. Je peux vous renseigner sur nos services, les préparations aux examens, les horaires, comment venir... Comment puis-je vous aider ?',
-    },
+    { id: 'welcome', role: 'assistant', content: t.welcome },
   ])
   const [input, setInput] = useState('')
   const [isLoading, setIsLoading] = useState(false)
@@ -47,6 +62,7 @@ export default function Chatbot() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           messages: newMessages.filter(m => m.id !== 'welcome').map(m => ({ role: m.role, content: m.content })),
+          locale,
         }),
       })
 
@@ -100,7 +116,7 @@ export default function Chatbot() {
             boxShadow: '0 4px 20px rgba(45,140,78,0.4)',
             WebkitTapHighlightColor: 'transparent', touchAction: 'manipulation',
           }}
-          aria-label="Ouvrir l'assistant"
+          aria-label={t.open}
         >
           <MessageCircle style={{ width: 28, height: 28 }} />
         </button>
@@ -142,8 +158,8 @@ export default function Chatbot() {
                 <Bot style={{ width: 22, height: 22, color: 'white' }} />
               </div>
               <div>
-                <div style={{ color: 'white', fontWeight: 700, fontSize: 15 }}>Assistant Clinique Pasteur</div>
-                <div style={{ color: 'rgba(255,255,255,0.7)', fontSize: 12 }}>En ligne 24h/24</div>
+                <div style={{ color: 'white', fontWeight: 700, fontSize: 15 }}>{t.title}</div>
+                <div style={{ color: 'rgba(255,255,255,0.7)', fontSize: 12 }}>{t.status}</div>
               </div>
             </div>
             <button onClick={() => setOpen(false)} style={{ padding: 8, background: 'none', border: 'none', cursor: 'pointer', color: 'white', WebkitTapHighlightColor: 'transparent', touchAction: 'manipulation' }}>
@@ -206,7 +222,7 @@ export default function Chatbot() {
               ref={inputRef}
               value={input}
               onChange={(e) => setInput(e.target.value)}
-              placeholder="Posez votre question..."
+              placeholder={t.placeholder}
               disabled={isLoading}
               style={{ flexGrow: 1, padding: '10px 16px', borderRadius: 24, border: '1px solid #d1d5db', fontSize: 14, background: '#f9fafb' }}
             />
@@ -222,7 +238,7 @@ export default function Chatbot() {
           </form>
 
           <div style={{ padding: '6px 16px 10px', textAlign: 'center', fontSize: 10, color: '#9ca3af', background: 'white' }}>
-            Assistant informatif uniquement. Pour tout avis médical, consultez votre médecin.
+            {t.note}
           </div>
         </div>
       )}

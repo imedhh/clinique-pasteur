@@ -1,10 +1,10 @@
-import Link from 'next/link'
+import Link from '@/components/I18nLink'
 import Image from 'next/image'
 import { Phone, Mail, MapPin, Clock, ArrowRight } from 'lucide-react'
 import { clinicInfo } from '@/lib/data'
 import SocialLinks from '@/components/SocialLinks'
 
-export default function Footer() {
+export default function Footer({ dict }: { locale?: string; dict?: any } = {}) {
   return (
     <footer className="gradient-dark text-white">
       {/* CTA Banner */}
@@ -119,8 +119,8 @@ export default function Footer() {
             &copy; {new Date().getFullYear()} Clinique Pasteur Tunis. Tous droits réservés.
           </p>
           <div className="flex gap-6 text-sm text-gray-500">
-            <Link href="/mentions-legales" className="hover:text-white transition">Mentions légales</Link>
-            <Link href="/politique-confidentialite" className="hover:text-white transition">Confidentialité</Link>
+            <Link href="/mentions-legales" className="hover:text-white transition">{dict?.footer?.legalNotice || 'Mentions légales'}</Link>
+            <Link href="/politique-confidentialite" className="hover:text-white transition">{dict?.footer?.privacy || 'Confidentialité'}</Link>
           </div>
         </div>
       </div>

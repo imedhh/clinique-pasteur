@@ -1,0 +1,2 @@
+// STUB en: ré-exporte le FR tant que la traduction n'est pas faite. Remplacé par fable.
+export * from '../../../prestations/pediatrique';

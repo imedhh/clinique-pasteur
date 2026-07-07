@@ -1,79 +1,42 @@
 import { MetadataRoute } from 'next'
-import { chirurgies, centres, explorations } from '@/lib/data'
-import { examsByExploration, examsByCentre } from '@/lib/examens-index'
-import { prestationsByChirurgie } from '@/lib/prestations-chirurgie'
+import { getContent } from '@/lib/i18n/content'
+import { locales } from '@/lib/i18n/config'
+
+const baseUrl = 'https://cptunis.com'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://cptunis.com'
   const now = new Date()
+  const { chirurgies, centres, explorations, examsByExploration, examsByCentre, prestationsByChirurgie } = getContent('fr')
 
-  const staticPages = [
-    { url: baseUrl, lastModified: now, changeFrequency: 'weekly' as const, priority: 1.0 },
-    { url: `${baseUrl}/la-clinique`, lastModified: now, changeFrequency: 'monthly' as const, priority: 0.9 },
-    { url: `${baseUrl}/chirurgies`, lastModified: now, changeFrequency: 'weekly' as const, priority: 0.9 },
-    { url: `${baseUrl}/explorations`, lastModified: now, changeFrequency: 'weekly' as const, priority: 0.9 },
-    { url: `${baseUrl}/centres`, lastModified: now, changeFrequency: 'weekly' as const, priority: 0.9 },
-    { url: `${baseUrl}/hospitalisation`, lastModified: now, changeFrequency: 'monthly' as const, priority: 0.8 },
-    { url: `${baseUrl}/devis`, lastModified: now, changeFrequency: 'monthly' as const, priority: 0.95 },
-    { url: `${baseUrl}/contact`, lastModified: now, changeFrequency: 'monthly' as const, priority: 0.8 },
+  // chemins sans préfixe de langue + priorité
+  const paths: { path: string; priority: number; freq: 'weekly' | 'monthly' }[] = [
+    { path: '', priority: 1.0, freq: 'weekly' },
+    { path: '/la-clinique', priority: 0.9, freq: 'monthly' },
+    { path: '/chirurgies', priority: 0.9, freq: 'weekly' },
+    { path: '/explorations', priority: 0.9, freq: 'weekly' },
+    { path: '/centres', priority: 0.9, freq: 'weekly' },
+    { path: '/hospitalisation', priority: 0.8, freq: 'monthly' },
+    { path: '/devis', priority: 0.95, freq: 'monthly' },
+    { path: '/contact', priority: 0.8, freq: 'monthly' },
+    { path: '/mentions-legales', priority: 0.3, freq: 'monthly' },
+    { path: '/politique-confidentialite', priority: 0.3, freq: 'monthly' },
   ]
+  for (const c of chirurgies) paths.push({ path: `/chirurgies/${c.slug}`, priority: 0.85, freq: 'monthly' })
+  for (const e of explorations) paths.push({ path: `/explorations/${e.slug}`, priority: 0.8, freq: 'monthly' })
+  for (const c of centres) paths.push({ path: `/centres/${c.slug}`, priority: 0.8, freq: 'monthly' })
+  for (const [slug, exams] of Object.entries(examsByExploration)) for (const ex of exams as any[]) paths.push({ path: `/explorations/${slug}/${ex.slug}`, priority: 0.7, freq: 'monthly' })
+  for (const [slug, exams] of Object.entries(examsByCentre)) for (const ex of exams as any[]) paths.push({ path: `/centres/${slug}/${ex.slug}`, priority: 0.7, freq: 'monthly' })
+  for (const [slug, prestations] of Object.entries(prestationsByChirurgie)) for (const p of prestations as any[]) paths.push({ path: `/chirurgies/${slug}/${p.slug}`, priority: 0.7, freq: 'monthly' })
 
-  const chirurgiePages = chirurgies.map((c) => ({
-    url: `${baseUrl}/chirurgies/${c.slug}`,
-    lastModified: now,
-    changeFrequency: 'monthly' as const,
-    priority: 0.85,
-  }))
-
-  const explorationPages = explorations.map((e) => ({
-    url: `${baseUrl}/explorations/${e.slug}`,
-    lastModified: now,
-    changeFrequency: 'monthly' as const,
-    priority: 0.8,
-  }))
-
-  const centrePages = centres.map((c) => ({
-    url: `${baseUrl}/centres/${c.slug}`,
-    lastModified: now,
-    changeFrequency: 'monthly' as const,
-    priority: 0.8,
-  }))
-
-  // Pages examens détaillées (longue traîne SEO)
-  const explorationExamPages = Object.entries(examsByExploration).flatMap(([slug, exams]) =>
-    exams.map((ex) => ({
-      url: `${baseUrl}/explorations/${slug}/${ex.slug}`,
+  return paths.flatMap(({ path, priority, freq }) =>
+    locales.map((locale) => ({
+      url: `${baseUrl}/${locale}${path}`,
       lastModified: now,
-      changeFrequency: 'monthly' as const,
-      priority: 0.7,
+      changeFrequency: freq,
+      priority,
+      alternates: {
+        languages: Object.fromEntries(locales.map((l) => [l, `${baseUrl}/${l}${path}`])),
+      },
     }))
   )
-
-  const centreExamPages = Object.entries(examsByCentre).flatMap(([slug, exams]) =>
-    exams.map((ex) => ({
-      url: `${baseUrl}/centres/${slug}/${ex.slug}`,
-      lastModified: now,
-      changeFrequency: 'monthly' as const,
-      priority: 0.7,
-    }))
-  )
-
-  const prestationPages = Object.entries(prestationsByChirurgie).flatMap(([slug, prestations]) =>
-    prestations.map((p) => ({
-      url: `${baseUrl}/chirurgies/${slug}/${p.slug}`,
-      lastModified: now,
-      changeFrequency: 'monthly' as const,
-      priority: 0.7,
-    }))
-  )
-
-  return [
-    ...staticPages,
-    ...chirurgiePages,
-    ...explorationPages,
-    ...centrePages,
-    ...explorationExamPages,
-    ...centreExamPages,
-    ...prestationPages,
-  ]
 }
