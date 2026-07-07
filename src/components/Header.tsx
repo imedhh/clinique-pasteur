@@ -6,61 +6,60 @@ import { usePathname } from 'next/navigation'
 import { Phone, Menu, X, ChevronDown, ChevronRight, Clock, Mail, MapPin } from 'lucide-react'
 import LanguageSwitcher from '@/components/LanguageSwitcher'
 
-const navigation = [
-  { name: 'Accueil', href: '/' },
-  {
-    name: 'La Clinique',
-    href: '/la-clinique',
-    children: [
-      { name: 'Présentation', href: '/la-clinique' },
-      { name: 'Infrastructure', href: '/la-clinique#infrastructure' },
-      { name: 'Hospitalisation', href: '/hospitalisation' },
-    ],
-  },
-  {
-    name: 'Chirurgies',
-    href: '/chirurgies',
-    children: [
-      { name: 'Cardiovasculaire', href: '/chirurgies/chirurgie-cardiovasculaire' },
-      { name: 'Générale', href: '/chirurgies/chirurgie-generale' },
-      { name: 'Bariatrique', href: '/chirurgies/chirurgie-bariatrique' },
-      { name: 'Esthétique', href: '/chirurgies/chirurgie-esthetique' },
-      { name: 'Orthopédique', href: '/chirurgies/chirurgie-orthopedique' },
-      { name: 'Urologique', href: '/chirurgies/chirurgie-urologique' },
-      { name: 'Neurochirurgie', href: '/chirurgies/neurochirurgie' },
-      { name: 'ORL', href: '/chirurgies/chirurgie-orl' },
-      { name: 'Gynéco-Obstétrique', href: '/chirurgies/chirurgie-gyneco-obstetrique' },
-      { name: 'Toutes les chirurgies', href: '/chirurgies' },
-    ],
-  },
-  {
-    name: 'Explorations',
-    href: '/explorations',
-    children: [
-      { name: 'Cardiaques', href: '/explorations/explorations-cardiaques' },
-      { name: 'Neurophysiologiques', href: '/explorations/explorations-neurophysiologiques' },
-
-      { name: 'Urodynamiques', href: '/explorations/explorations-urodynamiques' },
-      { name: 'Toutes les explorations', href: '/explorations' },
-    ],
-  },
-  {
-    name: 'Centres',
-    href: '/centres',
-    children: [
-      { name: 'Urgences 24h/24', href: '/centres/urgences' },
-      { name: 'Cardiologie interventionnelle', href: '/centres/cardiologie-interventionnelle' },
-      { name: 'Radiologie & Imagerie', href: '/centres/radiologie' },
-      { name: 'Endoscopie', href: '/centres/endoscopie' },
-      { name: 'Hôpital de jour (chimiothérapie)', href: '/centres/hospitalisation-jour' },
-      { name: 'Nutrition & Esthétique', href: '/centres/coaching-nutritionnel-esthetique' },
-      { name: 'Tous les centres', href: '/centres' },
-    ],
-  },
-  { name: 'Contact', href: '/contact' },
-]
-
 export default function Header({ dict }: { locale?: string; dict?: any } = {}) {
+  const navigation = [
+    { name: dict?.nav?.home || 'Accueil', href: '/' },
+    {
+      name: dict?.nav?.clinic || 'La Clinique',
+      href: '/la-clinique',
+      children: [
+        { name: 'Présentation', href: '/la-clinique' },
+        { name: 'Infrastructure', href: '/la-clinique#infrastructure' },
+        { name: 'Hospitalisation', href: '/hospitalisation' },
+      ],
+    },
+    {
+      name: dict?.nav?.surgeries || 'Chirurgies',
+      href: '/chirurgies',
+      children: [
+        { name: 'Cardiovasculaire', href: '/chirurgies/chirurgie-cardiovasculaire' },
+        { name: 'Générale', href: '/chirurgies/chirurgie-generale' },
+        { name: 'Bariatrique', href: '/chirurgies/chirurgie-bariatrique' },
+        { name: 'Esthétique', href: '/chirurgies/chirurgie-esthetique' },
+        { name: 'Orthopédique', href: '/chirurgies/chirurgie-orthopedique' },
+        { name: 'Urologique', href: '/chirurgies/chirurgie-urologique' },
+        { name: 'Neurochirurgie', href: '/chirurgies/neurochirurgie' },
+        { name: 'ORL', href: '/chirurgies/chirurgie-orl' },
+        { name: 'Gynéco-Obstétrique', href: '/chirurgies/chirurgie-gyneco-obstetrique' },
+        { name: dict?.common?.allSurgeries || 'Toutes les chirurgies', href: '/chirurgies' },
+      ],
+    },
+    {
+      name: dict?.nav?.explorations || 'Explorations',
+      href: '/explorations',
+      children: [
+        { name: 'Cardiaques', href: '/explorations/explorations-cardiaques' },
+        { name: 'Neurophysiologiques', href: '/explorations/explorations-neurophysiologiques' },
+
+        { name: 'Urodynamiques', href: '/explorations/explorations-urodynamiques' },
+        { name: dict?.common?.allExplorations || 'Toutes les explorations', href: '/explorations' },
+      ],
+    },
+    {
+      name: dict?.nav?.centres || 'Centres',
+      href: '/centres',
+      children: [
+        { name: 'Urgences 24h/24', href: '/centres/urgences' },
+        { name: 'Cardiologie interventionnelle', href: '/centres/cardiologie-interventionnelle' },
+        { name: 'Radiologie & Imagerie', href: '/centres/radiologie' },
+        { name: 'Endoscopie', href: '/centres/endoscopie' },
+        { name: 'Hôpital de jour (chimiothérapie)', href: '/centres/hospitalisation-jour' },
+        { name: 'Nutrition & Esthétique', href: '/centres/coaching-nutritionnel-esthetique' },
+        { name: dict?.common?.allCentres || 'Tous les centres', href: '/centres' },
+      ],
+    },
+    { name: dict?.nav?.contact || 'Contact', href: '/contact' },
+  ]
   const [scrolled, setScrolled] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
   const [openDropdown, setOpenDropdown] = useState<string | null>(null)
