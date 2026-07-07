@@ -157,7 +157,9 @@ export default function Header({ locale = 'fr', dict }: { locale?: string; dict?
               contact@cliniquepasteur.com.tn
             </span>
           </div>
-          <div className="flex items-center gap-6">
+          <div className="flex items-center gap-5">
+            <LanguageSwitcher dark />
+            <span className="w-px h-4 bg-white/20" />
             <span className="flex items-center gap-2">
               <Clock className="w-3.5 h-3.5 text-clinic-gold" />
               {t.open247}
@@ -215,7 +217,7 @@ export default function Header({ locale = 'fr', dict }: { locale?: string; dict?
 
             {/* CTA + Mobile Button */}
             <div className="flex items-center gap-2 sm:gap-3">
-              <LanguageSwitcher />
+              <LanguageSwitcher className="lg:hidden" />
               <Link href="/devis" className="hidden md:inline-flex btn-primary text-sm" style={{ padding: '10px 20px' }}>
                 {dict?.common?.requestQuote || 'Demander un Devis'}
               </Link>
