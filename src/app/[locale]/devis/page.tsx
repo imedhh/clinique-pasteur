@@ -4,9 +4,13 @@ import { Phone, Mail, Clock, CheckCircle2, Shield, FileText } from 'lucide-react
 import { getContent } from '@/lib/i18n/content'
 import DevisForm from '@/components/DevisForm'
 
-export const metadata: Metadata = {
-  title: 'Demander un Devis Gratuit',
-  description: 'Obtenez un devis gratuit et personnalisé pour votre intervention à la Clinique Pasteur Tunis. Réponse sous 24-48h. Chirurgie, examens, hospitalisation.',
+export async function generateMetadata({ params }: { params: { locale: string } }) {
+  const M: any = {
+    fr: { title: 'Demander un Devis Gratuit', description: 'Obtenez un devis gratuit et personnalisé pour votre intervention à la Clinique Pasteur Tunis. Réponse sous 24-48h. Chirurgie, examens, hospitalisation.' },
+    en: { title: 'Request a Free Quote', description: 'Get a free, personalized quote for your procedure at Clinique Pasteur Tunis. Reply within 24-48h. Surgery, tests, hospitalization.' },
+    ar: { title: 'اطلب عرض أسعار مجاني', description: 'احصل على عرض أسعار مجاني ومخصّص لتدخلك في عيادة باستور تونس. رد خلال 24-48 ساعة. جراحة، فحوصات، إقامة.' },
+  }
+  return M[params.locale] || M.fr
 }
 
 export default function DevisPage({ params }: { params: { locale: string } }) {

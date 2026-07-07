@@ -1,6 +1,14 @@
 import type { Metadata } from 'next'
 
-export const metadata: Metadata = { title: 'Mentions légales' }
+export async function generateMetadata({ params }: { params: { locale: string } }) {
+  const M: any = {
+    fr: { title: 'Mentions légales' },
+    en: { title: 'Legal Notice' },
+    ar: { title: 'الإشعارات القانونية' },
+  }
+  return M[params.locale] || M.fr
+}
+
 
 const content = {
   fr: {

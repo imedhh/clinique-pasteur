@@ -3,9 +3,13 @@ import Link from '@/components/I18nLink'
 import { Building2, Shield, Heart, Users, CheckCircle2, ArrowRight, Bed, Stethoscope, Clock, Award } from 'lucide-react'
 import { getContent } from '@/lib/i18n/content'
 
-export const metadata: Metadata = {
-  title: 'La Clinique - Présentation & Infrastructure',
-  description: "Découvrez la Clinique Pasteur Tunis : équipements de pointe, équipe d'excellence. Clinique pluridisciplinaire de référence au Centre Urbain Nord.",
+export async function generateMetadata({ params }: { params: { locale: string } }) {
+  const M: any = {
+    fr: { title: 'La Clinique - Présentation & Infrastructure', description: 'Découvrez la Clinique Pasteur Tunis : équipements de pointe, équipe d\'excellence. Clinique pluridisciplinaire de référence au Centre Urbain Nord.' },
+    en: { title: 'The Clinic - Overview & Facilities', description: 'Discover Clinique Pasteur Tunis: cutting-edge equipment and a team of excellence. A leading multidisciplinary clinic in the Centre Urbain Nord.' },
+    ar: { title: 'المصحة - تقديم والبنية التحتية', description: 'اكتشف عيادة باستور تونس: تجهيزات متطورة وفريق متميز. مصحة متعددة التخصصات مرجعية في المركز العمراني الشمالي.' },
+  }
+  return M[params.locale] || M.fr
 }
 
 const UI = {

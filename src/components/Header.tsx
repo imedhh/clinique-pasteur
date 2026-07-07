@@ -40,30 +40,36 @@ export default function Header({ locale = 'fr', dict }: { locale?: string; dict?
     },
   }
   const t = (HEADER_UI as any)[locale] || HEADER_UI.fr
+  const SUBNAV: any = {
+    fr: { presentation: 'Présentation', infrastructure: 'Infrastructure', hospitalisation: 'Hospitalisation', cardiovasc: 'Cardiovasculaire', generale: 'Générale', bariatrique: 'Bariatrique', esthetique: 'Esthétique', orthopedique: 'Orthopédique', urologique: 'Urologique', neurochirurgie: 'Neurochirurgie', orl: 'ORL', gyneco: 'Gynéco-Obstétrique', explCard: 'Cardiaques', explNeuro: 'Neurophysiologiques', explUro: 'Urodynamiques', urgences: 'Urgences 24h/24', cardioInterv: 'Cardiologie interventionnelle', radiologie: 'Radiologie & Imagerie', endoscopie: 'Endoscopie', hopitalJour: 'Hôpital de jour (chimiothérapie)', nutrition: 'Nutrition & Esthétique' },
+    en: { presentation: 'Overview', infrastructure: 'Facilities', hospitalisation: 'Hospitalization', cardiovasc: 'Cardiovascular', generale: 'General Surgery', bariatrique: 'Bariatric', esthetique: 'Cosmetic', orthopedique: 'Orthopedic', urologique: 'Urology', neurochirurgie: 'Neurosurgery', orl: 'ENT', gyneco: 'Gynecology & Obstetrics', explCard: 'Cardiac', explNeuro: 'Neurophysiological', explUro: 'Urodynamic', urgences: '24/7 Emergency', cardioInterv: 'Interventional Cardiology', radiologie: 'Radiology & Imaging', endoscopie: 'Endoscopy', hopitalJour: 'Day Hospital (chemotherapy)', nutrition: 'Nutrition & Aesthetics' },
+    ar: { presentation: 'تقديم', infrastructure: 'البنية التحتية', hospitalisation: 'الإقامة بالمستشفى', cardiovasc: 'القلب والأوعية الدموية', generale: 'الجراحة العامة', bariatrique: 'جراحة السمنة', esthetique: 'التجميل', orthopedique: 'جراحة العظام', urologique: 'المسالك البولية', neurochirurgie: 'جراحة الأعصاب', orl: 'الأنف والأذن والحنجرة', gyneco: 'أمراض النساء والتوليد', explCard: 'القلبية', explNeuro: 'الفيزيولوجية العصبية', explUro: 'ديناميكا البول', urgences: 'الطوارئ على مدار الساعة', cardioInterv: 'أمراض القلب التداخلية', radiologie: 'الأشعة والتصوير', endoscopie: 'التنظير', hopitalJour: 'الاستشفاء النهاري (العلاج الكيميائي)', nutrition: 'التغذية والتجميل' },
+  }
+  const sn = SUBNAV[locale] || SUBNAV.fr
   const navigation = [
     { name: dict?.nav?.home || 'Accueil', href: '/' },
     {
       name: dict?.nav?.clinic || 'La Clinique',
       href: '/la-clinique',
       children: [
-        { name: 'Présentation', href: '/la-clinique' },
-        { name: 'Infrastructure', href: '/la-clinique#infrastructure' },
-        { name: 'Hospitalisation', href: '/hospitalisation' },
+        { name: sn.presentation, href: '/la-clinique' },
+        { name: sn.infrastructure, href: '/la-clinique#infrastructure' },
+        { name: sn.hospitalisation, href: '/hospitalisation' },
       ],
     },
     {
       name: dict?.nav?.surgeries || 'Chirurgies',
       href: '/chirurgies',
       children: [
-        { name: 'Cardiovasculaire', href: '/chirurgies/chirurgie-cardiovasculaire' },
-        { name: 'Générale', href: '/chirurgies/chirurgie-generale' },
-        { name: 'Bariatrique', href: '/chirurgies/chirurgie-bariatrique' },
-        { name: 'Esthétique', href: '/chirurgies/chirurgie-esthetique' },
-        { name: 'Orthopédique', href: '/chirurgies/chirurgie-orthopedique' },
-        { name: 'Urologique', href: '/chirurgies/chirurgie-urologique' },
-        { name: 'Neurochirurgie', href: '/chirurgies/neurochirurgie' },
-        { name: 'ORL', href: '/chirurgies/chirurgie-orl' },
-        { name: 'Gynéco-Obstétrique', href: '/chirurgies/chirurgie-gyneco-obstetrique' },
+        { name: sn.cardiovasc, href: '/chirurgies/chirurgie-cardiovasculaire' },
+        { name: sn.generale, href: '/chirurgies/chirurgie-generale' },
+        { name: sn.bariatrique, href: '/chirurgies/chirurgie-bariatrique' },
+        { name: sn.esthetique, href: '/chirurgies/chirurgie-esthetique' },
+        { name: sn.orthopedique, href: '/chirurgies/chirurgie-orthopedique' },
+        { name: sn.urologique, href: '/chirurgies/chirurgie-urologique' },
+        { name: sn.neurochirurgie, href: '/chirurgies/neurochirurgie' },
+        { name: sn.orl, href: '/chirurgies/chirurgie-orl' },
+        { name: sn.gyneco, href: '/chirurgies/chirurgie-gyneco-obstetrique' },
         { name: dict?.common?.allSurgeries || 'Toutes les chirurgies', href: '/chirurgies' },
       ],
     },
@@ -71,10 +77,10 @@ export default function Header({ locale = 'fr', dict }: { locale?: string; dict?
       name: dict?.nav?.explorations || 'Explorations',
       href: '/explorations',
       children: [
-        { name: 'Cardiaques', href: '/explorations/explorations-cardiaques' },
-        { name: 'Neurophysiologiques', href: '/explorations/explorations-neurophysiologiques' },
+        { name: sn.explCard, href: '/explorations/explorations-cardiaques' },
+        { name: sn.explNeuro, href: '/explorations/explorations-neurophysiologiques' },
 
-        { name: 'Urodynamiques', href: '/explorations/explorations-urodynamiques' },
+        { name: sn.explUro, href: '/explorations/explorations-urodynamiques' },
         { name: dict?.common?.allExplorations || 'Toutes les explorations', href: '/explorations' },
       ],
     },
@@ -82,12 +88,12 @@ export default function Header({ locale = 'fr', dict }: { locale?: string; dict?
       name: dict?.nav?.centres || 'Centres',
       href: '/centres',
       children: [
-        { name: 'Urgences 24h/24', href: '/centres/urgences' },
-        { name: 'Cardiologie interventionnelle', href: '/centres/cardiologie-interventionnelle' },
-        { name: 'Radiologie & Imagerie', href: '/centres/radiologie' },
-        { name: 'Endoscopie', href: '/centres/endoscopie' },
-        { name: 'Hôpital de jour (chimiothérapie)', href: '/centres/hospitalisation-jour' },
-        { name: 'Nutrition & Esthétique', href: '/centres/coaching-nutritionnel-esthetique' },
+        { name: sn.urgences, href: '/centres/urgences' },
+        { name: sn.cardioInterv, href: '/centres/cardiologie-interventionnelle' },
+        { name: sn.radiologie, href: '/centres/radiologie' },
+        { name: sn.endoscopie, href: '/centres/endoscopie' },
+        { name: sn.hopitalJour, href: '/centres/hospitalisation-jour' },
+        { name: sn.nutrition, href: '/centres/coaching-nutritionnel-esthetique' },
         { name: dict?.common?.allCentres || 'Tous les centres', href: '/centres' },
       ],
     },

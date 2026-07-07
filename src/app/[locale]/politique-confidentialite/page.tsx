@@ -1,6 +1,14 @@
 import type { Metadata } from 'next'
 
-export const metadata: Metadata = { title: 'Politique de confidentialité' }
+export async function generateMetadata({ params }: { params: { locale: string } }) {
+  const M: any = {
+    fr: { title: 'Politique de confidentialité' },
+    en: { title: 'Privacy Policy' },
+    ar: { title: 'سياسة الخصوصية' },
+  }
+  return M[params.locale] || M.fr
+}
+
 
 const content = {
   fr: {

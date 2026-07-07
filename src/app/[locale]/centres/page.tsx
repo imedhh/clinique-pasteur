@@ -4,9 +4,13 @@ import Image from 'next/image'
 import { ArrowRight, Stethoscope } from 'lucide-react'
 import { getContent } from '@/lib/i18n/content'
 
-export const metadata: Metadata = {
-  title: 'Nos Centres Médicaux',
-  description: 'Découvrez les centres médicaux de la Clinique Pasteur Tunis : urgences, radiologie, explorations cardiaques, endoscopie, hôpital de jour et plus.',
+export async function generateMetadata({ params }: { params: { locale: string } }) {
+  const M: any = {
+    fr: { title: 'Nos Centres Médicaux', description: 'Découvrez les centres médicaux de la Clinique Pasteur Tunis : urgences, radiologie, explorations cardiaques, endoscopie, hôpital de jour et plus.' },
+    en: { title: 'Our Medical Centres', description: 'Discover the medical centres of Clinique Pasteur Tunis: emergency, radiology, cardiac investigations, endoscopy, day hospital and more.' },
+    ar: { title: 'مراكزنا الطبية', description: 'اكتشف المراكز الطبية لعيادة باستور تونس: الطوارئ، الأشعة، الاستكشافات القلبية، التنظير، الاستشفاء النهاري والمزيد.' },
+  }
+  return M[params.locale] || M.fr
 }
 
 const UI = {

@@ -4,9 +4,13 @@ import Image from 'next/image'
 import { Bed, Crown, Star, Home, CheckCircle2, ArrowRight, Phone } from 'lucide-react'
 import { getContent } from '@/lib/i18n/content'
 
-export const metadata: Metadata = {
-  title: 'Hospitalisation - Chambres & Séjour',
-  description: 'Clinique Pasteur Tunis : chambres d\'hospitalisation - individuelles, confort, suites et VIP. Découvrez nos options de séjour et nos équipements.',
+export async function generateMetadata({ params }: { params: { locale: string } }) {
+  const M: any = {
+    fr: { title: 'Hospitalisation - Chambres & Séjour', description: 'Clinique Pasteur Tunis : chambres d\'hospitalisation - individuelles, confort, suites et VIP. Découvrez nos options de séjour et nos équipements.' },
+    en: { title: 'Hospitalization - Rooms & Stay', description: 'Clinique Pasteur Tunis: hospitalization rooms - single, comfort, suites and VIP. Discover our stay options and amenities.' },
+    ar: { title: 'الإقامة بالمستشفى - الغرف والإقامة', description: 'عيادة باستور تونس: غرف الإقامة - فردية، مريحة، أجنحة وVIP. اكتشف خيارات الإقامة والتجهيزات.' },
+  }
+  return M[params.locale] || M.fr
 }
 
 const UI = {

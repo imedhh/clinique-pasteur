@@ -4,9 +4,13 @@ import Image from 'next/image'
 import { ArrowRight, Stethoscope, Heart, Brain, Sparkles, Activity, Baby, Shield } from 'lucide-react'
 import { getContent } from '@/lib/i18n/content'
 
-export const metadata: Metadata = {
-  title: 'Nos Chirurgies et Spécialités',
-  description: 'Découvrez les spécialités chirurgicales de la Clinique Pasteur Tunis : cardiovasculaire, bariatrique, esthétique, orthopédique, neurochirurgie et plus.',
+export async function generateMetadata({ params }: { params: { locale: string } }) {
+  const M: any = {
+    fr: { title: 'Nos Chirurgies et Spécialités', description: 'Découvrez les spécialités chirurgicales de la Clinique Pasteur Tunis : cardiovasculaire, bariatrique, esthétique, orthopédique, neurochirurgie et plus.' },
+    en: { title: 'Our Surgical Specialties', description: 'Discover the surgical specialties of Clinique Pasteur Tunis: cardiovascular, bariatric, cosmetic, orthopedic, neurosurgery and more.' },
+    ar: { title: 'جراحاتنا وتخصصاتنا', description: 'اكتشف التخصصات الجراحية لعيادة باستور تونس: القلب والأوعية، السمنة، التجميل، العظام، جراحة الأعصاب والمزيد.' },
+  }
+  return M[params.locale] || M.fr
 }
 
 const UI = {

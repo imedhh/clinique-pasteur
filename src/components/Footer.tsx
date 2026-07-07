@@ -6,9 +6,9 @@ import SocialLinks from '@/components/SocialLinks'
 
 export default function Footer({ locale = 'fr', dict }: { locale?: string; dict?: any } = {}) {
   const FUI: any = {
-    fr: { ctaTitle: "Besoin d'un avis médical ou d'un devis ?", ctaDesc: "Notre équipe commerciale est à votre disposition pour répondre à toutes vos questions et vous accompagner dans votre parcours de soins.", ctaQuote: 'Demander un Devis Gratuit', callUs: 'Appelez-nous', about: 'Clinique pluridisciplinaire de référence au Centre Urbain Nord de Tunis. De nombreuses spécialités médicales et chirurgicales, équipements de dernière technologie.', colSurgeries: 'Nos Chirurgies', colCentres: 'Nos Centres', colContact: 'Contact', emergency: 'Urgences', rights: 'Tous droits réservés.' },
-    en: { ctaTitle: 'Need medical advice or a quote?', ctaDesc: 'Our team is here to answer all your questions and support you throughout your care journey.', ctaQuote: 'Get a Free Quote', callUs: 'Call us', about: 'A leading multidisciplinary clinic in the Centre Urbain Nord of Tunis. A wide range of medical and surgical specialties, with state-of-the-art equipment.', colSurgeries: 'Our Surgeries', colCentres: 'Our Centres', colContact: 'Contact', emergency: 'Emergency', rights: 'All rights reserved.' },
-    ar: { ctaTitle: 'هل تحتاج إلى استشارة طبية أو عرض أسعار؟', ctaDesc: 'فريقنا في خدمتك للإجابة عن جميع أسئلتك ومرافقتك في مسار علاجك.', ctaQuote: 'اطلب عرض أسعار مجاني', callUs: 'اتصل بنا', about: 'مصحة متعددة التخصصات ومرجعية في المركز العمراني الشمالي بتونس. العديد من التخصصات الطبية والجراحية بأحدث التجهيزات.', colSurgeries: 'جراحاتنا', colCentres: 'مراكزنا', colContact: 'اتصل بنا', emergency: 'الطوارئ', rights: 'جميع الحقوق محفوظة.' },
+    fr: { ctaTitle: "Besoin d'un avis médical ou d'un devis ?", ctaDesc: "Notre équipe commerciale est à votre disposition pour répondre à toutes vos questions et vous accompagner dans votre parcours de soins.", ctaQuote: 'Demander un Devis Gratuit', callUs: 'Appelez-nous', about: 'Clinique pluridisciplinaire de référence au Centre Urbain Nord de Tunis. De nombreuses spécialités médicales et chirurgicales, équipements de dernière technologie.', colSurgeries: 'Nos Chirurgies', colCentres: 'Nos Centres', colContact: 'Contact', emergency: 'Urgences', rights: 'Tous droits réservés.', lCardiovasc: 'Cardiovasculaire', lBariatrique: 'Bariatrique', lEsthetique: 'Esthétique', lOrthopedique: 'Orthopédique', lGenerale: 'Générale', lNeurochirurgie: 'Neurochirurgie', lAllSurg: 'Toutes les chirurgies', lUrgences: 'Urgences 24h/24', lExplCard: 'Explorations Cardiaques', lRadiologie: 'Radiologie & Imagerie', lEndoscopie: 'Endoscopie', lHospit: 'Hospitalisation', lAllCentres: 'Tous les centres' },
+    en: { ctaTitle: 'Need medical advice or a quote?', ctaDesc: 'Our team is here to answer all your questions and support you throughout your care journey.', ctaQuote: 'Get a Free Quote', callUs: 'Call us', about: 'A leading multidisciplinary clinic in the Centre Urbain Nord of Tunis. A wide range of medical and surgical specialties, with state-of-the-art equipment.', colSurgeries: 'Our Surgeries', colCentres: 'Our Centres', colContact: 'Contact', emergency: 'Emergency', rights: 'All rights reserved.', lCardiovasc: 'Cardiovascular', lBariatrique: 'Bariatric', lEsthetique: 'Cosmetic', lOrthopedique: 'Orthopedic', lGenerale: 'General Surgery', lNeurochirurgie: 'Neurosurgery', lAllSurg: 'All surgeries', lUrgences: '24/7 Emergency', lExplCard: 'Cardiac Investigations', lRadiologie: 'Radiology & Imaging', lEndoscopie: 'Endoscopy', lHospit: 'Hospitalization', lAllCentres: 'All centres' },
+    ar: { ctaTitle: 'هل تحتاج إلى استشارة طبية أو عرض أسعار؟', ctaDesc: 'فريقنا في خدمتك للإجابة عن جميع أسئلتك ومرافقتك في مسار علاجك.', ctaQuote: 'اطلب عرض أسعار مجاني', callUs: 'اتصل بنا', about: 'مصحة متعددة التخصصات ومرجعية في المركز العمراني الشمالي بتونس. العديد من التخصصات الطبية والجراحية بأحدث التجهيزات.', colSurgeries: 'جراحاتنا', colCentres: 'مراكزنا', colContact: 'اتصل بنا', emergency: 'الطوارئ', rights: 'جميع الحقوق محفوظة.', lCardiovasc: 'القلب والأوعية الدموية', lBariatrique: 'جراحة السمنة', lEsthetique: 'التجميل', lOrthopedique: 'جراحة العظام', lGenerale: 'الجراحة العامة', lNeurochirurgie: 'جراحة الأعصاب', lAllSurg: 'جميع الجراحات', lUrgences: 'الطوارئ على مدار الساعة', lExplCard: 'الاستكشافات القلبية', lRadiologie: 'الأشعة والتصوير', lEndoscopie: 'التنظير', lHospit: 'الإقامة بالمستشفى', lAllCentres: 'جميع المراكز' },
   }
   const t = FUI[locale] || FUI.fr
   return (
@@ -52,13 +52,13 @@ export default function Footer({ locale = 'fr', dict }: { locale?: string; dict?
             <h3 className="text-lg font-heading font-bold mb-6 text-clinic-gold">{t.colSurgeries}</h3>
             <ul className="space-y-3">
               {[
-                { name: 'Cardiovasculaire', href: '/chirurgies/chirurgie-cardiovasculaire' },
-                { name: 'Bariatrique', href: '/chirurgies/chirurgie-bariatrique' },
-                { name: 'Esthétique', href: '/chirurgies/chirurgie-esthetique' },
-                { name: 'Orthopédique', href: '/chirurgies/chirurgie-orthopedique' },
-                { name: 'Générale', href: '/chirurgies/chirurgie-generale' },
-                { name: 'Neurochirurgie', href: '/chirurgies/neurochirurgie' },
-                { name: 'Toutes les chirurgies', href: '/chirurgies' },
+                { name: t.lCardiovasc, href: '/chirurgies/chirurgie-cardiovasculaire' },
+                { name: t.lBariatrique, href: '/chirurgies/chirurgie-bariatrique' },
+                { name: t.lEsthetique, href: '/chirurgies/chirurgie-esthetique' },
+                { name: t.lOrthopedique, href: '/chirurgies/chirurgie-orthopedique' },
+                { name: t.lGenerale, href: '/chirurgies/chirurgie-generale' },
+                { name: t.lNeurochirurgie, href: '/chirurgies/neurochirurgie' },
+                { name: t.lAllSurg, href: '/chirurgies' },
               ].map((item) => (
                 <li key={item.name}>
                   <Link href={item.href} className="text-gray-400 hover:text-white text-sm transition flex items-center gap-2">
@@ -74,12 +74,12 @@ export default function Footer({ locale = 'fr', dict }: { locale?: string; dict?
             <h3 className="text-lg font-heading font-bold mb-6 text-clinic-gold">{t.colCentres}</h3>
             <ul className="space-y-3">
               {[
-                { name: 'Urgences 24h/24', href: '/centres/urgences' },
-                { name: 'Explorations Cardiaques', href: '/centres/explorations-cardiaques' },
-                { name: 'Radiologie & Imagerie', href: '/centres/radiologie' },
-                { name: 'Endoscopie', href: '/centres/endoscopie' },
-                { name: 'Hospitalisation', href: '/hospitalisation' },
-                { name: 'Tous les centres', href: '/centres' },
+                { name: t.lUrgences, href: '/centres/urgences' },
+                { name: t.lExplCard, href: '/centres/explorations-cardiaques' },
+                { name: t.lRadiologie, href: '/centres/radiologie' },
+                { name: t.lEndoscopie, href: '/centres/endoscopie' },
+                { name: t.lHospit, href: '/hospitalisation' },
+                { name: t.lAllCentres, href: '/centres' },
               ].map((item) => (
                 <li key={item.name}>
                   <Link href={item.href} className="text-gray-400 hover:text-white text-sm transition flex items-center gap-2">

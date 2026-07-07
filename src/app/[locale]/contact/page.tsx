@@ -6,17 +6,21 @@ import { getContent } from '@/lib/i18n/content'
 import ContactForm from '@/components/ContactForm'
 import SocialLinks from '@/components/SocialLinks'
 
-export const metadata: Metadata = {
-  title: 'Contact - Nous Joindre',
-  description: 'Contactez la Clinique Pasteur Tunis : Tél. +216 36 402 000, Urgences +216 36 402 076. Centre Urbain Nord, Tunis. Ouvert 24h/24, 7j/7.',
+export async function generateMetadata({ params }: { params: { locale: string } }) {
+  const M: any = {
+    fr: { title: 'Contact - Nous Joindre', description: 'Contactez la Clinique Pasteur Tunis : Tél. +216 36 402 000, Urgences +216 36 402 076. Centre Urbain Nord, Tunis. Ouvert 24h/24, 7j/7.' },
+    en: { title: 'Contact Us', description: 'Contact Clinique Pasteur Tunis: Tel +216 36 402 000, Emergency +216 36 402 076. Centre Urbain Nord, Tunis. Open 24/7.' },
+    ar: { title: 'اتصل بنا', description: 'اتصل بعيادة باستور تونس: هاتف 000 402 36 216+، الطوارئ 076 402 36 216+. المركز العمراني الشمالي، تونس. مفتوح على مدار الساعة.' },
+  }
+  return M[params.locale] || M.fr
 }
 
 export default function ContactPage({ params }: { params: { locale: string } }) {
   const { clinicInfo } = getContent(params.locale as any)
   const CUI: any = {
-    fr: { badge: 'Contact', title: 'Contactez-nous', desc: "Notre équipe est à votre disposition pour répondre à toutes vos questions. N'hésitez pas à nous contacter par téléphone, email ou via le formulaire ci-dessous.", cPhone: 'Téléphone', cEmerg: 'Urgences', cEmail: 'Email', cAddr: 'Adresse', sStd: 'Standard', s247: '24h/24 - 7j/7', sMail: 'Réponse sous 24h', sCity: '1003 Tunis, Tunisie', formTitle: 'Envoyez-nous un message', formSub: 'Nous vous répondrons dans les plus brefs délais.' },
-    en: { badge: 'Contact', title: 'Contact us', desc: 'Our team is here to answer all your questions. Feel free to reach us by phone, email or through the form below.', cPhone: 'Phone', cEmerg: 'Emergencies', cEmail: 'Email', cAddr: 'Address', sStd: 'Reception', s247: '24/7', sMail: 'Reply within 24h', sCity: '1003 Tunis, Tunisia', formTitle: 'Send us a message', formSub: 'We will get back to you as soon as possible.' },
-    ar: { badge: 'اتصل بنا', title: 'اتصل بنا', desc: 'فريقنا في خدمتك للإجابة عن جميع أسئلتك. لا تتردد في الاتصال بنا هاتفياً أو عبر البريد الإلكتروني أو من خلال النموذج أدناه.', cPhone: 'الهاتف', cEmerg: 'الطوارئ', cEmail: 'البريد الإلكتروني', cAddr: 'العنوان', sStd: 'المقسم', s247: 'على مدار الساعة طوال الأسبوع', sMail: 'الرد خلال 24 ساعة', sCity: '1003 تونس، تونس', formTitle: 'أرسل لنا رسالة', formSub: 'سنرد عليكم في أقرب وقت ممكن.' },
+    fr: { badge: 'Contact', title: 'Contactez-nous', desc: "Notre équipe est à votre disposition pour répondre à toutes vos questions. N'hésitez pas à nous contacter par téléphone, email ou via le formulaire ci-dessous.", cPhone: 'Téléphone', cEmerg: 'Urgences', cEmail: 'Email', cAddr: 'Adresse', sStd: 'Standard', s247: '24h/24 - 7j/7', sMail: 'Réponse sous 24h', sCity: '1003 Tunis, Tunisie', formTitle: 'Envoyez-nous un message', formSub: 'Nous vous répondrons dans les plus brefs délais.', hoursTitle: "Horaires d'ouverture", hUrg: 'Service des urgences', h247full: '24h/24 - 7j/7', hStd: 'Standard téléphonique', h247: '24h/24', hConsult: 'Consultations', hConsultH: 'Lun - Sam : 8h-18h', hSales: 'Service commercial', hSalesH: 'Lun - Ven : 8h-17h', followUs: 'Suivez-nous' },
+    en: { badge: 'Contact', title: 'Contact us', desc: 'Our team is here to answer all your questions. Feel free to reach us by phone, email or through the form below.', cPhone: 'Phone', cEmerg: 'Emergencies', cEmail: 'Email', cAddr: 'Address', sStd: 'Reception', s247: '24/7', sMail: 'Reply within 24h', sCity: '1003 Tunis, Tunisia', formTitle: 'Send us a message', formSub: 'We will get back to you as soon as possible.', hoursTitle: 'Opening hours', hUrg: 'Emergency department', h247full: '24/7', hStd: 'Phone reception', h247: '24/7', hConsult: 'Consultations', hConsultH: 'Mon - Sat: 8am-6pm', hSales: 'Sales department', hSalesH: 'Mon - Fri: 8am-5pm', followUs: 'Follow us' },
+    ar: { badge: 'اتصل بنا', title: 'اتصل بنا', desc: 'فريقنا في خدمتك للإجابة عن جميع أسئلتك. لا تتردد في الاتصال بنا هاتفياً أو عبر البريد الإلكتروني أو من خلال النموذج أدناه.', cPhone: 'الهاتف', cEmerg: 'الطوارئ', cEmail: 'البريد الإلكتروني', cAddr: 'العنوان', sStd: 'المقسم', s247: 'على مدار الساعة طوال الأسبوع', sMail: 'الرد خلال 24 ساعة', sCity: '1003 تونس، تونس', formTitle: 'أرسل لنا رسالة', formSub: 'سنرد عليكم في أقرب وقت ممكن.', hoursTitle: 'أوقات العمل', hUrg: 'قسم الطوارئ', h247full: 'على مدار الساعة طوال الأسبوع', hStd: 'المقسم الهاتفي', h247: 'على مدار الساعة', hConsult: 'الاستشارات', hConsultH: 'الاثنين - السبت: 8ص-6م', hSales: 'القسم التجاري', hSalesH: 'الاثنين - الجمعة: 8ص-5م', followUs: 'تابعونا' },
   }
   const t = CUI[params.locale] || CUI.fr
   return (
@@ -89,31 +93,31 @@ export default function ContactPage({ params }: { params: { locale: string } }) 
               {/* Horaires */}
               <div className="bg-white rounded-2xl shadow-lg p-8">
                 <h3 className="text-xl font-heading font-bold text-gray-900 mb-6 flex items-center gap-2">
-                  <Clock className="w-6 h-6 text-clinic-green" /> Horaires d&apos;ouverture
+                  <Clock className="w-6 h-6 text-clinic-green" /> {t.hoursTitle}
                 </h3>
                 <div className="space-y-3">
                   <div className="flex justify-between items-center py-2 border-b border-gray-100">
-                    <span className="text-gray-700 font-medium">Service des urgences</span>
-                    <span className="text-clinic-green font-bold">24h/24 - 7j/7</span>
+                    <span className="text-gray-700 font-medium">{t.hUrg}</span>
+                    <span className="text-clinic-green font-bold">{t.h247full}</span>
                   </div>
                   <div className="flex justify-between items-center py-2 border-b border-gray-100">
-                    <span className="text-gray-700 font-medium">Standard téléphonique</span>
-                    <span className="text-clinic-green font-bold">24h/24</span>
+                    <span className="text-gray-700 font-medium">{t.hStd}</span>
+                    <span className="text-clinic-green font-bold">{t.h247}</span>
                   </div>
                   <div className="flex justify-between items-center py-2 border-b border-gray-100">
-                    <span className="text-gray-700 font-medium">Consultations</span>
-                    <span className="text-gray-600">Lun - Sam : 8h-18h</span>
+                    <span className="text-gray-700 font-medium">{t.hConsult}</span>
+                    <span className="text-gray-600">{t.hConsultH}</span>
                   </div>
                   <div className="flex justify-between items-center py-2">
-                    <span className="text-gray-700 font-medium">Service commercial</span>
-                    <span className="text-gray-600">Lun - Ven : 8h-17h</span>
+                    <span className="text-gray-700 font-medium">{t.hSales}</span>
+                    <span className="text-gray-600">{t.hSalesH}</span>
                   </div>
                 </div>
               </div>
 
               {/* Social */}
               <div className="bg-white rounded-2xl shadow-lg p-8">
-                <h3 className="text-xl font-heading font-bold text-gray-900 mb-4">Suivez-nous</h3>
+                <h3 className="text-xl font-heading font-bold text-gray-900 mb-4">{t.followUs}</h3>
                 <SocialLinks />
               </div>
             </div>

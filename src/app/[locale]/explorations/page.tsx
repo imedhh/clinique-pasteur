@@ -3,9 +3,13 @@ import Image from 'next/image'
 import { ArrowRight, Stethoscope } from 'lucide-react'
 import { getContent } from '@/lib/i18n/content'
 
-export const metadata = {
-  title: 'Nos Explorations Médicales',
-  description: 'Découvrez les explorations médicales de la Clinique Pasteur Tunis : explorations cardiaques, neurophysiologiques, et urodynamiques.',
+export async function generateMetadata({ params }: { params: { locale: string } }) {
+  const M: any = {
+    fr: { title: 'Nos Explorations Médicales', description: 'Découvrez les explorations médicales de la Clinique Pasteur Tunis : explorations cardiaques, neurophysiologiques, et urodynamiques.' },
+    en: { title: 'Our Medical Investigations', description: 'Discover the medical investigations at Clinique Pasteur Tunis: cardiac, neurophysiological, and urodynamic.' },
+    ar: { title: 'استكشافاتنا الطبية', description: 'اكتشف الاستكشافات الطبية في عيادة باستور تونس: القلبية، الفيزيولوجية العصبية، وديناميكا البول.' },
+  }
+  return M[params.locale] || M.fr
 }
 
 const explorationImages: Record<string, string> = {
