@@ -9,17 +9,51 @@ export const metadata: Metadata = {
   description: 'Découvrez les centres médicaux de la Clinique Pasteur Tunis : urgences, radiologie, explorations cardiaques, endoscopie, hôpital de jour et plus.',
 }
 
+const UI = {
+  fr: {
+    badge: 'Services',
+    title: 'Nos Centres Médicaux',
+    subtitle: 'Des centres spécialisés équipés des dernières technologies pour un diagnostic précis et un traitement optimal.',
+    learnMore: 'En savoir plus',
+    ctaTitle: 'Besoin d’un rendez-vous ?',
+    ctaText: 'Contactez-nous pour planifier votre consultation ou examen dans l’un de nos centres spécialisés.',
+    ctaQuote: 'Demander un Devis',
+    ctaContact: 'Nous Contacter',
+  },
+  en: {
+    badge: 'Services',
+    title: 'Our Medical Centres',
+    subtitle: 'Specialised centres equipped with the latest technologies for accurate diagnosis and optimal treatment.',
+    learnMore: 'Learn more',
+    ctaTitle: 'Need an appointment?',
+    ctaText: 'Contact us to schedule your consultation or examination in one of our specialised centres.',
+    ctaQuote: 'Request a Quote',
+    ctaContact: 'Contact Us',
+  },
+  ar: {
+    badge: 'الخدمات',
+    title: 'مراكزنا الطبية',
+    subtitle: 'مراكز متخصصة مجهزة بأحدث التقنيات لتشخيص دقيق وعلاج أمثل.',
+    learnMore: 'اعرف المزيد',
+    ctaTitle: 'هل تحتاجون إلى موعد؟',
+    ctaText: 'اتصلوا بنا لتحديد موعد استشارتكم أو فحصكم في أحد مراكزنا المتخصصة.',
+    ctaQuote: 'اطلبوا عرض سعر',
+    ctaContact: 'اتصلوا بنا',
+  },
+} as const
+
 export default function CentresPage({ params }: { params: { locale: string } }) {
+  const t = (UI as any)[params.locale] || UI.fr
   const { centres, examsByCentre } = getContent(params.locale as any)
   return (
     <>
       <section className="relative py-20 gradient-dark text-white">
         <div className="container-custom px-4">
           <div className="max-w-3xl">
-            <span className="text-clinic-gold font-semibold text-sm uppercase tracking-wider">Services</span>
-            <h1 className="text-4xl md:text-5xl font-heading font-bold mt-2 mb-6">Nos Centres Médicaux</h1>
+            <span className="text-clinic-gold font-semibold text-sm uppercase tracking-wider">{t.badge}</span>
+            <h1 className="text-4xl md:text-5xl font-heading font-bold mt-2 mb-6">{t.title}</h1>
             <p className="text-xl text-gray-300 leading-relaxed">
-              Des centres spécialisés équipés des dernières technologies pour un diagnostic précis et un traitement optimal.
+              {t.subtitle}
             </p>
           </div>
         </div>
@@ -59,7 +93,7 @@ export default function CentresPage({ params }: { params: { locale: string } }) 
                     ))}
                   </ul>
                   <span className="text-clinic-green font-semibold text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
-                    En savoir plus <ArrowRight className="w-4 h-4" />
+                    {t.learnMore} <ArrowRight className="w-4 h-4" />
                   </span>
                 </div>
               </Link>
@@ -70,16 +104,16 @@ export default function CentresPage({ params }: { params: { locale: string } }) 
 
       <section className="section-padding bg-white text-center">
         <div className="container-custom max-w-2xl">
-          <h2 className="text-3xl font-heading font-bold text-gray-900 mb-6">Besoin d&apos;un rendez-vous ?</h2>
+          <h2 className="text-3xl font-heading font-bold text-gray-900 mb-6">{t.ctaTitle}</h2>
           <p className="text-gray-600 text-lg mb-8">
-            Contactez-nous pour planifier votre consultation ou examen dans l&apos;un de nos centres spécialisés.
+            {t.ctaText}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/devis" className="btn-primary text-lg">
-              Demander un Devis <ArrowRight className="w-5 h-5 ml-2" />
+              {t.ctaQuote} <ArrowRight className="w-5 h-5 ml-2" />
             </Link>
             <Link href="/contact" className="btn-secondary text-lg">
-              Nous Contacter
+              {t.ctaContact}
             </Link>
           </div>
         </div>

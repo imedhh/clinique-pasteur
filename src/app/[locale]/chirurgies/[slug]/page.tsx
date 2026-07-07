@@ -6,6 +6,48 @@ import { ArrowRight, CheckCircle2, Phone, ArrowLeft, Shield, Stethoscope, Award,
 import { getContent } from '@/lib/i18n/content'
 import { locales } from '@/lib/i18n/config'
 
+const UI = {
+  fr: {
+    metaChirurgie: 'Chirurgie',
+    allChirurgies: 'Toutes les chirurgies',
+    requestQuote: 'Demander un Devis',
+    prestationsTitle: 'Prestations & Interventions',
+    clickIntervention: 'Cliquez sur une intervention pour en savoir plus : description, indications, déroulement, récupération.',
+    equipementsTitle: 'Équipements & Technologies',
+    whyChooseUs: 'Pourquoi nous choisir ?',
+    quoteCardText: 'Obtenez un devis gratuit et personnalisé pour votre intervention sous 24-48h.',
+    freeQuote: 'Devis Gratuit',
+    callUs: 'Appelez-nous',
+    otherSpecialties: 'Autres Spécialités',
+  },
+  en: {
+    metaChirurgie: 'Surgery',
+    allChirurgies: 'All surgeries',
+    requestQuote: 'Request a Quote',
+    prestationsTitle: 'Services & Procedures',
+    clickIntervention: 'Click on a procedure to learn more: description, indications, how it works, recovery.',
+    equipementsTitle: 'Equipment & Technologies',
+    whyChooseUs: 'Why choose us?',
+    quoteCardText: 'Get a free, personalized quote for your procedure within 24-48h.',
+    freeQuote: 'Free Quote',
+    callUs: 'Call us',
+    otherSpecialties: 'Other Specialties',
+  },
+  ar: {
+    metaChirurgie: 'جراحة',
+    allChirurgies: 'جميع الجراحات',
+    requestQuote: 'طلب عرض أسعار',
+    prestationsTitle: 'الخدمات والتدخلات الجراحية',
+    clickIntervention: 'انقر على تدخل جراحي لمعرفة المزيد: الوصف، دواعي الإجراء، سير العملية، فترة التعافي.',
+    equipementsTitle: 'المعدات والتقنيات',
+    whyChooseUs: 'لماذا تختارنا؟',
+    quoteCardText: 'احصل على عرض أسعار مجاني ومخصص لتدخلك الجراحي خلال 24 إلى 48 ساعة.',
+    freeQuote: 'عرض أسعار مجاني',
+    callUs: 'اتصل بنا',
+    otherSpecialties: 'تخصصات أخرى',
+  },
+} as const
+
 export function generateStaticParams() {
   const { chirurgies } = getContent('fr')
   return locales.flatMap((locale) => chirurgies.map((c) => ({ locale, slug: c.slug })))
@@ -15,8 +57,9 @@ export async function generateMetadata({ params }: { params: { locale: string; s
   const { chirurgies } = getContent(params.locale as any)
   const chir = chirurgies.find((c) => c.slug === params.slug)
   if (!chir) return {}
+  const t = (UI as any)[params.locale] || UI.fr
   return {
-    title: `${chir.title} - Chirurgie`,
+    title: `${chir.title} - ${t.metaChirurgie}`,
     description: `${chir.heroDescription.substring(0, 155)}...`,
     openGraph: {
       title: `${chir.title} | Clinique Pasteur Tunis`,
@@ -26,6 +69,7 @@ export async function generateMetadata({ params }: { params: { locale: string; s
 }
 
 export default function ChirurgiePage({ params }: { params: { locale: string; slug: string } }) {
+  const t = (UI as any)[params.locale] || UI.fr
   const { chirurgies, clinicInfo, prestationsByChirurgie } = getContent(params.locale as any)
   const chir = chirurgies.find((c) => c.slug === params.slug)
   if (!chir) notFound()
@@ -45,13 +89,13 @@ export default function ChirurgiePage({ params }: { params: { locale: string; sl
         </div>
         <div className="container-custom px-4 relative">
           <Link href="/chirurgies" className="inline-flex items-center gap-2 text-gray-400 hover:text-white transition mb-6 text-sm">
-            <ArrowLeft className="w-4 h-4" /> Toutes les chirurgies
+            <ArrowLeft className="w-4 h-4" /> {t.allChirurgies}
           </Link>
           <h1 className="text-3xl md:text-5xl font-heading font-bold mb-6">{chir.title}</h1>
           <p className="text-xl text-gray-300 leading-relaxed max-w-3xl">{chir.heroDescription}</p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4">
             <Link href="/devis" className="btn-gold">
-              Demander un Devis <ArrowRight className="w-5 h-5 ml-2" />
+              {t.requestQuote} <ArrowRight className="w-5 h-5 ml-2" />
             </Link>
             <a href={`tel:${clinicInfo.phone}`} className="inline-flex items-center justify-center px-6 py-3 border-2 border-white/30 text-white rounded-lg hover:bg-white/10 transition font-semibold">
               <Phone className="w-5 h-5 mr-2" /> {clinicInfo.phone}
@@ -71,11 +115,11 @@ export default function ChirurgiePage({ params }: { params: { locale: string; sl
                   <div className="w-12 h-12 rounded-xl gradient-green flex items-center justify-center">
                     <Stethoscope className="w-6 h-6 text-white" />
                   </div>
-                  <h2 className="text-2xl font-heading font-bold text-gray-900">Prestations & Interventions</h2>
+                  <h2 className="text-2xl font-heading font-bold text-gray-900">{t.prestationsTitle}</h2>
                 </div>
                 {hasDetailedPrestations ? (
                   <>
-                    <p className="text-gray-500 mb-6 -mt-2">Cliquez sur une intervention pour en savoir plus : description, indications, déroulement, récupération.</p>
+                    <p className="text-gray-500 mb-6 -mt-2">{t.clickIntervention}</p>
                     <div className="grid gap-4">
                       {prestationsDetail.map((p: any) => (
                         <Link
@@ -118,7 +162,7 @@ export default function ChirurgiePage({ params }: { params: { locale: string; sl
                     <div className="w-12 h-12 rounded-xl gradient-green flex items-center justify-center">
                       <Shield className="w-6 h-6 text-white" />
                     </div>
-                    <h2 className="text-2xl font-heading font-bold text-gray-900">Équipements & Technologies</h2>
+                    <h2 className="text-2xl font-heading font-bold text-gray-900">{t.equipementsTitle}</h2>
                   </div>
                   <div className="space-y-3">
                     {chir.equipements.map((e) => (
@@ -137,7 +181,7 @@ export default function ChirurgiePage({ params }: { params: { locale: string; sl
                     <div className="w-12 h-12 rounded-xl gradient-green flex items-center justify-center">
                       <Award className="w-6 h-6 text-white" />
                     </div>
-                    <h2 className="text-2xl font-heading font-bold text-gray-900">Pourquoi nous choisir ?</h2>
+                    <h2 className="text-2xl font-heading font-bold text-gray-900">{t.whyChooseUs}</h2>
                   </div>
                   <div className="space-y-3">
                     {chir.avantages.map((a) => (
@@ -156,21 +200,21 @@ export default function ChirurgiePage({ params }: { params: { locale: string; sl
               {/* CTA Card */}
               <div className="sticky top-24 space-y-6">
                 <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-2xl p-8 border border-green-200">
-                  <h3 className="text-xl font-heading font-bold text-gray-900 mb-4">Demander un Devis</h3>
+                  <h3 className="text-xl font-heading font-bold text-gray-900 mb-4">{t.requestQuote}</h3>
                   <p className="text-gray-600 text-sm mb-6">
-                    Obtenez un devis gratuit et personnalisé pour votre intervention sous 24-48h.
+                    {t.quoteCardText}
                   </p>
                   <Link href="/devis" className="btn-primary w-full text-center mb-3">
-                    Devis Gratuit <ArrowRight className="w-4 h-4 ml-2" />
+                    {t.freeQuote} <ArrowRight className="w-4 h-4 ml-2" />
                   </Link>
                   <a href={`tel:${clinicInfo.phone}`} className="btn-secondary w-full text-center text-sm">
-                    <Phone className="w-4 h-4 mr-2" /> Appelez-nous
+                    <Phone className="w-4 h-4 mr-2" /> {t.callUs}
                   </a>
                 </div>
 
                 {/* Other specialties */}
                 <div className="bg-white rounded-2xl p-6 border border-gray-200">
-                  <h3 className="font-heading font-bold text-gray-900 mb-4">Autres Spécialités</h3>
+                  <h3 className="font-heading font-bold text-gray-900 mb-4">{t.otherSpecialties}</h3>
                   <div className="space-y-3">
                     {otherChirurgies.map((c) => (
                       <Link
@@ -184,7 +228,7 @@ export default function ChirurgiePage({ params }: { params: { locale: string; sl
                     ))}
                   </div>
                   <Link href="/chirurgies" className="text-clinic-green font-semibold text-sm flex items-center gap-1 mt-4 hover:gap-2 transition-all">
-                    Toutes les chirurgies <ArrowRight className="w-4 h-4" />
+                    {t.allChirurgies} <ArrowRight className="w-4 h-4" />
                   </Link>
                 </div>
               </div>

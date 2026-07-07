@@ -6,7 +6,40 @@ import { usePathname } from 'next/navigation'
 import { Phone, Menu, X, ChevronDown, ChevronRight, Clock, Mail, MapPin } from 'lucide-react'
 import LanguageSwitcher from '@/components/LanguageSwitcher'
 
-export default function Header({ dict }: { locale?: string; dict?: any } = {}) {
+export default function Header({ locale = 'fr', dict }: { locale?: string; dict?: any } = {}) {
+  const HEADER_UI = {
+    fr: {
+      address: 'Centre Urbain Nord, Tunis',
+      open247: 'Ouvert 24h/24 - 7j/7',
+      emergency: 'Urgences',
+      emergency247: 'Urgences 24h/24',
+      requestQuote: 'Demander un Devis',
+      menu: 'Menu',
+      closeMenu: 'Fermer le menu',
+      viewSubmenu: 'Voir les sous-menus de',
+    },
+    en: {
+      address: 'Centre Urbain Nord, Tunis',
+      open247: 'Open 24/7',
+      emergency: 'Emergency',
+      emergency247: 'Emergency 24/7',
+      requestQuote: 'Request a Quote',
+      menu: 'Menu',
+      closeMenu: 'Close menu',
+      viewSubmenu: 'View submenu of',
+    },
+    ar: {
+      address: 'المركز العمراني الشمالي، تونس',
+      open247: 'مفتوح 24/24 - 7/7',
+      emergency: 'الطوارئ',
+      emergency247: 'الطوارئ على مدار الساعة',
+      requestQuote: 'اطلب عرض سعر',
+      menu: 'القائمة',
+      closeMenu: 'إغلاق القائمة',
+      viewSubmenu: 'عرض القوائم الفرعية لـ',
+    },
+  }
+  const t = (HEADER_UI as any)[locale] || HEADER_UI.fr
   const navigation = [
     { name: dict?.nav?.home || 'Accueil', href: '/' },
     {

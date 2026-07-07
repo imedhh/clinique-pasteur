@@ -9,7 +9,38 @@ export const metadata: Metadata = {
   description: 'Découvrez les spécialités chirurgicales de la Clinique Pasteur Tunis : cardiovasculaire, bariatrique, esthétique, orthopédique, neurochirurgie et plus.',
 }
 
+const UI = {
+  fr: {
+    badge: 'Spécialités',
+    title: 'Nos Chirurgies et Spécialités',
+    subtitle: 'Des spécialités chirurgicales avec des équipes médicales chevronnées, des blocs opératoires de dernière technologie et une prise en charge personnalisée.',
+    learnMore: 'En savoir plus',
+    ctaTitle: 'Besoin d’un devis pour une intervention ?',
+    ctaText: 'Notre équipe vous répond sous 24-48h avec un devis détaillé et personnalisé.',
+    ctaButton: 'Demander un Devis Gratuit',
+  },
+  en: {
+    badge: 'Specialties',
+    title: 'Our Surgeries and Specialties',
+    subtitle: 'Surgical specialties with seasoned medical teams, state-of-the-art operating theatres and personalised care.',
+    learnMore: 'Learn more',
+    ctaTitle: 'Need a quote for a procedure?',
+    ctaText: 'Our team responds within 24-48 hours with a detailed, personalised quote.',
+    ctaButton: 'Request a Free Quote',
+  },
+  ar: {
+    badge: 'التخصصات',
+    title: 'جراحاتنا وتخصصاتنا',
+    subtitle: 'تخصصات جراحية بفرق طبية ذات خبرة عالية، وقاعات عمليات مجهزة بأحدث التقنيات، ورعاية شخصية متكاملة.',
+    learnMore: 'اعرف المزيد',
+    ctaTitle: 'هل تحتاجون إلى عرض سعر لعملية جراحية؟',
+    ctaText: 'يرد فريقنا خلال 24-48 ساعة بعرض سعر مفصل وشخصي.',
+    ctaButton: 'اطلبوا عرض سعر مجانيًا',
+  },
+} as const
+
 export default function ChirurgiesPage({ params }: { params: { locale: string } }) {
+  const t = (UI as any)[params.locale] || UI.fr
   const { chirurgies, prestationsByChirurgie } = getContent(params.locale as any)
   const iconMap: Record<string, any> = { Heart, Stethoscope, Activity, Sparkles, Brain, Baby, Shield }
 
@@ -18,10 +49,10 @@ export default function ChirurgiesPage({ params }: { params: { locale: string } 
       <section className="relative py-20 gradient-dark text-white">
         <div className="container-custom px-4">
           <div className="max-w-3xl">
-            <span className="text-clinic-gold font-semibold text-sm uppercase tracking-wider">Spécialités</span>
-            <h1 className="text-4xl md:text-5xl font-heading font-bold mt-2 mb-6">Nos Chirurgies et Spécialités</h1>
+            <span className="text-clinic-gold font-semibold text-sm uppercase tracking-wider">{t.badge}</span>
+            <h1 className="text-4xl md:text-5xl font-heading font-bold mt-2 mb-6">{t.title}</h1>
             <p className="text-xl text-gray-300 leading-relaxed">
-              Des spécialités chirurgicales avec des équipes médicales chevronnées, des blocs opératoires de dernière technologie et une prise en charge personnalisée.
+              {t.subtitle}
             </p>
           </div>
         </div>
@@ -63,7 +94,7 @@ export default function ChirurgiesPage({ params }: { params: { locale: string } 
                       ))}
                     </ul>
                     <span className="text-clinic-green font-semibold text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
-                      En savoir plus <ArrowRight className="w-4 h-4" />
+                      {t.learnMore} <ArrowRight className="w-4 h-4" />
                     </span>
                   </div>
                 </Link>
@@ -75,12 +106,12 @@ export default function ChirurgiesPage({ params }: { params: { locale: string } 
 
       <section className="section-padding bg-white text-center">
         <div className="container-custom max-w-2xl">
-          <h2 className="text-3xl font-heading font-bold text-gray-900 mb-6">Besoin d&apos;un devis pour une intervention ?</h2>
+          <h2 className="text-3xl font-heading font-bold text-gray-900 mb-6">{t.ctaTitle}</h2>
           <p className="text-gray-600 text-lg mb-8">
-            Notre équipe vous répond sous 24-48h avec un devis détaillé et personnalisé.
+            {t.ctaText}
           </p>
           <Link href="/devis" className="btn-primary text-lg">
-            Demander un Devis Gratuit <ArrowRight className="w-5 h-5 ml-2" />
+            {t.ctaButton} <ArrowRight className="w-5 h-5 ml-2" />
           </Link>
         </div>
       </section>

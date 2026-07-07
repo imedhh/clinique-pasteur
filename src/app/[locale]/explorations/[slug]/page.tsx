@@ -12,6 +12,36 @@ const explorationImages: Record<string, string> = {
   'explorations-urodynamiques': '/images/urodynamique.webp',
 }
 
+const UI = {
+  fr: {
+    allExplorations: 'Toutes les explorations',
+    requestQuote: 'Demander un Devis',
+    examsTitle: 'Nos Examens & Explorations',
+    clickExam: 'Cliquez sur un examen pour en savoir plus : description, préparation, déroulement, durée.',
+    bookAppointment: 'Prendre Rendez-vous',
+    contactText: 'Contactez-nous pour planifier votre exploration ou obtenir un devis personnalisé.',
+    otherExplorations: 'Autres Explorations',
+  },
+  en: {
+    allExplorations: 'All explorations',
+    requestQuote: 'Request a Quote',
+    examsTitle: 'Our Examinations & Explorations',
+    clickExam: 'Click on an examination to learn more: description, preparation, how it works, duration.',
+    bookAppointment: 'Book an Appointment',
+    contactText: 'Contact us to schedule your exploration or get a personalized quote.',
+    otherExplorations: 'Other Explorations',
+  },
+  ar: {
+    allExplorations: 'جميع الاستكشافات',
+    requestQuote: 'طلب عرض أسعار',
+    examsTitle: 'فحوصاتنا واستكشافاتنا',
+    clickExam: 'انقر على فحص لمعرفة المزيد: الوصف، التحضير، سير الفحص، المدة.',
+    bookAppointment: 'حجز موعد',
+    contactText: 'اتصل بنا لتحديد موعد الاستكشاف أو الحصول على عرض أسعار مخصص.',
+    otherExplorations: 'استكشافات أخرى',
+  },
+} as const
+
 export function generateStaticParams() {
   const { explorations } = getContent('fr')
   return locales.flatMap((locale) => explorations.map((e: any) => ({ locale, slug: e.slug })))
@@ -28,6 +58,7 @@ export async function generateMetadata({ params }: { params: { locale: string; s
 }
 
 export default function ExplorationPage({ params }: { params: { locale: string; slug: string } }) {
+  const t = (UI as any)[params.locale] || UI.fr
   const { explorations, clinicInfo, examsByExploration } = getContent(params.locale as any)
   const exploration = explorations.find((e: any) => e.slug === params.slug)
   if (!exploration) notFound()
@@ -46,13 +77,13 @@ export default function ExplorationPage({ params }: { params: { locale: string; 
         </div>
         <div className="container-custom px-4 relative">
           <Link href="/explorations" className="inline-flex items-center gap-2 text-gray-400 hover:text-white transition mb-6 text-sm">
-            <ArrowLeft className="w-4 h-4" /> Toutes les explorations
+            <ArrowLeft className="w-4 h-4" /> {t.allExplorations}
           </Link>
           <h1 className="text-3xl md:text-5xl font-heading font-bold text-white mb-6">{exploration.title}</h1>
           <p className="text-xl text-gray-300 leading-relaxed max-w-3xl">{exploration.fullDescription}</p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4">
             <Link href="/devis" className="btn-gold">
-              Demander un Devis <ArrowRight className="w-5 h-5 ml-2" />
+              {t.requestQuote} <ArrowRight className="w-5 h-5 ml-2" />
             </Link>
             <a href={`tel:${clinicInfo.phone}`} className="inline-flex items-center justify-center px-6 py-3 border-2 border-white/30 text-white rounded-lg hover:bg-white/10 transition font-semibold">
               <Phone className="w-5 h-5 mr-2" /> {clinicInfo.phone}
@@ -65,8 +96,8 @@ export default function ExplorationPage({ params }: { params: { locale: string; 
         <div className="container-custom">
           <div className="grid lg:grid-cols-3 gap-12">
             <div className="lg:col-span-2">
-              <h2 className="text-2xl font-heading font-bold text-gray-900 mb-3">Nos Examens & Explorations</h2>
-              <p className="text-gray-500 mb-8">Cliquez sur un examen pour en savoir plus : description, préparation, déroulement, durée.</p>
+              <h2 className="text-2xl font-heading font-bold text-gray-900 mb-3">{t.examsTitle}</h2>
+              <p className="text-gray-500 mb-8">{t.clickExam}</p>
 
               {/* Exam cards - clickable */}
               <div className="grid gap-4">
@@ -102,12 +133,12 @@ export default function ExplorationPage({ params }: { params: { locale: string; 
                 </div>
 
                 <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-2xl p-8 border border-green-200">
-                  <h3 className="text-xl font-heading font-bold text-gray-900 mb-4">Prendre Rendez-vous</h3>
+                  <h3 className="text-xl font-heading font-bold text-gray-900 mb-4">{t.bookAppointment}</h3>
                   <p className="text-gray-600 text-sm mb-6">
-                    Contactez-nous pour planifier votre exploration ou obtenir un devis personnalisé.
+                    {t.contactText}
                   </p>
                   <Link href="/devis" className="btn-primary w-full text-center mb-3">
-                    Demander un Devis <ArrowRight className="w-4 h-4 ml-2" />
+                    {t.requestQuote} <ArrowRight className="w-4 h-4 ml-2" />
                   </Link>
                   <a href={`tel:${clinicInfo.phone}`} className="btn-secondary w-full text-center text-sm">
                     <Phone className="w-4 h-4 mr-2" /> {clinicInfo.phone}
@@ -115,7 +146,7 @@ export default function ExplorationPage({ params }: { params: { locale: string; 
                 </div>
 
                 <div className="bg-white rounded-2xl p-6 border border-gray-200">
-                  <h3 className="font-heading font-bold text-gray-900 mb-4">Autres Explorations</h3>
+                  <h3 className="font-heading font-bold text-gray-900 mb-4">{t.otherExplorations}</h3>
                   <div className="space-y-3">
                     {otherExplorations.map((e) => (
                       <Link key={e.slug} href={`/explorations/${e.slug}`} className="block p-3 bg-gray-50 rounded-lg hover:bg-green-50 transition text-sm">

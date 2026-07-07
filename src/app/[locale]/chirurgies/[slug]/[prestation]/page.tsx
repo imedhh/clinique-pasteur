@@ -49,6 +49,70 @@ export async function generateMetadata({ params }: { params: { locale: string; s
 }
 
 export default function PrestationPage({ params }: { params: { locale: string; slug: string; prestation: string } }) {
+  const UI = {
+    fr: {
+      breadcrumbChirurgies: 'Chirurgies',
+      requestQuote: 'Demander un Devis',
+      whatIsIt: 'Qu’est-ce que c’est ?',
+      whenIndicated: 'Quand est-elle indiquée ?',
+      preparation: 'Préparation',
+      deroulement: 'Déroulement',
+      duree: 'Durée',
+      recovery: 'Suites & Récupération',
+      risks: 'Risques et effets secondaires',
+      risksNote: 'Ces risques restent rares. Votre chirurgien vous informera en détail avant l’intervention.',
+      quoteText: 'Contactez-nous pour planifier une consultation ou obtenir un devis personnalisé.',
+      atAGlance: 'En bref',
+      dureeLabel: 'Durée :',
+      preparationLabel: 'Préparation :',
+      required: 'Requise',
+      dedicatedTeam: 'Équipe spécialisée dédiée',
+      otherInterventions: 'Autres interventions',
+      allInterventions: 'Toutes les interventions',
+    },
+    en: {
+      breadcrumbChirurgies: 'Surgeries',
+      requestQuote: 'Request a Quote',
+      whatIsIt: 'What is it?',
+      whenIndicated: 'When is it indicated?',
+      preparation: 'Preparation',
+      deroulement: 'Procedure',
+      duree: 'Duration',
+      recovery: 'Aftercare & Recovery',
+      risks: 'Risks and side effects',
+      risksNote: 'These risks remain rare. Your surgeon will inform you in detail before the procedure.',
+      quoteText: 'Contact us to schedule a consultation or receive a personalized quote.',
+      atAGlance: 'At a glance',
+      dureeLabel: 'Duration:',
+      preparationLabel: 'Preparation:',
+      required: 'Required',
+      dedicatedTeam: 'Dedicated specialist team',
+      otherInterventions: 'Other procedures',
+      allInterventions: 'All procedures',
+    },
+    ar: {
+      breadcrumbChirurgies: 'الجراحات',
+      requestQuote: 'طلب عرض أسعار',
+      whatIsIt: 'ما هي هذه العملية؟',
+      whenIndicated: 'متى يُنصح بإجرائها؟',
+      preparation: 'التحضير',
+      deroulement: 'مراحل العملية',
+      duree: 'المدة',
+      recovery: 'ما بعد العملية والتعافي',
+      risks: 'المخاطر والآثار الجانبية',
+      risksNote: 'تبقى هذه المخاطر نادرة. سيقدّم لكم الجرّاح معلومات مفصّلة قبل العملية.',
+      quoteText: 'اتصلوا بنا لتحديد موعد استشارة أو الحصول على عرض أسعار مخصّص.',
+      atAGlance: 'باختصار',
+      dureeLabel: 'المدة :',
+      preparationLabel: 'التحضير :',
+      required: 'مطلوب',
+      dedicatedTeam: 'فريق طبي متخصّص',
+      otherInterventions: 'عمليات أخرى',
+      allInterventions: 'جميع العمليات',
+    },
+  } as const
+  const t = (UI as any)[params.locale] || UI.fr
+
   const { chirurgies, clinicInfo, prestationsByChirurgie } = getContent(params.locale as any)
   const prestations = prestationsByChirurgie[params.slug]
   if (!prestations) notFound()
@@ -71,7 +135,7 @@ export default function PrestationPage({ params }: { params: { locale: string; s
         </div>
         <div className="container-custom px-4 relative">
           <div className="flex items-center gap-2 text-gray-400 text-sm mb-4 flex-wrap">
-            <Link href="/chirurgies" className="hover:text-white transition">Chirurgies</Link>
+            <Link href="/chirurgies" className="hover:text-white transition">{t.breadcrumbChirurgies}</Link>
             <span>/</span>
             <Link href={`/chirurgies/${params.slug}`} className="hover:text-white transition">{chir.shortTitle}</Link>
             <span>/</span>
@@ -81,7 +145,7 @@ export default function PrestationPage({ params }: { params: { locale: string; s
           <p className="text-lg text-gray-300 leading-relaxed max-w-3xl">{prestation.description}</p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4">
             <Link href="/devis" className="btn-gold">
-              Demander un Devis <ArrowRight className="w-5 h-5 ml-2" />
+              {t.requestQuote} <ArrowRight className="w-5 h-5 ml-2" />
             </Link>
             <a href={`tel:${clinicInfo.phone}`} className="inline-flex items-center justify-center px-6 py-3 border-2 border-white/30 text-white rounded-lg hover:bg-white/10 transition font-semibold">
               <Phone className="w-5 h-5 mr-2" /> {clinicInfo.phone}
@@ -101,7 +165,7 @@ export default function PrestationPage({ params }: { params: { locale: string; s
                   <div className="w-10 h-10 rounded-xl gradient-green flex items-center justify-center">
                     <FileText className="w-5 h-5 text-white" />
                   </div>
-                  Qu&apos;est-ce que c&apos;est ?
+                  {t.whatIsIt}
                 </h2>
                 <div className="prose prose-gray max-w-none text-gray-600 leading-relaxed whitespace-pre-line">
                   {prestation.fullDescription}
@@ -120,7 +184,7 @@ export default function PrestationPage({ params }: { params: { locale: string; s
                     <div className="w-10 h-10 rounded-xl gradient-green flex items-center justify-center">
                       <Stethoscope className="w-5 h-5 text-white" />
                     </div>
-                    Quand est-elle indiquée ?
+                    {t.whenIndicated}
                   </h2>
                   <div className="grid md:grid-cols-2 gap-3">
                     {prestation.indications.map((ind: any) => {
@@ -146,7 +210,7 @@ export default function PrestationPage({ params }: { params: { locale: string; s
                     <div className="w-10 h-10 rounded-xl gradient-green flex items-center justify-center">
                       <ClipboardList className="w-5 h-5 text-white" />
                     </div>
-                    Préparation
+                    {t.preparation}
                   </h2>
                   <div className="bg-amber-50 border border-amber-200 rounded-2xl p-6">
                     <div className="space-y-3">
@@ -167,7 +231,7 @@ export default function PrestationPage({ params }: { params: { locale: string; s
                     <div className="w-10 h-10 rounded-xl gradient-green flex items-center justify-center">
                       <Timer className="w-5 h-5 text-white" />
                     </div>
-                    Déroulement
+                    {t.deroulement}
                   </h2>
                   <div className="space-y-4">
                     {prestation.deroulement.map((step: string, i: number) => (
@@ -188,7 +252,7 @@ export default function PrestationPage({ params }: { params: { locale: string; s
                   <div className="bg-green-50 border border-green-200 rounded-2xl p-6">
                     <div className="flex items-center gap-3 mb-3">
                       <Clock className="w-6 h-6 text-clinic-green" />
-                      <h3 className="font-heading font-bold text-gray-900">Durée</h3>
+                      <h3 className="font-heading font-bold text-gray-900">{t.duree}</h3>
                     </div>
                     <p className="text-gray-700">{prestation.duree}</p>
                   </div>
@@ -197,7 +261,7 @@ export default function PrestationPage({ params }: { params: { locale: string; s
                   <div className="bg-green-50 border border-green-200 rounded-2xl p-6">
                     <div className="flex items-center gap-3 mb-3">
                       <FileText className="w-6 h-6 text-clinic-green" />
-                      <h3 className="font-heading font-bold text-gray-900">Suites & Récupération</h3>
+                      <h3 className="font-heading font-bold text-gray-900">{t.recovery}</h3>
                     </div>
                     <p className="text-gray-700">{prestation.resultats}</p>
                   </div>
@@ -210,7 +274,7 @@ export default function PrestationPage({ params }: { params: { locale: string; s
                     <div className="w-10 h-10 rounded-xl bg-amber-500 flex items-center justify-center">
                       <AlertTriangle className="w-5 h-5 text-white" />
                     </div>
-                    Risques et effets secondaires
+                    {t.risks}
                   </h2>
                   <div className="bg-gray-50 rounded-2xl p-6 border border-gray-200">
                     <div className="space-y-2">
@@ -222,7 +286,7 @@ export default function PrestationPage({ params }: { params: { locale: string; s
                       ))}
                     </div>
                     <p className="text-gray-500 text-xs mt-4 italic">
-                      Ces risques restent rares. Votre chirurgien vous informera en détail avant l&apos;intervention.
+                      {t.risksNote}
                     </p>
                   </div>
                 </div>
@@ -233,10 +297,10 @@ export default function PrestationPage({ params }: { params: { locale: string; s
             <div className="lg:col-span-1">
               <div className="sticky top-24 space-y-6">
                 <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-2xl p-8 border border-green-200">
-                  <h3 className="text-xl font-heading font-bold text-gray-900 mb-3">Demander un Devis</h3>
-                  <p className="text-gray-600 text-sm mb-6">Contactez-nous pour planifier une consultation ou obtenir un devis personnalisé.</p>
+                  <h3 className="text-xl font-heading font-bold text-gray-900 mb-3">{t.requestQuote}</h3>
+                  <p className="text-gray-600 text-sm mb-6">{t.quoteText}</p>
                   <Link href="/devis" className="btn-primary w-full text-center mb-3">
-                    Demander un Devis <ArrowRight className="w-4 h-4 ml-2" />
+                    {t.requestQuote} <ArrowRight className="w-4 h-4 ml-2" />
                   </Link>
                   <a href={`tel:${clinicInfo.phone}`} className="btn-secondary w-full text-center text-sm">
                     <Phone className="w-4 h-4 mr-2" /> {clinicInfo.phone}
@@ -245,28 +309,28 @@ export default function PrestationPage({ params }: { params: { locale: string; s
 
                 {prestation.duree && (
                   <div className="bg-white rounded-2xl p-6 border border-gray-200">
-                    <h3 className="font-heading font-bold text-gray-900 mb-4">En bref</h3>
+                    <h3 className="font-heading font-bold text-gray-900 mb-4">{t.atAGlance}</h3>
                     <div className="space-y-3 text-sm">
                       <div className="flex items-center gap-3">
                         <Clock className="w-5 h-5 text-clinic-green" />
-                        <div><span className="text-gray-500">Durée :</span> <strong>{prestation.duree}</strong></div>
+                        <div><span className="text-gray-500">{t.dureeLabel}</span> <strong>{prestation.duree}</strong></div>
                       </div>
                       {prestation.preparation && prestation.preparation.length > 0 && (
                         <div className="flex items-center gap-3">
                           <ClipboardList className="w-5 h-5 text-clinic-green" />
-                          <div><span className="text-gray-500">Préparation :</span> <strong>Requise</strong></div>
+                          <div><span className="text-gray-500">{t.preparationLabel}</span> <strong>{t.required}</strong></div>
                         </div>
                       )}
                       <div className="flex items-center gap-3">
                         <ShieldCheck className="w-5 h-5 text-clinic-green" />
-                        <div><strong>Équipe spécialisée dédiée</strong></div>
+                        <div><strong>{t.dedicatedTeam}</strong></div>
                       </div>
                     </div>
                   </div>
                 )}
 
                 <div className="bg-white rounded-2xl p-6 border border-gray-200">
-                  <h3 className="font-heading font-bold text-gray-900 mb-4">Autres interventions</h3>
+                  <h3 className="font-heading font-bold text-gray-900 mb-4">{t.otherInterventions}</h3>
                   <div className="space-y-2">
                     {otherPrestations.map((p: any) => (
                       <Link key={p.slug} href={`/chirurgies/${params.slug}/${p.slug}`} className="block p-3 bg-gray-50 rounded-lg hover:bg-green-50 transition text-sm">
@@ -275,7 +339,7 @@ export default function PrestationPage({ params }: { params: { locale: string; s
                     ))}
                   </div>
                   <Link href={`/chirurgies/${params.slug}`} className="text-clinic-green font-semibold text-sm flex items-center gap-1 mt-4 hover:gap-2 transition-all">
-                    Toutes les interventions <ArrowRight className="w-4 h-4" />
+                    {t.allInterventions} <ArrowRight className="w-4 h-4" />
                   </Link>
                 </div>
               </div>

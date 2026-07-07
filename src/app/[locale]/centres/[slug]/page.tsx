@@ -18,6 +18,36 @@ const centreImages: Record<string, string> = {
   'coaching-nutritionnel-esthetique': '/images/nutrition.webp',
 }
 
+const UI = {
+  fr: {
+    allCentres: 'Tous les centres',
+    requestQuote: 'Demander un Devis',
+    servicesTitle: 'Services & Examens',
+    clickExam: 'Cliquez sur un service ou un examen pour en savoir plus : description, préparation, déroulement, durée.',
+    bookAppointment: 'Prendre Rendez-vous',
+    contactText: 'Contactez-nous pour planifier votre consultation ou examen.',
+    otherCentres: 'Autres Centres',
+  },
+  en: {
+    allCentres: 'All centers',
+    requestQuote: 'Request a Quote',
+    servicesTitle: 'Services & Examinations',
+    clickExam: 'Click on a service or an examination to learn more: description, preparation, how it works, duration.',
+    bookAppointment: 'Book an Appointment',
+    contactText: 'Contact us to schedule your consultation or examination.',
+    otherCentres: 'Other Centers',
+  },
+  ar: {
+    allCentres: 'جميع المراكز',
+    requestQuote: 'طلب عرض أسعار',
+    servicesTitle: 'الخدمات والفحوصات',
+    clickExam: 'انقر على خدمة أو فحص لمعرفة المزيد: الوصف، التحضير، سير الفحص، المدة.',
+    bookAppointment: 'حجز موعد',
+    contactText: 'اتصل بنا لتحديد موعد الاستشارة أو الفحص.',
+    otherCentres: 'مراكز أخرى',
+  },
+} as const
+
 export function generateStaticParams() {
   const { centres } = getContent('fr')
   return locales.flatMap((locale) => centres.map((c) => ({ locale, slug: c.slug })))
@@ -34,6 +64,7 @@ export async function generateMetadata({ params }: { params: { locale: string; s
 }
 
 export default function CentrePage({ params }: { params: { locale: string; slug: string } }) {
+  const t = (UI as any)[params.locale] || UI.fr
   const { centres, clinicInfo, examsByCentre } = getContent(params.locale as any)
   const centre = centres.find((c) => c.slug === params.slug)
   if (!centre) notFound()
@@ -52,13 +83,13 @@ export default function CentrePage({ params }: { params: { locale: string; slug:
         </div>
         <div className="container-custom px-4 relative">
           <Link href="/centres" className="inline-flex items-center gap-2 text-gray-400 hover:text-white transition mb-6 text-sm">
-            <ArrowLeft className="w-4 h-4" /> Tous les centres
+            <ArrowLeft className="w-4 h-4" /> {t.allCentres}
           </Link>
           <h1 className="text-3xl md:text-5xl font-heading font-bold text-white mb-6">{centre.title}</h1>
           <p className="text-xl text-gray-300 leading-relaxed max-w-3xl">{centre.fullDescription}</p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4">
             <Link href="/devis" className="btn-gold">
-              Demander un Devis <ArrowRight className="w-5 h-5 ml-2" />
+              {t.requestQuote} <ArrowRight className="w-5 h-5 ml-2" />
             </Link>
             <a href={`tel:${clinicInfo.phone}`} className="inline-flex items-center justify-center px-6 py-3 border-2 border-white/30 text-white rounded-lg hover:bg-white/10 transition font-semibold">
               <Phone className="w-5 h-5 mr-2" /> {clinicInfo.phone}
@@ -71,9 +102,9 @@ export default function CentrePage({ params }: { params: { locale: string; slug:
         <div className="container-custom">
           <div className="grid lg:grid-cols-3 gap-12">
             <div className="lg:col-span-2">
-              <h2 className="text-2xl font-heading font-bold text-gray-900 mb-3">Services & Examens</h2>
+              <h2 className="text-2xl font-heading font-bold text-gray-900 mb-3">{t.servicesTitle}</h2>
               {hasDetailedExams && (
-                <p className="text-gray-500 mb-8">Cliquez sur un service ou un examen pour en savoir plus : description, préparation, déroulement, durée.</p>
+                <p className="text-gray-500 mb-8">{t.clickExam}</p>
               )}
 
               {hasDetailedExams ? (
@@ -121,10 +152,10 @@ export default function CentrePage({ params }: { params: { locale: string; slug:
                 </div>
 
                 <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-2xl p-8 border border-green-200">
-                  <h3 className="text-xl font-heading font-bold text-gray-900 mb-4">Prendre Rendez-vous</h3>
-                  <p className="text-gray-600 text-sm mb-6">Contactez-nous pour planifier votre consultation ou examen.</p>
+                  <h3 className="text-xl font-heading font-bold text-gray-900 mb-4">{t.bookAppointment}</h3>
+                  <p className="text-gray-600 text-sm mb-6">{t.contactText}</p>
                   <Link href="/devis" className="btn-primary w-full text-center mb-3">
-                    Demander un Devis <ArrowRight className="w-4 h-4 ml-2" />
+                    {t.requestQuote} <ArrowRight className="w-4 h-4 ml-2" />
                   </Link>
                   <a href={`tel:${clinicInfo.phone}`} className="btn-secondary w-full text-center text-sm">
                     <Phone className="w-4 h-4 mr-2" /> {clinicInfo.phone}
@@ -132,7 +163,7 @@ export default function CentrePage({ params }: { params: { locale: string; slug:
                 </div>
 
                 <div className="bg-white rounded-2xl p-6 border border-gray-200">
-                  <h3 className="font-heading font-bold text-gray-900 mb-4">Autres Centres</h3>
+                  <h3 className="font-heading font-bold text-gray-900 mb-4">{t.otherCentres}</h3>
                   <div className="space-y-3">
                     {otherCentres.map((c) => (
                       <Link key={c.slug} href={`/centres/${c.slug}`} className="block p-3 bg-gray-50 rounded-lg hover:bg-green-50 transition text-sm">
@@ -141,7 +172,7 @@ export default function CentrePage({ params }: { params: { locale: string; slug:
                     ))}
                   </div>
                   <Link href="/centres" className="text-clinic-green font-semibold text-sm flex items-center gap-1 mt-4 hover:gap-2 transition-all">
-                    Tous les centres <ArrowRight className="w-4 h-4" />
+                    {t.allCentres} <ArrowRight className="w-4 h-4" />
                   </Link>
                 </div>
               </div>

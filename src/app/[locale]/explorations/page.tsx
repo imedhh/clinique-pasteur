@@ -14,20 +14,63 @@ const explorationImages: Record<string, string> = {
   'explorations-urodynamiques': '/images/fiches/home-explo-urodynamique.webp',
 }
 
+const UI = {
+  fr: {
+    badge: 'Diagnostic',
+    title: 'Nos Explorations Médicales',
+    subtitle: 'Des centres d’explorations spécialisés équipés de technologies de pointe pour un diagnostic précis et une prise en charge optimale.',
+    heroAlt: 'Explorations médicales',
+    others: 'autres',
+    learnMore: 'En savoir plus',
+    clinicAlt: 'Clinique',
+    ctaTitle: 'Besoin d’une exploration ?',
+    ctaText: 'Contactez-nous pour obtenir un devis ou prendre rendez-vous pour vos explorations médicales.',
+    ctaQuote: 'Demander un Devis',
+    call: 'Appeler le',
+  },
+  en: {
+    badge: 'Diagnostics',
+    title: 'Our Medical Explorations',
+    subtitle: 'Specialised exploration centres equipped with cutting-edge technologies for accurate diagnosis and optimal care.',
+    heroAlt: 'Medical explorations',
+    others: 'more',
+    learnMore: 'Learn more',
+    clinicAlt: 'Clinic',
+    ctaTitle: 'Need an examination?',
+    ctaText: 'Contact us to get a quote or book an appointment for your medical examinations.',
+    ctaQuote: 'Request a Quote',
+    call: 'Call',
+  },
+  ar: {
+    badge: 'التشخيص',
+    title: 'استكشافاتنا الطبية',
+    subtitle: 'مراكز استكشافات متخصصة مجهزة بتقنيات متطورة لتشخيص دقيق ورعاية مثلى.',
+    heroAlt: 'استكشافات طبية',
+    others: 'أخرى',
+    learnMore: 'اعرف المزيد',
+    clinicAlt: 'المصحة',
+    ctaTitle: 'هل تحتاجون إلى فحص استكشافي؟',
+    ctaText: 'اتصلوا بنا للحصول على عرض سعر أو لحجز موعد لفحوصاتكم الطبية.',
+    ctaQuote: 'اطلبوا عرض سعر',
+    call: 'اتصلوا على',
+  },
+} as const
+
 export default function ExplorationsPage({ params }: { params: { locale: string } }) {
+  const t = (UI as any)[params.locale] || UI.fr
   const { explorations, clinicInfo } = getContent(params.locale as any)
   return (
     <>
       <section className="relative py-20 overflow-hidden">
         <div className="absolute inset-0">
-          <Image src="/images/consultation.webp" alt="Explorations médicales" fill className="object-cover" />
+          <Image src="/images/consultation.webp" alt={t.heroAlt} fill className="object-cover" />
           <div className="absolute inset-0 bg-[#0a1628]/90" />
         </div>
         <div className="container-custom px-4 relative">
-          <span className="text-clinic-gold font-semibold uppercase tracking-wider text-sm">Diagnostic</span>
-          <h1 className="text-3xl md:text-5xl font-heading font-bold text-white mt-3 mb-6">Nos Explorations Médicales</h1>
+          <span className="text-clinic-gold font-semibold uppercase tracking-wider text-sm">{t.badge}</span>
+          <h1 className="text-3xl md:text-5xl font-heading font-bold text-white mt-3 mb-6">{t.title}</h1>
           <p className="text-xl text-gray-300 leading-relaxed max-w-3xl">
-            Des centres d&apos;explorations spécialisés équipés de technologies de pointe pour un diagnostic précis et une prise en charge optimale.
+            {t.subtitle}
           </p>
         </div>
       </section>
@@ -64,12 +107,12 @@ export default function ExplorationsPage({ params }: { params: { locale: string 
                     ))}
                     {exploration.services.length > 4 && (
                       <span className="text-xs bg-clinic-green text-white px-3 py-1 rounded-full font-semibold">
-                        +{exploration.services.length - 4} autres
+                        +{exploration.services.length - 4} {t.others}
                       </span>
                     )}
                   </div>
                   <span className="text-clinic-green font-semibold text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
-                    En savoir plus <ArrowRight className="w-4 h-4" />
+                    {t.learnMore} <ArrowRight className="w-4 h-4" />
                   </span>
                 </div>
               </Link>
@@ -80,20 +123,20 @@ export default function ExplorationsPage({ params }: { params: { locale: string 
 
       <section className="relative py-20 px-4 overflow-hidden">
         <div className="absolute inset-0">
-          <Image src="/images/clinic-building.webp" alt="Clinique" fill className="object-cover" />
+          <Image src="/images/clinic-building.webp" alt={t.clinicAlt} fill className="object-cover" />
           <div className="absolute inset-0 bg-clinic-green/90" />
         </div>
         <div className="container-custom relative text-center text-white">
-          <h2 className="text-3xl font-heading font-bold mb-4">Besoin d&apos;une exploration ?</h2>
+          <h2 className="text-3xl font-heading font-bold mb-4">{t.ctaTitle}</h2>
           <p className="text-green-100 mb-8 max-w-2xl mx-auto">
-            Contactez-nous pour obtenir un devis ou prendre rendez-vous pour vos explorations médicales.
+            {t.ctaText}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/devis" className="btn-gold">
-              Demander un Devis <ArrowRight className="w-4 h-4 ml-2" />
+              {t.ctaQuote} <ArrowRight className="w-4 h-4 ml-2" />
             </Link>
             <a href={`tel:${clinicInfo.phone}`} className="inline-flex items-center justify-center px-8 py-4 border-2 border-white/40 text-white font-semibold rounded-lg hover:bg-white/10 transition-all">
-              Appeler le {clinicInfo.phone}
+              {t.call} {clinicInfo.phone}
             </a>
           </div>
         </div>
