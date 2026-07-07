@@ -26,13 +26,14 @@ const FLAGS: Record<string, React.ReactNode> = {
       <rect y="12" width="60" height="6" fill="#C8102E" />
     </svg>
   ),
-  // Tunisie : rouge, disque blanc, croissant + étoile rouges
+  // Tunisie : rouge, DISQUE blanc, croissant + étoile ROUGES à l'intérieur
   ar: (
     <svg viewBox="0 0 60 40" width="100%" height="100%" preserveAspectRatio={PA}>
       <rect width="60" height="40" fill="#E70013" />
       <circle cx="30" cy="20" r="11" fill="#fff" />
-      <circle cx="32.5" cy="20" r="8.5" fill="#E70013" />
-      <path d="M31,15.2 L32.12,18.46 L35.56,18.52 L32.81,20.59 L33.82,23.88 L31,21.9 L28.18,23.88 L29.19,20.59 L26.44,18.52 L29.88,18.46 Z" fill="#E70013" />
+      <circle cx="31" cy="20" r="7.5" fill="#E70013" />
+      <circle cx="34" cy="20" r="6" fill="#fff" />
+      <path d="M34.5,17 L35.21,19.03 L37.35,19.07 L35.64,20.37 L36.26,22.43 L34.5,21.2 L32.74,22.43 L33.36,20.37 L31.65,19.07 L33.79,19.03 Z" fill="#E70013" />
     </svg>
   ),
 }
