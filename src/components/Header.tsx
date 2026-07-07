@@ -218,9 +218,11 @@ export default function Header({ locale = 'fr', dict }: { locale?: string; dict?
             {/* CTA + Mobile Button */}
             <div className="flex items-center gap-2 sm:gap-3">
               <LanguageSwitcher className="lg:hidden" compact />
-              <Link href="/devis" className="hidden md:inline-flex btn-primary text-sm" style={{ padding: '10px 20px' }}>
-                {dict?.common?.requestQuote || 'Demander un Devis'}
-              </Link>
+              <span className="hidden md:inline-flex">
+                <Link href="/devis" className="btn-primary text-sm" style={{ padding: '10px 20px' }}>
+                  {dict?.common?.requestQuote || 'Demander un Devis'}
+                </Link>
+              </span>
               <a href="tel:+21636402000" className="hidden sm:flex items-center gap-2 text-clinic-green font-semibold text-sm">
                 <Phone className="w-4 h-4" /> <span dir="ltr">36 402 000</span>
               </a>
