@@ -80,17 +80,17 @@ export default function DevisPage({ params }: { params: { locale: string } }) {
                 <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-2xl p-8 border border-green-200">
                   <h3 className="text-lg font-heading font-bold text-gray-900 mb-4">{t.direct}</h3>
                   <div className="space-y-4">
-                    <a href={`tel:${clinicInfo.phone}`} className="flex items-center gap-3 text-gray-700 hover:text-clinic-green transition">
+                    <a href={`tel:$<span dir="ltr">{clinicInfo.phone}</span>`} className="flex items-center gap-3 text-gray-700 hover:text-clinic-green transition">
                       <Phone className="w-5 h-5 text-clinic-green" />
                       <div>
-                        <p className="font-semibold text-sm">{clinicInfo.phone}</p>
+                        <p className="font-semibold text-sm"><span dir="ltr">{clinicInfo.phone}</span></p>
                         <p className="text-xs text-gray-500">{t.std}</p>
                       </div>
                     </a>
-                    <a href={`mailto:${clinicInfo.emailCommercial}`} className="flex items-center gap-3 text-gray-700 hover:text-clinic-green transition">
+                    <a href={`mailto:$<span dir="ltr">{clinicInfo.emailCommercial}</span>`} className="flex items-center gap-3 text-gray-700 hover:text-clinic-green transition">
                       <Mail className="w-5 h-5 text-clinic-green" />
                       <div>
-                        <p className="font-semibold text-sm">{clinicInfo.emailCommercial}</p>
+                        <p className="font-semibold text-sm"><span dir="ltr">{clinicInfo.emailCommercial}</span></p>
                         <p className="text-xs text-gray-500">{t.comm}</p>
                       </div>
                     </a>

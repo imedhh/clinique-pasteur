@@ -101,13 +101,13 @@ export default function Footer({ locale = 'fr', dict }: { locale?: string; dict?
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-clinic-green flex-shrink-0" />
                 <div>
-                  <a href={`tel:${clinicInfo.phone}`} className="text-white font-semibold text-sm hover:text-clinic-gold transition block">{clinicInfo.phone}</a>
-                  <a href={`tel:${clinicInfo.urgences}`} className="text-red-400 text-xs font-medium hover:text-red-300 transition">{t.emergency}: {clinicInfo.urgences}</a>
+                  <a href={`tel:$<span dir="ltr">{clinicInfo.phone}</span>`} className="text-white font-semibold text-sm hover:text-clinic-gold transition block"><span dir="ltr">{clinicInfo.phone}</span></a>
+                  <a href={`tel:$<span dir="ltr">{clinicInfo.urgences}</span>`} className="text-red-400 text-xs font-medium hover:text-red-300 transition">{t.emergency}: <span dir="ltr">{clinicInfo.urgences}</span></a>
                 </div>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-clinic-green flex-shrink-0" />
-                <a href={`mailto:${clinicInfo.email}`} className="text-gray-400 text-sm hover:text-white transition">{clinicInfo.email}</a>
+                <a href={`mailto:$<span dir="ltr">{clinicInfo.email}</span>`} className="text-gray-400 text-sm hover:text-white transition"><span dir="ltr">{clinicInfo.email}</span></a>
               </li>
               <li className="flex items-center gap-3">
                 <Clock className="w-5 h-5 text-clinic-green flex-shrink-0" />

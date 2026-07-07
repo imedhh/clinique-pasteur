@@ -223,7 +223,7 @@ export default function HospitalisationPage({ params }: { params: { locale: stri
             <Link href="/devis" className="btn-primary text-lg">
               {t.ctaQuote} <ArrowRight className="w-5 h-5 ml-2" />
             </Link>
-            <a href={`tel:${clinicInfo.phone}`} className="btn-secondary text-lg">
+            <a href={`tel:$<span dir="ltr">{clinicInfo.phone}</span>`} className="btn-secondary text-lg">
               <Phone className="w-5 h-5 mr-2" /> {t.ctaCall}
             </a>
           </div>

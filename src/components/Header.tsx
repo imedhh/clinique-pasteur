@@ -163,7 +163,7 @@ export default function Header({ locale = 'fr', dict }: { locale?: string; dict?
               {t.open247}
             </span>
             <a href="tel:+21636402076" className="flex items-center gap-2 bg-red-600 px-3 py-1 rounded text-xs font-bold hover:bg-red-700 transition">
-              <Phone className="w-3.5 h-3.5" /> {t.emergency}: 36 402 076
+              <Phone className="w-3.5 h-3.5" /> {t.emergency}: <span dir="ltr">36 402 076</span>
             </a>
           </div>
         </div>
@@ -220,7 +220,7 @@ export default function Header({ locale = 'fr', dict }: { locale?: string; dict?
                 {dict?.common?.requestQuote || 'Demander un Devis'}
               </Link>
               <a href="tel:+21636402000" className="hidden sm:flex items-center gap-2 text-clinic-green font-semibold text-sm">
-                <Phone className="w-4 h-4" /> 36 402 000
+                <Phone className="w-4 h-4" /> <span dir="ltr">36 402 000</span>
               </a>
               <button
                 type="button"

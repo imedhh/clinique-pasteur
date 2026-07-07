@@ -44,9 +44,9 @@ export default function ContactPage({ params }: { params: { locale: string } }) 
           {/* Contact Cards */}
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
             {[
-              { icon: Phone, title: t.cPhone, value: clinicInfo.phone, href: `tel:${clinicInfo.phone}`, sub: t.sStd },
-              { icon: Phone, title: t.cEmerg, value: clinicInfo.urgences, href: `tel:${clinicInfo.urgences}`, sub: t.s247, urgent: true },
-              { icon: Mail, title: t.cEmail, value: clinicInfo.email, href: `mailto:${clinicInfo.email}`, sub: t.sMail },
+              { icon: Phone, title: t.cPhone, value: clinicInfo.phone, href: `tel:$<span dir="ltr">{clinicInfo.phone}</span>`, sub: t.sStd },
+              { icon: Phone, title: t.cEmerg, value: clinicInfo.urgences, href: `tel:$<span dir="ltr">{clinicInfo.urgences}</span>`, sub: t.s247, urgent: true },
+              { icon: Mail, title: t.cEmail, value: clinicInfo.email, href: `mailto:$<span dir="ltr">{clinicInfo.email}</span>`, sub: t.sMail },
               { icon: MapPin, title: t.cAddr, value: 'Centre Urbain Nord', href: clinicInfo.googleMaps, sub: t.sCity },
             ].map(({ icon: Icon, title, value, href, sub, urgent }) => (
               <a
@@ -60,7 +60,7 @@ export default function ContactPage({ params }: { params: { locale: string } }) 
                   <Icon className={`w-7 h-7 ${urgent ? 'text-red-600' : 'text-clinic-green'}`} />
                 </div>
                 <h3 className="font-semibold text-gray-900 mb-1">{title}</h3>
-                <p className={`font-bold ${urgent ? 'text-red-600' : 'text-clinic-green'}`}>{value}</p>
+                <p className={`font-bold ${urgent ? 'text-red-600' : 'text-clinic-green'}`}><span dir="ltr">{value}</span></p>
                 <p className="text-gray-500 text-sm mt-1">{sub}</p>
               </a>
             ))}

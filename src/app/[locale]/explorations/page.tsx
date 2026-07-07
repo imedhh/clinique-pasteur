@@ -139,8 +139,8 @@ export default function ExplorationsPage({ params }: { params: { locale: string 
             <Link href="/devis" className="btn-gold">
               {t.ctaQuote} <ArrowRight className="w-4 h-4 ml-2" />
             </Link>
-            <a href={`tel:${clinicInfo.phone}`} className="inline-flex items-center justify-center px-8 py-4 border-2 border-white/40 text-white font-semibold rounded-lg hover:bg-white/10 transition-all">
-              {t.call} {clinicInfo.phone}
+            <a href={`tel:$<span dir="ltr">{clinicInfo.phone}</span>`} className="inline-flex items-center justify-center px-8 py-4 border-2 border-white/40 text-white font-semibold rounded-lg hover:bg-white/10 transition-all">
+              {t.call} <span dir="ltr">{clinicInfo.phone}</span>
             </a>
           </div>
         </div>

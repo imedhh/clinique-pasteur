@@ -97,8 +97,8 @@ export default function ChirurgiePage({ params }: { params: { locale: string; sl
             <Link href="/devis" className="btn-gold">
               {t.requestQuote} <ArrowRight className="w-5 h-5 ml-2" />
             </Link>
-            <a href={`tel:${clinicInfo.phone}`} className="inline-flex items-center justify-center px-6 py-3 border-2 border-white/30 text-white rounded-lg hover:bg-white/10 transition font-semibold">
-              <Phone className="w-5 h-5 mr-2" /> {clinicInfo.phone}
+            <a href={`tel:$<span dir="ltr">{clinicInfo.phone}</span>`} className="inline-flex items-center justify-center px-6 py-3 border-2 border-white/30 text-white rounded-lg hover:bg-white/10 transition font-semibold">
+              <Phone className="w-5 h-5 mr-2" /> <span dir="ltr">{clinicInfo.phone}</span>
             </a>
           </div>
         </div>
@@ -207,7 +207,7 @@ export default function ChirurgiePage({ params }: { params: { locale: string; sl
                   <Link href="/devis" className="btn-primary w-full text-center mb-3">
                     {t.freeQuote} <ArrowRight className="w-4 h-4 ml-2" />
                   </Link>
-                  <a href={`tel:${clinicInfo.phone}`} className="btn-secondary w-full text-center text-sm">
+                  <a href={`tel:$<span dir="ltr">{clinicInfo.phone}</span>`} className="btn-secondary w-full text-center text-sm">
                     <Phone className="w-4 h-4 mr-2" /> {t.callUs}
                   </a>
                 </div>
