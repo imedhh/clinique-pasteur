@@ -36,8 +36,43 @@ export async function generateMetadata({ params }: { params: { locale: string } 
       title: d.title, description: d.description,
       images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: d.siteName }],
     },
+    twitter: {
+      card: 'summary_large_image',
+      title: d.title, description: d.description,
+      images: ['/og-image.jpg'],
+    },
     robots: { index: true, follow: true },
   }
+}
+
+// Données structurées schema.org (rich results Google : établissement de santé).
+const clinicJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'MedicalClinic',
+  name: 'Clinique Pasteur Tunis',
+  url: 'https://cptunis.com',
+  logo: 'https://cptunis.com/images/logo-clinique.png',
+  image: 'https://cptunis.com/og-image.jpg',
+  telephone: '+21636402000',
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: 'Centre Urbain Nord',
+    addressLocality: 'Tunis',
+    postalCode: '1003',
+    addressCountry: 'TN',
+  },
+  geo: { '@type': 'GeoCoordinates', latitude: 36.8493, longitude: 10.1986 },
+  openingHoursSpecification: {
+    '@type': 'OpeningHoursSpecification',
+    dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
+    opens: '00:00',
+    closes: '23:59',
+  },
+  availableService: { '@type': 'MedicalProcedure', name: 'Urgences 24h/24 - 7j/7' },
+  sameAs: [
+    'https://www.facebook.com/cliniquepasteurtunisie',
+    'https://www.instagram.com/cliniquepasteurtunis',
+  ],
 }
 
 export default function LocaleLayout({ children, params }: { children: React.ReactNode; params: { locale: string } }) {
@@ -47,7 +82,10 @@ export default function LocaleLayout({ children, params }: { children: React.Rea
   return (
     <html lang={htmlLang[locale]} dir={dir(locale)}>
       <head>
-        <link rel="icon" href="/favicon.ico" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(clinicJsonLd) }}
+        />
       </head>
       <body className={`${inter.variable} ${playfair.variable} ${cairo.variable} min-h-screen flex flex-col`}>
         <a href="#contenu" className="skip-link">{d.common.skipToContent}</a>

@@ -42,7 +42,12 @@ export function clientIp(req: Request): string {
 
 /** Vérifie que la requête provient bien du site (anti-CSRF léger). */
 export function isSameOrigin(req: Request): boolean {
-  const allowed = ['https://cptunis.com', 'https://www.cptunis.com', 'http://localhost:3010']
+  const allowed = [
+    'https://cptunis.com',
+    'https://www.cptunis.com',
+    'https://pasteur.imedhh.com',
+    'http://localhost:3010',
+  ]
   const origin = req.headers.get('origin')
   if (origin) return allowed.includes(origin)
   // Certains navigateurs n'envoient pas Origin sur same-origin GET ; on retombe sur Referer.
